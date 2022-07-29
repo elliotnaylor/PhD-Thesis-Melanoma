@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TransferReport-final.aux
+The style file: unsrt.bst
+Database file #1: PHD-ElliotNaylor.bib
+Warning--there's a number but no volume in FerrantediRuffano2018
+Warning--empty journal in Zhang2018
+You've used 38 entries,
+            1791 wiz_defined-function locations,
+            700 strings with 12223 characters,
+and the built_in function-call counts, 9157 in all, are:
+= -- 776
+> -- 543
+< -- 1
++ -- 195
+- -- 157
+* -- 744
+:= -- 1541
+add.period$ -- 112
+call.type$ -- 38
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 332
+empty$ -- 807
+format.name$ -- 157
+if$ -- 1925
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 36
+newline$ -- 191
+num.names$ -- 38
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 137
+stack$ -- 0
+substring$ -- 661
+swap$ -- 44
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 92
+width$ -- 40
+write$ -- 411
+(There were 2 warnings)
