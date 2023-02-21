@@ -1,0 +1,1 @@
+{"rule":"PASSIVE_VOICE","sentence":"^\\QHere is a list of a number of biases being considered: Skin lesions without recognizable suspicious features are dismissed early within the diagnostic procedure.\\E$"}

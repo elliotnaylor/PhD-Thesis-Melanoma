@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11) (preloaded format=pdflatex 2022.11.30)  13 DEC 2022 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  21 FEB 2023 15:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/naynay/Documents/GitHub/phd-thesis2/thesis.tex
-(/home/naynay/Documents/GitHub/phd-thesis2/thesis.tex
-LaTeX2e <2022-11-01>
-L3 programming layer <2022-11-02> (/usr/local/share/miktex-texmf/tex/latex/base/report.cls
+**c:/Users/scary/Documents/GitHub/PhD-Thesis/thesis.tex
+(c:/Users/scary/Documents/GitHub/PhD-Thesis/thesis.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-02> (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/local/share/miktex-texmf/tex/latex/base/size11.clo
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -20,24 +20,24 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count191
 \c@figure=\count192
 \c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (packages.tex (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
+) (packages.tex (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen141
-)) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen142
-) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count194
@@ -82,19 +82,19 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen148
 \lineht@=\dimen149
 \@envbody=\toks19
-\multlinegap=\skip50
-\multlinetaggap=\skip51
+\multlinegap=\skip51
+\multlinetaggap=\skip52
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/home/naynay/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-) (/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count272
@@ -109,37 +109,37 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks22
- (/home/naynay/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/usr/local/share/miktex-texmf/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/share/miktex-texmf/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks23
 \pgfutil@tempdima=\dimen158
 \pgfutil@tempdimb=\dimen159
- (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box53
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-) (/usr/local/share/miktex-texmf/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks24
 \pgfkeys@temptoks=\toks25
- (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks26
 ))
 \pgf@x=\dimen162
@@ -162,27 +162,27 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
 \pgf@sys@id@count=\count279
- (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count280
 \pgfsyssoftpath@bigbuffer@items=\count281
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/latex/xcolor/xcolor.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (/usr/local/share/miktex-texmf/tex/latex/graphics/mathcolor.ltx)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -192,19 +192,19 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen172
 \pgfmath@count=\count282
 \pgfmath@box=\box54
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
 \pgfmath@stack@operation=\toks32
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count283
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen173
 \pgf@picmaxx=\dimen174
 \pgf@picminy=\dimen175
@@ -219,77 +219,76 @@ File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yy=\dimen184
 \pgf@zx=\dimen185
 \pgf@zy=\dimen186
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen187
 \pgf@path@lasty=\dimen188
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen189
 \pgf@shorten@start@additional=\dimen190
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
 \pgf@picture@serial@count=\count284
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen191
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen192
 \pgf@pt@y=\dimen193
 \pgf@pt@temp=\dimen194
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen195
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen196
 \pgf@sys@shading@range@num=\count285
 \pgf@shadingcount=\count286
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box58
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box59
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen197
 \pgf@nodesepend=\dimen198
-) (/usr/local/share/miktex-texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgffor.sty (/usr/local/share/miktex-texmf/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/share/miktex-texmf/tex/latex/pgf/math/pgfmath.sty (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/share/miktex-texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/math/pgfmath.code.tex)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen199
 \pgffor@skip=\dimen256
 \pgffor@stack=\toks33
 \pgffor@toks=\toks34
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count287
 \pgfplotmarksize=\dimen257
 )
@@ -309,68 +308,68 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikznumberofchildren=\count289
 \tikznumberofcurrentchild=\count290
 \tikz@fig@count=\count291
- (/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count292
 \pgfmatrixcurrentcolumn=\count293
 \pgf@matrix@numberofcolumns=\count294
 )
 \tikz@expandcount=\count295
- (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (/home/naynay/.miktex/texmfs/install/tex/latex/algorithm2e/algorithm2e.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count296
- (/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip52
- (/home/naynay/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+\algocf@hangindent=\skip53
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count297
-) (/usr/local/share/miktex-texmf/tex/latex/tools/xspace.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (/home/naynay/.miktex/texmfs/install/tex/latex/relsize/relsize.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip53
-\skiplinenumber=\skip54
-\skiprule=\skip55
-\skiphlne=\skip56
-\skiptext=\skip57
-\skiplength=\skip58
-\algomargin=\skip59
-\skipalgocfslide=\skip60
+\skiptotal=\skip54
+\skiplinenumber=\skip55
+\skiprule=\skip56
+\skiphlne=\skip57
+\skiptext=\skip58
+\skiplength=\skip59
+\algomargin=\skip60
+\skipalgocfslide=\skip61
 \algowidth=\dimen266
 \inoutsize=\dimen267
 \inoutindent=\dimen268
 \interspacetitleruled=\dimen269
 \interspacealgoruled=\dimen270
 \interspacetitleboxruled=\dimen271
-\algocf@ruledwidth=\skip61
+\algocf@ruledwidth=\skip62
 \algocf@inoutbox=\box64
 \algocf@inputbox=\box65
-\AlCapSkip=\skip62
-\AlCapHSkip=\skip63
-\algoskipindent=\skip64
+\AlCapSkip=\skip63
+\AlCapHSkip=\skip64
+\algoskipindent=\skip65
 \algocf@nlbox=\box66
 \algocf@hangingbox=\box67
 \algocf@untilbox=\box68
-\algocf@skipuntil=\skip65
+\algocf@skipuntil=\skip66
 \algocf@capbox=\box69
-\algocf@lcaptionbox=\skip66
-\algoheightruledefault=\skip67
-\algoheightrule=\skip68
-\algotitleheightruledefault=\skip69
-\algotitleheightrule=\skip70
+\algocf@lcaptionbox=\skip67
+\algoheightruledefault=\skip68
+\algoheightrule=\skip69
+\algotitleheightruledefault=\skip70
+\algotitleheightrule=\skip71
 \c@algocfline=\count298
 \c@algocfproc=\count299
 \c@algocf=\count300
 \algocf@algoframe=\box70
 \algocf@algobox=\box71
-) (/home/naynay/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
- (/usr/local/share/miktex-texmf/tex/latex/etoolbox/etoolbox.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count301
 )
@@ -384,57 +383,57 @@ LaTeX Info: Redefining \textls on input line 1234.
 \MT@outer@kern=\dimen272
 LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 \MT@listname@count=\count303
- (/home/naynay/.miktex/texmfs/install/tex/latex/microtype/microtype-pdftex.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2022/06/23 v3.0f Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 900.
 LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip71
+\MT@outer@space=\skip72
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/home/naynay/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
-)) (/home/naynay/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip72
-\f@nch@O@elh=\skip73
-\f@nch@O@erh=\skip74
-\f@nch@O@olh=\skip75
-\f@nch@O@orh=\skip76
-\f@nch@O@elf=\skip77
-\f@nch@O@erf=\skip78
-\f@nch@O@olf=\skip79
-\f@nch@O@orf=\skip80
-) (/usr/local/share/miktex-texmf/tex/latex/hyperref/hyperref.sty
+\f@nch@headwidth=\skip73
+\f@nch@O@elh=\skip74
+\f@nch@O@erh=\skip75
+\f@nch@O@olh=\skip76
+\f@nch@O@orh=\skip77
+\f@nch@O@elf=\skip78
+\f@nch@O@erf=\skip79
+\f@nch@O@olf=\skip80
+\f@nch@O@orf=\skip81
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
- (/home/naynay/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/local/share/miktex-texmf/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/home/naynay/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/home/naynay/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
- (/home/naynay/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/home/naynay/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count304
@@ -442,17 +441,17 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \@linkdim=\dimen273
 \Hy@linkcounter=\count305
 \Hy@pagecounter=\count306
- (/usr/local/share/miktex-texmf/tex/latex/hyperref/pd1enc.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/home/naynay/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/home/naynay/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count307
- (/usr/local/share/miktex-texmf/tex/latex/hyperref/puenc.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -465,15 +464,15 @@ Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4410.
 \c@Hy@tempcnt=\count308
- (/usr/local/share/miktex-texmf/tex/latex/url/url.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4748.
 \XeTeXLinkMargin=\dimen274
- (/home/naynay/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/home/naynay/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count309
@@ -486,7 +485,7 @@ Package hyperref Info: backreferencing OFF on input line 6042.
 Package hyperref Info: Link coloring OFF on input line 6047.
 Package hyperref Info: Link coloring with OCG OFF on input line 6052.
 Package hyperref Info: PDF/A mode OFF on input line 6057.
- (/usr/local/share/miktex-texmf/tex/latex/base/atbegshi-ltx.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -495,37 +494,38 @@ package with kernel methods
 \c@Hfootnote=\count312
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/share/miktex-texmf/tex/latex/hyperref/hpdftex.def
+
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
- (/usr/local/share/miktex-texmf/tex/latex/base/atveryend-ltx.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count313
 \c@bookmark@seq@number=\count314
- (/home/naynay/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/home/naynay/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip81
-) (/home/naynay/.miktex/texmfs/install/tex/latex/datetime/datetime.sty
+\Hy@SectionHShift=\skip82
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
- (/home/naynay/.miktex/texmfs/install/tex/latex/fmtcount/fmtcount.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
 Package: fmtcount 2020/01/30 v3.07
- (/usr/local/share/miktex-texmf/tex/latex/xkeyval/xkeyval.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkeyval.tex (/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkvutils.tex
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks36
 \XKV@tempa@toks=\toks37
 )
 \XKV@depth=\count315
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/home/naynay/.miktex/texmfs/install/tex/latex/fmtcount/fcprefix.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
- (/home/naynay/.miktex/texmfs/install/tex/latex/fmtcount/fcnumparser.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
 Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count316
 ))
@@ -538,7 +538,7 @@ Package: fcnumparser 2017/06/15
 \@tmpstrctr=\count323
 \@DT@loopN=\count324
 \@DT@X=\count325
-) (/home/naynay/.miktex/texmfs/install/tex/latex/datetime/datetime-defaults.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count326
@@ -560,18 +560,18 @@ Package datetime Info: No datetime.cfg file found, using default settings on inp
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks38
 \dt@b=\toks39
-) (/usr/local/share/miktex-texmf/tex/latex/base/inputenc.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks40
 \inpenc@posthook=\toks41
-) (/home/naynay/.miktex/texmfs/install/tex/latex/realboxes/realboxes.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/realboxes\realboxes.sty
 Package: realboxes 2011/08/08 v0.2 Change box commands to read there content as real boxes
- (/home/naynay/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box73
-) (/home/naynay/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-)) (/usr/local/share/miktex-texmf/tex/latex/blindtext/blindtext.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 \c@blindtext=\count341
 \c@Blindtext=\count342
@@ -591,26 +591,25 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 \c@blind@randommax=\count356
 \c@blind@pangramcount=\count357
 \c@blind@pangrammax=\count358
-) (/home/naynay/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip82
+\labelindent=\skip83
 \enit@outerparindent=\dimen277
 \enit@toks=\toks42
 \enit@inbox=\box74
 \enit@count@id=\count359
 \enitdp@description=\count360
-) (/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrextend.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrextend.sty
 Package: scrextend 2022/10/12 v3.38 KOMA-Script package (extend other classes with features of KOMA-Script classes)
- (/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.sty
 Package: scrkbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
-
-(/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
 Package: scrbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
 Package: scrlfile 2022/10/12 v3.38 KOMA-Script package (file load hooks)
- (/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
 Package: scrlfile-hook 2022/10/12 v3.38 KOMA-Script package (using LaTeX hooks)
- (/home/naynay/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
 Package: scrlogo 2022/10/12 v3.38 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
@@ -620,11 +619,11 @@ Already applied: [0000/00/00] Usage of raw or classic option list on input line 
 LaTeX Warning: Command \@footnotemark  has changed.
                Check if current package is valid.
 
-) (/home/naynay/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
- (/home/naynay/.miktex/texmfs/install/tex/latex/caption/caption.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
- (/home/naynay/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen278
 \captionmargin=\dimen279
@@ -642,16 +641,16 @@ Package caption Info: hyperref package is loaded.
 )
 \c@subfigure=\count363
 \c@subtable=\count364
-) (/home/naynay/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
- (/home/naynay/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 \tc@llx=\dimen286
 \tc@lly=\dimen287
 \tc@urx=\dimen288
 \tc@ury=\dimen289
 Package trimclip Info: Using driver 'tc-pdftex.def'.
- (/home/naynay/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen290
@@ -662,27 +661,27 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pheight=\dimen295
 \adjbox@pdepth=\dimen296
 \adjbox@ptotalheight=\dimen297
- (/home/naynay/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box75
 \sift@deathcycles=\count365
 \@vwid@loff=\dimen298
 \@vwid@roff=\dimen299
-)) (/usr/local/share/miktex-texmf/tex/latex/tools/array.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen300
 \ar@mcellbox=\box76
 \extrarowheight=\dimen301
 \NC@list=\toks43
-\extratabsurround=\skip83
-\backup@length=\skip84
+\extratabsurround=\skip84
+\backup@length=\skip85
 \ar@cellbox=\box77
-) (/home/naynay/.miktex/texmfs/install/tex/latex/isodate/isodate.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/isodate\isodate.sty
 Package: isodate 2010/01/03 v2.30 Print dates with different formats (HH)
- (/home/naynay/.miktex/texmfs/install/tex/latex/substr/substr.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count366
-) (/home/naynay/.miktex/texmfs/install/tex/latex/isodate/english.idf
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/isodate\english.idf
 File: english.idf 2010/01/03 v2.30 Language definitions for isodate package (HH)
 
 Define commands for English date format
@@ -696,12 +695,12 @@ LaTeX Info: Redefining \shortdate on input line 154.
 \c@iso@@slash=\count372
 \c@iso@@minus=\count373
 \c@iso@@dot=\count374
-) (/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
- (/home/naynay/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count375
- (/home/naynay/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 \c@tabx@nest=\count376
@@ -747,23 +746,23 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@sectionciteorderinternal@0=\count416
 \blx@entrysetcounter=\count417
 \blx@biblioinstance=\count418
-\labelnumberwidth=\skip85
-\labelalphawidth=\skip86
-\biblabelsep=\skip87
-\bibitemsep=\skip88
-\bibnamesep=\skip89
-\bibinitsep=\skip90
-\bibparsep=\skip91
-\bibhang=\skip92
+\labelnumberwidth=\skip86
+\labelalphawidth=\skip87
+\biblabelsep=\skip88
+\bibitemsep=\skip89
+\bibnamesep=\skip90
+\bibinitsep=\skip91
+\bibparsep=\skip92
+\bibhang=\skip93
 \blx@bcfin=\read3
 \blx@bcfout=\write4
-\blx@langwohyphens=\language1
+\blx@langwohyphens=\language79
 \c@mincomprange=\count419
 \c@maxcomprange=\count420
 \c@mincompwidth=\count421
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-dm.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -836,28 +835,28 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count487
 \c@pageref=\count488
 \c@savedpageref=\count489
-\shorthandwidth=\skip93
-\shortjournalwidth=\skip94
-\shortserieswidth=\skip95
-\shorttitlewidth=\skip96
-\shortauthorwidth=\skip97
-\shorteditorwidth=\skip98
-\locallabelnumberwidth=\skip99
-\locallabelalphawidth=\skip100
-\localshorthandwidth=\skip101
-\localshortjournalwidth=\skip102
-\localshortserieswidth=\skip103
-\localshorttitlewidth=\skip104
-\localshortauthorwidth=\skip105
-\localshorteditorwidth=\skip106
+\shorthandwidth=\skip94
+\shortjournalwidth=\skip95
+\shortserieswidth=\skip96
+\shorttitlewidth=\skip97
+\shortauthorwidth=\skip98
+\shorteditorwidth=\skip99
+\locallabelnumberwidth=\skip100
+\locallabelalphawidth=\skip101
+\localshorthandwidth=\skip102
+\localshortjournalwidth=\skip103
+\localshortserieswidth=\skip104
+\localshorttitlewidth=\skip105
+\localshortauthorwidth=\skip106
+\localshorteditorwidth=\skip107
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-compat.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-bibtex.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-bibtex.def
 File: blx-bibtex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 
 
@@ -867,7 +866,7 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 \c@textcitecount=\count490
 \c@textcitetotal=\count491
@@ -885,18 +884,18 @@ File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/bbx/numeric.bbx
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/bbx/standard.bbx
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count499
 \c@bbx:relatedtotal=\count500
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/cbx/numeric.cbx
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
 File: numeric.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -912,46 +911,46 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.cfg
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (/usr/local/share/miktex-texmf/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-11-02 L3 programming layer (loader) 
- (/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-02-02 L3 programming layer (loader) 
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count501
 \l__pdf_internal_box=\box78
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-11-02 L3 programming layer (loader) 
+(biblatex)             2023-02-02 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/share/miktex-texmf/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-06-22 L3 Experimental document command parser
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
-)) (/home/naynay/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
- (/usr/local/share/miktex-texmf/tex/latex/tools/calc.sty
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count502
 \calc@Bcount=\count503
 \calc@Adimen=\dimen302
 \calc@Bdimen=\dimen303
-\calc@Askip=\skip107
-\calc@Bskip=\skip108
+\calc@Askip=\skip108
+\calc@Bskip=\skip109
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count504
-\calc@Cskip=\skip109
-) (/home/naynay/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+\calc@Cskip=\skip110
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count505
 \l_MT_multwidth_dim=\dimen304
-\origjot=\skip110
+\origjot=\skip111
 \l_MT_shortvdotswithinadjustabove_dim=\dimen305
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen306
 \l_MT_above_intertext_sep=\dimen307
@@ -960,39 +959,39 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen310
 \xmathstrut@box=\box79
 \xmathstrut@dim=\dimen311
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \arrowsize=\dimen312
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartlowerbox=\box80
 \pgfnodeparttwobox=\box81
 \pgfnodepartthreebox=\box82
@@ -1013,10 +1012,10 @@ File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodepartsevenbox=\box97
 \pgfnodepartsixbox=\box98
 \pgfnodepartfivebox=\box99
-))) (/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/home/naynay/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+))) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2023/01/19 line numbers on paragraphs v5.1
 \linenopenalty=\count506
 \output=\toks44
 \linenoprevgraf=\count507
@@ -1031,10 +1030,11 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframerule=\dimen316
 \bframesep=\dimen317
 \bframebox=\box100
-LaTeX Info: Redefining \\ on input line 3056.
+\linenoamsmath@ams@eqpen=\count513
+LaTeX Info: Redefining \\ on input line 3131.
 ))
-\@quotelevel=\count513
-\@quotereset=\count514
+\@quotelevel=\count514
+\@quotereset=\count515
 
 
 LaTeX Warning: Unused global option(s):
@@ -1096,23 +1096,23 @@ LaTeX Font Info:    ... okay on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count515
+\scratchcounter=\count516
 \scratchdimen=\dimen318
 \scratchbox=\box101
-\nofMPsegments=\count516
-\nofMParguments=\count517
+\nofMPsegments=\count517
+\nofMParguments=\count518
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count518
+\MPscratchCnt=\count519
 \MPscratchDim=\dimen319
-\MPnumerator=\count519
-\makeMPintoPDFobject=\count520
+\MPnumerator=\count520
+\makeMPintoPDFobject=\count521
 \everyMPtoPDFconversion=\toks46
-) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \microtypecontext on input line 18.
@@ -1133,15 +1133,14 @@ LaTeX Info: Redefining \showhyphens on input line 18.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/home/naynay/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package hyperref Info: Link coloring OFF on input line 18.
- (thesis.out) (thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
- (/home/naynay/.miktex/texmfs/install/tex/latex/fmtcount/fc-english.def
+ (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
 File: fc-english.def 2016/01/12
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1150,7 +1149,7 @@ Package caption Info: End \AtBeginDocument code.
 isodate: babel.sty, (n)german.sty have not been loaded
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/local/share/miktex-texmf/tex/latex/biblatex/lbx/english.lbx
+(C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1162,13 +1161,14 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout4 = `thesis-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' found.
- (thesis.bbl)
+Package biblatex Info: ... file 'thesis.bbl' not found.
+
+No file thesis.bbl.
 Package biblatex Info: Reference section=0 on input line 18.
 Package biblatex Info: Reference segment=0 on input line 18.
- (Front/title.tex [1
+(Front/title.tex [1
 
-{/home/naynay/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}]) (Front/declaration.tex) (Front/dedication.tex [1
+{C:/Users/scary/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (Front/declaration.tex) (Front/dedication.tex [1
 
 
 ]) (Front/acknowledgements.tex [2
@@ -1182,24 +1182,71 @@ Package biblatex Info: Reference segment=0 on input line 18.
 
 
 
-] (thesis.toc)
+]
+No file thesis.toc.
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [5
+[5
 
 
 
-] (thesis.lot)
+]
+No file thesis.lot.
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- (Chapters/introduction.tex [1
+(Chapters/introduction.tex [1
 
 
 
 ]
 Chapter 1.
+
+LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'bhatia2009' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Izikson2002' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Minagawa2017' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Morton1998' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Nachbar' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'unlu2014' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'unlu2014' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Nachbar' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Stricklin2011' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Cognetta1994' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
+
+
+LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
+
 [2
 
 
@@ -1214,123 +1261,385 @@ Overfull \hbox (29.84935pt too wide) in paragraph at lines 13--30
 [][] 
  []
 
-[3] [4] [5]
-Overfull \hbox (4.88985pt too wide) in paragraph at lines 66--67
-[]\OT1/cmr/bx/n/10.95 (-20) Developing and validating a novel asymmetry analysis approach for improved
- []
+
+LaTeX Warning: Citation 'Cognetta1994' on page 3 undefined on input line 30.
 
 
-Overfull \hbox (11.08983pt too wide) in paragraph at lines 66--67
-\OT1/cmr/bx/n/10.95 (-20) analysis for improved bi-fold analysis and superpixels for improved asymmetry
- []
+LaTeX Warning: Citation 'Cognetta1994' on page 3 undefined on input line 30.
 
-[6]
-Overfull \hbox (2.28923pt too wide) in paragraph at lines 74--75
-\OT1/cmr/bx/n/10.95 (-20) improve classification accuracy between melanoma and seborrhoeic keratosis
- []
 
-) (Chapters/literatureReview.tex [7]
+LaTeX Warning: Citation 'Dick2019' on page 3 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Andre2017' on page 3 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Ali2020' on page 3 undefined on input line 34.
+
+[3]
+
+LaTeX Warning: Citation 'Fuji2019' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Selvaraju2016' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Ribeiro2016' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Tjoa2019' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Samek2019a' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Ghorbani2019' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Lopez-Labraca2018' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Takruri2017' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'Dick2019' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Ali2020a' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Ali2020b' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'She2007' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Tenenhaus2010' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Lopez-Labraca2018' on page 4 undefined on input line 39.
+
+[4] [5] [6]) (Chapters/literatureReview.tex [7]
 Chapter 2.
 
-Overfull \hbox (8.87378pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/10.95 (-20) This chapter reviews statistical and machine learning algorithms for the automatic classification
- []
+LaTeX Warning: Citation 'Andre2017' on page 8 undefined on input line 8.
+
+
+LaTeX Warning: Citation 'Ali2020b' on page 8 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'FerrantediRuffano2018' on page 8 undefined on input line 12.
 
 [8
 
 
 
 ]
-Overfull \hbox (3.22801pt too wide) in paragraph at lines 24--25
-\OT1/cmr/m/n/10.95 (-20) statistical approaches. ABCD rules include asymmetry, border, colour, and dermoscopic
- []
+
+LaTeX Warning: Citation 'Meskini2018' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Ali2020b' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Ali2020a' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'She2007' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Tenenhaus2010' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Ramezani2014' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Yuan2017a' on page 9 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Badrinarayanan2017' on page 9 undefined on input line 33.
 
 [9]
+
+LaTeX Warning: Citation 'Meskini2018' on page 10 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Fan2017' on page 10 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Pereira2020' on page 10 undefined on input line 37.
+
+
 Overfull \hbox (2.10744pt too wide) in paragraph at lines 40--41
-\OT1/cmr/m/n/10.95 (-20) Handcrafted features are the extraction of particular features using statistical algorithms|the
+\OT1/cmr/m/n/10.95 (-20) Handcrafted fea-tures are the ex-trac-tion of par-tic-u-lar fea-tures us-ing sta-tis-ti-cal al-go-rithms|the
  []
 
-<images/asym1.png, id=263, 291.9708pt x 265.2309pt>
+
+LaTeX Warning: Reference `lit-asym' on page 10 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 10 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 10 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'Ali2020a' on page 10 undefined on input line 43.
+
+[10]
+<images/asym1.png, id=108, 291.9708pt x 265.2309pt>
 File: images/asym1.png Graphic file (type png)
 <use images/asym1.png>
 Package pdftex.def Info: images/asym1.png  used on input line 47.
 (pdftex.def)             Requested size: 145.98503pt x 132.61511pt.
-<images/asym2.png, id=265, 295.5843pt x 263.7855pt>
+<images/asym2.png, id=110, 295.5843pt x 263.7855pt>
 File: images/asym2.png Graphic file (type png)
 <use images/asym2.png>
 Package pdftex.def Info: images/asym2.png  used on input line 48.
 (pdftex.def)             Requested size: 147.79178pt x 131.89243pt.
-[10]
-<images/bord1.png, id=280, 265.2309pt x 263.0628pt>
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 11 undefined on input line 52.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 11 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'Ali2020a' on page 11 undefined on input line 56.
+
+
+LaTeX Warning: Reference `borders' on page 11 undefined on input line 59.
+
+[11 <./images/asym1.png> <./images/asym2.png>]
+<images/bord1.png, id=119, 265.2309pt x 263.0628pt>
 File: images/bord1.png Graphic file (type png)
 <use images/bord1.png>
 Package pdftex.def Info: images/bord1.png  used on input line 63.
 (pdftex.def)             Requested size: 132.61511pt x 131.53107pt.
-<images/bord2.png, id=281, 292.6935pt x 265.2309pt>
+<images/bord2.png, id=120, 292.6935pt x 265.2309pt>
 File: images/bord2.png Graphic file (type png)
 <use images/bord2.png>
 Package pdftex.def Info: images/bord2.png  used on input line 64.
 (pdftex.def)             Requested size: 146.34639pt x 132.61511pt.
- [11 <./images/asym1.png> <./images/asym2.png>] [12 <./images/bord1.png> <./images/bord2.png>] [13]) (Chapters/dataExtraction.tex [14]
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 12 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 12 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'Ali2020b' on page 12 undefined on input line 72.
+
+[12 <./images/bord1.png> <./images/bord2.png>]
+
+LaTeX Warning: Citation 'She2007' on page 13 undefined on input line 77.
+
+
+LaTeX Warning: Citation 'Tenenhaus2010' on page 13 undefined on input line 79.
+
+
+LaTeX Warning: Citation 'Myridis2014a' on page 13 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'Kasmi2016a' on page 13 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'Anantha04' on page 13 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'Stricklin2011' on page 13 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'Lopez-Labraca2018' on page 13 undefined on input line 86.
+
+[13]
+
+LaTeX Warning: Citation 'Ramezani2014' on page 14 undefined on input line 91.
+
+
+LaTeX Warning: Citation 'Zaqout2016' on page 14 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'Zhang2018' on page 14 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'Izikson2002' on page 14 undefined on input line 96.
+
+) (Chapters/dataExtraction.tex [14]
 Chapter 3.
-) (Chapters/proposedMethod.tex [15
+
+Chapters/dataExtraction.tex:10: LaTeX Error: Environment itemsize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{itemsize}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Chapters/dataExtraction.tex:11: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     \item S
+                kin lesions without recognizable suspicious features are dis...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Chapters/dataExtraction.tex:12: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     \item D
+                ermatologists have diagnosed the large majority of the skin ...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Chapters/dataExtraction.tex:13: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13     \item D
+                ermatologists could diagnose during an in-person examination...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+[15
 
 ]
+
+Chapters/dataExtraction.tex:14: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     \item S
+                ome skin lesions are lacking diagnoses
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+
+Chapters/dataExtraction.tex:15: LaTeX Error: \begin{document} ended by \end{itemsize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \end{itemsize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (Chapters/proposedMethod.tex [16]
 Chapter 4.
-) [16
+) [17
 
 ]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.05548pt too wide) in paragraph at lines 67--67
-\OT1/cmr/m/n/10.95 (-20) detection of skin lesion shape asymmetry, color variegation and diameter in dermoscopic
- []
+LaTeX Warning: Empty bibliography on input line 67.
 
-
-Overfull \hbox (16.32147pt too wide) in paragraph at lines 67--67
-[]\OT1/cmr/m/n/10.95 (-20) Vijay Badrinarayanan, Alex Kendall, and Roberto Cipolla. ``SegNet: A Deep Convolutional
- []
-
-[17
-
+(Back/tables.tex [18
 
 
 ]
-Overfull \hbox (1.96906pt too wide) in paragraph at lines 67--67
-[]\OT1/cmr/m/n/10.95 (-20) Lavinia Ferrante di Ruffano et al. ``Computer-assisted diagnosis techniques (dermoscopy
- []
-
-[18]
-Overfull \hbox (3.86636pt too wide) in paragraph at lines 67--67
-[]\OT1/cmr/m/n/10.95 (-20) Wojciech Samek and Klaus Robert M^^?uller. ``Towards Explainable Artificial Intelligence''.
- []
-
-[19] (Back/tables.tex [20]
 Chapter 5.
-) [21
+) [19
 
 ] (thesis.aux)
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D58671F8634C60997DEC4A7574758F48;1981.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D7FC76E54C739E83599D311151700748;2584.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39296 strings out of 477219
- 770027 string characters out of 2826191
- 1552648 words of memory out of 3000000
- 59582 multiletter control sequences out of 15000+600000
- 484367 words of font info for 161 fonts, out of 8000000 for 9000
- 0 hyphenation exceptions out of 8191
- 113i,10n,134p,2225b,1671s stack positions out of 10000i,1000n,20000p,200000b,80000s
- </home/naynay/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk> </home/naynay/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (27 pages, 447791 bytes).
+ 38938 strings out of 476374
+ 765652 string characters out of 5788854
+ 1864340 words of memory out of 5000000
+ 58455 multiletter control sequences out of 15000+600000
+ 525297 words of font info for 147 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 113i,10n,134p,2226b,1658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on thesis.pdf (25 pages, 358289 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 41625 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 38945 words of extra memory for PDF output out of 42996 (max. 10000000)
 

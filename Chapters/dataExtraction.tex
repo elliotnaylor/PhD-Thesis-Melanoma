@@ -2,3 +2,17 @@
 
 \section{Introduction}
 This chapter discusses data extraction methods and pre-processing techniques including 
+
+\section{Testing Criteria}
+The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weights on the quality of the data used. Biases can arise from data collection procedures, and pre-processing techniques. Not considering possible biases greatly affect machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons it is essential to carefully identify and evaluate data before using and testing it, especially in this scenario as this data has not been previously used in research.
+
+Data is captured within a medical environment, so there are a couple of possible biases considered from speaking with doctors working there. Here is a list of a number of biases being considered:
+\begin{itemsize}
+    \item Skin lesions without recognizable suspicious features are dismissed early within the diagnostic procedure. Therefore, there is a lack of benign skin lesions within the dataset, and all have some undesirable features.
+    \item Dermatologists have diagnosed the large majority of the skin lesions which have varying accuracy depending on their experience. There is no way of knowing how accurate this data is.
+    \item Dermatologists could diagnose during an in-person examination where patients can be asked questions in real-time and further tests can be made involving touch. Otherwise, dermatologists diagnose using previously saved images, which might be less accurate because it is lacking the insight that an in-person examination would provide.
+    \item Some skin lesions are lacking diagnoses
+\end{itemsize}
+
+    Some skin lesion data lack a diagnosis. 
+
