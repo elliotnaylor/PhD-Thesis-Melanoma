@@ -1,17 +1,20 @@
 \chapter{Data Extraction and Transformation}
 
 \section{Introduction}
-The use of machine learning algorithms for the detection of melanoma is a promising and evolving field. However, the effectiveness of such is depends heavily on the quality of datasets used to develop them. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) dataset and highlight biases and preprocessing needed for the training of machine learning algorithms for the detection of melanoma.  
+The use of machine learning algorithms for the detection of melanoma is a promising and evolving field. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) dataset and highlight biases and preprocessing needed for the training of machine learning algorithms for the detection of melanoma.  
 
-\section{Criteria}
-The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weights on the quality of the data used. Biases can arise from data collection procedures, and pre-processing techniques. Not considering possible biases greatly affect machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons it is essential to carefully identify and evaluate data before using and testing it.
+\section{Data Biases}
+The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
 
-The NHS datasets contains a wealth of information that can be utilized. However, there are biases that need consideration before creating a dataset. These biases include:
+The NHS datasets contain a wealth of information that can be utilized. However, some biases need consideration before creating a dataset. These biases include:
 \begin{enumerate}
     \item Skin lesions without recognizable suspicious features are dismissed early within the diagnostic procedure. Therefore, there is a lack of benign skin lesions within the dataset, and all have some undesirable features.
-    \item Dermatologists have diagnosed the large majority of the skin lesions which have varying accuracy depending on their experience. There is no way of knowing how accurate this data is.
+    \item Dermatologists have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. There is no way of knowing how accurate this data is.
     \item Dermatologists could diagnose during an in-person examination where patients can be asked questions in real-time and further tests can be made involving touch. Otherwise, dermatologists diagnose using previously saved images, which might be less accurate because it is lacking the insight that an in-person examination would provide.
-    \item Some skin lesions within the dataset are lacking metadata including their diagnosis.
+    \item Some skin lesions within the dataset are lacking metadata including their diagnosis. Such image samples should be avoided.
+    \item Photographs of the skin lesions may be captured on different body parts such as hands, legs, face, and others. Most pre-processing methods are designed to differentiate between skin and skin lesions, so it is important to avoid using these images. Otherwise, new pre-processing methods will have to be made and tested.
 \end{enumerate}
 
-Pathology is needed.
+\section{Image Criteria}
+Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnoses, the scenario in which the diagnoses were captured is not mentioned, and the dermatologist that originally is not mentioned. There are many ways to combat this problem. Usually, in the creation of similar melanoma image datasets, several dermatologists would be questioned on a variety of benign and malignant skin lesions and each image is compared and diagnosed. If most dermatologists agree it is included in the study, otherwise it is removed \cite{}. Only images that have distinct visual features are included, which is appropriate for training machine learning algorithms. In this project, In this project, we will instead be focusing on 
+
