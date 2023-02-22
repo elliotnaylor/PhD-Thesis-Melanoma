@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  21 FEB 2023 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  21 FEB 2023 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1137,6 +1137,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package hyperref Info: Link coloring OFF on input line 18.
+ (thesis.out) (thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
@@ -1161,12 +1162,11 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout4 = `thesis-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' not found.
-
-No file thesis.bbl.
+Package biblatex Info: ... file 'thesis.bbl' found.
+ (thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 18.
 Package biblatex Info: Reference segment=0 on input line 18.
-(Front/title.tex [1
+ (Front/title.tex [1
 
 {C:/Users/scary/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (Front/declaration.tex) (Front/dedication.tex [1
 
@@ -1182,71 +1182,24 @@ Package biblatex Info: Reference segment=0 on input line 18.
 
 
 
-]
-No file thesis.toc.
+] (thesis.toc)
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-[5
+ [5
 
 
 
-]
-No file thesis.lot.
+] (thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-(Chapters/introduction.tex [1
+ (Chapters/introduction.tex [1
 
 
 
 ]
 Chapter 1.
-
-LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'bhatia2009' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'UK2019' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Izikson2002' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Minagawa2017' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Morton1998' on page 2 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'Nachbar' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'unlu2014' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'unlu2014' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Nachbar' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Stricklin2011' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Cognetta1994' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
-
 [2
 
 
@@ -1261,385 +1214,79 @@ Overfull \hbox (29.84935pt too wide) in paragraph at lines 13--30
 [][] 
  []
 
-
-LaTeX Warning: Citation 'Cognetta1994' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Cognetta1994' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Dick2019' on page 3 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'Andre2017' on page 3 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'Ali2020' on page 3 undefined on input line 34.
-
-[3]
-
-LaTeX Warning: Citation 'Fuji2019' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Selvaraju2016' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Ribeiro2016' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Tjoa2019' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Samek2019a' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Ghorbani2019' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Lopez-Labraca2018' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Takruri2017' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Dick2019' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Ali2020a' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Ali2020b' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'She2007' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Tenenhaus2010' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Lopez-Labraca2018' on page 4 undefined on input line 39.
-
-[4] [5] [6]) (Chapters/literatureReview.tex [7]
+[3] [4] [5] [6]) (Chapters/literatureReview.tex [7]
 Chapter 2.
-
-LaTeX Warning: Citation 'Andre2017' on page 8 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'Ali2020b' on page 8 undefined on input line 10.
-
-
-LaTeX Warning: Citation 'FerrantediRuffano2018' on page 8 undefined on input line 12.
-
 [8
 
 
 
-]
-
-LaTeX Warning: Citation 'Meskini2018' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Ali2020b' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Ali2020a' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'She2007' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Tenenhaus2010' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Ramezani2014' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Yuan2017a' on page 9 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'Badrinarayanan2017' on page 9 undefined on input line 33.
-
-[9]
-
-LaTeX Warning: Citation 'Meskini2018' on page 10 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'Fan2017' on page 10 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'Pereira2020' on page 10 undefined on input line 37.
-
-
+] [9]
 Overfull \hbox (2.10744pt too wide) in paragraph at lines 40--41
 \OT1/cmr/m/n/10.95 (-20) Handcrafted fea-tures are the ex-trac-tion of par-tic-u-lar fea-tures us-ing sta-tis-ti-cal al-go-rithms|the
  []
 
-
-LaTeX Warning: Reference `lit-asym' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation 'Ali2020a' on page 10 undefined on input line 43.
-
 [10]
-<images/asym1.png, id=108, 291.9708pt x 265.2309pt>
+<images/asym1.png, id=297, 291.9708pt x 265.2309pt>
 File: images/asym1.png Graphic file (type png)
 <use images/asym1.png>
 Package pdftex.def Info: images/asym1.png  used on input line 47.
 (pdftex.def)             Requested size: 145.98503pt x 132.61511pt.
-<images/asym2.png, id=110, 295.5843pt x 263.7855pt>
+<images/asym2.png, id=299, 295.5843pt x 263.7855pt>
 File: images/asym2.png Graphic file (type png)
 <use images/asym2.png>
 Package pdftex.def Info: images/asym2.png  used on input line 48.
 (pdftex.def)             Requested size: 147.79178pt x 131.89243pt.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 11 undefined on input line 52.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 11 undefined on input line 54.
-
-
-LaTeX Warning: Citation 'Ali2020a' on page 11 undefined on input line 56.
-
-
-LaTeX Warning: Reference `borders' on page 11 undefined on input line 59.
-
-[11 <./images/asym1.png> <./images/asym2.png>]
-<images/bord1.png, id=119, 265.2309pt x 263.0628pt>
+ [11 <./images/asym1.png> <./images/asym2.png>]
+<images/bord1.png, id=312, 265.2309pt x 263.0628pt>
 File: images/bord1.png Graphic file (type png)
 <use images/bord1.png>
 Package pdftex.def Info: images/bord1.png  used on input line 63.
 (pdftex.def)             Requested size: 132.61511pt x 131.53107pt.
-<images/bord2.png, id=120, 292.6935pt x 265.2309pt>
+<images/bord2.png, id=313, 292.6935pt x 265.2309pt>
 File: images/bord2.png Graphic file (type png)
 <use images/bord2.png>
 Package pdftex.def Info: images/bord2.png  used on input line 64.
 (pdftex.def)             Requested size: 146.34639pt x 132.61511pt.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 12 undefined on input line 68.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 12 undefined on input line 70.
-
-
-LaTeX Warning: Citation 'Ali2020b' on page 12 undefined on input line 72.
-
-[12 <./images/bord1.png> <./images/bord2.png>]
-
-LaTeX Warning: Citation 'She2007' on page 13 undefined on input line 77.
-
-
-LaTeX Warning: Citation 'Tenenhaus2010' on page 13 undefined on input line 79.
-
-
-LaTeX Warning: Citation 'Myridis2014a' on page 13 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'Kasmi2016a' on page 13 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'Anantha04' on page 13 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'Stricklin2011' on page 13 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'Lopez-Labraca2018' on page 13 undefined on input line 86.
-
-[13]
-
-LaTeX Warning: Citation 'Ramezani2014' on page 14 undefined on input line 91.
-
-
-LaTeX Warning: Citation 'Zaqout2016' on page 14 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'Zhang2018' on page 14 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'Izikson2002' on page 14 undefined on input line 96.
-
-) (Chapters/dataExtraction.tex [14]
+ [12 <./images/bord1.png> <./images/bord2.png>] [13]) (Chapters/dataExtraction.tex [14]
 Chapter 3.
-
-Chapters/dataExtraction.tex:10: LaTeX Error: Environment itemsize undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \begin{itemsize}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Chapters/dataExtraction.tex:11: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11     \item S
-                kin lesions without recognizable suspicious features are dis...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 11
-[][]
- []
-
-
-Chapters/dataExtraction.tex:12: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12     \item D
-                ermatologists have diagnosed the large majority of the skin ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 12
-[][]
- []
-
-
-Chapters/dataExtraction.tex:13: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13     \item D
-                ermatologists could diagnose during an in-person examination...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 13
-[][]
- []
-
 [15
 
-]
-
-Chapters/dataExtraction.tex:14: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14     \item S
-                ome skin lesions are lacking diagnoses
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 14
-[][]
- []
-
-
-Chapters/dataExtraction.tex:15: LaTeX Error: \begin{document} ended by \end{itemsize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 \end{itemsize}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (Chapters/proposedMethod.tex [16]
+]) (Chapters/proposedMethod.tex [16]
 Chapter 4.
 ) [17
 
 ]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [18
 
-LaTeX Warning: Empty bibliography on input line 67.
-
-(Back/tables.tex [18
 
 
-]
+] [19] [20] (Back/tables.tex [21]
 Chapter 5.
-) [19
+) [22
 
 ] (thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D7FC76E54C739E83599D311151700748;2584.
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: CC99727F186176D0ED6D0B341C256745;2541.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38938 strings out of 476374
- 765652 string characters out of 5788854
- 1864340 words of memory out of 5000000
- 58455 multiletter control sequences out of 15000+600000
- 525297 words of font info for 147 fonts, out of 8000000 for 9000
+ 39333 strings out of 476374
+ 776434 string characters out of 5788854
+ 1866340 words of memory out of 5000000
+ 58745 multiletter control sequences out of 15000+600000
+ 528022 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,134p,2226b,1658s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (25 pages, 358289 bytes).
+ 113i,10n,134p,2226b,1675s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (28 pages, 455013 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 66 named destinations out of 1000 (max. 500000)
- 38945 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 41665 words of extra memory for PDF output out of 42996 (max. 10000000)
 
