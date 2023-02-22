@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.16)  22 FEB 2023 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.16)  22 FEB 2023 13:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1252,11 +1252,7 @@ Package pdftex.def Info: images/bord2.png  used on input line 64.
 Chapter 3.
 [15
 
-]
-
-LaTeX Warning: Citation '' on page 16 undefined on input line 19.
-
-) (Chapters/proposedMethod.tex [16]
+]) (Chapters/proposedMethod.tex [16]
 Chapter 4.
 ) [17
 
@@ -1281,17 +1277,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39334 strings out of 475282
- 770419 string characters out of 2781157
+ 39335 strings out of 475282
+ 770426 string characters out of 2781157
  1558701 words of memory out of 3000000
  59837 multiletter control sequences out of 15000+600000
  484994 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,10n,134p,2224b,1675s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </home/naynay/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk> </home/naynay/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1095.pk></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (28 pages, 456958 bytes).
+Output written on thesis.pdf (28 pages, 457424 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
  41673 words of extra memory for PDF output out of 42996 (max. 10000000)
 
