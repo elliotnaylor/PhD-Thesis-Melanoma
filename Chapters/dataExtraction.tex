@@ -1,4 +1,4 @@
-\chapter{Data Extraction and Transformation}
+\chapter{Data Extraction and Pre-processing}
 
 \section{Introduction}
 The use of machine learning algorithms for the detection of melanoma is a promising and evolving field. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases and preprocessing needed for the training of machine learning algorithms for the detection of melanoma.  
@@ -8,16 +8,16 @@ The use of datasets is fundamental to the development and evaluation of machine 
 
 The NHS datasets contain a wealth of information that can be utilized. However, some biases need consideration before creating a dataset. These biases include:
 \begin{enumerate}
-    \item Skin lesions without recognizable suspicious features are dismissed early within the diagnostic procedure. Therefore, there is a lack of benign skin lesions within the dataset, and all have some undesirable features.
+    \item  The diagnostic procedure dismisses skin lesions without recognizably suspicious features and do not reach the phase that photographs were captured. As such, there is a lack of benign skin lesions within the dataset, and all have some undesirable features.
     \item Dermatologists have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. There is no way of knowing how accurate this data is.
     \item Dermatologists could diagnose during an in-person examination where patients can be asked questions in real-time and further tests can be made involving touch. Otherwise, dermatologists diagnose using previously saved images, which might be less accurate because it is lacking the insight that an in-person examination would provide.
     \item Some skin lesions within the dataset are lacking metadata including their diagnosis. Such image samples should be avoided.
     \item Photographs of the skin lesions may be captured on different body parts such as hands, legs, face, and others. Most pre-processing methods are designed to differentiate between skin and skin lesions, so it is important to avoid using these images. Otherwise, new pre-processing methods will have to be made and tested.
-    \item SK
+    \item Seborrhoeic keratosis (SK) have similar features to that seen in malignant skin lesions. Therefore, there might be skin lesions diagnosed as melanoma that are SK. Furthermore, because of its similarity there are potentially many SK images. It will be vital to separate these.
 \end{enumerate}
 
 \section{Image Criteria}
-Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnoses, the scenario in which the diagnoses were captured is not mentioned, and the dermatologist that originally is not mentioned. There are many ways to combat this problem. Usually, in the creation of similar melanoma image datasets, several dermatologists would be questioned on a variety of benign and malignant skin lesions and each image is compared and diagnosed. If most dermatologists agree it is included in the study, otherwise it is removed[]. This is appropriate for training machine learning algorithms because only those with a distinct or lack of visual features relating to their diagnosis are included. Alternatively, you might argue that removing less adequate records fails to prove whether the developed algorithms work in a real medical environment.
+Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnoses, the scenario in which the diagnoses were captured is not mentioned, SK is potentially misdiagnosed as malignant, and the dermatologist that originally diagnosed are not mentioned. There are many ways to combat these problem. Usually, in the creation of similar melanoma image datasets, several dermatologists would be questioned on a variety of benign and malignant skin lesions and each image is compared and diagnosed. If most dermatologists agree it is included in the study, otherwise it is removed[]. This is appropriate for training machine learning algorithms because only those with a distinct or lack of visual features relating to their diagnosis are included. Alternatively, you might argue that removing less adequate records fails to prove whether the developed algorithms work in a real medical environment. Therefore, other methods were explored to validate the data.
 
 In this project, we do not have the resources to re-diagnose skin lesions, so instead the focus is on gathering results from the histopathology department. These results are more accurate than dermatologists and counter the mentioned biases[]. 
 
