@@ -4,14 +4,14 @@
 The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{}. The goal of this paper is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
 \section{Background}
-Describe the requirements, such as using macroscopic images over dermoscopic.
+%Describe the requirements, such as using macroscopic images over dermoscopic.
 
-The goal of this paper is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
+%The goal of this paper is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
 
-Labels include Filename, Tags, Gender, DOB, Department, Consent, Diagnosis, Date Photographed.
+%Labels include Filename, Tags, Gender, DOB, Department, Consent, Diagnosis, Date Photographed.
 
 \section{Other Public Datasets}
-Brief comparison of other datasets and their data.
+%Brief comparison of other datasets and their data.
 
 \section{Data Biases}
 The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
@@ -34,12 +34,6 @@ Varied accuracy of
 
 
 The dataset includes skin lesions of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squemous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). 
-
-
-
-
-
-
 
 
 Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnostic data and some have a variety of diagnoses, the scenario in which the diagnoses were captured is not mentioned, 
@@ -65,3 +59,4 @@ Use ANOVA to check whether features of Atypical and typical moles are similar.
 
 %Hair removal
 
+Analyse the data and make a point about the method used for labelling and how it might be improved
