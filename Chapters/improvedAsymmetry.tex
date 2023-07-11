@@ -39,7 +39,7 @@ The weakest point in the technique is the use of a threshold, if more than half 
 To improve the accuracy of the algorithm some changes need to be made based on the previous statements. First will be superpixels and next is k-means.
 
 % Demonstrating the changes including superpixels and graphs, etc
-Superpixels is an alogorithm for grouping pixels into a region with similar values. This one uses simple linear iterative clustering (SLIC) algorithm \cite{} to do so. The goal of using this instead of averaging specific areas as shown in \cite{}, is to segment areas of similar interest values. This is to prevent areas from being cut in half.
+Superpixels is an algorithm for grouping pixels into a region with similar values. This one uses simple linear iterative clustering (SLIC) algorithm \cite{} to do so. The goal of using this instead of averaging specific areas as shown in \cite{}, is to segment areas of similar interest values. This is to prevent areas from being cut in half.
 
 The image in ... demonstrates the usual average and the new averages based on superpixels and the changes in values. areas that are lighter in colour appear to have a lower value and darker appear darker.
 
