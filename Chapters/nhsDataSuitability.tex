@@ -1,10 +1,22 @@
 \chapter{NHS Data Suitability for Melanoma Detection Using Machine Learning Algorithms}
 
 \section{Introduction}
-The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{}. The goal of this paper is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
+The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{}. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
 \section{Background}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
+
+There are certain requirments for the project including the use of macroscopic images instead of dermoscopic images.
+
+Dermoscopic images are the preferred method over macroscopic for the diagnosis of skin cancers for several reasons. Firstly dermoscopic images provide a detailed visualisation of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Vestergaard et al., 2008, Oliveira, R}. These structures include pigment network, asymmetry, irregular borders, and other features that aid in the differentiation between benign and maignant lesions\cite{Vestergaard et al., 2008}. 
+
+Dermoscopy improves the diagnostic accuracy for melanoma when compared with macroscopic examination\cite{Wolner et al., 2017} and is widely considered a superior \ciite{Vestergaard et al., 2008}. Additionally dermoscopy allows for the detection fo specific dermosocpic patterns that are visible within melanoma. For example, considering acral melanoma, dermspcopy has been found to be significant in detecting the parallel ridge and irregular diffuse pigmentation patterns\cite{Saida et al., 2004}. 
+
+Furthermore, when considering the automatic detection of melnaoma naked-eye or macroscopic examinations are considered more accuracte because of the removal of outside sources including lighting. However, a recent study made of of convolutional neural networks (CNNs) with transfer learning on dermoscopic and macroscopic images for the detection of melnaoma\cite{Millenia et al., 2022}. Both were detected effectively.
+
+While dermoscopy is considered the most superior to macroscopic examination for melanoama due to its ability to increase sensitivity. However, the projects requirements require using macropsic images. The logic behind this is to use standard mobile devices for general practitioners because they are unlikely to recognise dermoscopic features regardless. Therefore macroscopic images are used throughout this project.
+
+This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomilous data from the images. All of which will support in improving the accuracy when classifying.
 
 %The goal of this paper is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
 
@@ -34,7 +46,6 @@ Varied accuracy of
 
 
 The dataset includes skin lesions of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squemous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). 
-
 
 Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnostic data and some have a variety of diagnoses, the scenario in which the diagnoses were captured is not mentioned, 
 SK is potentially misdiagnosed as malignant, and the dermatologist that originally diagnosed are not mentioned. There are many ways to combat these problem. For example during the creation of the PH2 dataset\cite{mendonca2013}, several dermatologists were asked to diagnose a skin lesion with appropriate metadata relating to the ABCD rules. If most dermatologists agree it is included in the study, otherwise it is removed. The goal of this is to minimize the incorrect data within the dataset. Alternatively, you might argue that removing less adequate records fails to prove whether the developed algorithms work in a real medical environment. Therefore, other methods were explored to validate the data.
