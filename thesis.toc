@@ -18,20 +18,20 @@
 \contentsline {chapter}{\numberline {3}NHS Data Suitability for Melanoma Detection Using Machine Learning Algorithms}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Background}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Other Public Datasets}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Data Biases}{15}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Image Criteria}{16}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Data Preperation}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Skin Lesion Extraction}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}SegNet}{18}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Border extraction}{18}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Otsu Threshold}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}LBPC segmentation}{18}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Experimental results}{18}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Specular removal}{18}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Improved Melanoma Detection using Asymmetry}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Related Works}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Asymmetry Analysis Approach}{20}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Tables}{26}{chapter.6}%
+\contentsline {section}{\numberline {3.3}Other Public Datasets}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Data Biases}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Image Criteria}{17}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Data Preperation}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Skin Lesion Extraction}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}SegNet}{19}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Border extraction}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Otsu Threshold}{19}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}LBPC segmentation}{19}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Experimental results}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Specular removal}{19}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Improved Melanoma Detection using Asymmetry}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Related Works}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Asymmetry Analysis Approach}{21}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Tables}{27}{chapter.6}%

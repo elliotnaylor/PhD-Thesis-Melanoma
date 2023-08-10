@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  11 JUL 2023 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  9 AUG 2023 15:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1281,73 +1281,93 @@ Overfull \hbox (10.92142pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/10.95 (-20) evolv-ing field with de-tec-tion ac-cu-ra-cies of-ten beat-ing that of a dermotologists[[]].
  []
 
+
+LaTeX Warning: Citation 'Wolner et al.' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation '2017' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Oliveira' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'R' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'Dascalu et al.' on page 15 undefined on input line 13.
+
+
+LaTeX Warning: Citation '2021' on page 15 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Dascalu et al.' on page 15 undefined on input line 13.
+
+
+LaTeX Warning: Citation '2021' on page 15 undefined on input line 13.
+
 [15
 
-]
+] [16]
 
-LaTeX Warning: Citation 'mendonca2013' on page 16 undefined on input line 40.
+LaTeX Warning: Citation 'mendonca2013' on page 17 undefined on input line 49.
 
-[16]
 
-LaTeX Warning: Citation '' on page 17 undefined on input line 43.
+LaTeX Warning: Citation '' on page 17 undefined on input line 52.
 
-) (Chapters/segmentation.tex [17]
+[17]) (Chapters/segmentation.tex [18]
 Chapter 4.
-) (Chapters/improvedAsymmetry.tex [18
+) (Chapters/improvedAsymmetry.tex [19
 
 ]
 Chapter 5.
 
-LaTeX Warning: Citation 'Takiddin2021' on page 19 undefined on input line 5.
+LaTeX Warning: Citation 'Takiddin2021' on page 20 undefined on input line 5.
 
 
-LaTeX Warning: Citation 'Jiang2017' on page 19 undefined on input line 5.
+LaTeX Warning: Citation 'Jiang2017' on page 20 undefined on input line 5.
 
 
-LaTeX Warning: Citation '' on page 19 undefined on input line 13.
+LaTeX Warning: Citation '' on page 20 undefined on input line 13.
 
-[19
+[20
 
-] [20]
-Chapters/improvedAsymmetry.tex:36: Missing $ inserted.
-<inserted text> 
-                $
-l.36 ...ble, look at the graph below using the PH^
-                                                  2 dataset. Essentially, th...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+] [21]
 
-Chapters/improvedAsymmetry.tex:37: Missing $ inserted.
-<inserted text> 
-                $
-l.37 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Citation '' on page 22 undefined on input line 42.
 
 
-Overfull \hbox (1402.90523pt too wide) in paragraph at lines 36--37
-\OT1/cmr/m/n/10.95 (-20) method is not suit-able, look at the graph be-low us-ing the PH$[]\OML/cmm/m/it/10.95 dataset:Essentially; thesymmetricalskinlesionhasasmallerareaandtheasymmetricallesionhasalargerarea; butbothremaininthesamezoneandthereforesplittingthedataonlyusingathresholdhaspoorresults:Furthermore; therearealotofoutlyingdataandthethresholddoesnotadjustaccordingtothesevalues:Seethegraphbelow \OT1/cmr/m/n/10.95 (-20) :$ 
- []
+LaTeX Warning: Citation '' on page 22 undefined on input line 42.
 
-
-LaTeX Warning: Citation '' on page 21 undefined on input line 42.
-
-
-LaTeX Warning: Citation '' on page 21 undefined on input line 42.
-
-) [21]
+) [22]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22
+ [23
 
 
 
-] [23] [24] (Back/tables.tex [25]
+] [24] [25] (Back/tables.tex [26]
 Chapter 6.
-) [26
+) [27
 
 ] (thesis.aux)
 
@@ -1374,17 +1394,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39328 strings out of 476374
- 776329 string characters out of 5788854
+ 39330 strings out of 476374
+ 776344 string characters out of 5788854
  1865340 words of memory out of 5000000
- 58726 multiletter control sequences out of 15000+600000
+ 58727 multiletter control sequences out of 15000+600000
  528022 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,10n,134p,2226b,1673s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (32 pages, 462768 bytes).
+Output written on thesis.pdf (33 pages, 463294 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  41505 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis"] 0 "thesis.aux" "thesis.bbl" "thesis" 0 -1
+["bibtex thesis"] 1691590008 "thesis.aux" "thesis.bbl" "thesis" 1691590009 2
   "./references.bib" 1674222012 367698 7ef6633c516c3a28a4aee942ced2d7cf ""
-  "./thesis-blx.bib" 1689078435 340 25674e554aa25e98ea59ec40797d70f1 ""
+  "./thesis-blx.bib" 1691590007 340 25674e554aa25e98ea59ec40797d70f1 ""
   "C:/Users/scary/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1657613115 65483 3b5a53ada692a06ce416d088de6a391b ""
-  "thesis.aux" 1689078435 18392 e3360631c2d11347bd44259d0174857a "pdflatex"
+  "thesis.aux" 1691590007 19518 dd04610433b65a99ad244d883ecf5fc5 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1689078431 "c:/Users/scary/Documents/GitHub/PhD-Thesis/thesis.tex" "thesis.pdf" "thesis" 1689078436 2
+["pdflatex"] 1691590003 "c:/Users/scary/Documents/GitHub/PhD-Thesis/thesis.tex" "thesis.pdf" "thesis" 1691590009 0
   "Back/tables.tex" 1674222012 16 81e5f2508f33ad8361f15d47811bfaf6 ""
   "C:/Users/scary/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1682607033 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/scary/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1676979453 12668 20e5863bcb86d6e64451d97f6adafe7c ""
@@ -243,10 +243,10 @@
   "C:/Users/scary/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/scary/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/scary/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Chapters/improvedAsymmetry.tex" 1689074590 8084 09b3baeed0053477d0bed7610542a26b ""
+  "Chapters/improvedAsymmetry.tex" 1691589995 8085 1a779af7999b7aaa4d226e9c2b3ac737 ""
   "Chapters/introduction.tex" 1685965211 16590 a92521cf6684aac61cfe61bf9e1ece5f ""
   "Chapters/literatureReview.tex" 1674222012 17706 411aee2e2a43692212d8ea771ba5741d ""
-  "Chapters/nhsDataSuitability.tex" 1689067046 6597 dff633fbd3c213efdca3454a2ba8496f ""
+  "Chapters/nhsDataSuitability.tex" 1691589995 8505 cfe20e7955dca34b1870e6b315df7ac6 ""
   "Chapters/segmentation.tex" 1689067046 315 52c77ce6ff68c39e8080da2e399a3348 ""
   "Front/abstract.tex" 1674222012 60 956c93a6de7e0bc2b2f7c2ae2b748bb9 ""
   "Front/acknowledgements.tex" 1674222012 76 199225be532d3d9c147cd15e8b53426a ""
@@ -259,13 +259,13 @@
   "images/bord1.png" 1674222012 48115 ad187eb5caf28f5d9381870223f934f9 ""
   "images/bord2.png" 1674222012 40394 b637a5d234b791be95ac961134c36e03 ""
   "packages.tex" 1674222012 952 06ec66710a24e94e022c02fecd65cdf1 ""
-  "thesis.aux" 1689078435 18392 e3360631c2d11347bd44259d0174857a "pdflatex"
-  "thesis.bbl" 1677081865 104675 601c2f96cf687d8ac8f8af00ac1fb601 "bibtex thesis"
-  "thesis.lot" 1689078435 595 b1bb5571d7689e8cd7361934bc216338 "pdflatex"
-  "thesis.out" 1689078435 4653 12b470d7d618e2f70cb2f25f2064b0c2 "pdflatex"
-  "thesis.run.xml" 1689078435 2540 9125092a232c85ce22cab9216e844b10 "pdflatex"
+  "thesis.aux" 1691590007 19518 dd04610433b65a99ad244d883ecf5fc5 "pdflatex"
+  "thesis.bbl" 1691590009 104675 601c2f96cf687d8ac8f8af00ac1fb601 "bibtex thesis"
+  "thesis.lot" 1691590007 595 b1bb5571d7689e8cd7361934bc216338 "pdflatex"
+  "thesis.out" 1691590007 4653 12b470d7d618e2f70cb2f25f2064b0c2 "pdflatex"
+  "thesis.run.xml" 1691590007 2540 9125092a232c85ce22cab9216e844b10 "pdflatex"
   "thesis.tex" 1689078429 1902 22622e1383a1bc90f16f0a2336d7ad43 ""
-  "thesis.toc" 1689078435 2852 2a41fdd0b6c067298539534535747686 "pdflatex"
+  "thesis.toc" 1691590007 2852 b584ab66138e186122848e7ba3354462 "pdflatex"
   (generated)
   "thesis-blx.bib"
   "thesis.aux"

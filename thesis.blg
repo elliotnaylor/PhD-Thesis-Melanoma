@@ -1,0 +1,103 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+White space in argument---line 273 of file thesis.aux
+ : \citation{Wolner
+ :                  et al.}
+I'm skipping whatever remains of this command
+White space in argument---line 279 of file thesis.aux
+ : \citation{Vestergaard
+ :                       et al.}
+I'm skipping whatever remains of this command
+White space in argument---line 285 of file thesis.aux
+ : \citation{Vestergaard
+ :                       et al.}
+I'm skipping whatever remains of this command
+White space in argument---line 297 of file thesis.aux
+ : \citation{Vestergaard
+ :                       et al.}
+I'm skipping whatever remains of this command
+White space in argument---line 303 of file thesis.aux
+ : \citation{Dascalu
+ :                   et al.}
+I'm skipping whatever remains of this command
+White space in argument---line 309 of file thesis.aux
+ : \citation{Dascalu
+ :                   et al.}
+I'm skipping whatever remains of this command
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 11300 items.
+Database file #1: thesis-blx.bib
+Database file #2: references.bib
+Reallocating 'str_pool' (item size: 1) to 130000 items.
+Warning--I didn't find a database entry for "2017"
+Warning--I didn't find a database entry for "2008"
+Warning--I didn't find a database entry for "Oliveira"
+Warning--I didn't find a database entry for "R"
+Warning--I didn't find a database entry for "2021"
+Warning--I didn't find a database entry for "mendonca2013"
+Warning--I didn't find a database entry for "Takiddin2021"
+Warning--I didn't find a database entry for "Jiang2017"
+Biblatex version: 3.18
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 37 entries,
+            6399 wiz_defined-function locations,
+            1574 strings with 70230 characters,
+and the built_in function-call counts, 392949 in all, are:
+= -- 33788
+> -- 4362
+< -- 973
++ -- 11796
+- -- 1892
+* -- 30488
+:= -- 47743
+add.period$ -- 0
+call.type$ -- 37
+change.case$ -- 380
+chr.to.int$ -- 42
+cite$ -- 72
+duplicate$ -- 39452
+empty$ -- 33695
+format.name$ -- 3053
+if$ -- 77388
+int.to.chr$ -- 0
+int.to.str$ -- 75
+missing$ -- 0
+newline$ -- 1728
+num.names$ -- 1509
+pop$ -- 13771
+preamble$ -- 1
+purify$ -- 680
+quote$ -- 0
+skip$ -- 6498
+stack$ -- 0
+substring$ -- 67104
+swap$ -- 6745
+text.length$ -- 1068
+text.prefix$ -- 36
+top$ -- 1
+type$ -- 1246
+warning$ -- 0
+while$ -- 5634
+width$ -- 0
+write$ -- 1692
+(There were 6 error messages)
