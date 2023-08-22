@@ -1,20 +1,20 @@
 \chapter{NHS Data Suitability for Melanoma Detection Using Machine Learning Algorithms}
 
 \section{Introduction}
-The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{}. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
+The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae et al. (2019)}. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
 \section{Background}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
 
 There are requirements for the project including the use of macroscopic images instead of dermoscopic images. Macroscopic is described as viewing with a naked eye or by taking a standard picture with no special lenses. Dermoscopic is when you use a specialized tool called a dermoscope.
 
-Dermoscopy improves the diagnostic accuracy of dermotologists for melanoma when compared with macroscopic examination\cite{Wolner et al., 2017} and is widely considered superior \cite{Vestergaard et al., 2008}. Dermoscopic images provide a detailed visualization of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Vestergaard et al., 2008, Oliveira, R}. Some of these structures are pigment network, asymmetry, irregular borders, and other features that support in the differentiation between benign and malignant lesions\cite{Vestergaard et al., 2008}. 
+Dermoscopy improves the diagnostic accuracy of dermatologists for melanoma when compared with macroscopic examination\cite{Wolner et al., 2017} and is widely considered superior \cite{Vestergaard et al., 2008}. Dermoscopic images provide a detailed visualization of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Vestergaard et al., 2008, Oliveira, R}. Some of these structures are pigment network, asymmetry, irregular borders, and other features that support in the differentiation between benign and malignant lesions\cite{Vestergaard et al., 2008}. 
 
 Another example, shows the diagnosis for BCC was 91\% when using dermoscopy, compared to 57\% when using close-up images \cite{Dascalu et al., 2021}. Similarly, the sensitivity for SCC was 77\% with dermoscopy, compared to 70\% with close-up images \cite{Dascalu et al., 2021}. These findings highlight the superior diagnostic performance of dermoscopy compared to macroscopic.
 
-While dermoscopy is considered the most superior to macroscopic examination for melanoma the projects requirements require using macroscopic images. The logic behind this is to use standard mobile devices for general practitioners because they are unlikely to recognize dermoscopic features regardless. Therefore, macroscopic images are used throughout this project.
+Dermoscopic examination is superior to macroscopic examination, however, the projects requirements specify using macroscopic. The logic behind this is that general practitioners are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes.  This appears to be consistent with an authors findings showing that 92\% of dermatologists correctly recognize at least four of size types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas \cite{Tae et al. (2019)}. Therefore, 'the dataset' is created with macroscopic images for examination.
 
-This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support in improving the accuracy when classifying.
+Considerations to clean the data removing hair and specular reflection to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support in improving the accuracy when classifying.
 
 %The goal of this paper is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
 
@@ -54,7 +54,6 @@ In this project, we do not have the resources to re-diagnose skin lesions, so in
 As mentioned in the data biases section the skin lesion images are taken under various different conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project. 
 
 These variations in image quality would decrease the accuracy of results. For this study the focus is on skin lesions captured using dermoscopes, avoiding the cases where skin lesions are captured under less-adequte conditions.
-
 
 Use ANOVA to check whether features of Atypical and typical moles are similar.
 
