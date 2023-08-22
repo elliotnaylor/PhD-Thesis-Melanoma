@@ -5,30 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-White space in argument---line 273 of file thesis.aux
- : \citation{Wolner
- :                  et al.}
-I'm skipping whatever remains of this command
-White space in argument---line 279 of file thesis.aux
- : \citation{Vestergaard
- :                       et al.}
-I'm skipping whatever remains of this command
-White space in argument---line 285 of file thesis.aux
- : \citation{Vestergaard
- :                       et al.}
-I'm skipping whatever remains of this command
-White space in argument---line 297 of file thesis.aux
- : \citation{Vestergaard
- :                       et al.}
-I'm skipping whatever remains of this command
-White space in argument---line 303 of file thesis.aux
- : \citation{Dascalu
- :                   et al.}
-I'm skipping whatever remains of this command
-White space in argument---line 309 of file thesis.aux
- : \citation{Dascalu
- :                   et al.}
-I'm skipping whatever remains of this command
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -44,60 +20,55 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 11300 items.
+Reallocating 'field_info' (item size: 4) to 12420 items.
 Database file #1: thesis-blx.bib
 Database file #2: references.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
-Warning--I didn't find a database entry for "2017"
-Warning--I didn't find a database entry for "2008"
-Warning--I didn't find a database entry for "Oliveira"
-Warning--I didn't find a database entry for "R"
-Warning--I didn't find a database entry for "2021"
-Warning--I didn't find a database entry for "mendonca2013"
-Warning--I didn't find a database entry for "Takiddin2021"
-Warning--I didn't find a database entry for "Jiang2017"
+Warning--I didn't find a database entry for "Wen2022"
+Warning--I didn't find a database entry for "Unver2019"
+Warning--I didn't find a database entry for "Lee1997"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 37 entries,
+You've used 50 entries,
             6399 wiz_defined-function locations,
-            1574 strings with 70230 characters,
-and the built_in function-call counts, 392949 in all, are:
-= -- 33788
-> -- 4362
-< -- 973
-+ -- 11796
-- -- 1892
-* -- 30488
-:= -- 47743
+            1667 strings with 93193 characters,
+and the built_in function-call counts, 585169 in all, are:
+= -- 51626
+> -- 5859
+< -- 1270
++ -- 18171
+- -- 2510
+* -- 44894
+:= -- 72562
 add.period$ -- 0
-call.type$ -- 37
-change.case$ -- 380
-chr.to.int$ -- 42
-cite$ -- 72
-duplicate$ -- 39452
-empty$ -- 33695
-format.name$ -- 3053
-if$ -- 77388
+call.type$ -- 50
+change.case$ -- 520
+chr.to.int$ -- 45
+cite$ -- 98
+duplicate$ -- 59158
+empty$ -- 49630
+format.name$ -- 4336
+if$ -- 114372
 int.to.chr$ -- 0
-int.to.str$ -- 75
+int.to.str$ -- 101
 missing$ -- 0
-newline$ -- 1728
-num.names$ -- 1509
-pop$ -- 13771
+newline$ -- 2439
+num.names$ -- 2053
+pop$ -- 19340
 preamble$ -- 1
-purify$ -- 680
+purify$ -- 969
 quote$ -- 0
-skip$ -- 6498
+skip$ -- 8728
 stack$ -- 0
-substring$ -- 67104
-swap$ -- 6745
-text.length$ -- 1068
-text.prefix$ -- 36
+substring$ -- 102973
+swap$ -- 9311
+text.length$ -- 1415
+text.prefix$ -- 49
 top$ -- 1
-type$ -- 1246
+type$ -- 1688
 warning$ -- 0
-while$ -- 5634
+while$ -- 8610
 width$ -- 0
-write$ -- 1692
-(There were 6 error messages)
+write$ -- 2390
+(There were 3 warnings)

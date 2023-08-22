@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  9 AUG 2023 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  22 AUG 2023 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1043,24 +1043,24 @@ LaTeX Warning: Unused global option(s):
 (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1115,13 +1115,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 18.
-Package microtype Info: Applying patch `item' on input line 18.
-Package microtype Info: Applying patch `toc' on input line 18.
-Package microtype Info: Applying patch `eqnum' on input line 18.
+LaTeX Info: Redefining \microtypecontext on input line 6.
+Package microtype Info: Applying patch `item' on input line 6.
+Package microtype Info: Applying patch `toc' on input line 6.
+Package microtype Info: Applying patch `eqnum' on input line 6.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 18.
+Package microtype Warning: Unable to apply patch `footnote' on input line 6.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -1129,14 +1129,15 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 18.
+LaTeX Info: Redefining \showhyphens on input line 6.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (C:\Users\scary\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 6.
+ (thesis.out) (thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
@@ -1163,8 +1164,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
+Package biblatex Info: Reference section=0 on input line 6.
+Package biblatex Info: Reference segment=0 on input line 6.
  (Front/title.tex [1
 
 {C:/Users/scary/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (Front/declaration.tex) (Front/dedication.tex [1
@@ -1181,32 +1182,30 @@ Package biblatex Info: Reference segment=0 on input line 18.
 
 
 
-]
-No file thesis.toc.
+] (thesis.toc [5
+
+
+
+])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-[5
+ [6] (thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+ [7
 
 
 
-]
-No file thesis.lot.
-\tf@lot=\write7
-\openout7 = `thesis.lot'.
+] (thesis.lot)
+\tf@lot=\write8
+\openout8 = `thesis.lot'.
 
-(Chapters/introduction.tex [1
-
-
+ (Chapters/introduction.tex [1
 
 ]
 Chapter 1.
-
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
-
 [2
 
 
@@ -1221,14 +1220,7 @@ Overfull \hbox (29.84935pt too wide) in paragraph at lines 13--30
 [][] 
  []
 
-
-LaTeX Warning: Citation '' on page 3 undefined on input line 34.
-
-[3]
-
-LaTeX Warning: Citation '' on page 4 undefined on input line 39.
-
-[4] [5] [6]) (Chapters/literatureReview.tex [7]
+[3] [4] [5] [6]) (Chapters/literatureReview.tex [7]
 Chapter 2.
 [8
 
@@ -1239,151 +1231,153 @@ Overfull \hbox (2.10744pt too wide) in paragraph at lines 40--41
 \OT1/cmr/m/n/10.95 (-20) Handcrafted fea-tures are the ex-trac-tion of par-tic-u-lar fea-tures us-ing sta-tis-ti-cal al-go-rithms|the
  []
 
-
-LaTeX Warning: Reference `lit-asym' on page 10 undefined on input line 43.
-
 [10]
-<images/asym1.png, id=199, 291.9708pt x 265.2309pt>
+<images/asym1.png, id=454, 291.9708pt x 265.2309pt>
 File: images/asym1.png Graphic file (type png)
 <use images/asym1.png>
 Package pdftex.def Info: images/asym1.png  used on input line 47.
 (pdftex.def)             Requested size: 145.98503pt x 132.61511pt.
-<images/asym2.png, id=201, 295.5843pt x 263.7855pt>
+<images/asym2.png, id=456, 295.5843pt x 263.7855pt>
 File: images/asym2.png Graphic file (type png)
 <use images/asym2.png>
 Package pdftex.def Info: images/asym2.png  used on input line 48.
 (pdftex.def)             Requested size: 147.79178pt x 131.89243pt.
-
-
-LaTeX Warning: Reference `borders' on page 11 undefined on input line 59.
-
-[11 <./images/asym1.png> <./images/asym2.png>]
-<images/bord1.png, id=213, 265.2309pt x 263.0628pt>
+ [11 <./images/asym1.png> <./images/asym2.png>]
+<images/bord1.png, id=469, 265.2309pt x 263.0628pt>
 File: images/bord1.png Graphic file (type png)
 <use images/bord1.png>
 Package pdftex.def Info: images/bord1.png  used on input line 63.
 (pdftex.def)             Requested size: 132.61511pt x 131.53107pt.
-<images/bord2.png, id=214, 292.6935pt x 265.2309pt>
+<images/bord2.png, id=470, 292.6935pt x 265.2309pt>
 File: images/bord2.png Graphic file (type png)
 <use images/bord2.png>
 Package pdftex.def Info: images/bord2.png  used on input line 64.
 (pdftex.def)             Requested size: 146.34639pt x 132.61511pt.
  [12 <./images/bord1.png> <./images/bord2.png>] [13]) (Chapters/nhsDataSuitability.tex [14]
 Chapter 3.
+[15
 
-LaTeX Warning: Citation '' on page 15 undefined on input line 4.
+]
+
+LaTeX Warning: Citation 'Wen2022' on page 16 undefined on input line 24.
+
+[16] [17]) (Chapters/segmentation.tex [18]
+Chapter 4.
+
+LaTeX Warning: Citation 'Unver2019' on page 19 undefined on input line 11.
 
 
-LaTeX Warning: Citation '' on page 15 undefined on input line 4.
+LaTeX Warning: Citation 'Lee1997' on page 19 undefined on input line 16.
 
+[19
 
-Overfull \hbox (10.92142pt too wide) in paragraph at lines 4--5
-\OT1/cmr/m/n/10.95 (-20) evolv-ing field with de-tec-tion ac-cu-ra-cies of-ten beat-ing that of a dermotologists[[]].
+]
+<images/border-seg.png, id=556, 362.5545pt x 107.80275pt>
+File: images/border-seg.png Graphic file (type png)
+<use images/border-seg.png>
+Package pdftex.def Info: images/border-seg.png  used on input line 39.
+(pdftex.def)             Requested size: 435.06323pt x 129.36264pt.
+
+Overfull \hbox (5.05861pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+[20]
+<images/otsu3.png, id=570, 650.43pt x 307.90031pt>
+File: images/otsu3.png Graphic file (type png)
+<use images/otsu3.png>
+Package pdftex.def Info: images/otsu3.png  used on input line 59.
+(pdftex.def)             Requested size: 455.2979pt x 215.52873pt.
+
+Overfull \hbox (25.29327pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+[21 <./images/border-seg.png>] [22 <./images/otsu3.png>]
+<images/borders.PNG, id=592, 301.72725pt x 205.9695pt>
+File: images/borders.PNG Graphic file (type png)
+<use images/borders.PNG>
+Package pdftex.def Info: images/borders.PNG  used on input line 84.
+(pdftex.def)             Requested size: 362.07088pt x 247.16214pt.
+ [23 <./images/borders.PNG>]
+File: images/border-seg.png Graphic file (type png)
+<use images/border-seg.png>
+Package pdftex.def Info: images/border-seg.png  used on input line 95.
+(pdftex.def)             Requested size: 435.06323pt x 129.36264pt.
+
+Overfull \hbox (5.05861pt too wide) in paragraph at lines 95--96
+ [][] 
+ []
+
+) (Chapters/improvedAsymmetry.tex [24]
+Chapter 5.
+[25
+
+] [26] [27]
+<images/superpixels.png, id=639, 607.51968pt x 263.48438pt>
+File: images/superpixels.png Graphic file (type png)
+<use images/superpixels.png>
+Package pdftex.def Info: images/superpixels.png  used on input line 53.
+(pdftex.def)             Requested size: 364.51462pt x 158.09183pt.
+<images/superpixel2.png, id=641, 657.2053pt x 280.04625pt>
+File: images/superpixel2.png Graphic file (type png)
+<use images/superpixel2.png>
+Package pdftex.def Info: images/superpixel2.png  used on input line 61.
+(pdftex.def)             Requested size: 460.04057pt x 196.03102pt.
+<images/superpixel1.png, id=642, 659.46375pt x 289.08pt>
+File: images/superpixel1.png Graphic file (type png)
+<use images/superpixel1.png>
+Package pdftex.def Info: images/superpixel1.png  used on input line 62.
+(pdftex.def)             Requested size: 461.62148pt x 202.35461pt.
+
+Overfull \hbox (30.03595pt too wide) in paragraph at lines 61--63
+ [][] 
  []
 
 
-LaTeX Warning: Citation 'Wolner et al.' on page 15 undefined on input line 11.
+Overfull \hbox (31.61685pt too wide) in paragraph at lines 61--63
+ [] 
+ []
 
-
-LaTeX Warning: Citation '2017' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Oliveira' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'R' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Vestergaard et al.' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation '2008' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Dascalu et al.' on page 15 undefined on input line 13.
-
-
-LaTeX Warning: Citation '2021' on page 15 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'Dascalu et al.' on page 15 undefined on input line 13.
-
-
-LaTeX Warning: Citation '2021' on page 15 undefined on input line 13.
-
-[15
-
-] [16]
-
-LaTeX Warning: Citation 'mendonca2013' on page 17 undefined on input line 49.
-
-
-LaTeX Warning: Citation '' on page 17 undefined on input line 52.
-
-[17]) (Chapters/segmentation.tex [18]
-Chapter 4.
-) (Chapters/improvedAsymmetry.tex [19
+) (Chapters/dermoscopicFeatures.tex [28 <./images/superpixels.png>] [29 <./images/superpixel2.png> <./images/superpixel1.png>]
+Chapter 6.
+) (Chapters/proposedTechnique.tex [30
 
 ]
-Chapter 5.
+Chapter 7.
+) (Chapters/conclusion.tex [31
 
-LaTeX Warning: Citation 'Takiddin2021' on page 20 undefined on input line 5.
+]
+Chapter 8.
+[32
 
+] [33]
+Chapter 9.
+) [34
 
-LaTeX Warning: Citation 'Jiang2017' on page 20 undefined on input line 5.
-
-
-LaTeX Warning: Citation '' on page 20 undefined on input line 13.
-
-[20
-
-] [21]
-
-LaTeX Warning: Citation '' on page 22 undefined on input line 42.
-
-
-LaTeX Warning: Citation '' on page 22 undefined on input line 42.
-
-) [22]
+]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [23
+ [35
 
 
 
-] [24] [25] (Back/tables.tex [26]
-Chapter 6.
-) [27
+] [36] [37] [38] (Back/tables.tex [39]
+Chapter 10.
+) (Back/appendix.tex [40
+
+]
+Chapter 11.
+) [41
 
 ] (thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  12B470D7D618E2F70CB2F25F2064B0C2;4653.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: DE56E73DAEF8E47316B4D598D40FC1B7;6638.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                thesis
@@ -1394,17 +1388,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39330 strings out of 476374
- 776344 string characters out of 5788854
- 1865340 words of memory out of 5000000
- 58727 multiletter control sequences out of 15000+600000
- 528022 words of font info for 173 fonts, out of 8000000 for 9000
+ 39577 strings out of 476374
+ 782094 string characters out of 5788854
+ 1867340 words of memory out of 5000000
+ 58888 multiletter control sequences out of 15000+600000
+ 529127 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,134p,2226b,1673s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (33 pages, 463294 bytes).
+ 113i,10n,134p,2234b,1675s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (49 pages, 985442 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
- 41505 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 887 PDF objects out of 1000 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
+ 41879 words of extra memory for PDF output out of 42996 (max. 10000000)
 

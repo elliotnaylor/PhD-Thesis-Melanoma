@@ -4,3 +4,4 @@ Dermoscopic
 Dermoscopy
 dermoscopy
 dermoscopes
+SegNet

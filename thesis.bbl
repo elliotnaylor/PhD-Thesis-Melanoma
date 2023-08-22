@@ -17,6 +17,159 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{Achanta2012}{article}{}
+    \name{author}{6}{}{%
+      {{hash=AR}{%
+         family={Achanta},
+         familyi={A\bibinitperiod},
+         given={Radhakrishna},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shaji},
+         familyi={S\bibinitperiod},
+         given={Appu},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lucchi},
+         familyi={L\bibinitperiod},
+         given={Aurelien},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fua},
+         familyi={F\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Süsstrunk},
+         familyi={S\bibinitperiod},
+         given={Sabine},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AR+1}
+    \strng{fullhash}{ARSASKLAFPSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Computer vision applications have come to rely increasingly on superpixels
+  in recent years, but it is not always clear what constitutes a good
+  superpixel algorithm. In an effort to understand the benefits and drawbacks
+  of existing methods, we empirically compare five state-of-the-art superpixel
+  algorithms for their ability to adhere to image boundaries, speed, memory
+  efficiency, and their impact on segmentation performance. We then introduce a
+  new superpixel algorithm, simple linear iterative clustering (SLIC), which
+  adapts a k-means clustering approach to efficiently generate superpixels.
+  Despite its simplicity, SLIC adheres to boundaries as well as or better than
+  previous methods. At the same time, it is faster and more memory efficient,
+  improves segmentation performance, and is straightforward to extend to
+  supervoxel generation. © 2012 IEEE.%
+    }
+    \verb{doi}
+    \verb 10.1109/TPAMI.2012.120
+    \endverb
+    \field{issn}{01628828}
+    \field{issue}{11}
+    \field{title}{SLIC superpixels compared to state-of-the-art superpixel
+  methods}
+    \field{volume}{34}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Albahli2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=AS}{%
+         family={Albahli},
+         familyi={A\bibinitperiod},
+         given={Saleh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NN}{%
+         family={Nida},
+         familyi={N\bibinitperiod},
+         given={Nudrat},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=IA}{%
+         family={Irtaza},
+         familyi={I\bibinitperiod},
+         given={Aun},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YMH}{%
+         family={Yousaf},
+         familyi={Y\bibinitperiod},
+         given={Muhammad\bibnamedelima Haroon},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MMT}{%
+         family={Mahmood},
+         familyi={M\bibinitperiod},
+         given={Muhammad\bibnamedelima Tariq},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AS+1}
+    \strng{fullhash}{ASNNIAYMHMMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Melanoma is the skin cancer caused by the ultraviolet radiation from the
+  Sun and has only 15-20% of survival rate. Late diagnosis of melanoma leads to
+  the severe malignancy of disease, and metastasis expands to the other body
+  organs i.e. liver, lungs and brain. The dermatologists analyze the pigmented
+  lesions over the skin to discriminate melanoma from other skin diseases.
+  However, the imprecise analysis results in the form of a series of biopsies
+  and it complicates the treatment. Meanwhile, the process of melanoma
+  detection can be expedited through computer vision methods by analyzing the
+  dermoscopic images automatically. However, the visual similarity between the
+  normal and infected skin regions, and arti-facts like gel bubbles, hair and
+  clinical marks indicate low accuracy rates for these approaches. To overcome
+  these challenges, in this article, a melanoma detection and segmentation
+  approach is presented that brings significant improvement in terms of
+  accuracy against state-of-the-art approaches. As a first step, the artifacts
+  like hairs, gel bubbles, and clinical marks are removed from the dermoscopic
+  images by applying the morphological operations, and image regions are
+  sharpen. Afterwards, for infected region detection, we used YOLOv4 object
+  detector by tuning it for melanoma detection to discriminate the highly
+  correlated infected and non-infected regions. Once the bounding boxes against
+  the melanoma regions are obtained, the infected melanoma regions are
+  extracted by applying the active contour segmentation approach. For
+  performance evaluation, the proposed approach is evaluated on ISIC2018 and
+  ISIC2016 datasets and results are compared against state-of-the-art melanoma
+  detection, and segmentation techniques. Our proposed approach achieves
+  average dice score as 1 and Jaccard coefficient as 0.989. The segmentation
+  result validates the practical bearing of our method in development of
+  clinical decision support system for melanoma diagnosis in contrast to
+  state-of-the-art methods. The YOLOv4 detector is capable to detect multiple
+  skin diseases of same patient and multiple diseases of various patients.%
+    }
+    \verb{doi}
+    \verb 10.1109/ACCESS.2020.3035345
+    \endverb
+    \field{issn}{21693536}
+    \field{title}{Melanoma Lesion Detection and Segmentation Using
+  YOLOv4-DarkNet and Active Contour}
+    \field{volume}{8}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2020}
+  \endentry
+
   \entry{Ali2020a}{article}{}
     \name{author}{3}{}{%
       {{hash=AAR}{%
@@ -32,7 +185,7 @@
          giveni={J\bibinitperiod},
       }}%
       {{hash=OSJ}{%
-         family={O'Shea},
+         family={O’Shea},
          familyi={O\bibinitperiod},
          given={Sally\bibnamedelima Jane},
          giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
@@ -47,27 +200,27 @@
     \field{abstract}{%
     Asymmetry, color variegation and diameter are considered strong indicators
   of malignant melanoma. The subjectivity inherent in the first two features
-  and the fact that 10{\%} of melanomas tend to be missed in the early
-  diagnosis due to having a diameter less than 6mm, deem it necessary to
-  develop an objective computer vision system to evaluate these criteria and
-  aid in the early detection of melanoma which could eventually lead to a
-  higher 5-year survival rate. This paper proposes an approach for evaluating
-  the three criteria objectively, whereby we develop a measure to find
-  asymmetry with the aid of a decision tree which we train on the extracted
-  asymmetry measures and then use to predict the asymmetry of new skin lesion
-  images. A range of colors that demonstrate the suspicious colors for the
-  color variegation feature have been derived, and Feret's diameter has been
-  utilized to find the diameter of the skin lesion. The decision tree is 80{\%}
-  accurate in determining the asymmetry of skin lesions, and the number of
-  suspicious colors and diameter values are objectively identified.%
+  and the fact that 10% of melanomas tend to be missed in the early diagnosis
+  due to having a diameter less than 6mm, deem it necessary to develop an
+  objective computer vision system to evaluate these criteria and aid in the
+  early detection of melanoma which could eventually lead to a higher 5-year
+  survival rate. This paper proposes an approach for evaluating the three
+  criteria objectively, whereby we develop a measure to find asymmetry with the
+  aid of a decision tree which we train on the extracted asymmetry measures and
+  then use to predict the asymmetry of new skin lesion images. A range of
+  colors that demonstrate the suspicious colors for the color variegation
+  feature have been derived, and Feret’s diameter has been utilized to find
+  the diameter of the skin lesion. The decision tree is 80% accurate in
+  determining the asymmetry of skin lesions, and the number of suspicious
+  colors and diameter values are objectively identified.%
     }
     \verb{doi}
     \verb 10.1371/journal.pone.0234352
     \endverb
     \field{issn}{19326203}
-    \field{number}{6}
-    \field{title}{{Towards the automatic detection of skin lesion shape
-  asymmetry, color variegation and diameter in dermoscopic images}}
+    \field{issue}{6}
+    \field{title}{Towards the automatic detection of skin lesion shape
+  asymmetry, color variegation and diameter in dermoscopic images}
     \field{volume}{15}
     \field{journaltitle}{PLoS ONE}
     \field{year}{2020}
@@ -94,7 +247,7 @@
          giveni={G\bibinitperiod},
       }}%
       {{hash=OSJ}{%
-         family={O'Shea},
+         family={O’Shea},
          familyi={O\bibinitperiod},
          given={Sally\bibnamedelima Jane},
          giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
@@ -111,8 +264,8 @@
     \endverb
     \field{issn}{2376-5992}
     \field{pages}{e268}
-    \field{title}{{A machine learning approach to automatic detection of
-  irregularity in skin lesion border using dermoscopic images}}
+    \field{title}{A machine learning approach to automatic detection of
+  irregularity in skin lesion border using dermoscopic images}
     \field{volume}{6}
     \field{journaltitle}{PeerJ Computer Science}
     \field{year}{2020}
@@ -164,7 +317,7 @@
     \endverb
     \field{issn}{21693536}
     \field{pages}{83333\bibrangedash 83346}
-    \field{title}{{Automating the ABCD Rule for Melanoma Detection: A Survey}}
+    \field{title}{Automating the ABCD Rule for Melanoma Detection: A Survey}
     \field{volume}{8}
     \field{journaltitle}{IEEE Access}
     \field{year}{2020}
@@ -211,16 +364,16 @@
   optimized on a set of 155 dermatoscopy images and compared. Results suggest
   superiority of Laws energy masks for pigment network detection in
   dermatoscopy images. For both methods, a texel width of 10 pixels or
-  approximately 0.22 mm is found for dermatoscopy images. {\textcopyright} 2004
-  Published by Elsevier Ltd.%
+  approximately 0.22 mm is found for dermatoscopy images. © 2004 Published by
+  Elsevier Ltd.%
     }
     \verb{doi}
     \verb 10.1016/j.compmedimag.2004.04.002
     \endverb
     \field{issn}{08956111}
-    \field{number}{5}
-    \field{title}{{Detection of pigment network in dermatoscopy images using
-  texture analysis}}
+    \field{issue}{5}
+    \field{title}{Detection of pigment network in dermatoscopy images using
+  texture analysis}
     \field{volume}{28}
     \field{journaltitle}{Computerized Medical Imaging and Graphics}
     \field{year}{2004}
@@ -240,11 +393,11 @@
          given={Kuprel},
          giveni={K\bibinitperiod},
       }}%
-      {{hash=RN}{%
-         family={{Roberto A.}},
-         familyi={R\bibinitperiod},
-         given={Novoa},
-         giveni={N\bibinitperiod},
+      {{hash=ANR}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Novoa\bibnamedelima Roberto},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
       {{hash=JK}{%
          family={Justin},
@@ -252,17 +405,17 @@
          given={Ko},
          giveni={K\bibinitperiod},
       }}%
-      {{hash=SS}{%
-         family={{Susan M.}},
-         familyi={S\bibinitperiod},
-         given={Swetter},
-         giveni={S\bibinitperiod},
+      {{hash=MSS}{%
+         family={M.},
+         familyi={M\bibinitperiod},
+         given={Swetter\bibnamedelima Susan},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
-      {{hash=HB}{%
-         family={{Helen M.}},
-         familyi={H\bibinitperiod},
-         given={Blau},
-         giveni={B\bibinitperiod},
+      {{hash=MBH}{%
+         family={M.},
+         familyi={M\bibinitperiod},
+         given={Blau\bibnamedelima Helen},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
       {{hash=ST}{%
          family={Sebastian},
@@ -271,15 +424,15 @@
          giveni={T\bibinitperiod},
       }}%
     }
-    \keyw{Explainable,amelanotic melanoma,article,artificial
-  intelligence,cancer classification,cancer patient,cancer screening,clinical
-  decision making,comparative study,convolutional neural
+    \keyw{amelanotic melanoma,article,artificial intelligence,cancer
+  classification,cancer patient,cancer screening,clinical decision
+  making,comparative study,convolutional neural
   network,dermatologist,diagnostic accuracy,epiluminescence
   microscopy,histopathology,human,keratinocyte,learning algorithm,medical
   education,melanoma,nevus,priority journal,probability,seborrheic
   keratosis,sensitivity and specificity,skin biopsy,skin cancer,skin defect}
     \strng{namehash}{AE+1}
-    \strng{fullhash}{AEBKRNJKSSHBST1}
+    \strng{fullhash}{AEBKANRJKMSSMBHST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
@@ -319,13 +472,13 @@
     \verb &pages=115-118&date=2017&auinit1=A&auinitm=
     \endverb
     \field{issn}{1476-4687}
-    \field{number}{7639}
+    \field{issue}{7639}
     \field{pages}{115\bibrangedash 118}
-    \field{title}{{Dermatologist-level classification of skin cancer with deep
-  neural networks}}
+    \field{title}{Dermatologist-level classification of skin cancer with deep
+  neural networks}
     \verb{url}
-    \verb http://www.embase.com/search/results?subaction=viewrecord{\&}from=exp
-    \verb ort{\&}id=L614981551{\%}0Ahttp://dx.doi.org/10.1038/nature21056
+    \verb http://www.embase.com/search/results?subaction=viewrecord&from=export
+    \verb &id=L614981551%0Ahttp://dx.doi.org/10.1038/nature21056
     \endverb
     \field{volume}{542}
     \field{journaltitle}{Nature}
@@ -394,18 +547,14 @@
     \verb{doi}
     \verb 10.1109/TPAMI.2016.2644615
     \endverb
-    \verb{eprint}
-    \verb 1511.00561
-    \endverb
     \field{issn}{01628828}
-    \field{number}{12}
+    \field{issue}{12}
     \field{pages}{2481\bibrangedash 2495}
-    \field{title}{{SegNet: A Deep Convolutional Encoder-Decoder Architecture
-  for Image Segmentation}}
+    \field{title}{SegNet: A Deep Convolutional Encoder-Decoder Architecture for
+  Image Segmentation}
     \field{volume}{39}
     \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}
-    \field{eprinttype}{arXiv}
     \field{year}{2017}
   \endentry
 
@@ -438,23 +587,101 @@
     \field{sortinithash}{B}
     \field{abstract}{%
     The 10-year survival rate for patients with metastatic melanoma is less
-  than 10{\%}. Although surgery and radiation therapy have a role in the
-  treatment of metastatic disease, systemic therapy is the mainstay of
-  treatment for most patients. Single-agent chemotherapy is well tolerated but
-  is associated with response rates of only 5{\%} to 20{\%}. Combination
-  chemotherapy and biochemotherapy may improve objective response rates but do
-  not extend survival and are associated with greater toxicity.
-  Immunotherapeutic approaches such as high-dose interleukin-2 are associated
-  with durable responses in a small percentage of patients. In this article, we
-  review the treatments for metastatic melanoma including promising
-  investigational approaches.%
+  than 10%. Although surgery and radiation therapy have a role in the treatment
+  of metastatic disease, systemic therapy is the mainstay of treatment for most
+  patients. Single-agent chemotherapy is well tolerated but is associated with
+  response rates of only 5% to 20%. Combination chemotherapy and
+  biochemotherapy may improve objective response rates but do not extend
+  survival and are associated with greater toxicity. Immunotherapeutic
+  approaches such as high-dose interleukin-2 are associated with durable
+  responses in a small percentage of patients. In this article, we review the
+  treatments for metastatic melanoma including promising investigational
+  approaches.%
     }
-    \field{booktitle}{ONCOLOGY}
     \field{issn}{08909091}
-    \field{number}{6}
-    \field{title}{{Treatment of metastatic melanoma: An overview}}
+    \field{issue}{6}
+    \field{title}{Treatment of metastatic melanoma: An overview}
     \field{volume}{23}
+    \field{journaltitle}{ONCOLOGY}
     \field{year}{2009}
+  \endentry
+
+  \entry{chen2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CLC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Liang\bibnamedelima Chieh},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Papandreou},
+         familyi={P\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kokkinos},
+         familyi={K\bibinitperiod},
+         given={Iasonas},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YAL}{%
+         family={Yuille},
+         familyi={Y\bibinitperiod},
+         given={Alan\bibnamedelima L.},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CLC+1}
+    \strng{fullhash}{CLCPGKIMKYAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    In this work we address the task of semantic image segmentation with Deep
+  Learning and make three main contributions that are experimentally shown to
+  have substantial practical merit. First, we highlight convolution with
+  upsampled filters, or 'atrous convolution', as a powerful tool in dense
+  prediction tasks. Atrous convolution allows us to explicitly control the
+  resolution at which feature responses are computed within Deep Convolutional
+  Neural Networks. It also allows us to effectively enlarge the field of view
+  of filters to incorporate larger context without increasing the number of
+  parameters or the amount of computation. Second, we propose atrous spatial
+  pyramid pooling (ASPP) to robustly segment objects at multiple scales. ASPP
+  probes an incoming convolutional feature layer with filters at multiple
+  sampling rates and effective fields-of-views, thus capturing objects as well
+  as image context at multiple scales. Third, we improve the localization of
+  object boundaries by combining methods from DCNNs and probabilistic graphical
+  models. The commonly deployed combination of max-pooling and downsampling in
+  DCNNs achieves invariance but has a toll on localization accuracy. We
+  overcome this by combining the responses at the final DCNN layer with a fully
+  connected Conditional Random Field (CRF), which is shown both qualitatively
+  and quantitatively to improve localization performance. Our proposed
+  'DeepLab' system sets the new state-of-art at the PASCAL VOC-2012 semantic
+  image segmentation task, reaching 79.7 percent mIOU in the test set, and
+  advances the results on three other datasets: PASCAL-Context,
+  PASCAL-Person-Part, and Cityscapes. All of our code is made publicly
+  available online.%
+    }
+    \verb{doi}
+    \verb 10.1109/TPAMI.2017.2699184
+    \endverb
+    \field{issn}{01628828}
+    \field{issue}{4}
+    \field{title}{DeepLab: Semantic Image Segmentation with Deep Convolutional
+  Nets, Atrous Convolution, and Fully Connected CRFs}
+    \field{volume}{40}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2018}
   \endentry
 
   \entry{Cognetta1994}{article}{}
@@ -507,33 +734,105 @@
   melanocytic pigmented skin lesions, the criteria of the ABCD rule of
   dermatoscopy were analyzed with a semiquantitative scoring system before
   excision. Results: According to the retrospectively determined threshold,
-  tumors with a score higher than 5.45 (64/69 melanomas [92.8{\%}]) were
+  tumors with a score higher than 5.45 (64/69 melanomas [92.8%]) were
   classified as malignant, whereas lesions with a lower score were considered
-  as benign (93/103 melanocytic nevi [90.3{\%}]). Negative predictive value for
-  melanoma (True-Negative ÷ [True-Negative + False-Negative]) was 9 5.8{\%},
+  as benign (93/103 melanocytic nevi [90.3%]). Negative predictive value for
+  melanoma (True-Negative ÷ [True-Negative + False-Negative]) was 9 5.8%,
   whereas positive predictive value (True-Positive ÷ [True-Positive +
-  False-Positive]) was 85.3{\%}. Diagnostic accuracy for melanoma
-  (True-Positive ÷ [True-Positive + False- Positive + False-Negative]) was
-  80.0{\%}, compared with 64.4{\%} by the naked eye. Melanoma showed a mean
-  final dermatoscopy score of 6.79 (SD, ± 0.92), significantly differing from
-  melanocytic nevi (mean score, 4.27 ± 0.99; p {\textless}0.01, U test).
-  Conclusion: The ABCD rule can be easily learned and rapidly calculated, and
-  has proven to be reliable. It should be routinely applied to all equivocal
-  pigmented skin lesions to reach a more objective and reproducible diagnosis
-  and to obtain this assessment preoperatively. {\textcopyright} 1994, American
-  Academy of Dermatology, Inc.. All rights reserved.%
+  False-Positive]) was 85.3%. Diagnostic accuracy for melanoma (True-Positive
+  ÷ [True-Positive + False- Positive + False-Negative]) was 80.0%, compared
+  with 64.4% by the naked eye. Melanoma showed a mean final dermatoscopy score
+  of 6.79 (SD, ± 0.92), significantly differing from melanocytic nevi (mean
+  score, 4.27 ± 0.99; p <0.01, U test). Conclusion: The ABCD rule can be
+  easily learned and rapidly calculated, and has proven to be reliable. It
+  should be routinely applied to all equivocal pigmented skin lesions to reach
+  a more objective and reproducible diagnosis and to obtain this assessment
+  preoperatively. © 1994, American Academy of Dermatology, Inc.. All rights
+  reserved.%
     }
     \verb{doi}
     \verb 10.1016/S0190-9622(94)70061-3
     \endverb
     \field{issn}{01909622}
-    \field{number}{4}
+    \field{issue}{4}
     \field{pages}{551\bibrangedash 559}
-    \field{title}{{The ABCD rule of dermatoscopy: High prospective value in the
-  diagnosis of doubtful melanocytic skin lesions}}
+    \field{title}{The ABCD rule of dermatoscopy: High prospective value in the
+  diagnosis of doubtful melanocytic skin lesions}
     \field{volume}{30}
     \field{journaltitle}{Journal of the American Academy of Dermatology}
     \field{year}{1994}
+  \endentry
+
+  \entry{Dascalu2022}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DA}{%
+         family={Dascalu},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WBN}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={B.\bibnamedelima N.},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Oron},
+         familyi={O\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DEO}{%
+         family={David},
+         familyi={D\bibinitperiod},
+         given={E.\bibnamedelima O.},
+         giveni={E\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA+1}
+    \strng{fullhash}{DAWBNOYDEO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Purpose: Non-melanoma skin cancer (NMSC) is the most frequent
+  keratinocyte-origin skin tumor. It is confirmed that dermoscopy of NMSC
+  confers a diagnostic advantage as compared to visual face-to-face assessment.
+  COVID-19 restrictions diagnostics by telemedicine photos, which are analogous
+  to visual inspection, displaced part of in-person visits. This study
+  evaluated by a dual convolutional neural network (CNN) performance metrics in
+  dermoscopic (DI) versus smartphone-captured images (SI) and tested if
+  artificial intelligence narrows the proclaimed gap in diagnostic accuracy.
+  Methods: A CNN that receives a raw image and predicts malignancy, overlaid by
+  a second independent CNN which processes a sonification (image-to-sound
+  mapping) of the original image, were combined into a unified malignancy
+  classifier. All images were histopathology-verified in a comparison between
+  NMSC and benign skin lesions excised as suspected NMSCs. Study criteria
+  outcomes were sensitivity and specificity for the unified output. Results:
+  Images acquired by DI (n = 132 NMSC, n = 33 benign) were compared to SI (n =
+  170 NMSC, n = 28 benign). DI and SI analysis metrics resulted in an area
+  under the curve (AUC) of the receiver operator characteristic curve of 0.911
+  and 0.821, respectively. Accuracy was increased by DI (0.88; CI 81.9–92.4)
+  as compared to SI (0.75; CI 68.1–80.6, p < 0.005). Sensitivity of DI was
+  higher than SI (95.3%, CI 90.4–98.3 vs 75.3%, CI 68.1–81.6, p < 0.001),
+  but not specificity (p = NS). Conclusion: Telemedicine use of smartphone
+  images might result in a substantial decrease in diagnostic performance as
+  compared to dermoscopy, which needs to be considered by both healthcare
+  providers and patients.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00432-021-03809-x
+    \endverb
+    \field{issn}{14321335}
+    \field{issue}{9}
+    \field{title}{Non-melanoma skin cancer diagnosis: a comparison between
+  dermoscopic and smartphone images by unified visual and sonification deep
+  learning algorithms}
+    \field{volume}{148}
+    \field{journaltitle}{Journal of Cancer Research and Clinical Oncology}
+    \field{year}{2022}
   \endentry
 
   \entry{Dick2019}{article}{}
@@ -551,7 +850,7 @@
          giveni={C\bibinitperiod},
       }}%
       {{hash=MM}{%
-         family={Mittlb{\"{o}}ck},
+         family={Mittlböck},
          familyi={M\bibinitperiod},
          given={Martina},
          giveni={M\bibinitperiod},
@@ -594,30 +893,29 @@
   eligible studies, of which 132 were included and 70 offered sufficient
   information for a quantitative analysis. Most studies came from the field of
   computer science. Prospective clinical studies were rare. Combining the
-  results for automated systems gave a melanoma sensitivity of 0.74 (95{\%} CI,
-  0.66-0.80) and a specificity of 0.84 (95{\%} CI, 0.79-0.88). Sensitivity was
+  results for automated systems gave a melanoma sensitivity of 0.74 (95% CI,
+  0.66-0.80) and a specificity of 0.84 (95% CI, 0.79-0.88). Sensitivity was
   lower in studies that used independent test sets than in those that did not
-  (0.51; 95{\%} CI, 0.34-0.69 vs 0.82; 95{\%} CI, 0.77-0.86; P
-  {\textless}.001); however, the specificity was similar (0.83; 95{\%} CI,
-  0.71-0.91 vs 0.85; 95{\%} CI, 0.80-0.88; P =.67). In comparison with
-  dermatologists' diagnosis, computer-aided diagnosis showed similar
-  sensitivities and a 10 percentage points lower specificity, but the
-  difference was not statistically significant. Studies were heterogeneous and
-  substantial risk of bias was found in all but 4 of the 70 studies included in
-  the quantitative analysis. Conclusions and Relevance: Although the accuracy
-  of computer-aided diagnosis for melanoma detection is comparable to that of
-  experts, the real-world applicability of these systems is unknown and
-  potentially limited owing to overfitting and the risk of bias of the studies
-  at hand.%
+  (0.51; 95% CI, 0.34-0.69 vs 0.82; 95% CI, 0.77-0.86; P <.001); however, the
+  specificity was similar (0.83; 95% CI, 0.71-0.91 vs 0.85; 95% CI, 0.80-0.88;
+  P =.67). In comparison with dermatologists' diagnosis, computer-aided
+  diagnosis showed similar sensitivities and a 10 percentage points lower
+  specificity, but the difference was not statistically significant. Studies
+  were heterogeneous and substantial risk of bias was found in all but 4 of the
+  70 studies included in the quantitative analysis. Conclusions and Relevance:
+  Although the accuracy of computer-aided diagnosis for melanoma detection is
+  comparable to that of experts, the real-world applicability of these systems
+  is unknown and potentially limited owing to overfitting and the risk of bias
+  of the studies at hand.%
     }
     \verb{doi}
     \verb 10.1001/jamadermatol.2019.1375
     \endverb
     \field{issn}{21686068}
-    \field{number}{11}
+    \field{issue}{11}
     \field{pages}{1291\bibrangedash 1299}
-    \field{title}{{Accuracy of Computer-Aided Diagnosis of Melanoma: A
-  Meta-analysis}}
+    \field{title}{Accuracy of Computer-Aided Diagnosis of Melanoma: A
+  Meta-analysis}
     \field{volume}{155}
     \field{journaltitle}{JAMA Dermatology}
     \field{year}{2019}
@@ -685,20 +983,1127 @@
     \endverb
     \field{issn}{18790534}
     \field{pages}{75\bibrangedash 85}
-    \field{title}{{Automatic segmentation of dermoscopy images using saliency
-  combined with Otsu threshold}}
+    \field{title}{Automatic segmentation of dermoscopy images using saliency
+  combined with Otsu threshold}
     \field{volume}{85}
     \field{journaltitle}{Computers in Biology and Medicine}
     \field{year}{2017}
   \endentry
 
+  \entry{Fuji2019}{article}{}
+    \name{author}{6}{}{%
+      {{hash=FM}{%
+         family={Fuji},
+         familyi={F\bibinitperiod},
+         given={Masaru},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Morita},
+         familyi={M\bibinitperiod},
+         given={Hajime},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Goto},
+         familyi={G\bibinitperiod},
+         given={Keisuke},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Maruhashi},
+         familyi={M\bibinitperiod},
+         given={Koji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AH}{%
+         family={Anai},
+         familyi={A\bibinitperiod},
+         given={Hirokazu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=IN}{%
+         family={Igata},
+         familyi={I\bibinitperiod},
+         given={Nobuyuki},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FM+1}
+    \strng{fullhash}{FMMHGKMKAHIN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    One of the most significant advancements made in AI in recent years is the
+  greatly enhanced accuracy of machine learning through deep learning. However,
+  because deep learning deals with huge volumes of data and involves vast
+  neural networks in the learning process, it is often difficult to explain how
+  or why an output was reached even if the inference was correct. This issue
+  impedes the application of AI technology to such business areas as finance
+  and medicine, which demand absolute reliability. To address this issue, we
+  have developed an AI technology that combines Deep Tensor, Fujitsu’s
+  original machine-learning technology based on enhanced deep learning, and
+  another Fujitsu-developed machine-learning technology based on knowledge
+  graph, a knowledge base represented by graph data taken from past documents
+  and databases. This has enabled us to logically explain the reasons and bases
+  in which Deep Tensor reaches its inference output. This paper explains the
+  technology that makes Explainable AI possible in terms of application cases
+  in network intrusion detection and genomic medicine.%
+    }
+    \field{issn}{00162523}
+    \field{issue}{2}
+    \field{pages}{58\bibrangedash 64}
+    \field{title}{Explainable AI through combination of deep tensor and
+  knowledge graph}
+    \field{volume}{55}
+    \field{journaltitle}{Fujitsu Scientific and Technical Journal}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Ghorbani2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GA}{%
+         family={Ghorbani},
+         familyi={G\bibinitperiod},
+         given={Amirata},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Abid},
+         familyi={A\bibinitperiod},
+         given={Abubakar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GAAAZJ1}
+    \strng{fullhash}{GAAAZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    In order for machine learning to be trusted in many applications, it is
+  critical to be able to reliably explain why the machine learning algorithm
+  makes certain predictions. For this reason, a variety of methods have been
+  developed recently to interpret neural network predictions by providing, for
+  example, feature importance maps. For both scientific robustness and security
+  reasons, it is important to know to what extent can the interpretations be
+  altered by small systematic perturbations to the input data, which might be
+  generated by adversaries or by measurement biases. In this paper, we
+  demonstrate how to generate adversarial perturbations that produce
+  perceptively indistinguishable inputs that are assigned the same predicted
+  label, yet have very different interpretations. We systematically
+  characterize the robustness of interpretations generated by several
+  widely-used feature importance interpretation methods (feature importance
+  maps, integrated gradients, and DeepLIFT) on ImageNet and CIFAR-10. In all
+  cases, our experiments show that systematic perturbations can lead to
+  dramatically different interpretations without changing the label. We extend
+  these results to show that interpretations based on exemplars (e.g. influence
+  functions) are similarly susceptible to adversarial attack. Our analysis of
+  the geometry of the Hessian matrix gives insight on why robustness is a
+  general challenge to current interpretation approaches.%
+    }
+    \verb{doi}
+    \verb 10.1609/aaai.v33i01.33013681
+    \endverb
+    \field{issn}{2159-5399}
+    \field{pages}{3681\bibrangedash 3688}
+    \field{title}{Interpretation of Neural Networks Is Fragile}
+    \field{volume}{33}
+    \field{journaltitle}{Proceedings of the AAAI Conference on Artificial
+  Intelligence}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Izikson2002}{article}{}
+    \name{author}{4}{}{%
+      {{hash=IL}{%
+         family={Izikson},
+         familyi={I\bibinitperiod},
+         given={Leonid},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SAJ}{%
+         family={Sober},
+         familyi={S\bibinitperiod},
+         given={Arthur\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MMC}{%
+         family={Mihm},
+         familyi={M\bibinitperiod},
+         given={Martin\bibnamedelima C.},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zembowicz},
+         familyi={Z\bibinitperiod},
+         given={Artur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IL+1}
+    \strng{fullhash}{ILSAJMMCZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    Objective: To estimate the prevalence of melanoma clinically mimicking
+  seborrheic keratosis. Design: Retrospective review of cases submitted for
+  histological examination with a clinical diagnosis of seborrheic keratosis or
+  with a differential diagnosis that included seborrheic keratosis. Setting: A
+  tertiary medical care center-based dermatopathology laboratory serving
+  academic dermatology clinics that have a busy pigmented lesion clinic.
+  Materials and Methods: A total of 9204 consecutive pathology reports
+  containing a diagnosis of seborrheic keratosis in the clinical information
+  field were identified between the years 1992 and 2001 through a computer
+  database search. Reports with a final histological diagnosis of melanoma were
+  selected for further review and clinicopathological analysis. Main Outcome
+  Measure: Histological diagnosis, which was correlated with the preoperative
+  clinical diagnosis. Results: Melanoma was identified in 61 cases (0.66%)
+  submitted for histological examination with a clinical diagnosis that
+  included seborrheic keratosis. Melanoma was in the clinical differential
+  diagnosis of 31 cases (51%). The remaining lesions had a differential
+  diagnosis of seborrheic keratosis vs melanocytic nevus (17 cases, 28%), basal
+  cell carcinoma (7 cases, 12%), or a squamous proliferation (3 cases, 5%). In
+  3 cases (5%), seborrheic keratosis was the only clinical diagnosis. All
+  histological types of melanoma were represented. Conclusions: Our results
+  confirm that melanoma can mimic seborrheic keratosis. These data strongly
+  support the current policy of submitting for histological examination all
+  specimens that have been removed from patients.%
+    }
+    \verb{doi}
+    \verb 10.1001/archderm.138.12.1562
+    \endverb
+    \field{issn}{0003987X}
+    \field{issue}{12}
+    \field{title}{Prevalence of melanoma clinically resembling seborrheic
+  keratosis: Analysis of 9204 cases}
+    \field{volume}{138}
+    \field{journaltitle}{Archives of Dermatology}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Kasmi2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KR}{%
+         family={Kasmi},
+         familyi={K\bibinitperiod},
+         given={Reda},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mokrani},
+         familyi={M\bibinitperiod},
+         given={Karim},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRMK1}
+    \strng{fullhash}{KRMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    The ABCD (asymmetry, border irregularity, colour and dermoscopic structure)
+  rule of dermoscopy is a scoring method used by dermatologists to quantify
+  dermoscopy findings and effectively separate melanoma from benign lesions.
+  Automatic detection of the ABCD features and separation of benign lesions
+  from melanoma could enable earlier detection of melanoma. In this study,
+  automatic ABCD scoring of dermoscopy lesions is implemented. Pre-processing
+  enables automatic detection of hair using Gabor filters and lesion boundaries
+  using geodesic active contours. Algorithms are implemented to extract the
+  characteristics of ABCD attributes. Methods used here combine existing
+  methods with novel methods to detect colour asymmetry and dermoscopic
+  structures. To classify lesions as melanoma or benign nevus, the total
+  dermoscopy score is calculated. The experimental results, using 200
+  dermoscopic images, where 80 are malignant melanomas and 120 benign lesions,
+  show that the algorithm achieves 91.25% sensitivity of 91.25 and 95.83%
+  specificity. This is comparable to the 92.8% sensitivity and 90.3%
+  specificity reported for human implementation of the ABCD rule. The
+  experimental results show that the extracted features can be used to build a
+  promising classifier for melanoma detection.%
+    }
+    \verb{doi}
+    \verb 10.1049/iet-ipr.2015.0385
+    \endverb
+    \field{issn}{17519659}
+    \field{issue}{6}
+    \field{pages}{448\bibrangedash 455}
+    \field{title}{Classification of malignant melanoma and benign skin lesions:
+  Implementation of automatic ABCD rule}
+    \field{volume}{10}
+    \field{journaltitle}{IET Image Processing}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Kaya2016}{article}{}
+    \name{author}{7}{}{%
+      {{hash=KS}{%
+         family={Kaya},
+         familyi={K\bibinitperiod},
+         given={Sertan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bayraktar},
+         familyi={B\bibinitperiod},
+         given={Mustafa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kockara},
+         familyi={K\bibinitperiod},
+         given={Sinan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mete},
+         familyi={M\bibinitperiod},
+         given={Mutlu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Halic},
+         familyi={H\bibinitperiod},
+         given={Tansel},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FHE}{%
+         family={Field},
+         familyi={F\bibinitperiod},
+         given={Halle\bibnamedelima E.},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WHK}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Henry\bibnamedelima K.},
+         giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSBMKSMMHTFHEWHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Background: Automated skin lesion border examination and analysis
+  techniques have become an important field of research for distinguishing
+  malignant pigmented lesions from benign lesions. An abrupt pigment pattern
+  cutoff at the periphery of a skin lesion is one of the most important
+  dermoscopic features for detection of neoplastic behavior. In current
+  clinical setting, the lesion is divided into a virtual pie with eight
+  sections. Each section is examined by a dermatologist for abrupt cutoff and
+  scored accordingly, which can be tedious and subjective. Methods: This study
+  introduces a novel approach to objectively quantify abruptness of pigment
+  patterns along the lesion periphery. In the proposed approach, first, the
+  skin lesion border is detected by the density based lesion border detection
+  method. Second, the detected border is gradually scaled through vector
+  operations. Then, along gradually scaled borders, pigment pattern
+  homogeneities are calculated at different scales. Through this process,
+  statistical texture features are extracted. Moreover, different color spaces
+  are examined for the efficacy of texture analysis. Results: The proposed
+  method has been tested and validated on 100 (31 melanoma, 69 benign)
+  dermoscopy images. Analyzed results indicate that proposed method is
+  efficient on malignancy detection. More specifically, we obtained specificity
+  of 0.96 and sensitivity of 0.86 for malignancy detection in a certain color
+  space. The F-measure, harmonic mean of recall and precision, of the framework
+  is reported as 0.87. Conclusions: The use of texture homogeneity along the
+  periphery of the lesion border is an effective method to detect malignancy of
+  the skin lesion in dermoscopy images. Among different color spaces tested,
+  RGB color space's blue color channel is the most informative color channel to
+  detect malignancy for skin lesions. That is followed by YCbCr color spaces Cr
+  channel, and Cr is closely followed by the green color channel of RGB color
+  space.%
+    }
+    \verb{doi}
+    \verb 10.1186/s12859-016-1221-4
+    \endverb
+    \field{issn}{14712105}
+    \field{title}{Abrupt skin lesion border cutoff measurement for malignancy
+  detection in dermoscopy images}
+    \field{volume}{17}
+    \field{journaltitle}{BMC Bioinformatics}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Lipton2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LZC}{%
+         family={Lipton},
+         familyi={L\bibinitperiod},
+         given={Zachary\bibnamedelima C.},
+         giveni={Z\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZC1}
+    \strng{fullhash}{LZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1145/3233231
+    \endverb
+    \field{issn}{15577317}
+    \field{issue}{10}
+    \field{title}{The mythos of model interpretability}
+    \field{volume}{61}
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Lopez-Labraca2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LLJ}{%
+         family={López-Labraca},
+         familyi={L\bibinithyphendelim L\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=�FTM}{%
+         prefix={Ángel},
+         prefixi={�\bibinitperiod},
+         family={Fernández-Torres},
+         familyi={F\bibinithyphendelim T\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GDI}{%
+         family={González-Díaz},
+         familyi={G\bibinithyphendelim D\bibinitperiod},
+         given={Iván},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=DDMF}{%
+         family={Díaz-De-María},
+         familyi={D\bibinithyphendelim D\bibinithyphendelim M\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=�P}{%
+         prefix={Ángel},
+         prefixi={�\bibinitperiod},
+         family={Pizarro},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Bayesian fusion,Computer-aided diagnosis,Dermoscopic
+  structures,Enriched diagnosis,Melanoma diagnosis}
+    \strng{namehash}{LLJ+1}
+    \strng{fullhash}{LLJFTM�GDIDDMFP�1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Computer-Aided Diagnosis (CAD) systems for melanoma detection have received
+  a lot of attention during the last decades because of the utmost importance
+  of detecting this type of skin cancer in its early stages. However, despite
+  of the many research efforts devoted to this matter, these systems are not
+  used yet in everyday clinical practice. Very likely, this is due to two main
+  reasons: 1) the accuracy of the systems is not high enough; and 2) they
+  simply provide a parallel diagnosis that actually does not help to the
+  doctors (as long as there is no way to interpret it). In this paper, we
+  propose a novel approach that aims to provide the doctor with an enriched
+  diagnosis. Specifically, we rely on a dermoscopic-structure-based soft
+  segmentation to design a set of structure-specific classifiers. Each
+  individual structure-specific classifier is trained to distinguish benign
+  lesions from melanomas just paying attention to one type of dermoscopic
+  structure. Then, the outputs of the individual classifiers are combined by a
+  means of the Bayesian method that, besides the final diagnosis, provide the
+  doctor with additional valuable information, such as the opinions of the
+  individual structure-specific experts and the uncertainty of the diagnosis.
+  The results in terms of the features selected for the structure-specific
+  classifiers are consistent with the expert insights. Furthermore, regarding
+  the automatic melanoma diagnosis problem, the proposed method has been
+  assessed on two different datasets, and the experimental results revealed
+  that the proposed system clearly outperforms other methods in two datasets
+  and compares well with the official submissions of the ISBI 2016 challenge on
+  melanoma detection. Moreover, the system performance is equivalent to that of
+  a well-known dermoscopy expert and its combination with the human diagnosis
+  surpasses the human performance.%
+    }
+    \verb{doi}
+    \verb 10.1007/s11042-017-4879-3
+    \endverb
+    \field{issn}{15737721}
+    \field{issue}{10}
+    \field{pages}{12171\bibrangedash 12202}
+    \field{title}{Enriched dermoscopic-structure-based cad system for melanoma
+  diagnosis}
+    \field{volume}{77}
+    \field{journaltitle}{Multimedia Tools and Applications}
+    \field{year}{2018}
+  \endentry
+
+  \entry{mendonca2013}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MT}{%
+         family={Mendonca},
+         familyi={M\bibinitperiod},
+         given={Teresa},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FPM}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={Pedro\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJS}{%
+         family={Marques},
+         familyi={M\bibinitperiod},
+         given={Jorge\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MAR}{%
+         family={Marcal},
+         familyi={M\bibinitperiod},
+         given={Andre\bibnamedelima R.S.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rozeira},
+         familyi={R\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTFPMMJSMARRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The increasing incidence of melanoma has recently promoted the development
+  of computer-aided diagnosis systems for the classification of dermoscopic
+  images. Unfortunately, the performance of such systems cannot be compared
+  since they are evaluated in different sets of images by their authors and
+  there are no public databases available to perform a fair evaluation of
+  multiple systems. In this paper, a dermoscopic image database, called PH2, is
+  presented. The PH2 database includes the manual segmentation, the clinical
+  diagnosis, and the identification of several dermoscopic structures,
+  performed by expert dermatologists, in a set of 200 dermoscopic images. The
+  PH2 database will be made freely available for research and benchmarking
+  purposes. © 2013 IEEE.%
+    }
+    \verb{doi}
+    \verb 10.1109/EMBC.2013.6610779
+    \endverb
+    \field{issn}{1557170X}
+    \field{title}{PH2 - A dermoscopic image database for research and
+  benchmarking}
+    \field{journaltitle}{Proceedings of the Annual International Conference of
+  the IEEE Engineering in Medicine and Biology Society, EMBS}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Meskini2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ME}{%
+         family={Meskini},
+         familyi={M\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HMS}{%
+         family={Helfroush},
+         familyi={H\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kazemi},
+         familyi={K\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sepaskhah},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Active contour,Dermoscopy,Melanoma,Segmentation}
+    \strng{namehash}{ME+1}
+    \strng{fullhash}{MEHMSKKSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Background: With advances in medical imaging systems, digital dermoscopy
+  has become one of the major imaging modalities in the analysis of skin
+  lesions. Thus, automated segmentation or border detection has a great impact
+  on the subsequent steps of skin cancer computer-aided diagnosis using
+  demoscopy images. Since dermoscopy images suffer from artifacts such as
+  shading and hair, there is a need for automated and robust artifact
+  attenuation removal and lesion border detection. Methods: A method for
+  segmentation of dermoscopy images is proposed based on active contour. To
+  this end, at first, a simple method for hair pixels is restored and a new
+  scheme for shading detection is proposed. Then, particle swarm optimization
+  (PSO) algorithm is applied to select the best coefficients for converting RGB
+  to gray level. The obtained gray level image is then used as input for multi
+  Otsu method which provides initial contour for border detection using active
+  contour. Finally, Chan and Vese active contour is used for final lesion
+  border detection. Results: The method is tested on a total of 145 dermoscopic
+  images: 79 cases with benign lesion and 75 cases with melanoma lesion. Mean
+  accuracy, sensitivity and specificity were obtained 94%, 78.5% and 99%,
+  respectively. Conclusion: Results reveal that the proposed method segments
+  the lesion from dermoscopy images accurately.%
+    }
+    \verb{doi}
+    \verb 10.22086/jbpe.v0i0.444
+    \endverb
+    \field{issn}{22517200}
+    \field{issue}{1}
+    \field{pages}{109\bibrangedash 118}
+    \field{title}{A new algorithm for skin lesion border detection in
+  dermoscopy images}
+    \field{volume}{8}
+    \field{journaltitle}{Journal of Biomedical Physics and Engineering}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Minagawa2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Minagawa},
+         familyi={M\bibinitperiod},
+         given={Akane},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{dermoscopy,histopathology,melanoma,milia-like cysts,seborrheic
+  keratosis}
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Making a definitive diagnosis of seborrheic keratosis (SK) can be
+  challenging for the naked eye due to its wide variation in clinical features.
+  Fortunately, however, most cases of SK exhibit the typical dermoscopic
+  findings of fissures and ridges, hairpin vessels with white halo, comedo-like
+  openings, and milia-like cysts, all of which are helpful to distinguish SK
+  from melanoma, melanocytic nevus, squamous cell carcinoma, basal cell
+  carcinoma (BCC) and other skin tumors. Histopathologically, these dermoscopic
+  characteristics correspond to papillomatous surface of the epidermis,
+  enlarged capillaries of the dermal papillae, pseudohorn cysts in the
+  epidermis opened to the surface of the lesion and intraepidermal cysts,
+  respectively. Clinicians should bear in mind that the clonal type of SK
+  dermoscopically mimics melanoma and BCC by the presence of globule-like
+  structures, while regressing SK exhibits a granular pattern that is similar
+  to the peppering found in melanoma. Furthermore, milia-like cysts alone are
+  insufficient for a conclusive diagnosis of SK because melanoma in rare cases
+  displays cysts along with other SK-like dermoscopic findings.%
+    }
+    \verb{doi}
+    \verb 10.1111/1346-8138.13657
+    \endverb
+    \field{issn}{13468138}
+    \field{issue}{5}
+    \field{pages}{518\bibrangedash 524}
+    \field{title}{Dermoscopy–pathology relationship in seborrheic keratosis}
+    \field{volume}{44}
+    \field{journaltitle}{Journal of Dermatology}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Morton1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MCA}{%
+         family={Morton},
+         familyi={M\bibinitperiod},
+         given={C.\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MRM}{%
+         family={Mackie},
+         familyi={M\bibinitperiod},
+         given={R.\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCAMRM1}
+    \strng{fullhash}{MCAMRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Diagnostic accuracy for melanoma was determined in a dedicated pigmented
+  lesion clinic. We assessed the impact of duration of experience in
+  dermatology and also the relationship between tumour thickness and accuracy
+  of clinical diagnosis. We reviewed the histopathology request forms and
+  reports for all biopsies generated by the Pigmented Lesion Clinic, Western
+  Infirmary, Glasgow during 1992-94 inclusive. The clinic is staffed by two
+  consultants, one senior registrar and one registrar. Diagnostic accuracy,
+  index of suspicion, sensitivity, specificity and positive predictive value
+  were calculated for the clinic overall, and for each grade of staff. One
+  hundred and sixty-three lesions were diagnosed clinically as melanoma. A
+  histopathological diagnosis of melanoma was made for 128 lesions during this
+  period, 113 of which had been correctly diagnosed before surgery. The
+  diagnostic accuracy for two dermatologists each with > 10 years experience in
+  dermatology was 80%, with sensitivity of 91% and positive predictive value of
+  86%. Diagnostic accuracy rates for two senior registrars (each with 3-5 years
+  experience) and six registrars (each with 1-2 years experience) were 62% and
+  56%, respectively. Thin and intermediate thickness melanomas generated the
+  greatest inaccuracy irrespective of clinical experience, although registrars
+  failed to recognize melanoma three times more often than the other groups. We
+  report the diagnostic accuracy for melanoma by trained dermatologists to be
+  higher than previously reported. In comparison with trainees, > 10 years
+  experience in dermatology and exposure to more than 10 melanomas per year
+  appears to be associated with greater diagnostic accuracy. Knowledge of the
+  current clinical diagnostic accuracy at varying levels of experience is
+  essential if the impact of training is to be evaluated. As pigmented lesions
+  of virtually all types can be treated within dermatology departments,
+  dermatologists are the appropriate first point of referral for suspected
+  early melanoma.%
+    }
+    \verb{doi}
+    \verb 10.1046/j.1365-2133.1998.02075.x
+    \endverb
+    \field{issn}{00070963}
+    \field{issue}{2}
+    \field{title}{Clinical accuracy of the diagnosis of cutaneous malignant
+  melanoma}
+    \field{volume}{138}
+    \field{journaltitle}{British Journal of Dermatology}
+    \field{year}{1998}
+  \endentry
+
+  \entry{Myridis2014a}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MNE}{%
+         family={Myridis},
+         familyi={M\bibinitperiod},
+         given={Nikolaos\bibnamedelima E.},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MNE1}
+    \strng{fullhash}{MNE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1080/00107514.2014.907348
+    \endverb
+    \field{issn}{0010-7514}
+    \field{issue}{3}
+    \field{pages}{247\bibrangedash 248}
+    \field{title}{Ultra-realistic Imaging: Advanced Techniques in Analogue and
+  Digital Colour Holography, by Hans Bjelkhagen and David Brotherton-Ratcliffe}
+    \field{volume}{55}
+    \field{journaltitle}{Contemporary Physics}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Nachbar1994}{article}{}
+    \name{author}{9}{}{%
+      {{hash=NF}{%
+         family={Nachbar},
+         familyi={N\bibinitperiod},
+         given={Franz},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Stolz},
+         familyi={S\bibinitperiod},
+         given={Wilhelm},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Merkle},
+         familyi={M\bibinitperiod},
+         given={Tanja},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CAB}{%
+         family={Cognetta},
+         familyi={C\bibinitperiod},
+         given={Armand\bibnamedelima B.},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=VT}{%
+         family={Vogt},
+         familyi={V\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Landthaler},
+         familyi={L\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bilek},
+         familyi={B\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BFO}{%
+         family={Braun-Falco},
+         familyi={B\bibinithyphendelim F\bibinitperiod},
+         given={Otto},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Plewig},
+         familyi={P\bibinitperiod},
+         given={Gerd},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier BV}%
+    }
+    \strng{namehash}{NF+1}
+    \strng{fullhash}{NFSWMTCABVTLMBPBFOPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Background: The difficulties in accurately assessing pigmented skin lesions
+  are ever present in practice. The recently described ABCD rule of
+  dermatoscopy (skin surface microscopy at ×10 magnification), based on the
+  criteria asymmetry (A), border (B), color (C), and differential structure
+  (D), improved diagnostic accuracy when applied retrospectively to clinical
+  slides. Objective: A study was designed to evaluate the prospective value of
+  the ABCD rule of dermatoscopy in melanocytic lesions. Methods: In 172
+  melanocytic pigmented skin lesions, the criteria of the ABCD rule of
+  dermatoscopy were analyzed with a semiquantitative scoring system before
+  excision. Results: According to the retrospectively determined threshold,
+  tumors with a score higher than 5.45 (64/69 melanomas [92.8%]) were
+  classified as malignant, whereas lesions with a lower score were considered
+  as benign (93/103 melanocytic nevi [90.3%]). Negative predictive value for
+  melanoma (True-Negative ÷ [True-Negative + False-Negative]) was 9 5.8%,
+  whereas positive predictive value (True-Positive ÷ [True-Positive +
+  False-Positive]) was 85.3%. Diagnostic accuracy for melanoma (True-Positive
+  ÷ [True-Positive + False- Positive + False-Negative]) was 80.0%, compared
+  with 64.4% by the naked eye. Melanoma showed a mean final dermatoscopy score
+  of 6.79 (SD, ± 0.92), significantly differing from melanocytic nevi (mean
+  score, 4.27 ± 0.99; p <0.01, U test). Conclusion: The ABCD rule can be
+  easily learned and rapidly calculated, and has proven to be reliable. It
+  should be routinely applied to all equivocal pigmented skin lesions to reach
+  a more objective and reproducible diagnosis and to obtain this assessment
+  preoperatively.%
+    }
+    \verb{doi}
+    \verb 10.1016/s0190-9622(94)70061-3
+    \endverb
+    \field{issn}{01909622}
+    \field{issue}{4}
+    \field{pages}{551\bibrangedash 559}
+    \field{title}{The ABCD rule of dermatoscopy}
+    \field{volume}{30}
+    \field{journaltitle}{Journal of the American Academy of Dermatology}
+    \field{month}{04}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Pereira2020}{article}{}
+    \name{author}{7}{}{%
+      {{hash=PPM}{%
+         family={Pereira},
+         familyi={P\bibinitperiod},
+         given={Pedro\bibnamedelima M.M.},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FPR}{%
+         family={Fonseca-Pinto},
+         familyi={F\bibinithyphendelim P\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PRP}{%
+         family={Paiva},
+         familyi={P\bibinitperiod},
+         given={Rui\bibnamedelima Pedro},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=APA}{%
+         family={Assuncao},
+         familyi={A\bibinitperiod},
+         given={Pedro\bibnamedelima A.A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TLM}{%
+         family={Tavora},
+         familyi={T\bibinitperiod},
+         given={Luis\bibnamedelima M.N.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=TLA}{%
+         family={Thomaz},
+         familyi={T\bibinitperiod},
+         given={Lucas\bibnamedelima A.},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=FSM}{%
+         family={Faria},
+         familyi={F\bibinitperiod},
+         given={Sergio\bibnamedelima M.M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Classification,Feature extraction,Image segmentation,Medical
+  imaging,Skin lesion}
+    \strng{namehash}{PPM+1}
+    \strng{fullhash}{PPMFPRPRPAPATLMTLAFSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Machine learning algorithms are progressively assuming an important role as
+  a computational tool to support clinical diagnosis, namely in the
+  classification of pigmented skin lesions. The current classification methods
+  commonly rely on features derived from shape, colour, or texture, obtained
+  after image segmentation, but these do not always guarantee the best results.
+  To improve the classification accuracy, this work proposes to further exploit
+  the border-line characteristics of the lesion segmentation mask, by combining
+  gradients with local binary patterns (LBP). In the proposed method, these
+  border-line features are used together with the conventional ones to enhance
+  the performance of skin lesion classification algorithms. When the new
+  features are combined with the classical ones, the experimental results show
+  higher accuracy, which impacts positively the overall performance of the
+  classification algorithms. As the medical image datasets usually present
+  large class imbalance, which results in low sensitivity for the classifiers,
+  the border-line features have a positive impact on this classification
+  metric, as evidenced by the experimental results. Both the features’
+  usefulness and their impact are assessed in regard to the classification
+  results, which in turn are statistically tested for completeness, using three
+  different classifiers and two medical image datasets.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.bspc.2019.101765
+    \endverb
+    \field{issn}{17468108}
+    \field{title}{Skin lesion classification enhancement using border-line
+  features – The melanoma vs nevus problem}
+    \field{volume}{57}
+    \field{journaltitle}{Biomedical Signal Processing and Control}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Ramezani2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RM}{%
+         family={Ramezani},
+         familyi={R\bibinitperiod},
+         given={Maryam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Karimian},
+         familyi={K\bibinitperiod},
+         given={Alireza},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Moallem},
+         familyi={M\bibinitperiod},
+         given={Payman},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Classification,malignant melanoma,melanoma diagnosis,skin lesions}
+    \strng{namehash}{RMKAMP1}
+    \strng{fullhash}{RMKAMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    In order to distinguish between benign and malignant types of pigmented
+  skin lesions, computerized procedures have been developed for images taken by
+  different equipment that the most available one of them is conventional
+  digital cameras. In this research, a new procedure to detect malignant
+  melanoma from benign pigmented lesions using macroscopic images is presented.
+  The images are taken by conventional digital cameras with spatial resolution
+  higher than one megapixel and by considering no constraints and special
+  conditions during imaging. In the proposed procedure, new methods to weaken
+  the effect of nonuniform illumination, correction of the effect of thick
+  hairs and large glows on the lesion and also, a new threshold-based
+  segmentation algorithm are presented. 187 features representing asymmetry,
+  border irregularity, color variation, diameter and texture are extracted from
+  the lesion area and after reducing the number of features using principal
+  component analysis (PCA), lesions are determined as malignant or benign using
+  support vector machine classifier. According to the dermatologist diagnosis,
+  the proposed processing methods have the ability to detect lesions area with
+  high accuracy. The evaluation measures of classification have indicated that
+  13 features extracted by PCA method lead to better results than all of the
+  extracted features. These results led to an accuracy of 82.2%, sensitivity of
+  77% and specificity of 86.93%. The proposed method may help dermatologists to
+  detect the malignant lesions in the primary stages due to the minimum
+  constraints during imaging, the ease of usage by the public and nonexperts,
+  and high accuracy in detection of the lesion type.%
+    }
+    \verb{doi}
+    \verb 10.4103/2228-7477.144052
+    \endverb
+    \field{issn}{22287477}
+    \field{issue}{4}
+    \field{pages}{281\bibrangedash 290}
+    \field{title}{Automatic Detection of Malignant Melanoma using Macroscopic
+  Images}
+    \field{volume}{4}
+    \field{journaltitle}{Journal of Medical Signals and Sensors}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Riaz2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RF}{%
+         family={Riaz},
+         familyi={R\bibinitperiod},
+         given={Farhan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Naeem},
+         familyi={N\bibinitperiod},
+         given={Sidra},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nawaz},
+         familyi={N\bibinitperiod},
+         given={Raheel},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Coimbra},
+         familyi={C\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RF+1}
+    \strng{fullhash}{RFNSNRCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    This paper proposes a computer assisted diagnostic system for the detection
+  of melanoma in dermoscopy images. Clinical findings have concluded that in
+  case of melanoma, the lesion borders exhibit differential structures such as
+  pigment networks and streaks as opposed to normal skin spots, which have
+  smoother borders. We aim at validating these findings by performing
+  segmentation of the skin lesions followed by an extraction of the peripheral
+  region of the lesion that is subjected to feature extraction and
+  classification for detecting melanoma. For segmentation, we propose a novel
+  active contours based method that takes an initial lesion contour followed by
+  the usage of Kullback-Leibler divergence between the lesion and skin to fit a
+  curve to the lesion boundaries. After segmentation of the lesion, its
+  periphery is extracted to detect melanoma using image features that are based
+  on local binary patterns. For validation of our algorithms, we have used the
+  publicly available PH2 and ISIC dermoscopy datasets. An extensive
+  experimental analysis reveals two important findings: 1) the proposed
+  segmentation method mimics the ground truth data; and 2) the most significant
+  melanoma characteristics in the lesion actually lie on the lesion periphery.%
+    }
+    \verb{doi}
+    \verb 10.1109/JBHI.2018.2832455
+    \endverb
+    \field{issn}{21682208}
+    \field{issue}{2}
+    \field{title}{Active Contours Based Segmentation and Lesion Periphery
+  Analysis for Characterization of Skin Lesions in Dermoscopy Images}
+    \field{volume}{23}
+    \field{journaltitle}{IEEE Journal of Biomedical and Health Informatics}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Ribeiro2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RM}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Sameer},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guestrin},
+         familyi={G\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RMSSGC1}
+    \strng{fullhash}{RMSSGC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Despite widespread adoption, machine learning models remain mostly black
+  boxes. Understanding the reasons behind predictions is, however, quite
+  important in assessing trust, which is fundamental if one plans to take
+  action based on a prediction, or when choosing whether to deploy a new model.
+  Such understanding also provides insights into the model, which can be used
+  to transform an untrustworthy model or prediction into a trustworthy one. In
+  this work, we propose LIME, a novel explanation technique that explains the
+  predictions of any classifier in an interpretable and faithful manner, by
+  learning an interpretable model locally around the prediction. We also
+  propose a method to explain models by presenting representative individual
+  predictions and their explanations in a non-redundant way, framing the task
+  as a submodular optimization problem. We demonstrate the flexibility of these
+  methods by explaining different models for text (e.g. random forests) and
+  image classification (e.g. neural networks). We show the utility of
+  explanations via novel experiments, both simulated and with human subjects,
+  on various scenarios that require trust: deciding if one should trust a
+  prediction, choosing between models, improving an untrustworthy classifier,
+  and identifying why a classifier should not be trusted.%
+    }
+    \verb{doi}
+    \verb 10.18653/v1/n16-3020
+    \endverb
+    \field{pages}{97\bibrangedash 101}
+    \field{title}{“Why Should I Trust You?”: Explaining the Predictions of
+  Any Classifier}
+    \field{journaltitle}{ArXiv}
+    \field{year}{2016}
+  \endentry
+
   \entry{FerrantediRuffano2018}{article}{}
     \name{author}{17}{}{%
-      {{hash=FL}{%
-         family={{Ferrante di Ruffano}},
-         familyi={F\bibinitperiod},
-         given={Lavinia},
-         giveni={L\bibinitperiod},
+      {{hash=dRLF}{%
+         prefix={di},
+         prefixi={d\bibinitperiod},
+         family={Ruffano},
+         familyi={R\bibinitperiod},
+         given={Lavinia\bibnamedelima Ferrante},
+         giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
       {{hash=TY}{%
          family={Takwoingi},
@@ -797,13 +2202,12 @@
          giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
-    \keyw{Statistics}
-    \strng{namehash}{FL+1}
-    \strng{fullhash}{FLTYDJCNBSEDCMRNGKOCGACSADAOSGMDBJDJJWHC1}
+    \strng{namehash}{RLFd+1}
+    \strng{fullhash}{RLFdTYDJCNBSEDCMRNGKOCGACSADAOSGMDBJDJJWHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
     \field{abstract}{%
     Background: Early accurate detection of all skin cancer types is essential
   to guide appropriate management and to improve morbidity and survival.
@@ -863,861 +2267,42 @@
   cutaneous invasive melanoma and atypical intraepidermal melanocytic variants
   in highly selected populations, but with low and very variable specificity,
   particularly for Spectro-CAD systems. Pooled data from 22 studies estimated
-  the sensitivity of Derm-CAD for the detection of melanoma as 90.1{\%} (95{\%}
-  confidence interval (CI) 84.0{\%} to 94.0{\%}) and specificity as 74.3{\%}
-  (95{\%} CI 63.6{\%} to 82.7{\%}). Pooled data from eight studies estimated
-  the sensitivity of multispectral imaging CAD (MSI-CAD) as 92.9{\%} (95{\%} CI
-  83.7{\%} to 97.1{\%}) and specificity as 43.6{\%} (95{\%} CI 24.8{\%} to
-  64.5{\%}). When applied to a hypothetical population of 1000 lesions at the
-  mean observed melanoma prevalence of 20{\%}, Derm-CAD would miss 20 melanomas
-  and would lead to 206 false-positive results for melanoma. MSI-CAD would miss
-  14 melanomas and would lead to 451 false diagnoses for melanoma. Preliminary
-  findings suggest CAD systems are at least as sensitive as assessment of
-  dermoscopic images for the diagnosis of invasive melanoma and atypical
-  intraepidermal melanocytic variants. We are unable to make summary statements
-  about the use of CAD in unreferred populations, or its accuracy in detecting
-  keratinocyte cancers, or its use in any setting as a diagnostic aid, because
-  of the paucity of studies. Authors' conclusions: In highly selected patient
-  populations all CAD types demonstrate high sensitivity, and could prove
-  useful as a back-up for specialist diagnosis to assist in minimising the risk
-  of missing melanomas. However, the evidence base is currently too poor to
-  understand whether CAD system outputs translate to different clinical
-  decision-making in practice. Insufficient data are available on the use of
-  CAD in community settings, or for the detection of keratinocyte cancers. The
-  evidence base for individual systems is too limited to draw conclusions on
-  which might be preferred for practice. Prospective comparative studies are
-  required that evaluate the use of already evaluated CAD systems as diagnostic
-  aids, by comparison to face-to-face dermoscopy, and in participant
-  populations that are representative of those in which the test would be used
-  in practice.%
+  the sensitivity of Derm-CAD for the detection of melanoma as 90.1% (95%
+  confidence interval (CI) 84.0% to 94.0%) and specificity as 74.3% (95% CI
+  63.6% to 82.7%). Pooled data from eight studies estimated the sensitivity of
+  multispectral imaging CAD (MSI-CAD) as 92.9% (95% CI 83.7% to 97.1%) and
+  specificity as 43.6% (95% CI 24.8% to 64.5%). When applied to a hypothetical
+  population of 1000 lesions at the mean observed melanoma prevalence of 20%,
+  Derm-CAD would miss 20 melanomas and would lead to 206 false-positive results
+  for melanoma. MSI-CAD would miss 14 melanomas and would lead to 451 false
+  diagnoses for melanoma. Preliminary findings suggest CAD systems are at least
+  as sensitive as assessment of dermoscopic images for the diagnosis of
+  invasive melanoma and atypical intraepidermal melanocytic variants. We are
+  unable to make summary statements about the use of CAD in unreferred
+  populations, or its accuracy in detecting keratinocyte cancers, or its use in
+  any setting as a diagnostic aid, because of the paucity of studies. Authors'
+  conclusions: In highly selected patient populations all CAD types demonstrate
+  high sensitivity, and could prove useful as a back-up for specialist
+  diagnosis to assist in minimising the risk of missing melanomas. However, the
+  evidence base is currently too poor to understand whether CAD system outputs
+  translate to different clinical decision-making in practice. Insufficient
+  data are available on the use of CAD in community settings, or for the
+  detection of keratinocyte cancers. The evidence base for individual systems
+  is too limited to draw conclusions on which might be preferred for practice.
+  Prospective comparative studies are required that evaluate the use of already
+  evaluated CAD systems as diagnostic aids, by comparison to face-to-face
+  dermoscopy, and in participant populations that are representative of those
+  in which the test would be used in practice.%
     }
     \verb{doi}
     \verb 10.1002/14651858.CD013186
     \endverb
     \field{issn}{1469493X}
-    \field{number}{12}
-    \field{title}{{Computer-assisted diagnosis techniques (dermoscopy and
-  spectroscopy-based) for diagnosing skin cancer in adults}}
+    \field{issue}{12}
+    \field{title}{Computer-assisted diagnosis techniques (dermoscopy and
+  spectroscopy-based) for diagnosing skin cancer in adults}
     \field{journaltitle}{Cochrane Database of Systematic Reviews}
     \field{year}{2018}
-  \endentry
-
-  \entry{Fuji2019}{article}{}
-    \name{author}{6}{}{%
-      {{hash=FM}{%
-         family={Fuji},
-         familyi={F\bibinitperiod},
-         given={Masaru},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MH}{%
-         family={Morita},
-         familyi={M\bibinitperiod},
-         given={Hajime},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=GK}{%
-         family={Goto},
-         familyi={G\bibinitperiod},
-         given={Keisuke},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=MK}{%
-         family={Maruhashi},
-         familyi={M\bibinitperiod},
-         given={Koji},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=AH}{%
-         family={Anai},
-         familyi={A\bibinitperiod},
-         given={Hirokazu},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=IN}{%
-         family={Igata},
-         familyi={I\bibinitperiod},
-         given={Nobuyuki},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \keyw{Explainable}
-    \strng{namehash}{FM+1}
-    \strng{fullhash}{FMMHGKMKAHIN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{abstract}{%
-    One of the most significant advancements made in AI in recent years is the
-  greatly enhanced accuracy of machine learning through deep learning. However,
-  because deep learning deals with huge volumes of data and involves vast
-  neural networks in the learning process, it is often difficult to explain how
-  or why an output was reached even if the inference was correct. This issue
-  impedes the application of AI technology to such business areas as finance
-  and medicine, which demand absolute reliability. To address this issue, we
-  have developed an AI technology that combines Deep Tensor, Fujitsu's original
-  machine-learning technology based on enhanced deep learning, and another
-  Fujitsu-developed machine-learning technology based on knowledge graph, a
-  knowledge base represented by graph data taken from past documents and
-  databases. This has enabled us to logically explain the reasons and bases in
-  which Deep Tensor reaches its inference output. This paper explains the
-  technology that makes Explainable AI possible in terms of application cases
-  in network intrusion detection and genomic medicine.%
-    }
-    \field{issn}{00162523}
-    \field{number}{2}
-    \field{pages}{58\bibrangedash 64}
-    \field{title}{{Explainable AI through combination of deep tensor and
-  knowledge graph}}
-    \field{volume}{55}
-    \field{journaltitle}{Fujitsu Scientific and Technical Journal}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Ghorbani2019}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GA}{%
-         family={Ghorbani},
-         familyi={G\bibinitperiod},
-         given={Amirata},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Abid},
-         familyi={A\bibinitperiod},
-         given={Abubakar},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ZJ}{%
-         family={Zou},
-         familyi={Z\bibinitperiod},
-         given={James},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GAAAZJ1}
-    \strng{fullhash}{GAAAZJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{abstract}{%
-    In order for machine learning to be trusted in many applications, it is
-  critical to be able to reliably explain why the machine learning algorithm
-  makes certain predictions. For this reason, a variety of methods have been
-  developed recently to interpret neural network predictions by providing, for
-  example, feature importance maps. For both scientific robustness and security
-  reasons, it is important to know to what extent can the interpretations be
-  altered by small systematic perturbations to the input data, which might be
-  generated by adversaries or by measurement biases. In this paper, we
-  demonstrate how to generate adversarial perturbations that produce
-  perceptively indistinguishable inputs that are assigned the same predicted
-  label, yet have very different interpretations. We systematically
-  characterize the robustness of interpretations generated by several
-  widely-used feature importance interpretation methods (feature importance
-  maps, integrated gradients, and DeepLIFT) on ImageNet and CIFAR-10. In all
-  cases, our experiments show that systematic perturbations can lead to
-  dramatically different interpretations without changing the label. We extend
-  these results to show that interpretations based on exemplars (e.g. influence
-  functions) are similarly susceptible to adversarial attack. Our analysis of
-  the geometry of the Hessian matrix gives insight on why robustness is a
-  general challenge to current interpretation approaches.%
-    }
-    \verb{doi}
-    \verb 10.1609/aaai.v33i01.33013681
-    \endverb
-    \verb{eprint}
-    \verb 1710.10547
-    \endverb
-    \field{issn}{2159-5399}
-    \field{pages}{3681\bibrangedash 3688}
-    \field{title}{{Interpretation of Neural Networks Is Fragile}}
-    \field{volume}{33}
-    \field{journaltitle}{Proceedings of the AAAI Conference on Artificial
-  Intelligence}
-    \field{eprinttype}{arXiv}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Izikson2002}{article}{}
-    \name{author}{4}{}{%
-      {{hash=IL}{%
-         family={Izikson},
-         familyi={I\bibinitperiod},
-         given={Leonid},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=SAJ}{%
-         family={Sober},
-         familyi={S\bibinitperiod},
-         given={Arthur\bibnamedelima J.},
-         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MMC}{%
-         family={Mihm},
-         familyi={M\bibinitperiod},
-         given={Martin\bibnamedelima C.},
-         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-      {{hash=ZA}{%
-         family={Zembowicz},
-         familyi={Z\bibinitperiod},
-         given={Artur},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{IL+1}
-    \strng{fullhash}{ILSAJMMCZA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-    \field{abstract}{%
-    Objective: To estimate the prevalence of melanoma clinically mimicking
-  seborrheic keratosis. Design: Retrospective review of cases submitted for
-  histological examination with a clinical diagnosis of seborrheic keratosis or
-  with a differential diagnosis that included seborrheic keratosis. Setting: A
-  tertiary medical care center-based dermatopathology laboratory serving
-  academic dermatology clinics that have a busy pigmented lesion clinic.
-  Materials and Methods: A total of 9204 consecutive pathology reports
-  containing a diagnosis of seborrheic keratosis in the clinical information
-  field were identified between the years 1992 and 2001 through a computer
-  database search. Reports with a final histological diagnosis of melanoma were
-  selected for further review and clinicopathological analysis. Main Outcome
-  Measure: Histological diagnosis, which was correlated with the preoperative
-  clinical diagnosis. Results: Melanoma was identified in 61 cases (0.66{\%})
-  submitted for histological examination with a clinical diagnosis that
-  included seborrheic keratosis. Melanoma was in the clinical differential
-  diagnosis of 31 cases (51{\%}). The remaining lesions had a differential
-  diagnosis of seborrheic keratosis vs melanocytic nevus (17 cases, 28{\%}),
-  basal cell carcinoma (7 cases, 12{\%}), or a squamous proliferation (3 cases,
-  5{\%}). In 3 cases (5{\%}), seborrheic keratosis was the only clinical
-  diagnosis. All histological types of melanoma were represented. Conclusions:
-  Our results confirm that melanoma can mimic seborrheic keratosis. These data
-  strongly support the current policy of submitting for histological
-  examination all specimens that have been removed from patients.%
-    }
-    \verb{doi}
-    \verb 10.1001/archderm.138.12.1562
-    \endverb
-    \field{issn}{0003987X}
-    \field{number}{12}
-    \field{title}{{Prevalence of melanoma clinically resembling seborrheic
-  keratosis: Analysis of 9204 cases}}
-    \field{volume}{138}
-    \field{journaltitle}{Archives of Dermatology}
-    \field{year}{2002}
-  \endentry
-
-  \entry{Nachbar}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KR}{%
-         family={Kasmi},
-         familyi={K\bibinitperiod},
-         given={Reda},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=MK}{%
-         family={Mokrani},
-         familyi={M\bibinitperiod},
-         given={Karim},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRMK1}
-    \strng{fullhash}{KRMK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{abstract}{%
-    The ABCD (asymmetry, border irregularity, colour and dermoscopic structure)
-  rule of dermoscopy is a scoring method used by dermatologists to quantify
-  dermoscopy findings and effectively separate melanoma from benign lesions.
-  Automatic detection of the ABCD features and separation of benign lesions
-  from melanoma could enable earlier detection of melanoma. In this study,
-  automatic ABCD scoring of dermoscopy lesions is implemented. Pre-processing
-  enables automatic detection of hair using Gabor filters and lesion boundaries
-  using geodesic active contours. Algorithms are implemented to extract the
-  characteristics of ABCD attributes. Methods used here combine existing
-  methods with novel methods to detect colour asymmetry and dermoscopic
-  structures. To classify lesions as melanoma or benign nevus, the total
-  dermoscopy score is calculated. The experimental results, using 200
-  dermoscopic images, where 80 are malignant melanomas and 120 benign lesions,
-  show that the algorithm achieves 91.25{\%} sensitivity of 91.25 and 95.83{\%}
-  specificity. This is comparable to the 92.8{\%} sensitivity and 90.3{\%}
-  specificity reported for human implementation of the ABCD rule. The
-  experimental results show that the extracted features can be used to build a
-  promising classifier for melanoma detection.%
-    }
-    \verb{doi}
-    \verb 10.1049/iet-ipr.2015.0385
-    \endverb
-    \field{issn}{17519659}
-    \field{number}{6}
-    \field{pages}{448\bibrangedash 455}
-    \field{title}{{Classification of malignant melanoma and benign skin
-  lesions: Implementation of automatic ABCD rule}}
-    \field{volume}{10}
-    \field{journaltitle}{IET Image Processing}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Kasmi2016a}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KR}{%
-         family={Kasmi},
-         familyi={K\bibinitperiod},
-         given={Reda},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=MK}{%
-         family={Mokrani},
-         familyi={M\bibinitperiod},
-         given={Karim},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \keyw{ABCD}
-    \strng{namehash}{KRMK1}
-    \strng{fullhash}{KRMK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{abstract}{%
-    The ABCD (asymmetry, border irregularity, colour and dermoscopic structure)
-  rule of dermoscopy is a scoring method used by dermatologists to quantify
-  dermoscopy findings and effectively separate melanoma from benign lesions.
-  Automatic detection of the ABCD features and separation of benign lesions
-  from melanoma could enable earlier detection of melanoma. In this study,
-  automatic ABCD scoring of dermoscopy lesions is implemented. Pre-processing
-  enables automatic detection of hair using Gabor filters and lesion boundaries
-  using geodesic active contours. Algorithms are implemented to extract the
-  characteristics of ABCD attributes. Methods used here combine existing
-  methods with novel methods to detect colour asymmetry and dermoscopic
-  structures. To classify lesions as melanoma or benign nevus, the total
-  dermoscopy score is calculated. The experimental results, using 200
-  dermoscopic images, where 80 are malignant melanomas and 120 benign lesions,
-  show that the algorithm achieves 91.25{\%} sensitivity of 91.25 and 95.83{\%}
-  specificity. This is comparable to the 92.8{\%} sensitivity and 90.3{\%}
-  specificity reported for human implementation of the ABCD rule. The
-  experimental results show that the extracted features can be used to build a
-  promising classifier for melanoma detection.%
-    }
-    \verb{doi}
-    \verb 10.1049/iet-ipr.2015.0385
-    \endverb
-    \field{issn}{17519659}
-    \field{number}{6}
-    \field{pages}{448\bibrangedash 455}
-    \field{title}{{Classification of malignant melanoma and benign skin
-  lesions: Implementation of automatic ABCD rule}}
-    \field{volume}{10}
-    \field{journaltitle}{IET Image Processing}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Lopez-Labraca2018}{article}{}
-    \name{author}{5}{}{%
-      {{hash=LLJ}{%
-         family={L{\'{o}}pez-Labraca},
-         familyi={L\bibinithyphendelim L\bibinitperiod},
-         given={Javier},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=FTMA}{%
-         family={Fern{\'{a}}ndez-Torres},
-         familyi={F\bibinithyphendelim T\bibinitperiod},
-         given={Miguel\bibnamedelima {\'{A}}ngel},
-         giveni={M\bibinitperiod\bibinitdelim {\'{A}}\bibinitperiod},
-      }}%
-      {{hash=GDI}{%
-         family={Gonz{\'{a}}lez-D{\'{i}}az},
-         familyi={G\bibinithyphendelim D\bibinitperiod},
-         given={Iv{\'{a}}n},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=DDMF}{%
-         family={D{\'{i}}az-De-Mar{\'{i}}a},
-         familyi={D\bibinithyphendelim D\bibinithyphendelim M\bibinitperiod},
-         given={Fernando},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={Pizarro},
-         familyi={P\bibinitperiod},
-         given={{\'{A}}ngel},
-         giveni={{\'{A}}\bibinitperiod},
-      }}%
-    }
-    \keyw{Bayesian fusion,Computer-aided diagnosis,Dermoscopic
-  structures,Enriched diagnosis,Melanoma diagnosis}
-    \strng{namehash}{LLJ+1}
-    \strng{fullhash}{LLJFTMAGDIDDMFPA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{abstract}{%
-    Computer-Aided Diagnosis (CAD) systems for melanoma detection have received
-  a lot of attention during the last decades because of the utmost importance
-  of detecting this type of skin cancer in its early stages. However, despite
-  of the many research efforts devoted to this matter, these systems are not
-  used yet in everyday clinical practice. Very likely, this is due to two main
-  reasons: 1) the accuracy of the systems is not high enough; and 2) they
-  simply provide a parallel diagnosis that actually does not help to the
-  doctors (as long as there is no way to interpret it). In this paper, we
-  propose a novel approach that aims to provide the doctor with an enriched
-  diagnosis. Specifically, we rely on a dermoscopic-structure-based soft
-  segmentation to design a set of structure-specific classifiers. Each
-  individual structure-specific classifier is trained to distinguish benign
-  lesions from melanomas just paying attention to one type of dermoscopic
-  structure. Then, the outputs of the individual classifiers are combined by a
-  means of the Bayesian method that, besides the final diagnosis, provide the
-  doctor with additional valuable information, such as the opinions of the
-  individual structure-specific experts and the uncertainty of the diagnosis.
-  The results in terms of the features selected for the structure-specific
-  classifiers are consistent with the expert insights. Furthermore, regarding
-  the automatic melanoma diagnosis problem, the proposed method has been
-  assessed on two different datasets, and the experimental results revealed
-  that the proposed system clearly outperforms other methods in two datasets
-  and compares well with the official submissions of the ISBI 2016 challenge on
-  melanoma detection. Moreover, the system performance is equivalent to that of
-  a well-known dermoscopy expert and its combination with the human diagnosis
-  surpasses the human performance.%
-    }
-    \verb{doi}
-    \verb 10.1007/s11042-017-4879-3
-    \endverb
-    \field{issn}{15737721}
-    \field{number}{10}
-    \field{pages}{12171\bibrangedash 12202}
-    \field{title}{{Enriched dermoscopic-structure-based cad system for melanoma
-  diagnosis}}
-    \field{volume}{77}
-    \field{journaltitle}{Multimedia Tools and Applications}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Meskini2018}{article}{}
-    \name{author}{4}{}{%
-      {{hash=ME}{%
-         family={Meskini},
-         familyi={M\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=HMS}{%
-         family={Helfroush},
-         familyi={H\bibinitperiod},
-         given={M.\bibnamedelima S.},
-         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=KK}{%
-         family={Kazemi},
-         familyi={K\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sepaskhah},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \keyw{Active contour,Dermoscopy,Melanoma,Segmentation}
-    \strng{namehash}{ME+1}
-    \strng{fullhash}{MEHMSKKSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Background: With advances in medical imaging systems, digital dermoscopy
-  has become one of the major imaging modalities in the analysis of skin
-  lesions. Thus, automated segmentation or border detection has a great impact
-  on the subsequent steps of skin cancer computer-aided diagnosis using
-  demoscopy images. Since dermoscopy images suffer from artifacts such as
-  shading and hair, there is a need for automated and robust artifact
-  attenuation removal and lesion border detection. Methods: A method for
-  segmentation of dermoscopy images is proposed based on active contour. To
-  this end, at first, a simple method for hair pixels is restored and a new
-  scheme for shading detection is proposed. Then, particle swarm optimization
-  (PSO) algorithm is applied to select the best coefficients for converting RGB
-  to gray level. The obtained gray level image is then used as input for multi
-  Otsu method which provides initial contour for border detection using active
-  contour. Finally, Chan and Vese active contour is used for final lesion
-  border detection. Results: The method is tested on a total of 145 dermoscopic
-  images: 79 cases with benign lesion and 75 cases with melanoma lesion. Mean
-  accuracy, sensitivity and specificity were obtained 94{\%}, 78.5{\%} and
-  99{\%}, respectively. Conclusion: Results reveal that the proposed method
-  segments the lesion from dermoscopy images accurately.%
-    }
-    \verb{doi}
-    \verb 10.22086/jbpe.v0i0.444
-    \endverb
-    \field{issn}{22517200}
-    \field{number}{1}
-    \field{pages}{109\bibrangedash 118}
-    \field{title}{{A new algorithm for skin lesion border detection in
-  dermoscopy images}}
-    \field{volume}{8}
-    \field{journaltitle}{Journal of Biomedical Physics and Engineering}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Minagawa2017}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MA}{%
-         family={Minagawa},
-         familyi={M\bibinitperiod},
-         given={Akane},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \keyw{dermoscopy,histopathology,melanoma,milia-like cysts,seborrheic
-  keratosis}
-    \strng{namehash}{MA1}
-    \strng{fullhash}{MA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Making a definitive diagnosis of seborrheic keratosis (SK) can be
-  challenging for the naked eye due to its wide variation in clinical features.
-  Fortunately, however, most cases of SK exhibit the typical dermoscopic
-  findings of fissures and ridges, hairpin vessels with white halo, comedo-like
-  openings, and milia-like cysts, all of which are helpful to distinguish SK
-  from melanoma, melanocytic nevus, squamous cell carcinoma, basal cell
-  carcinoma (BCC) and other skin tumors. Histopathologically, these dermoscopic
-  characteristics correspond to papillomatous surface of the epidermis,
-  enlarged capillaries of the dermal papillae, pseudohorn cysts in the
-  epidermis opened to the surface of the lesion and intraepidermal cysts,
-  respectively. Clinicians should bear in mind that the clonal type of SK
-  dermoscopically mimics melanoma and BCC by the presence of globule-like
-  structures, while regressing SK exhibits a granular pattern that is similar
-  to the peppering found in melanoma. Furthermore, milia-like cysts alone are
-  insufficient for a conclusive diagnosis of SK because melanoma in rare cases
-  displays cysts along with other SK-like dermoscopic findings.%
-    }
-    \verb{doi}
-    \verb 10.1111/1346-8138.13657
-    \endverb
-    \field{issn}{13468138}
-    \field{number}{5}
-    \field{pages}{518\bibrangedash 524}
-    \field{title}{{Dermoscopy–pathology relationship in seborrheic
-  keratosis}}
-    \field{volume}{44}
-    \field{journaltitle}{Journal of Dermatology}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Morton1998}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MCA}{%
-         family={Morton},
-         familyi={M\bibinitperiod},
-         given={C.\bibnamedelima A.},
-         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=MRM}{%
-         family={Mackie},
-         familyi={M\bibinitperiod},
-         given={R.\bibnamedelima M.},
-         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCAMRM1}
-    \strng{fullhash}{MCAMRM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Diagnostic accuracy for melanoma was determined in a dedicated pigmented
-  lesion clinic. We assessed the impact of duration of experience in
-  dermatology and also the relationship between tumour thickness and accuracy
-  of clinical diagnosis. We reviewed the histopathology request forms and
-  reports for all biopsies generated by the Pigmented Lesion Clinic, Western
-  Infirmary, Glasgow during 1992-94 inclusive. The clinic is staffed by two
-  consultants, one senior registrar and one registrar. Diagnostic accuracy,
-  index of suspicion, sensitivity, specificity and positive predictive value
-  were calculated for the clinic overall, and for each grade of staff. One
-  hundred and sixty-three lesions were diagnosed clinically as melanoma. A
-  histopathological diagnosis of melanoma was made for 128 lesions during this
-  period, 113 of which had been correctly diagnosed before surgery. The
-  diagnostic accuracy for two dermatologists each with {\textgreater} 10 years
-  experience in dermatology was 80{\%}, with sensitivity of 91{\%} and positive
-  predictive value of 86{\%}. Diagnostic accuracy rates for two senior
-  registrars (each with 3-5 years experience) and six registrars (each with 1-2
-  years experience) were 62{\%} and 56{\%}, respectively. Thin and intermediate
-  thickness melanomas generated the greatest inaccuracy irrespective of
-  clinical experience, although registrars failed to recognize melanoma three
-  times more often than the other groups. We report the diagnostic accuracy for
-  melanoma by trained dermatologists to be higher than previously reported. In
-  comparison with trainees, {\textgreater} 10 years experience in dermatology
-  and exposure to more than 10 melanomas per year appears to be associated with
-  greater diagnostic accuracy. Knowledge of the current clinical diagnostic
-  accuracy at varying levels of experience is essential if the impact of
-  training is to be evaluated. As pigmented lesions of virtually all types can
-  be treated within dermatology departments, dermatologists are the appropriate
-  first point of referral for suspected early melanoma.%
-    }
-    \verb{doi}
-    \verb 10.1046/j.1365-2133.1998.02075.x
-    \endverb
-    \field{issn}{00070963}
-    \field{number}{2}
-    \field{title}{{Clinical accuracy of the diagnosis of cutaneous malignant
-  melanoma}}
-    \field{volume}{138}
-    \field{journaltitle}{British Journal of Dermatology}
-    \field{year}{1998}
-  \endentry
-
-  \entry{Myridis2014a}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MNE}{%
-         family={Myridis},
-         familyi={M\bibinitperiod},
-         given={Nikolaos\bibnamedelima E.},
-         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \keyw{colour}
-    \strng{namehash}{MNE1}
-    \strng{fullhash}{MNE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1080/00107514.2014.907348
-    \endverb
-    \field{issn}{0010-7514}
-    \field{number}{3}
-    \field{pages}{247\bibrangedash 248}
-    \field{title}{{Ultra-realistic Imaging: Advanced Techniques in Analogue and
-  Digital Colour Holography, by Hans Bjelkhagen and David
-  Brotherton-Ratcliffe}}
-    \field{volume}{55}
-    \field{journaltitle}{Contemporary Physics}
-    \field{year}{2014}
-  \endentry
-
-  \entry{Pereira2020}{article}{}
-    \name{author}{7}{}{%
-      {{hash=PPM}{%
-         family={Pereira},
-         familyi={P\bibinitperiod},
-         given={Pedro\bibnamedelima M.M.},
-         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=FPR}{%
-         family={Fonseca-Pinto},
-         familyi={F\bibinithyphendelim P\bibinitperiod},
-         given={Rui},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=PRP}{%
-         family={Paiva},
-         familyi={P\bibinitperiod},
-         given={Rui\bibnamedelima Pedro},
-         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=APA}{%
-         family={Assuncao},
-         familyi={A\bibinitperiod},
-         given={Pedro\bibnamedelima A.A.},
-         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=TLM}{%
-         family={Tavora},
-         familyi={T\bibinitperiod},
-         given={Luis\bibnamedelima M.N.},
-         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=TLA}{%
-         family={Thomaz},
-         familyi={T\bibinitperiod},
-         given={Lucas\bibnamedelima A.},
-         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=FSM}{%
-         family={Faria},
-         familyi={F\bibinitperiod},
-         given={Sergio\bibnamedelima M.M.},
-         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \keyw{Classification,Feature extraction,Image segmentation,Medical
-  imaging,Skin lesion}
-    \strng{namehash}{PPM+1}
-    \strng{fullhash}{PPMFPRPRPAPATLMTLAFSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{abstract}{%
-    Machine learning algorithms are progressively assuming an important role as
-  a computational tool to support clinical diagnosis, namely in the
-  classification of pigmented skin lesions. The current classification methods
-  commonly rely on features derived from shape, colour, or texture, obtained
-  after image segmentation, but these do not always guarantee the best results.
-  To improve the classification accuracy, this work proposes to further exploit
-  the border-line characteristics of the lesion segmentation mask, by combining
-  gradients with local binary patterns (LBP). In the proposed method, these
-  border-line features are used together with the conventional ones to enhance
-  the performance of skin lesion classification algorithms. When the new
-  features are combined with the classical ones, the experimental results show
-  higher accuracy, which impacts positively the overall performance of the
-  classification algorithms. As the medical image datasets usually present
-  large class imbalance, which results in low sensitivity for the classifiers,
-  the border-line features have a positive impact on this classification
-  metric, as evidenced by the experimental results. Both the features'
-  usefulness and their impact are assessed in regard to the classification
-  results, which in turn are statistically tested for completeness, using three
-  different classifiers and two medical image datasets.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.bspc.2019.101765
-    \endverb
-    \field{issn}{17468108}
-    \field{title}{{Skin lesion classification enhancement using border-line
-  features – The melanoma vs nevus problem}}
-    \field{volume}{57}
-    \field{journaltitle}{Biomedical Signal Processing and Control}
-    \field{year}{2020}
-  \endentry
-
-  \entry{Ramezani2014}{article}{}
-    \name{author}{3}{}{%
-      {{hash=RM}{%
-         family={Ramezani},
-         familyi={R\bibinitperiod},
-         given={Maryam},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=KA}{%
-         family={Karimian},
-         familyi={K\bibinitperiod},
-         given={Alireza},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=MP}{%
-         family={Moallem},
-         familyi={M\bibinitperiod},
-         given={Payman},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \keyw{Classification,Macroscopy,malignant melanoma,melanoma diagnosis,skin
-  lesions}
-    \strng{namehash}{RMKAMP1}
-    \strng{fullhash}{RMKAMP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{abstract}{%
-    In order to distinguish between benign and malignant types of pigmented
-  skin lesions, computerized procedures have been developed for images taken by
-  different equipment that the most available one of them is conventional
-  digital cameras. In this research, a new procedure to detect malignant
-  melanoma from benign pigmented lesions using macroscopic images is presented.
-  The images are taken by conventional digital cameras with spatial resolution
-  higher than one megapixel and by considering no constraints and special
-  conditions during imaging. In the proposed procedure, new methods to weaken
-  the effect of nonuniform illumination, correction of the effect of thick
-  hairs and large glows on the lesion and also, a new threshold-based
-  segmentation algorithm are presented. 187 features representing asymmetry,
-  border irregularity, color variation, diameter and texture are extracted from
-  the lesion area and after reducing the number of features using principal
-  component analysis (PCA), lesions are determined as malignant or benign using
-  support vector machine classifier. According to the dermatologist diagnosis,
-  the proposed processing methods have the ability to detect lesions area with
-  high accuracy. The evaluation measures of classification have indicated that
-  13 features extracted by PCA method lead to better results than all of the
-  extracted features. These results led to an accuracy of 82.2{\%}, sensitivity
-  of 77{\%} and specificity of 86.93{\%}. The proposed method may help
-  dermatologists to detect the malignant lesions in the primary stages due to
-  the minimum constraints during imaging, the ease of usage by the public and
-  nonexperts, and high accuracy in detection of the lesion type.%
-    }
-    \verb{doi}
-    \verb 10.4103/2228-7477.144052
-    \endverb
-    \field{issn}{22287477}
-    \field{number}{4}
-    \field{pages}{281\bibrangedash 290}
-    \field{title}{{Automatic Detection of Malignant Melanoma using Macroscopic
-  Images}}
-    \field{volume}{4}
-    \field{journaltitle}{Journal of Medical Signals and Sensors}
-    \field{year}{2014}
-  \endentry
-
-  \entry{Ribeiro2016}{article}{}
-    \name{author}{3}{}{%
-      {{hash=RM}{%
-         family={Ribeiro},
-         familyi={R\bibinitperiod},
-         given={Marco},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Singh},
-         familyi={S\bibinitperiod},
-         given={Sameer},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=GC}{%
-         family={Guestrin},
-         familyi={G\bibinitperiod},
-         given={Carlos},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \keyw{Explainable}
-    \strng{namehash}{RMSSGC1}
-    \strng{fullhash}{RMSSGC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{abstract}{%
-    Despite widespread adoption, machine learning models remain mostly black
-  boxes. Understanding the reasons behind predictions is, however, quite
-  important in assessing trust, which is fundamental if one plans to take
-  action based on a prediction, or when choosing whether to deploy a new model.
-  Such understanding also provides insights into the model, which can be used
-  to transform an untrustworthy model or prediction into a trustworthy one. In
-  this work, we propose LIME, a novel explanation technique that explains the
-  predictions of any classifier in an interpretable and faithful manner, by
-  learning an interpretable model locally around the prediction. We also
-  propose a method to explain models by presenting representative individual
-  predictions and their explanations in a non-redundant way, framing the task
-  as a submodular optimization problem. We demonstrate the flexibility of these
-  methods by explaining different models for text (e.g. random forests) and
-  image classification (e.g. neural networks). We show the utility of
-  explanations via novel experiments, both simulated and with human subjects,
-  on various scenarios that require trust: deciding if one should trust a
-  prediction, choosing between models, improving an untrustworthy classifier,
-  and identifying why a classifier should not be trusted.%
-    }
-    \verb{doi}
-    \verb 10.18653/v1/n16-3020
-    \endverb
-    \field{pages}{97\bibrangedash 101}
-    \field{title}{{“Why Should I Trust You?”: Explaining the Predictions of
-  Any Classifier}}
-    \field{journaltitle}{ArXiv}
-    \field{year}{2016}
   \endentry
 
   \entry{Samek2019a}{article}{}
@@ -1729,13 +2314,13 @@
          giveni={W\bibinitperiod},
       }}%
       {{hash=MKR}{%
-         family={M{\"{u}}ller},
+         family={Müller},
          familyi={M\bibinitperiod},
          given={Klaus\bibnamedelima Robert},
          giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \keyw{Deep learning,Explainable,Explainable artificial
+    \keyw{Deep learning,Explainable artificial
   intelligence,Interpretability,Model transparency,Neural networks}
     \strng{namehash}{SWMKR1}
     \strng{fullhash}{SWMKR1}
@@ -1747,7 +2332,7 @@
     In recent years, machine learning (ML) has become a key enabling technology
   for the sciences and industry. Especially through improvements in
   methodology, the availability of large databases and increased computational
-  power, today's ML algorithms are able to achieve excellent performance (at
+  power, today’s ML algorithms are able to achieve excellent performance (at
   times even exceeding the human level) on an increasing number of complex
   tasks. Deep learning models are at the forefront of this development.
   However, due to their nested non-linear structure, these powerful models have
@@ -1763,17 +2348,13 @@
     \verb{doi}
     \verb 10.1007/978-3-030-28954-6_1
     \endverb
-    \verb{eprint}
-    \verb 1909.12072
-    \endverb
     \field{issn}{16113349}
     \field{pages}{5\bibrangedash 22}
-    \field{title}{{Towards Explainable Artificial Intelligence}}
+    \field{title}{Towards Explainable Artificial Intelligence}
     \field{volume}{11700 LNCS}
     \field{journaltitle}{Lecture Notes in Computer Science (including subseries
   Lecture Notes in Artificial Intelligence and Lecture Notes in
   Bioinformatics)}
-    \field{eprinttype}{arXiv}
     \field{year}{2019}
   \endentry
 
@@ -1816,7 +2397,6 @@
          giveni={D\bibinitperiod},
       }}%
     }
-    \keyw{Explainable}
     \strng{namehash}{SRR+1}
     \strng{fullhash}{SRRCMDAVRPDBD1}
     \field{labelnamesource}{author}
@@ -1851,19 +2431,15 @@
   at https://github.com/ramprs/grad-cam. A demo and a video of the demo can be
   found at http://gradcam.cloudcv.org and youtu.be/COjUB9Izk6E.%
     }
-    \verb{eprint}
-    \verb 1610.02391
-    \endverb
     \field{issn}{00418781}
     \field{pages}{331\bibrangedash 336}
-    \field{title}{{Grad-cam: Why did you say that? visual explanations from
-  deep networks via gradient-based localization}}
+    \field{title}{Grad-cam: Why did you say that? visual explanations from deep
+  networks via gradient-based localization}
     \verb{url}
     \verb http://arxiv.org/abs/1610.02391
     \endverb
     \field{volume}{17}
     \field{journaltitle}{Revista do Hospital das Cl??nicas}
-    \field{eprinttype}{arXiv}
     \field{year}{2016}
   \endentry
 
@@ -1919,20 +2495,156 @@
   and malignant lesions. An ROC (receiver operating characteristic) plot
   enclosed an area of 0.94. Conclusions: The classification results showed that
   the individual features have a limited discrimination capability and the
-  combined features were promising to distinguish MM from benign lesion.
-  {\textcopyright} Blackwell Munksgaard 2007.%
+  combined features were promising to distinguish MM from benign lesion. ©
+  Blackwell Munksgaard 2007.%
     }
     \verb{doi}
     \verb 10.1111/j.1600-0846.2007.00181.x
     \endverb
     \field{issn}{0909752X}
-    \field{number}{1}
+    \field{issue}{1}
     \field{pages}{25\bibrangedash 33}
-    \field{title}{{Combination of features from skin pattern and ABCD analysis
-  for lesion classification}}
+    \field{title}{Combination of features from skin pattern and ABCD analysis
+  for lesion classification}
     \field{volume}{13}
     \field{journaltitle}{Skin Research and Technology}
     \field{year}{2007}
+  \endentry
+
+  \entry{Sondermann2019}{article}{}
+    \name{author}{14}{}{%
+      {{hash=SW}{%
+         family={Sondermann},
+         familyi={S\bibinitperiod},
+         given={Wiebke},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=UJS}{%
+         family={Utikal},
+         familyi={U\bibinitperiod},
+         given={Jochen\bibnamedelima Sven},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=EAH}{%
+         family={Enk},
+         familyi={E\bibinitperiod},
+         given={Alexander\bibnamedelima H.},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Schadendorf},
+         familyi={S\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klode},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hauschild},
+         familyi={H\bibinitperiod},
+         given={Axel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weichenthal},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FLE}{%
+         family={French},
+         familyi={F\bibinitperiod},
+         given={Lars\bibnamedelima E.},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Berking},
+         familyi={B\bibinitperiod},
+         given={Carola},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schilling},
+         familyi={S\bibinitperiod},
+         given={Bastian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Haferkamp},
+         familyi={H\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fröhling},
+         familyi={F\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=vKC}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Kalle},
+         familyi={K\bibinitperiod},
+         given={Christof},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BTJ}{%
+         family={Brinker},
+         familyi={B\bibinitperiod},
+         given={Titus\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{Artificial intelligence,Deep learning,Melanoma,Prediction,Skin
+  cancer}
+    \strng{namehash}{SW+1}
+    \strng{fullhash}{SWUJSEAHSDKJHAWMFLEBCSBHSFSKCvBTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Recent research revealed the superiority of artificial intelligence over
+  dermatologists to diagnose melanoma from images. However, 30–50% of all
+  melanomas and more than half of those in young patients evolve from initially
+  benign lesions. Despite its high relevance for melanoma screening, neither
+  clinicians nor computers are yet able to reliably predict a nevus’
+  oncologic transformation. The cause of this lies in the static nature of
+  lesion presentation in the current standard of care, both for clinicians and
+  algorithms. The status quo makes it difficult to train algorithms (and
+  clinicians) to precisely assess the likelihood of a benign skin lesion to
+  transform into melanoma. In addition, it inhibits the precision of current
+  algorithms since ‘evolution’ image features may not be part of their
+  decision. The current literature reveals certain types of melanocytic nevi
+  (i.e. ‘spitzoid’ or ‘dysplastic’ nevi) and criteria (i.e. visible
+  vasculature) that, in general, appear to have a higher chance to transform
+  into melanoma. However, owing to the cumulative nature of oncogenic mutations
+  in melanoma, a more fine-grained early morphologic footprint is likely to be
+  detectable by an algorithm. In this perspective article, the concept of
+  melanoma prediction is further explored by the discussion of the evolution of
+  melanoma, the concept for training of such a nevi classifier and the
+  implications of early melanoma prediction for clinical practice. In
+  conclusion, the authors believe that artificial intelligence trained on
+  prospective image data could be transformative for skin cancer diagnostics by
+  (a) predicting melanoma before it occurs (i.e. pre-in situ) and (b) further
+  enhancing the accuracy of current melanoma classifiers. Necessary prospective
+  images for this research are obtained via free mole-monitoring mobile apps.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ejca.2019.07.009
+    \endverb
+    \field{issn}{18790852}
+    \field{pages}{30\bibrangedash 34}
+    \field{title}{Prediction of melanoma evolution in melanocytic nevi via
+  artificial intelligence: A call for prospective data}
+    \field{volume}{119}
+    \field{journaltitle}{European Journal of Cancer}
+    \field{year}{2019}
   \endentry
 
   \entry{Stricklin2011}{article}{}
@@ -1983,31 +2695,184 @@
   cancer found in humans. Objective The purpose of this study was to determine
   the statistical occurrence of MLCs in benign vs. malignant lesions. Methods A
   medical student with 10 months experience in examining approximately 1000
-  dermoscopy images and a dermoscopy-na{\"{i}}ve observer analysed contact
+  dermoscopy images and a dermoscopy-naïve observer analysed contact
   non-polarized dermoscopy images of 221 malignant melanomas and 175 seborrheic
   keratoses for presence of MLCs. Results The observers found two different
   types of MLCs present: large ones described as cloudy and smaller ones
   described as starry. Starry MLCs were found to be prevalent in both
   seborrheic keratoses and melanomas. Cloudy MLCs, however, were found to have
-  99.1{\%} specificity for seborrheic keratoses among this group of seborrheic
+  99.1% specificity for seborrheic keratoses among this group of seborrheic
   keratoses and melanomas. Conclusion Cloudy MLCs can be a useful tool for
-  differentiating between seborrheic keratoses and melanomas. {\textcopyright}
-  2010 The Authors. Journal of the European Academy of Dermatology and
-  Venereology {\textcopyright} 2010 European Academy of Dermatology and
-  Venereology.%
+  differentiating between seborrheic keratoses and melanomas. © 2010 The
+  Authors. Journal of the European Academy of Dermatology and Venereology ©
+  2010 European Academy of Dermatology and Venereology.%
     }
     \verb{doi}
     \verb 10.1111/j.1468-3083.2010.03920.x
     \endverb
     \field{issn}{09269959}
-    \field{number}{10}
+    \field{issue}{10}
     \field{pages}{1222\bibrangedash 1224}
-    \field{title}{{Cloudy and starry milia-like cysts: How well do they
-  distinguish seborrheic keratoses from malignant melanomas?}}
+    \field{title}{Cloudy and starry milia-like cysts: How well do they
+  distinguish seborrheic keratoses from malignant melanomas?}
     \field{volume}{25}
     \field{journaltitle}{Journal of the European Academy of Dermatology and
   Venereology}
     \field{year}{2011}
+  \endentry
+
+  \entry{Tae2019}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=TKH}{%
+         family={Tae},
+         familyi={T\bibinitperiod},
+         given={Ki\bibnamedelima Hyun},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RY}{%
+         family={Roh},
+         familyi={R\bibinitperiod},
+         given={Yuji},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=OYH}{%
+         family={Oh},
+         familyi={O\bibinitperiod},
+         given={Young\bibnamedelima Hun},
+         giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Hyunsu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WSE}{%
+         family={Whang},
+         familyi={W\bibinitperiod},
+         given={Steven\bibnamedelima Euijong},
+         giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TKH+1}
+    \strng{fullhash}{TKHRYOYHKHWSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    The wide use of machine learning is fundamentally changing the software
+  development paradigm (a.k.a. Software 2.0) where data becomes a first-class
+  citizen, on par with code. As machine learning is used in sensitive
+  applications, it becomes imperative that the trained model is accurate, fair,
+  and robust to attacks. While many techniques have been proposed to improve
+  the model training process (in-processing approach) or the trained model
+  itself (post-processing), we argue that the most effective method is to clean
+  the root cause of error: the data the model is trained on (pre-processing).
+  Historically, there are at least three research communities that have been
+  separately studying this problem: data management, machine learning (model
+  fairness), and security. Although a significant amount of research has been
+  done by each community, ultimately the same datasets must be preprocessed,
+  and there is little understanding how the techniques relate to each other and
+  can possibly be integrated. We contend that it is time to extend the notion
+  of data cleaning for modern machine learning needs. We identify dependencies
+  among the data preprocessing techniques and propose MLClean, a unified data
+  cleaning framework that integrates the techniques and helps train accurate
+  and fair models. This work is part of a broader trend of Big data --
+  Artificial Intelligence (AI) integration.%
+    }
+    \verb{doi}
+    \verb 10.1145/3329486.3329493
+    \endverb
+    \field{title}{Data Cleaning for Accurate, Fair, and Robust Models}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Takiddin2021}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=TA}{%
+         family={Takiddin},
+         familyi={T\bibinitperiod},
+         given={Abdulrahman},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Yin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AAA}{%
+         family={Abd-Alrazaq},
+         familyi={A\bibinithyphendelim A\bibinitperiod},
+         given={Alaa},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Househ},
+         familyi={H\bibinitperiod},
+         given={Mowafa},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TA+1}
+    \strng{fullhash}{TASJYYAAAHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Background: Skin cancer is the most common cancer type affecting humans.
+  Traditional skin cancer diagnosis methods are costly, require a professional
+  physician, and take time. Hence, to aid in diagnosing skin cancer, artificial
+  intelligence (AI) tools are being used, including shallow and deep machine
+  learning-based methodologies that are trained to detect and classify skin
+  cancer using computer algorithms and deep neural networks. Objective: The aim
+  of this study was to identify and group the different types of AI-based
+  technologies used to detect and classify skin cancer. The study also examined
+  the reliability of the selected papers by studying the correlation between
+  the data set size and the number of diagnostic classes with the performance
+  metrics used to evaluate the models. Methods: We conducted a systematic
+  search for papers using Institute of Electrical and Electronics Engineers
+  (IEEE) Xplore, Association for Computing Machinery Digital Library (ACM DL),
+  and Ovid MEDLINE databases following the Preferred Reporting Items for
+  Systematic Reviews and Meta-Analyses Extension for Scoping Reviews
+  (PRISMA-ScR) guidelines. The studies included in this scoping review had to
+  fulfill several selection criteria: being specifically about skin cancer,
+  detecting or classifying skin cancer, and using AI technologies. Study
+  selection and data extraction were independently conducted by two reviewers.
+  Extracted data were narratively synthesized, where studies were grouped based
+  on the diagnostic AI techniques and their evaluation metrics. Results: We
+  retrieved 906 papers from the 3 databases, of which 53 were eligible for this
+  review. Shallow AI-based techniques were used in 14 studies, and deep
+  AI-based techniques were used in 39 studies. The studies used up to 11
+  evaluation metrics to assess the proposed models, where 39 studies used
+  accuracy as the primary evaluation metric. Overall, studies that used smaller
+  data sets reported higher accuracy. Conclusions: This paper examined multiple
+  AI-based skin cancer detection models. However, a direct comparison between
+  methods was hindered by the varied use of different evaluation metrics and
+  image types. Performance scores were affected by factors such as data set
+  size, number of diagnostic classes, and techniques. Hence, the reliability of
+  shallow and deep models with higher accuracy scores was questionable since
+  they were trained and tested on relatively small data sets of a few
+  diagnostic classes.%
+    }
+    \verb{doi}
+    \verb 10.2196/22934
+    \endverb
+    \field{issn}{14388871}
+    \field{issue}{11}
+    \field{title}{Artificial intelligence for skin cancer detection: Scoping
+  review}
+    \field{volume}{23}
+    \field{journaltitle}{Journal of Medical Internet Research}
+    \field{year}{2021}
   \endentry
 
   \entry{Takruri2017}{article}{}
@@ -2051,8 +2916,8 @@
     \endverb
     \field{isbn}{9781538608722}
     \field{pages}{1\bibrangedash 4}
-    \field{title}{{Bayesian decision fusion for enhancing melanoma recognition
-  accuracy}}
+    \field{title}{Bayesian decision fusion for enhancing melanoma recognition
+  accuracy}
     \field{volume}{2018-Janua}
     \field{journaltitle}{2017 International Conference on Electrical and
   Computing Technologies and Applications, ICECTA 2017}
@@ -2076,7 +2941,7 @@
       {{hash=HJF}{%
          family={Horn},
          familyi={H\bibinitperiod},
-         given={Jean\bibnamedelima Fran{\c{c}}ois},
+         given={Jean\bibnamedelima François},
          giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
       {{hash=SC}{%
@@ -2099,7 +2964,7 @@
       }}%
     }
     \keyw{Dermatologists' expertise,Dermoscopy,KL-PLS,Melanoma diagnosis}
-    \strng{namehash}{TA+1}
+    \strng{namehash}{TA+2}
     \strng{fullhash}{TANAHJFSCGAFB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2113,34 +2978,85 @@
   work is to investigate to what extent the automatic melanoma diagnosis may be
   achieved from the analysis of uncontrolled images of pigmented skin lesions.
   Materials and methods: Images were acquired during regular practice by two
-  dermatologists using Reflex{\textregistered} 24 × 36 cameras combined with
-  Heine Delta 10 dermascopes. The images were then digitalized using a scanner.
-  In addition, five senior dermatologists were asked to give the diagnosis and
-  therapeutic decision (exeresis) for 227 images of naevi, together with an
-  opinion about the existence of malignancy-predictive features. Meanwhile, a
-  learning by sample classifier for the diagnosis of melanoma was constructed,
-  which combines image-processing with machine-learning techniques. After an
+  dermatologists using Reflex® 24 × 36 cameras combined with Heine Delta 10
+  dermascopes. The images were then digitalized using a scanner. In addition,
+  five senior dermatologists were asked to give the diagnosis and therapeutic
+  decision (exeresis) for 227 images of naevi, together with an opinion about
+  the existence of malignancy-predictive features. Meanwhile, a learning by
+  sample classifier for the diagnosis of melanoma was constructed, which
+  combines image-processing with machine-learning techniques. After an
   automatic segmentation, geometric and colorimetric parameters were extracted
   from images and selected according to their efficiency in predicting
   malignancy features. A diagnosis was subsequently provided based on selected
   parameters. An extensive comparison of dermatologists' and computer results
   was subsequently performed. Results and conclusion: The KL-PLS-based
   classifier shows comparable performances with respect to dermatologists
-  (sensitivity: 95{\%} and specificity: 60{\%}). The algorithm provides an
-  original insight into the clinical knowledge of pigmented skin lesions.
-  {\textcopyright} 2010 John Wiley {\&} Sons A/S.%
+  (sensitivity: 95% and specificity: 60%). The algorithm provides an original
+  insight into the clinical knowledge of pigmented skin lesions. © 2010 John
+  Wiley & Sons A/S.%
     }
     \verb{doi}
     \verb 10.1111/j.1600-0846.2009.00385.x
     \endverb
     \field{issn}{0909752X}
-    \field{number}{1}
+    \field{issue}{1}
     \field{pages}{85\bibrangedash 97}
-    \field{title}{{Detection of melanoma from dermoscopic images of naevi
-  acquired under uncontrolled conditions}}
+    \field{title}{Detection of melanoma from dermoscopic images of naevi
+  acquired under uncontrolled conditions}
     \field{volume}{16}
     \field{journaltitle}{Skin Research and Technology}
     \field{year}{2010}
+  \endentry
+
+  \entry{Thiers2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TB}{%
+         family={Thiers},
+         familyi={T\bibinitperiod},
+         given={B.H.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TB1}
+    \strng{fullhash}{TB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Background: Dermoscopy is a noninvasive technique that enables the
+  clinician to perform direct microscopic examination of diagnostic features,
+  not seen by the naked eye, in pigmented skin lesions. Diagnostic accuracy of
+  dermoscopy has previously been assessed in meta-analyses including studies
+  performed in experimental and clinical settings. Objectives: To assess the
+  diagnostic accuracy of dermoscopy for the diagnosis of melanoma compared with
+  naked eye examination by performing a meta-analysis exclusively on studies
+  performed in a clinical setting. Methods: We searched for publications from
+  1987 to January 2008 and found nine eligible studies. The selected studies
+  compare diagnostic accuracy of dermoscopy with naked eye examination using a
+  valid reference test on consecutive patients with a defined clinical
+  presentation, performed in a clinical setting. Hierarchical summary receiver
+  operator curve analysis was used to estimate the relative diagnostic accuracy
+  for clinical examination with, and without, the use of dermoscopy. Results:
+  We found the relative diagnostic odds ratio for melanoma, for dermoscopy
+  compared with naked eye examination, to be 15.6 [95% confidence interval (CI)
+  2.9-83.7, P = 0.016]; removal of two outlier studies changed this to 9.0 (95%
+  CI 1.5-54.6, P = 0.03). Conclusions: Dermoscopy is more accurate than naked
+  eye examination for the diagnosis of cutaneous melanoma in suspicious skin
+  lesions when performed in the clinical setting. (copyright) 2008 Australian
+  Cancer Network.%
+    }
+    \verb{doi}
+    \verb 10.1016/s0093-3619(08)79154-8
+    \endverb
+    \field{issn}{00933619}
+    \field{pages}{378\bibrangedash 379}
+    \field{title}{Dermoscopy compared with naked eye examination for the
+  diagnosis of primary melanoma: a meta-analysis of studies performed in a
+  clinical setting}
+    \field{volume}{2009}
+    \field{journaltitle}{Yearbook of Dermatology and Dermatologic Surgery}
+    \field{year}{2009}
   \endentry
 
   \entry{Tjoa2019}{article}{}
@@ -2158,7 +3074,6 @@
          giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \keyw{Explainable}
     \strng{namehash}{TEFCG1}
     \strng{fullhash}{TEFCG1}
     \field{labelnamesource}{author}
@@ -2186,17 +3101,13 @@
     \verb{doi}
     \verb 10.1109/tnnls.2020.3027314
     \endverb
-    \verb{eprint}
-    \verb 1907.07374
-    \endverb
     \field{issn}{23318422}
-    \field{title}{{A Survey on Explainable Artificial Intelligence (XAI):
-  Towards Medical XAI}}
+    \field{title}{A Survey on Explainable Artificial Intelligence (XAI):
+  Towards Medical XAI}
     \verb{url}
     \verb http://arxiv.org/abs/1907.07374
     \endverb
     \field{journaltitle}{arXiv}
-    \field{eprinttype}{arXiv}
     \field{year}{2019}
   \endentry
 
@@ -2209,19 +3120,18 @@
          giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \keyw{Statistics}
     \strng{namehash}{UCR1}
     \strng{fullhash}{UCR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{U}
     \field{sortinithash}{U}
-    \field{booktitle}{Cancer Researh UK}
-    \field{title}{{Melanoma skin cancer statistics | Cancer Research UK}}
+    \field{title}{Melanoma skin cancer statistics | Cancer Research UK}
     \verb{url}
     \verb https://www.cancerresearchuk.org/health-professional/cancer-statistic
-    \verb s/statistics-by-cancer-type/melanoma-skin-cancer{\#}heading-Three
+    \verb s/statistics-by-cancer-type/melanoma-skin-cancer#heading-Three
     \endverb
+    \field{journaltitle}{Cancer Researh UK}
     \field{year}{2019}
   \endentry
 
@@ -2267,32 +3177,99 @@
   melanocytic lesions of 115 patients were examined retrospectively using
   dermatoscopic images and compared with the histopathologic diagnosis. Four
   dermatoscopic algorithms were carried out for all lesions. The ABCD rule of
-  dermatoscopy showed sensitivity of 91.6{\%}, specificity of 60.4{\%}, and
-  diagnostic accuracy of 66.9{\%}. The seven-point checklist showed
-  sensitivity, specificity, and diagnostic accuracy of 87.5, 65.9, and
-  70.4{\%}, respectively; the three-point checklist 79.1, 62.6, 66{\%}; and the
-  CASH algorithm 91.6, 64.8, and 70.4{\%}, respectively. To our knowledge, this
-  is the first study that compares the sensitivity, specificity and diagnostic
-  accuracy of the ABCD rule of dermatoscopy, the three-point checklist, the
-  seven-point checklist, and the CASH algorithm for the diagnosis of
-  melanocytic lesions on the hairy skin. In our study, the ABCD rule of
-  dermatoscopy and the CASH algorithm showed the highest sensitivity for the
-  diagnosis of melanoma. {\textcopyright} 2014 Japanese Dermatological
-  Association.%
+  dermatoscopy showed sensitivity of 91.6%, specificity of 60.4%, and
+  diagnostic accuracy of 66.9%. The seven-point checklist showed sensitivity,
+  specificity, and diagnostic accuracy of 87.5, 65.9, and 70.4%, respectively;
+  the three-point checklist 79.1, 62.6, 66%; and the CASH algorithm 91.6, 64.8,
+  and 70.4%, respectively. To our knowledge, this is the first study that
+  compares the sensitivity, specificity and diagnostic accuracy of the ABCD
+  rule of dermatoscopy, the three-point checklist, the seven-point checklist,
+  and the CASH algorithm for the diagnosis of melanocytic lesions on the hairy
+  skin. In our study, the ABCD rule of dermatoscopy and the CASH algorithm
+  showed the highest sensitivity for the diagnosis of melanoma. © 2014
+  Japanese Dermatological Association.%
     }
     \verb{doi}
     \verb 10.1111/1346-8138.12491
     \endverb
     \field{issn}{13468138}
-    \field{number}{7}
+    \field{issue}{7}
     \field{pages}{598\bibrangedash 603}
-    \field{title}{{Comparison of dermatoscopic diagnostic algorithms based on
+    \field{title}{Comparison of dermatoscopic diagnostic algorithms based on
   calculation: The ABCD rule of dermatoscopy, the seven-point checklist, the
   three-point checklist and the CASH algorithm in dermatoscopic evaluation of
-  melanocytic lesions}}
+  melanocytic lesions}
     \field{volume}{41}
     \field{journaltitle}{Journal of Dermatology}
     \field{year}{2014}
+  \endentry
+
+  \entry{Wolner2017}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=WZJ}{%
+         family={Wolner},
+         familyi={W\bibinitperiod},
+         given={Zachary\bibnamedelima J.},
+         giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=YO}{%
+         family={Yélamos},
+         familyi={Y\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Liopyris},
+         familyi={L\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Rogers},
+         familyi={R\bibinitperiod},
+         given={Tova},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Marchetti},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MAA}{%
+         family={Marghoob},
+         familyi={M\bibinitperiod},
+         given={Ashfaq\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WZJ+1}
+    \strng{fullhash}{WZJYOLKRTMMAMAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Dermoscopy increases the sensitivity for skin cancer detection, decreases
+  the number of benign lesions biopsied for each malignant diagnosis, and
+  enables the diagnosis of thinner melanomas compared with naked eye
+  examination. Multiple meta-analyses have identified that dermoscopy improves
+  the diagnostic accuracy for melanoma when compared with naked eye
+  examination. In addition, studies have established that dermoscopy can aid in
+  the detection of keratinocyte carcinomas. Dermoscopy triage algorithms have
+  been developed to help novices decide when a biopsy or a referral is most
+  appropriate. In this article, the authors illustrate the dermoscopic features
+  that assist in identifying melanoma and keratinocyte carcinomas.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.det.2017.06.003
+    \endverb
+    \field{issn}{15580520}
+    \field{issue}{4}
+    \field{title}{Enhancing Skin Cancer Diagnosis with Dermoscopy}
+    \field{volume}{35}
+    \field{journaltitle}{Dermatologic Clinics}
+    \field{year}{2017}
   \endentry
 
   \entry{Yuan2017a}{article}{}
@@ -2310,8 +3287,8 @@
          giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
-    \keyw{Dermoscopic images,Segmentation,deep learning,fully convolutional
-  neural networks,image segmentation,jaccard distance,melanoma}
+    \keyw{Dermoscopic images,deep learning,fully convolutional neural
+  networks,image segmentation,jaccard distance,melanoma}
     \strng{namehash}{YYLYC1}
     \strng{fullhash}{YYLYC1}
     \field{labelnamesource}{author}
@@ -2337,21 +3314,17 @@
     \verb{doi}
     \verb 10.1109/JBHI.2017.2787487
     \endverb
-    \verb{eprint}
-    \verb 1709.09780
-    \endverb
     \field{issn}{21682194}
-    \field{number}{2}
+    \field{issue}{2}
     \field{pages}{519\bibrangedash 526}
-    \field{title}{{Improving Dermoscopic Image Segmentation With Enhanced
-  Convolutional-Deconvolutional Networks}}
+    \field{title}{Improving Dermoscopic Image Segmentation With Enhanced
+  Convolutional-Deconvolutional Networks}
     \verb{url}
-    \verb http://arxiv.org/abs/1703.05165{\%}0Ahttp://dx.doi.org/10.1109/JBHI.2
-    \verb 017.2787487
+    \verb http://arxiv.org/abs/1703.05165%0Ahttp://dx.doi.org/10.1109/JBHI.2017
+    \verb .2787487
     \endverb
     \field{volume}{23}
     \field{journaltitle}{IEEE Journal of Biomedical and Health Informatics}
-    \field{eprinttype}{arXiv}
     \field{year}{2019}
   \endentry
 
@@ -2364,7 +3337,6 @@
          giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \keyw{ABCD}
     \strng{namehash}{ZIS1}
     \strng{fullhash}{ZIS1}
     \field{labelnamesource}{author}
@@ -2375,16 +3347,16 @@
     Great effort has been put into the development of diagnosis methods for the
   most dangerous type of skin diseases—melanoma. This paper aims to develop a
   prototype capable of segment and classify skin lesions in dermoscopy images
-  based on ABCD rule. The {\ldots}%
+  based on ABCD rule. The …%
     }
     \verb{doi}
     \verb 10.14257/ijsip.2016.9.9.18
     \endverb
     \field{issn}{20054254}
-    \field{number}{9}
+    \field{issue}{9}
     \field{pages}{189\bibrangedash 204}
-    \field{title}{{Diagnosis of Skin Lesions Based on Dermoscopic Images Using
-  Image Processing Techniques}}
+    \field{title}{Diagnosis of Skin Lesions Based on Dermoscopic Images Using
+  Image Processing Techniques}
     \field{volume}{9}
     \field{journaltitle}{International Journal of Signal Processing, Image
   Processing and Pattern Recognition}
@@ -2406,7 +3378,6 @@
          giveni={X\bibinitperiod},
       }}%
     }
-    \keyw{Explainable,Survey}
     \strng{namehash}{ZYCX1}
     \strng{fullhash}{ZYCX1}
     \field{labelnamesource}{author}
@@ -2442,14 +3413,10 @@
   section to discuss the future directions to promote the explainable
   recommendation research.%
     }
-    \verb{eprint}
-    \verb 1804.11192
-    \endverb
-    \field{title}{{Explainable Recommendation: A Survey and New Perspectives}}
+    \field{title}{Explainable Recommendation: A Survey and New Perspectives}
     \verb{url}
     \verb http://arxiv.org/abs/1804.11192
     \endverb
-    \field{eprinttype}{arXiv}
     \field{year}{2018}
   \endentry
 \enddatalist

@@ -1,15 +1,3 @@
-%-------------------------------------------------%
-% This is a very basic but effective thesis template
-% created by David Clark. By all means feel free to 
-% use and distribute this template to all who may need
-% it but only done so freely. The creator forbids 
-% commercial use and distribution for personal/private
-% gain.
-%--------------------------------------------------%
-%------------------------------------------------%
-% Declare document class, using 'twoside' option %
-%------------------------------------------------%
-% In document class, we can specify 'print' to present the print version, otherwise the electronic version will compile.
 \documentclass[11pt, print]{report}
 \input{packages}
 \pagenumbering{gobble} % Turn page numbering off during front matter
@@ -39,6 +27,7 @@
 \cleardoublepage
 \tableofcontents
 \cleardoublepage
+\listoffigures
 \listoftables
 
 \pagenumbering{arabic} % Turn page numbering on
@@ -52,6 +41,12 @@
 \input{Chapters/segmentation}
 
 \input{Chapters/improvedAsymmetry}
+
+\input{Chapters/dermoscopicFeatures}
+
+\input{Chapters/proposedTechnique}
+
+\input{Chapters/conclusion}
 
 %-------------%
 % Back Matter %
@@ -67,6 +62,9 @@
 %\bibliography{references} % Input name of bibfile here
 %\bibliographystyle{unsrt}
 \printbibliography()
+
 \input{Back/tables}
+
+\input{Back/appendix}
 
 \end{document}

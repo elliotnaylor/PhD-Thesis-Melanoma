@@ -9,11 +9,11 @@
 \contentsline {section}{\numberline {2.3}Previous Works on Automating ABCD Rules}{9}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Segmentation}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Handcrafted Features}{10}{subsection.2.3.2}%
-\contentsline {subsubsection}{Asymmetry}{10}{section*.6}%
-\contentsline {subsubsection}{Border}{11}{section*.8}%
-\contentsline {subsubsection}{Colour}{12}{section*.10}%
-\contentsline {subsubsection}{Dermoscopic structures}{13}{section*.11}%
-\contentsline {subsubsection}{Combining ABCD Rules}{14}{section*.12}%
+\contentsline {subsubsection}{Asymmetry}{10}{section*.7}%
+\contentsline {subsubsection}{Border}{11}{section*.9}%
+\contentsline {subsubsection}{Colour}{12}{section*.11}%
+\contentsline {subsubsection}{Dermoscopic structures}{13}{section*.12}%
+\contentsline {subsubsection}{Combining ABCD Rules}{14}{section*.13}%
 \contentsline {section}{\numberline {2.4}Conclusion}{14}{section.2.4}%
 \contentsline {chapter}{\numberline {3}NHS Data Suitability for Melanoma Detection Using Machine Learning Algorithms}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}%
@@ -21,17 +21,28 @@
 \contentsline {section}{\numberline {3.3}Other Public Datasets}{16}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Data Biases}{16}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Image Criteria}{17}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Data Preperation}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Data Preparation}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Skin Lesion Extraction}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}SegNet}{19}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Border extraction}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Otsu Threshold}{19}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}LBPC segmentation}{19}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Experimental results}{19}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Specular removal}{19}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Improved Melanoma Detection using Asymmetry}{20}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{20}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Related Works}{20}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Asymmetry Analysis Approach}{21}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Tables}{27}{chapter.6}%
+\contentsline {section}{\numberline {4.2}Related Works}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Skin Lesion Augmentation}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Hair Removal (Dull-Razor)}{19}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Specular Removal}{20}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Skin Lesion Segmentation}{20}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}SegNet a Semantic Pixel Wise Segmentation}{20}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Border extraction}{21}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}U-Otsu Threshold}{21}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}LBPC segmentation}{22}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Semantic Pixel-Wise Segmentation}{23}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Experimental results}{24}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Improved Melanoma Detection using Asymmetry}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Related Works}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Asymmetry Analysis Approach}{26}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Results}{27}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Dermoscopic features extraction}{30}{chapter.6}%
+\contentsline {section}{\numberline {6.1}}{30}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Combined ABCD Rules and Dermoscopic Structures using Bayesian Network}{31}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{32}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Future Work}{34}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Tables}{40}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Appendix}{41}{chapter.11}%
