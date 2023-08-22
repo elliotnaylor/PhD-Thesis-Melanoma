@@ -4,12 +4,25 @@
 Automatic segmentation of skin lesions is 
 
 \section{Skin Lesion Extraction}
+Segmentation plays a crucial role in melanoma detection becuase it separates melanoma from healthy tissue. Accurate segmenation is essential for various aspects of melanoma diagnosis and treatment, and classification\cite{Albahli et al., 2020}.
+
+One of the main challenges in melanoma detection is the visual similarity nomral and infected regions. Others are the presense of artifacts such as bubbles, hair and clinical marks\cite{Albahli et al., 2020}. These factors lead to low accuracy rates in traditional approaches. However, segmenation techniques can help overoe these challenges by removing these areas and isolating the melanoma from the rest of the image.
+
+A range of traditional segmentation techniques including SegNet, Unet methods have been shown to outperform other approaches in capturing the most significant melanoma characteristics. However, these techniques do not provide an effective border for the analysis of ABCD rules. Other techniques have been explored including active countouring-based segmenation\cite{Riaz et al., 2019}, LBPC and others for border adjustment include u-otsu and edge-imfill.
+
 
 \subsection{SegNet}
+SegNet is a deep learning architecture that is used for semantic image segmentation for melanoma detection. It was originally developed by\cite{  Chen et al. (2018)} and has shown promising results in various segmenation tasks.
+
+The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end to end learning and inference at the pixel level. 
+
+The performance of SegBet has been evaluated using various datasets including the PACAL VOC-2012 semantic image segmenation task, where it achieved state of the art results of the mean intersection over union (mIOU) of 79.7\% on the test dataset.
+
 
 \section{Border extraction}
+Box-counting method
 
-\subsection{Otsu Threshold}
+\subsection{U-Otsu Threshold}
 
 \subsection{LBPC segmentation}
 
