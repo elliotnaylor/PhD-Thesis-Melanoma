@@ -1,21 +1,29 @@
-\chapter{Data Preparation}
+\chapter{Data Augmnetation and Segmentation}
 
 \section{Introduction}
-This section discusses segmentation techniques producing statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection \cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off.
+This section holds a discussion on segmentation and  techniques producing statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection\cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off.
 
 \section{Related Works}
+An approach by Albanhli\cite{Albahli2020} uses deep learning-based segmentation algotihm using YOLOv4-arkNet and active countour for melanoa and lesion detection and segmenation. They demonstarted a high accuracy and practicality for clinical decision support systems.
 
+A technique by Seeja R D\cite{seeja2019} uses a convolutional neural network (CNN) based on a U-net algorithm for segmentation based on colour, texture, and shapes to improve image classification.
 
+A technique by Hyunju Lee\cite{Lee2020} uses an edge fill method called u-otsu using the U channel from YUV for segmentation. This is followed by an analysis of ABCD rules, demonstrating the importance of an accurate border cut-off.
 
 \section{Skin Lesion Augmentation}
 Skin lesion augmentation is especially vital because of the use of macroscopic images instead of dermoscopic images. This means there are various artefacts including hair, specular reflections, rulers, varying sizes, and shapes of the skin lesion. All of these can obscure the skin lesion and affect the accuracy of segmentation\cite{Unver2019} and in effect feature detection.
 
-By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved
+By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved\cite{kasmi2023}. 
 
-\subsection{Hair Removal (Dull-Razor)}
-Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997}. and is frequently implemented with 
+\subsection{Hair Removal}
+Hair artificats in images can interfere with the recongition of handcrafted features and affect the performance of deep learning algorihms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation technqiues can remove hair artifacts from dermoscopic images\cite{kasmi2023}.
+
+Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997} and is frequently implemented with 
+
+Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from  images. This uses a multiple filter approach including grayscal plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform exisiting methods.
 
 \subsection{Specular Removal}
+Specular reflection removal techniques have been shown to be effective in improving the accuracy of melanoma detetion\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular compnonent, removing the specular reflection\cite{Shen2009}.
 
 \section{Skin Lesion Segmentation}
 Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy tissue. Accurate segmentation is essential for various aspects of melanoma diagnosis and treatment, and classification\cite{Albahli2020}.
