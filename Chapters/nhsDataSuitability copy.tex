@@ -1,29 +1,32 @@
 \chapter{NHS Data Suitability for Melanoma Detection Using Machine Learning Algorithms}
 
 \section{Introduction}
-The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
+The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
 \section{Background}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
 
-There are requirements for the project including the use of macroscopic images instead of dermoscopic images. Macroscopic is described as viewing with a naked eye or by taking a standard picture with no special lenses. Dermoscopic is when you use a specialized tool called a dermoscope.
+There are certain requirments for the project including the use of macroscopic images instead of dermoscopic images.
 
-Dermoscopy improves the diagnostic accuracy of dermatologists for melanoma when compared with macroscopic examination\cite{Wolner2017} and is widely considered superior\cite{Thiers2009}. Dermoscopic images provide a detailed visualization of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Thiers2009}. Some of these structures are pigment network, asymmetry, irregular borders, and other features that support in the differentiation between benign and malignant lesions\cite{Thiers2009}. 
+Dermoscopic images are the preferred method over macroscopic for the diagnosis of skin cancers for several reasons. Firstly, dermoscopic images provide a detailed visualisation of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Vestergaard et al., 2008, Oliveira, R}. These structures include pigment network, asymmetry, irregular borders, and other features that aid in the differentiation between benign and maignant lesions\cite{Vestergaard et al., 2008}. 
 
-Another example, shows the diagnosis for BCC was 91\% when using dermoscopy, compared to 57\% when using close-up images\cite{Dascalu2022}. Similarly, the sensitivity for SCC was 77\% with dermoscopy, compared to 70\% with close-up images\cite{Dascalu2022}. These findings highlight the superior diagnostic performance of dermoscopy compared to macroscopic.
+Dermoscopy improves the diagnostic accuracy for melanoma when compared with macroscopic examination\cite{Wolner et al., 2017} and is widely considered a superior\cite{Vestergaard et al., 2008}. Additionally dermoscopy allows for the detection fo specific dermosocpic patterns that are visible within melanoma. For example, considering acral melanoma, dermspcopy has been found to be significant in detecting the parallel ridge and irregular diffuse pigmentation patterns\cite{Saida et al., 2004}. 
 
-Dermoscopic examination is superior to macroscopic examination, however, the projects requirements specify using macroscopic. The logic behind this is that general practitioners are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes.  This appears to be consistent with an authors findings showing that 92\% of dermatologists correctly recognize at least four of size types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas\cite{Tae2019}. Therefore, 'the dataset' is created with macroscopic images for examination.
+Furthermore, when considering the automatic detection of melnaoma naked-eye or macroscopic examinations are considered more accuracte because of the removal of outside sources including lighting. However, a recent study made of of convolutional neural networks (CNNs) with transfer learning on dermoscopic and macroscopic images for the detection of melnaoma\cite{Millenia et al., 2022}. Both were detected effectively.
 
-Considerations to clean the data removing hair and specular reflection to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support in improving the accuracy when classifying.
+While dermoscopy is considered the most superior to macroscopic examination for melanoama due to its ability to increase sensitivity. However, the projects requirements require using macropsic images. The logic behind this is to use standard mobile devices for general practitioners because they are unlikely to recognise dermoscopic features regardless. Therefore macroscopic images are used throughout this project.
 
-Ideally the metadata included would include Filename, Tags, Gender, DOB, Department, Consent, Diagnosis, Date Photographed. However, there has been difficulty accessing this data, and therefore only the diagnosis of the skin lesions are available.
+This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomilous data from the images. All of which will support in improving the accuracy when classifying.
 
-The goal of this chapter is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
+%Labels include Filename, Tags, Gender, DOB, Department, Consent, Diagnosis, Date Photographed.
+
+Labels of the NHS data incude Filename, Tags, Gender, DOB, Department, Consent, Diagnosis, Date photographed. ALl of this data is embedded in the image file.
 
 \section{Other Public Datasets}
-Overall there are a range of public datasets including MEDLINE, PH2, ISIC, and others making a total of 21 open access datasets containing 106,950 skin lesion images\cite{Wen2022}. Out of these datasets only the PH2 dataset has publicly accessible data on the ABCD rules with a total of 200 images.
+%Brief comparison of other datasets and their data.
 
 
+%The goal of this paper is to measure the usefulness of NHS data, highlighting potential issues or biases in the data.
 \section{Data Biases}
 The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
 
@@ -33,7 +36,7 @@ The NHS datasets contain a wealth of information that can be utilized. However, 
     \item Dermatologists have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. There is no way of knowing how accurate this data is.
     \item Dermatologists could diagnose during an in-person examination where patients can be asked questions in real-time and further tests can be made involving touch. Otherwise, dermatologists diagnose using previously saved images, which might be less accurate because it is lacking the insight that an in-person examination would provide.
     \item Some skin lesions within the dataset are lacking metadata including their diagnosis. Such image samples should be avoided.
-    \item Diagnoses of skin lesions are written in plain text including questions marks where there is some uncertainty and the possibility of multiple diagnoses. Only diagnoses that are certain of their findings are used.
+    \item Diagnoses of skin lesions are written in plain text including questionsmarks where there is some uncertainty and the possiblity of multiple diagnoses. Only diagnoses that are certain of their findings are used.
     \item Photographs of the skin lesions may be captured on different body parts such as hands, legs, face, and others. Most pre-processing methods are designed to differentiate between skin and skin lesions, so it is important to avoid using these images. Otherwise, new pre-processing methods will have to be made and tested.
     \item Seborrhoeic keratosis (SK) have similar features to that seen in malignant skin lesions. Therefore, there might be skin lesions diagnosed as melanoma that are SK. Furthermore, because of its similarity there are potentially many SK images. It will be vital to separate these.
 \end{enumerate}
@@ -42,17 +45,18 @@ Varied accuracy of
 
 \section{Image Criteria}
 
-The dataset includes skin lesions of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squamous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). 
+The dataset includes skin lesions of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squemous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). 
 
 Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of the 'dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnostic data and some have a variety of diagnoses, the scenario in which the diagnoses were captured is not mentioned, 
 SK is potentially misdiagnosed as malignant, and the dermatologist that originally diagnosed are not mentioned. There are many ways to combat these problem. For example during the creation of the PH2 dataset\cite{mendonca2013}, several dermatologists were asked to diagnose a skin lesion with appropriate metadata relating to the ABCD rules. If most dermatologists agree it is included in the study, otherwise it is removed. The goal of this is to minimize the incorrect data within the dataset. Alternatively, you might argue that removing less adequate records fails to prove whether the developed algorithms work in a real medical environment. Therefore, other methods were explored to validate the data.
 
 %Very Unlikely we'll be getting histopathology data
-In this project, we do not have the resources to re-diagnose skin lesions, so instead the focus is on gathering diagnostic results from the histopathology department. These results are more accurate than dermatologists\cite{Morton1998} and counter the mentioned biases. Comparing this data with the diagnoses from the dermatology department provides insight into dermatology accuracy. Furthermore, histopathology serves as a ground-truth for training the algorithms and testing their capabilities.
+In this project, we do not have the resources to re-diagnose skin lesions, so instead the focus is on gathering diagnostic results from the histopathology department. These results are more accurate than dermatologists\cite{} and counter the mentioned biases. Comparing this data with the diagnoses from the dermotology department provides insight into dermotology accuracy. Furthermore, histopathology serves as a ground-truth for training the algorithms and testing their capabilities.
 
-As mentioned in the data biases section the skin lesion images are taken under various different conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project. 
+As mentioned in the data biases section the skin lesion images are taken under various different conditions including angles, lighting, and distance from the skin lesion. While the vairety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project. 
 
 These variations in image quality would decrease the accuracy of results. For this study the focus is on skin lesions captured using dermoscopes, avoiding the cases where skin lesions are captured under less-adequte conditions.
+
 
 Use ANOVA to check whether features of Atypical and typical moles are similar.
 
@@ -79,3 +83,5 @@ Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to
 
 \subsection{Specular Removal}
 Specular reflection removal techniques have been shown to be effective in improving the accuracy of melanoma detetion\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular compnonent, removing the specular reflection\cite{Shen2009}.
+
+
