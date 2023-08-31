@@ -3,6 +3,7 @@
 \section{Introduction}
 The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this chapter is to describe the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
+
 \section{Background}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
 
@@ -71,11 +72,11 @@ Skin lesion augmentation is especially vital because of the use of macroscopic i
 By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved\cite{kasmi2023}. 
 
 \subsection{Hair Removal}
-Hair artificats in images can interfere with the recongition of handcrafted features and affect the performance of deep learning algorihms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation technqiues can remove hair artifacts from dermoscopic images\cite{kasmi2023}.
+Hair artificats in images can interfere with the recognition of handcrafted features and affect the performance of deep learning algorihms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation technqiues can remove hair artifacts from dermoscopic images\cite{kasmi2023}.
 
 Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997} and is frequently implemented with 
 
-Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from  images. This uses a multiple filter approach including grayscal plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform exisiting methods.
+Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from  images. This uses a multiple filter approach including grayscale plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform exisiting methods.
 
 \subsection{Specular Removal}
 Specular reflection removal techniques have been shown to be effective in improving the accuracy of melanoma detetion\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular compnonent, removing the specular reflection\cite{Shen2009}.

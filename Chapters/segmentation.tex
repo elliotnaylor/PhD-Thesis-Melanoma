@@ -4,13 +4,13 @@
 This section holds a discussion on segmentation relating to the detection of melanoma and  techniques that produce statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection\cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off.
 
 \section{Related Works}
-An approach by Albanhli\cite{Albahli2020} uses deep learning-based segmentation algorithm using YOLOv4-arkNet and active countour for melanoma and skin lesion detection and segmenation. This technique provides classification of the skin lesion and a segmentation, demonstrating a high level of practicality for clinical decision support systems. 
+An approach by Albanhli\cite{Albahli2020} uses deep learning-based segmentation algorithm using YOLOv4-arkNet and active contouring for melanoma and skin lesion detection and segmentation. This technique provides classification of the skin lesion and a segmentation, demonstrating a high level of practicality for clinical decision support systems. 
 
 Seeja R D\cite{seeja2019} proposed a technique that utilizes a convolutional neural network (CNN) based on a U-net model architecture for the segmentation based on colour, texture and shapes. The U-net model architecture is a popular choice for image segmentation tasks due to its ability to capture both local and global features effectively.
 
-Hyunju Lee\cite{Lee2020} proposed a technique that utilizes an edge fill method called u-otsu for segmentation, using the U cahnnel from the YUV colour space to calculate the histogram. Otsu calculates the optimal threshold value to seperate foreground and background pixels based on the histogram of the image.
+Hyunju Lee\cite{Lee2020} proposed a technique that utilizes an edge fill method called u-otsu for segmentation, using the U cahnnel from the YUV colour space to calculate the histogram. Otsu calculates the optimal threshold value to separate foreground and background pixels based on the histogram of the image.
 
-Another technique by Pedro\cite{Pereira2020} uses a newly developed technique called Local Binary Patterns Clustering (LBPC). Using a Local Binary Pattern (LBP) filter by subtracting the grayscale image from the LBP filter after a gaussian filter, resulting in the creation of a mask. This has been sucessfully used for the detection of melanoma.
+Another technique by Pedro\cite{Pereira2020} uses a newly developed technique called Local Binary Patterns Clustering (LBPC). Using a Local Binary Pattern (LBP) filter by subtracting the grayscale image from the LBP filter after a Gaussian filter, resulting in the creation of a mask. This has been successfully used for the detection of melanoma.
 
 \section{Skin Lesion Segmentation}
 Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis and treatment, and classification\cite{Albahli2020} including improving the detection of of ABCD rules\cite{Lee2020}.
@@ -81,9 +81,9 @@ Figure \ref{fractal1} demonstrates the segmentation of two skin lesions, one wit
 Validating LBPC is not expected because the goal is to exaggerate the border to improve the classification process of ABCD rules, which it does successfully\cite{Pereira2020, Kaya2016}. For example, the segmentation might not match dataset segmentations but is still essential to classifying ABCD rules. Furthermore, many datasets lack expert border segmentation, an accurate border cut-off between the skin and skin lesions, so comparisons are not always possible.
 
 \section{Comparison of techniques}
-Overall the accuracy of the techniques demonstrates that SegNet is the most reliable technique. However, comparing the techniques in \ref{} we can demonstrate that it produces a smudge effect and fails to capture the border cut-off from the skin lesion, but it is however succesful at finding the location of the skin lesion.
+Overall the accuracy of the techniques demonstrates that SegNet is the most reliable technique. However, comparing the techniques in \ref{} we can demonstrate that it produces a smudge effect and fails to capture the border cut-off from the skin lesion, but it is however successful at finding the location of the skin lesion.
 
-Both statistical models of LBPC and Otsu threshold generated an accurate border cutoff between the skin and the skin lesion As previously mentioned, measuring the border cut-off and exaggerting irregular borders are helpful when calculating the ABCD rules. 
+Both statistical models of LBPC and Otsu threshold generated an accurate border cut-off between the skin and the skin lesion As previously mentioned, measuring the border cut-off and exaggerating irregular borders are helpful when calculating the ABCD rules. 
 
 It might be beneficial to combine SegNet and LBPC by using SegNet to find the skin lesions' location, followed by adjusting the border cut-off using LBPC.
 

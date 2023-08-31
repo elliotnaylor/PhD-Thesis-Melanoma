@@ -1461,6 +1461,13 @@ INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tf
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
+INPUT .\Chapters\explainability.tex
+INPUT .\Chapters\explainability.tex
+INPUT .\Chapters\explainability.tex
+INPUT Chapters\explainability.tex
+INPUT .\Chapters\explainability.tex
+INPUT .\Chapters\explainability.tex
+INPUT Chapters\explainability.tex
 INPUT .\Chapters\literatureReview.tex
 INPUT .\Chapters\literatureReview.tex
 INPUT .\Chapters\literatureReview.tex
@@ -1536,10 +1543,6 @@ INPUT .\images\borders.PNG
 INPUT .\images\borders.PNG
 INPUT .\images\borders.PNG
 INPUT .\images\borders.PNG
-INPUT .\images\border-seg.png
-INPUT .\images\border-seg.png
-INPUT images\border-seg.png
-INPUT .\images\border-seg.png
 INPUT .\Chapters\improvedAsymmetry.tex
 INPUT .\Chapters\improvedAsymmetry.tex
 INPUT .\Chapters\improvedAsymmetry.tex

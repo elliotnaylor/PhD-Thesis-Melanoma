@@ -20,19 +20,23 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 12420 items.
+Reallocating 'field_info' (item size: 4) to 12980 items.
 Database file #1: thesis-blx.bib
 Database file #2: references.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Warning--I didn't find a database entry for "Wen2022"
 Warning--I didn't find a database entry for "Unver2019"
+Warning--I didn't find a database entry for "kasmi2023"
 Warning--I didn't find a database entry for "Lee1997"
+Warning--I didn't find a database entry for "Shen2009"
+Warning--I didn't find a database entry for "seeja2019"
+Warning--I didn't find a database entry for "Lee2020"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 50 entries,
             6399 wiz_defined-function locations,
-            1667 strings with 93193 characters,
+            1673 strings with 93241 characters,
 and the built_in function-call counts, 585169 in all, are:
 = -- 51626
 > -- 5859
@@ -71,4 +75,4 @@ warning$ -- 0
 while$ -- 8610
 width$ -- 0
 write$ -- 2390
-(There were 3 warnings)
+(There were 7 warnings)
