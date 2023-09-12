@@ -1,16 +1,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Images of two skin lesions from the PH$^2$ dataset showing the asymmetry calculated from moments.\relax }}{12}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Images of two skin lesions split into 8 sections using moments, each border is measured for irregularity.\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Images of two skin lesions from the PH$^2$ dataset showing the asymmetry calculated from moments.\relax }}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Images of two skin lesions split into 8 sections using moments, each border is measured for irregularity.\relax }}{14}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.\relax }}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Otsu thresholding alongside ground-truth mask, where grey Otsu and white is SegNet. The bar chart shows the histogram with an otsu threshold of 138.\relax }}{24}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Local Binary Pattern Clustering (LBPC) showing the a) original image, b) ground-truth, and c) LBPC. LBPC successfully exaggerates the border cut-off on the skin lesions with regular and irregular borders\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.\relax }}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Otsu thresholding alongside ground-truth mask, where grey Otsu and white is SegNet. The bar chart shows the histogram with an otsu threshold of 138.\relax }}{25}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Local Binary Pattern Clustering (LBPC) showing the a) original image, b) ground-truth, and c) LBPC. LBPC successfully exaggerates the border cut-off on the skin lesions with regular and irregular borders\relax }}{27}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces This diagram shows the skin lesion split relating to superpixels instead of averaging squares.\relax }}{30}{figure.caption.17}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces This diagram shows the difference between averaging squares and using superpixels, with the threshold of 10 implying curves and 50 being square. The horizontal colour difference is improved, making it more likely to be seen asymmetrical. The vertical comparison is roughly the same, except for removing a false positive of 40.\relax }}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces This diagram shows the skin lesion split relating to superpixels instead of averaging squares.\relax }}{32}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces This diagram shows the difference between averaging squares and using superpixels, with the threshold of 10 implying curves and 50 being square. The horizontal colour difference is improved, making it more likely to be seen asymmetrical. The vertical comparison is roughly the same, except for removing a false positive of 40.\relax }}{33}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
