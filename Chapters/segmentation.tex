@@ -1,7 +1,7 @@
 \chapter{A Comparison of Melanoma Segmentation algorithms using neural networks and statistical models}
 
 \section{Introduction}
-This section holds a discussion on segmentation techniques relating to the detection of melanoma that produce statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection\cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off. This chapter includes a simple border analysis technique called fractal box counting to assess the benefits of using segmentation algorithms with accurate border cut-offs.
+This section includes a discussion on segmentation techniques for the detection of melanoma. The goal is to produce statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection\cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off. This chapter includes a simple border analysis technique called fractal box counting to assess the benefits of using segmentation algorithms with accurate border cut-offs.
 
 \section{Related Works}
 An approach by Albanhli\cite{Albahli2020} uses deep learning-based segmentation algorithm using YOLOv4-arkNet and active contouring for melanoma and skin lesion detection and segmentation. This technique provides classification of the skin lesion and a segmentation, demonstrating a high level of practicality for clinical decision support systems. 
@@ -22,8 +22,6 @@ A range of traditional segmentation techniques including SegNet, U-net methods h
 SegNet is a deep learning architecture that is used for semantic image segmentation for melanoma detection. It was originally developed by\cite{chen2018} and has shown promising results in various segmenation tasks.
 
 The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end to end learning and inference at the pixel level. 
-
-The performance of SegNet has been evaluated using various datasets including the PACAL VOC-2012 semantic image segmentation task, where it achieved state-of-the-art results of the mean intersection over union (mIOU) of 79.7\% on the test dataset.
 
 Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground-truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3x3 convolutions (including batch normalization and ReLU), pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2x2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3x3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
 
