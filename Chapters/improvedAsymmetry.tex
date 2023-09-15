@@ -1,11 +1,13 @@
-\chapter{Improved Melanoma Detection using Asymmetry}
+\chapter{Analysing and Updating ABCD Rules Detection Algorithms}
 
 \section{Introduction}
 
-Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, dermoscopic features).
+Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
 
-\section{Related Works}
+\subsection{Related Works}
 % Quick summary of TDS, ABCD rules, bi-fold and general issues
+
+\subsubsection{Asymmetry}
 Asymmetry analysis is a fundamental component in the early detection of melanoma because it often exhibits asymmetric shapes\cite{Ali2020a}. Meaning that the shape, colour and, texture matches asymmetrically more often in benign lesions. Bi-fold is a diagnostic procedure designed to recognize melanoma by drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match (considering the difference in shape, colour, and texture). Using this horizontally and vertically calculates whether the skin lesion is possibly malignant with a score between 0 and 2. Calculating with Total Dermoscopy Score (TDS) alongside the other ABCD rules including asymmetry, border, colour, and diameter calculates the likelihood of malignancy. Dermatologists frequently use bi-fold due to its simplicity, but it can be subjective to the original observer and time-consuming when managing large numbers of skin lesions. Therefore, automating techniques is beneficial to clinicians and can improve the objectivity of results.
 
 % Measuring asymmetry shape
@@ -20,9 +22,15 @@ Ali\cite{Ali2020a} uses SIFT-based similarity and projection profiles to measure
 % Summary of techniques and mention of the proposed approach
 Prior studies have introduced techniques that measure distinct aspects of asymmetry, such as Ihab S. Zaqout\cite{Zaqout2016} measurement of shape, Kasmi and Mokrani\cite{Kasmi2016} measurement of colour, and  Ali\cite{Ali2020a} measurement of texture. The new approach seeks to combine the following approaches into a more comprehensive analysis of asymmetry that takes into account multiple features of the skin lesion. The proposed novel technique updates colour measurement to improve accuracy using superpixels and an SVM model.
 
-\section{Novel Asymmetry Analysis Approach}
-To initiate the classification of skin lesions a technique called bi-fold is applied involving folding the skin lesion in half vertically and horizontally and a comparison of their respective dimensions. While the original technique was designed only to assess the lesions' shape, it's been utilized to account for colour and texture as well. The centre and orientation are determined by calculating its moments, where the centre is (m10 / m00, m01 / m00) and phi is 0.5tan (2m11)/ (m20 -m02). 
+\section{A Novel Asymmetry detection technique using Bi-Fold, 3D Euclidean distance, and Superpixels}
+This section describes a novel machine learning technique for the automatic detection of melanoma
 
+\subsection{Bi-fold}
+To initiate the classification of skin lesions a technique called bi-fold is applied involving folding the skin lesion in half vertically and horizontally and a comparison of their respective dimensions. While the original technique was designed only to assess the lesions' shape, it's been utilized to account for colour and texture as well. The centre and orientation are determined by calculating its moments, where the centre is (m10 / m00, m01 / m00) and phi is 0.5tan (2m11)/ (m20 -m02).
+
+%Add diagram demonstrating bi-fold of a skin lesion
+
+\subsection{3D Euclidean Distance}
 Next, the lesion is partitioned into a 20 by 20 grid centred on the mentioned centre point, and the average of each region is computed. This is followed by finding the matching region on the perpendicular area from the centre of the skin lesion and comparing the colour distance between the two. Distance is measured using the LAB colour space and a 2d Euclidean distance of A and B, removing L (luminosity) to eliminate light variation. Once compared, all compared regions are obtained, and they are plotted onto a graph. If over half of the values are above a threshold of 6, then the lesion is asymmetrical.
 
 % Scrutinize the threshold method and show the graph that the data can't be split with only the threshold 
@@ -37,6 +45,7 @@ Essentially, the symmetrical skin lesion has a smaller area and the asymmetrical
     
 To improve the accuracy of the algorithm some changes need to be made based on the previous statements. First will be superpixels and next is k-means.
 
+\subsection{Superpixels}
 % Demonstrating the changes including superpixels and graphs, etc
 Superpixels is an algorithm for grouping pixels into a region with similar values. This one uses simple linear iterative clustering (SLIC) algorithm\cite{Achanta2012} to do so. The goal of using this instead of averaging specific areas as shown in\cite{Kasmi2016}, is to segment areas of similar interest values. This is to prevent areas from being cut in half.
 
@@ -64,14 +73,21 @@ Each parallel square on the vertical and horizontal axes measures similarity usi
 
 There is a correlation in colour differences between the inner and outer edges because melanoma typically expands outwards, creating an abnormal border. This information specifies that the statistical model accuracy could be improved by increasing the threshold for the outer edges and decreasing for the inner.
 
+\section{Border Detection Using Zernike Moments, 
+Fractal Box-Counting, and Convexity}
 
-\subsection{Removing}
+\section{A Novel Colour Analysis Approach using Colour Ranges, and SVM}
+
+\section{Results}
+
+\section{Conclusion}
 
 % Describe the asymmetry technique and the changes that have been made to it.
-The proposed method has many similarities to Kasmi and Mokrani\cite{Kasmi2016} colour comparison technique, except it is updated to improve accuracy using superpixels, and a Support Vector Machine (SVM).
 
-The original method uses moments of inertia
+%The proposed method has many similarities to Kasmi and Mokrani\cite{Kasmi2016} colour comparison technique, except it is updated to improve accuracy using superpixels, and a Support Vector Machine (SVM).
 
-without any flexibility splits areas of interest in half, making comparisons less adequate. Using superpixels allows for a softer border which improves colour separation and accuracy.
+%The original method uses moments of inertia
 
-Superpixels are k-means colour extraction techniques designed to separate areas of an image into their associated areas of colour by applying a soft border around the edge. 
+%without any flexibility splits areas of interest in half, making comparisons less adequate. Using superpixels allows for a softer border which improves colour separation and accuracy.
+
+%Superpixels are k-means colour extraction techniques designed to separate areas of an image into their associated areas of colour by applying a soft border around the edge.
