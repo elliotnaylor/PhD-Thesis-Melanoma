@@ -11,8 +11,39 @@ Hybrid machine learning techniques are recently gaining traction, an example by 
 
 There is a lack of literature describing adequate visual representations for doctors, and it is understandable as there is still little evidence proving that CAD systems improve doctors decision making-processes\cite{FerrantediRuffano2018}. It would be beneficial to create literature describing a catalogue of different visualisations that benefit doctors. Putting all this information together, alongside a questionnaire, might provide further insight into the visualisations that might be most useful to doctors.
 
-\subsection{Datasets}
+
+
+\subsection{Datasets (ISIC, PH$^2$, HAM10,000, MSK, MEDNODE, etc)}
 One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms difficult; hence, this review has no direct comparisons. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their rules, likely because of subjectivity depending on the dermatologists that labelled them. More datasets should be public to assess individual rules and reach objective measurements. Until then, results conform with malignant, suspicious, or benign.
+
+%Go into more detail and graphs
+\begin{table}
+	\small
+	\begin{tabular}{|p{2.5cm}|p{10cm}|c|c|}
+		\hline
+		Name & Year of Publication & Image Type & Number of Images & Metadata \\
+		\hline
+		ISIC 2020 & 2020 & Dermoscopic & 44,108
+		\\
+		\hline
+		PH$/^2$ & 2013 & Dermoscopic & 200 & Asymmetry, Colour, and Dermoscopic Features
+		\\
+		\hline
+		MED-NODE  & 2015 & Macroscopic & 170 
+		\\
+		\hline
+		7-point criteria evaluation database & 2018 & Dermoscopic & 2013 & 7-Point checklist
+		\\
+		\hline	
+	\end{tabular}
+	\caption{}
+	\end{table} \label{TDS}
+
+%Mention some inaccessible datasets
+
+\subsection{Diagnostic Procedures (ABCD Rules, CASH, 7-point Checklist)}
+%Go into lots of detail about all the different diagnostic procedures used for the analysis of melanoma.
+%ABCD rules, 7-point checklist, CASH
 
 \section{Previous Works on Automating ABCD Rules}
 Many CAD frameworks follow a methodology for the classification of skin lesions. These are listed below:
