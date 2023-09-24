@@ -1,12 +1,15 @@
 \chapter{Analysing and Updating ABCD Rules Detection Algorithms}
 
 \section{Introduction}
+This chapter holds a discussion on some of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH$/^2$ dataset and updated relating to their accuracy. Supprisingly, many of these technqiues are tested on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques are tested and documented regarding the ABCD rules.
+
+\section{Discussion}
 
 Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
 
 \subsection{Preferred Diagnostic Procedures}
 % Quick summary of TDS, ABCD rules, bi-fold and general issues
-Diagnostic procedures describe procedures that are documented, tested, and utilised when diagnosing conditions. There are many types that have been utilised for the detection of melanoma and the most favourable is ABCD rules and Total Dermoscopy Score (TDS). These were commonly used because of its simplicity and effectiveness.
+Diagnostic procedures describe procedures that are documented, tested, and utilised when diagnosing conditions. There are many types that have been utilised for the detection of melanoma and the most favourable is CASH, ABCD rules, and Total Dermoscopy Score (TDS). The ABCD rules and TDS were commonly used because of its simplicity and effectiveness. Considering the projects criteria is for GPs to utilise
 
 \subsubsection{Asymmetry}
 Asymmetry analysis is a fundamental component in the early detection of melanoma because it often exhibits asymmetric shapes\cite{Ali2020a}. Meaning that the shape, colour and, texture matches asymmetrically more often in benign lesions. For example, as melanoma grows the central area begins to waste away leaving a hollow area covered by thin skin, showing dermoscopic features. As it grows the edges become more irregular producing an uneven shape often relating to irregular borders and asymmetrical shape. Diagnostic procedures have been developed to detect these uniuqe characteristics.
@@ -49,17 +52,17 @@ Essentially, the symmetrical skin lesion has a smaller area and the asymmetrical
     
 To improve the accuracy of the algorithm some changes need to be made based on the previous statements. First will be superpixels and next is k-means.
 
-\subsection{Superpixels}
+\subsection{Superpixels using Simple Linear Iterative Clustering (SLIC)}
 % Demonstrating the changes including superpixels and graphs, etc
-Superpixels is an algorithm for grouping pixels into a region with similar values. This one uses simple linear iterative clustering (SLIC) algorithm\cite{Achanta2012} to do so. The goal of using this instead of averaging specific areas as shown in\cite{Kasmi2016}, is to segment areas of similar interest values. This is to prevent areas from being cut in half.
+Superpixels is an algorithm for grouping pixels into a grid format, but with flexible borders that can adjust to regions with similar features. Unlike the original technique averaging specific squares in a grid\cite{Kasmi2016}, they are segmented related to colour, texture, and other properties. The reason for using this technique is to increase boundry adherence and to group features that might otherwise be split into seperate groups. This overall improves the accuracy of the algorithm.
 
-Superpixels work by grouping
+This technique uses simple linear iterative clustering (SLIC) algorithm and was first introduced by Achanta et al.\cite{Achanta2012}. This technique combines both k-means and graph-based segmentation. Firstly you define the desired number of superpixels as $k$ and the approximate size of each superpixel as $S$, which is usually $S = /square(N/k)$ and $N$ is the number of pixels in the image. Secondly for the centre of each cluster a search space is assigned to the cluster. For each group you measure the spatial distance which is the Euclidean distance between each pixel and the cluster center. Each pixel is assigned to the cluster with the nearest centroid. The cluster centres are then recalculated by taking the mean colour and position of the pixels assigned to each cluster. Followed by new pixels being assigned to the centroid relating to euclidean distance. This process is repeated depending on the number of iterations as $i$ are assigned. From this point each pixel is assigned to a cluster.
 
 The image in ... demonstrates the usual average and the new averages based on superpixels and the changes in values. Areas that are lighter in colour appear to have a lower value and darker appear darker.
 
 Using the thresholding method for classification we can already see the accuracy has been improved with a threshold of ...
 
-\section{Results}
+\section{Experimental Results}
 The goal of this experiment is to improve the accuracy of the asymmetry bi-fold technique described by Ihab S. Zaqout et al.\cite{Zaqout2016}. Initially, the skin lesion is split into a 10 by 10 grid and converted into the LAB colourspace. Next, a line is drawn through the middle horizontally and vertically. Measuring the euclidean distance from the centroid, locating the closest opposite patch of colour finds the parallel square. Subtracting the squares generates a score for each value, the closer to 0, the more similar the colour. These are then removed from the list to prevent them from being selected a second time. If half the results are over a specific threshold, it is considered asymmetrical in colour, otherwise considered symmetrical. The aim is to make a 10 by 10 grid, but instead of averaging squares, superpixels reduce data redundancy in the grid, allowing for a less complex algorithm and improving accuracy. The clustering method k-means partition each pixel to its nearest most similar centroid relating to colour. Next, it generates a superpixel that represents the average colour of that area. The diagram \ref{SP} demonstrates different borders when changing the $C$ for compactness, where 100 generates a square grid similar to the original technique. The border becomes more flexible as the compactness value decreases.
 
 \begin{figure} 
