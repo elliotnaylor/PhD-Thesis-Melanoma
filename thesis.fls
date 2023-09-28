@@ -1427,6 +1427,8 @@ INPUT .\Chapters\introduction.tex
 INPUT Chapters\introduction.tex
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -1456,8 +1458,9 @@ INPUT Chapters\literatureReview.tex
 INPUT .\Chapters\literatureReview.tex
 INPUT .\Chapters\literatureReview.tex
 INPUT Chapters\literatureReview.tex
-INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT .\images\asym1.png
 INPUT .\images\asym1.png
 INPUT images\asym1.png
@@ -1514,9 +1517,6 @@ INPUT .\images\otsu3.png
 INPUT .\images\otsu3.png
 INPUT .\images\otsu3.png
 INPUT .\images\otsu3.png
-INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT .\images\borders.PNG
 INPUT .\images\borders.PNG
 INPUT images\borders.PNG
@@ -1531,6 +1531,13 @@ INPUT Chapters\improvedAsymmetry.tex
 INPUT .\Chapters\improvedAsymmetry.tex
 INPUT .\Chapters\improvedAsymmetry.tex
 INPUT Chapters\improvedAsymmetry.tex
+INPUT .\images\symmetrical.png
+INPUT .\images\symmetrical.png
+INPUT images\symmetrical.png
+INPUT .\images\symmetrical.png
+INPUT .\images\symmetrical.png
+INPUT .\images\symmetrical.png
+INPUT .\images\symmetrical.png
 INPUT .\images\superpixels.png
 INPUT .\images\superpixels.png
 INPUT images\superpixels.png
@@ -1612,6 +1619,8 @@ INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\scary\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb

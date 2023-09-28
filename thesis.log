@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  12 SEP 2023 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  28 SEP 2023 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1209,302 +1209,351 @@ No file thesis.lot.
 ]
 Chapter 1.
 
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
+LaTeX Warning: Reference `TDS' on page 2 undefined on input line 13.
 
 
-LaTeX Warning: Reference `TDS' on page 2 undefined on input line 9.
+LaTeX Warning: Reference `TDS' on page 2 undefined on input line 13.
 
 [2
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 []|\OT1/cmr/m/n/10 (+20) Dermoscopic
  []
 
 
-Overfull \hbox (29.84935pt too wide) in paragraph at lines 13--30
+Overfull \hbox (29.84935pt too wide) in paragraph at lines 17--34
 [][] 
  []
 
-[3] [4]
 
-Chapters/introduction.tex:47: LaTeX Error: Environment itemsize undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47 \begin{itemsize}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Warning: Citation 'BarredoArrieta2020' on page 3 undefined on input line 39.
 
 
-Chapters/introduction.tex:48: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 	\item A
-             re the produced algorithms accurate enough to be properly utili...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Citation 'skar2017' on page 3 undefined on input line 39.
 
 
-Underfull \hbox (badness 10000) detected at line 48
-[][]
+Overfull \hbox (4.23932pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/10.95 (-20) tions will im-prove trust from doc-tors and pa-tients to these algorithms[[]].
  []
 
-
-Chapters/introduction.tex:49: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 	\item D
-             oes the developed technique provide meaningful responses that c...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 49
-[][]
- []
-
-
-Chapters/introduction.tex:50: LaTeX Error: \begin{document} ended by \end{itemsize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{itemsize}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[5] [6] [7]) (Chapters/explainability.tex [8]
+[3] [4] [5] [6] [7]) (Chapters/explainability.tex [8]
 Chapter 2.
-) (Chapters/literatureReview.tex [9
+
+LaTeX Warning: Citation 'Aas2021' on page 9 undefined on input line 11.
+
+[9
+
+]) (Chapters/literatureReview.tex [10]
+Chapter 3.
+[11
+
+
 
 ]
-Chapter 3.
-[10
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 16.
 
-] [11]
-Overfull \hbox (2.10744pt too wide) in paragraph at lines 40--41
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+Chapters/literatureReview.tex:24: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.24 ...lication & Image Type & Number of Images &
+                                                   Metadata \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+Chapters/literatureReview.tex:29: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.29 		PH$/^2$ & 2013 & Dermoscopic & 200 &
+                                            Asymmetry, Colour, and Dermoscop...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+[]|\OT1/cmr/m/n/10 (+20) Asymmetry,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+\OT1/cmr/m/n/10 (+20) Colour, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+\OT1/cmr/m/n/10 (+20) Der-mo-scopic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/10 (+20) 7-point cri-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/10 (+20) ria eval-u-a-tion
+ []
+
+Chapters/literatureReview.tex:35: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.35 ...ion database & 2018 & Dermoscopic & 2013 &
+                                                   7-Point checklist
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (111.51617pt too wide) in paragraph at lines 22--39
+[][] 
+ []
+
+
+LaTeX Warning: Citation 'Wen2022' on page 12 undefined on input line 44.
+
+[12] [13]
+Overfull \hbox (2.10744pt too wide) in paragraph at lines 73--74
 \OT1/cmr/m/n/10.95 (-20) Handcrafted fea-tures are the ex-trac-tion of par-tic-u-lar fea-tures us-ing sta-tis-ti-cal al-go-rithms|the
  []
 
 
-LaTeX Warning: Reference `lit-asym' on page 12 undefined on input line 43.
+LaTeX Warning: Reference `lit-asym' on page 14 undefined on input line 76.
 
-[12]
-<images/asym1.png, id=230, 291.9708pt x 265.2309pt>
+<images/asym1.png, id=232, 291.9708pt x 265.2309pt>
 File: images/asym1.png Graphic file (type png)
 <use images/asym1.png>
-Package pdftex.def Info: images/asym1.png  used on input line 47.
+Package pdftex.def Info: images/asym1.png  used on input line 80.
 (pdftex.def)             Requested size: 145.98503pt x 132.61511pt.
-<images/asym2.png, id=232, 295.5843pt x 263.7855pt>
+<images/asym2.png, id=234, 295.5843pt x 263.7855pt>
 File: images/asym2.png Graphic file (type png)
 <use images/asym2.png>
-Package pdftex.def Info: images/asym2.png  used on input line 48.
+Package pdftex.def Info: images/asym2.png  used on input line 81.
 (pdftex.def)             Requested size: 147.79178pt x 131.89243pt.
+[14 <./images/asym1.png> <./images/asym2.png>]
 
+LaTeX Warning: Reference `borders' on page 15 undefined on input line 92.
 
-LaTeX Warning: Reference `borders' on page 13 undefined on input line 59.
-
-[13 <./images/asym1.png> <./images/asym2.png>]
-<images/bord1.png, id=244, 265.2309pt x 263.0628pt>
+<images/bord1.png, id=248, 265.2309pt x 263.0628pt>
 File: images/bord1.png Graphic file (type png)
 <use images/bord1.png>
-Package pdftex.def Info: images/bord1.png  used on input line 63.
+Package pdftex.def Info: images/bord1.png  used on input line 96.
 (pdftex.def)             Requested size: 132.61511pt x 131.53107pt.
-<images/bord2.png, id=245, 292.6935pt x 265.2309pt>
+<images/bord2.png, id=249, 292.6935pt x 265.2309pt>
 File: images/bord2.png Graphic file (type png)
 <use images/bord2.png>
-Package pdftex.def Info: images/bord2.png  used on input line 64.
+Package pdftex.def Info: images/bord2.png  used on input line 97.
 (pdftex.def)             Requested size: 146.34639pt x 132.61511pt.
- [14 <./images/bord1.png> <./images/bord2.png>] [15]) (Chapters/nhsDataSuitability.tex [16]
+[15 <./images/bord1.png> <./images/bord2.png>] [16] [17]) (Chapters/nhsDataSuitability.tex [18]
 Chapter 4.
-[17
+[19
 
 ]
 
-LaTeX Warning: Citation 'Wen2022' on page 18 undefined on input line 25.
+LaTeX Warning: Citation 'Wen2022' on page 20 undefined on input line 25.
 
-[18] [19]
+[20] [21]
 
-LaTeX Warning: Citation 'Unver2019' on page 20 undefined on input line 70.
-
-
-LaTeX Warning: Citation 'kasmi2023' on page 20 undefined on input line 72.
+LaTeX Warning: Citation 'Unver2019' on page 22 undefined on input line 70.
 
 
-LaTeX Warning: Citation 'kasmi2023' on page 20 undefined on input line 75.
+LaTeX Warning: Citation 'kasmi2023' on page 22 undefined on input line 72.
 
 
-LaTeX Warning: Citation 'kasmi2023' on page 20 undefined on input line 75.
-
-[20]
-
-LaTeX Warning: Citation 'Lee1997' on page 21 undefined on input line 77.
+LaTeX Warning: Citation 'kasmi2023' on page 22 undefined on input line 75.
 
 
-LaTeX Warning: Citation 'kasmi2023' on page 21 undefined on input line 79.
+LaTeX Warning: Citation 'kasmi2023' on page 22 undefined on input line 75.
+
+[22]
+
+LaTeX Warning: Citation 'Lee1997' on page 23 undefined on input line 77.
 
 
-LaTeX Warning: Citation 'Shen2009' on page 21 undefined on input line 82.
+LaTeX Warning: Citation 'kasmi2023' on page 23 undefined on input line 79.
 
 
-LaTeX Warning: Citation 'Shen2009' on page 21 undefined on input line 82.
+LaTeX Warning: Citation 'Shen2009' on page 23 undefined on input line 82.
 
-) (Chapters/segmentation.tex [21]
+
+LaTeX Warning: Citation 'Shen2009' on page 23 undefined on input line 82.
+
+) (Chapters/segmentation.tex [23]
 Chapter 5.
 
-LaTeX Warning: Citation 'seeja2019' on page 22 undefined on input line 9.
+LaTeX Warning: Citation 'seeja2019' on page 24 undefined on input line 9.
 
 
-LaTeX Warning: Citation 'Lee2020' on page 22 undefined on input line 11.
+LaTeX Warning: Citation 'Lee2020' on page 24 undefined on input line 11.
 
-[22
+[24
 
 ]
 
-LaTeX Warning: Citation 'Lee2020' on page 23 undefined on input line 16.
+LaTeX Warning: Citation 'Lee2020' on page 25 undefined on input line 16.
 
-<images/border-seg.png, id=352, 362.5545pt x 107.80275pt>
+<images/border-seg.png, id=362, 362.5545pt x 107.80275pt>
 File: images/border-seg.png Graphic file (type png)
 <use images/border-seg.png>
-Package pdftex.def Info: images/border-seg.png  used on input line 32.
+Package pdftex.def Info: images/border-seg.png  used on input line 30.
 (pdftex.def)             Requested size: 435.06323pt x 129.36264pt.
 
-Overfull \hbox (5.05861pt too wide) in paragraph at lines 32--33
+Overfull \hbox (5.05861pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
-[23]
 
-LaTeX Warning: Reference `SegNet' on page 24 undefined on input line 36.
-
-
-LaTeX Warning: Reference `SegNet' on page 24 undefined on input line 36.
+LaTeX Warning: Reference `SegNet' on page 25 undefined on input line 34.
 
 
-LaTeX Warning: Citation 'Hamburger1996' on page 24 undefined on input line 41.
+LaTeX Warning: Reference `SegNet' on page 25 undefined on input line 34.
+
+[25]
+
+LaTeX Warning: Citation 'Hamburger1996' on page 26 undefined on input line 39.
 
 
-LaTeX Warning: Reference `otsu' on page 24 undefined on input line 44.
+LaTeX Warning: Reference `otsu' on page 26 undefined on input line 42.
 
 
-LaTeX Warning: Reference `otsu2' on page 24 undefined on input line 44.
+LaTeX Warning: Reference `otsu2' on page 26 undefined on input line 42.
 
-[24 <./images/border-seg.png>]
+[26 <./images/border-seg.png>]
 
-LaTeX Warning: Reference `otsu2' on page 25 undefined on input line 50.
+LaTeX Warning: Reference `otsu2' on page 27 undefined on input line 48.
 
-<images/otsu3.png, id=371, 650.43pt x 307.90031pt>
+<images/otsu3.png, id=381, 650.43pt x 307.90031pt>
 File: images/otsu3.png Graphic file (type png)
 <use images/otsu3.png>
-Package pdftex.def Info: images/otsu3.png  used on input line 54.
+Package pdftex.def Info: images/otsu3.png  used on input line 52.
 (pdftex.def)             Requested size: 455.2979pt x 215.52873pt.
 
-Overfull \hbox (25.29327pt too wide) in paragraph at lines 54--55
+Overfull \hbox (25.29327pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
 
-LaTeX Warning: Reference `eq1' on page 25 undefined on input line 61.
+LaTeX Warning: Reference `eq1' on page 27 undefined on input line 59.
 
 
-LaTeX Warning: Reference `eq2' on page 25 undefined on input line 61.
+LaTeX Warning: Reference `eq2' on page 27 undefined on input line 59.
 
-[25 <./images/otsu3.png>]
+[27 <./images/otsu3.png>]
 
-LaTeX Warning: Reference `fractal1' on page 26 undefined on input line 75.
+LaTeX Warning: Reference `fractal1' on page 28 undefined on input line 73.
 
-<images/borders.PNG, id=383, 301.72725pt x 205.9695pt>
+<images/borders.PNG, id=393, 301.72725pt x 205.9695pt>
 File: images/borders.PNG Graphic file (type png)
 <use images/borders.PNG>
-Package pdftex.def Info: images/borders.PNG  used on input line 79.
+Package pdftex.def Info: images/borders.PNG  used on input line 77.
 (pdftex.def)             Requested size: 362.07088pt x 247.16214pt.
+[28 <./images/borders.PNG>]
 
-LaTeX Warning: Reference `' on page 26 undefined on input line 86.
+LaTeX Warning: Reference `' on page 29 undefined on input line 84.
 
-[26] [27 <./images/borders.PNG>]) (Chapters/improvedAsymmetry.tex [28]
+) (Chapters/improvedAsymmetry.tex [29]
 Chapter 6.
-[29
+[30
 
-] [30]
+] [31]
 
-LaTeX Warning: Reference `SP' on page 31 undefined on input line 49.
+LaTeX Warning: Reference `symmetrical' on page 32 undefined on input line 44.
 
-[31]
-<images/superpixels.png, id=444, 607.51968pt x 263.48438pt>
+
+Overfull \hbox (214.33691pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 32
+ []
+
+[32]
+<images/symmetrical.png, id=448, 462.528pt x 322.3242pt>
+File: images/symmetrical.png Graphic file (type png)
+<use images/symmetrical.png>
+Package pdftex.def Info: images/symmetrical.png  used on input line 49.
+(pdftex.def)             Requested size: 277.51894pt x 193.39601pt.
+
+Overfull \hbox (214.33691pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 33
+ []
+
+[33 <./images/symmetrical.png>]
+
+LaTeX Warning: Reference `SP' on page 34 undefined on input line 66.
+
+<images/superpixels.png, id=460, 607.51968pt x 263.48438pt>
 File: images/superpixels.png Graphic file (type png)
 <use images/superpixels.png>
-Package pdftex.def Info: images/superpixels.png  used on input line 53.
+Package pdftex.def Info: images/superpixels.png  used on input line 70.
 (pdftex.def)             Requested size: 364.51462pt x 158.09183pt.
-<images/superpixel2.png, id=446, 657.2053pt x 280.04625pt>
+<images/superpixel2.png, id=462, 657.2053pt x 280.04625pt>
 File: images/superpixel2.png Graphic file (type png)
 <use images/superpixel2.png>
-Package pdftex.def Info: images/superpixel2.png  used on input line 61.
+Package pdftex.def Info: images/superpixel2.png  used on input line 78.
 (pdftex.def)             Requested size: 460.04057pt x 196.03102pt.
-<images/superpixel1.png, id=447, 659.46375pt x 289.08pt>
+<images/superpixel1.png, id=463, 659.46375pt x 289.08pt>
 File: images/superpixel1.png Graphic file (type png)
 <use images/superpixel1.png>
-Package pdftex.def Info: images/superpixel1.png  used on input line 62.
+Package pdftex.def Info: images/superpixel1.png  used on input line 79.
 (pdftex.def)             Requested size: 461.62148pt x 202.35461pt.
 
-Overfull \hbox (30.03595pt too wide) in paragraph at lines 61--63
+Overfull \hbox (30.03595pt too wide) in paragraph at lines 78--80
  [][] 
  []
 
 
-Overfull \hbox (31.61685pt too wide) in paragraph at lines 61--63
+Overfull \hbox (31.61685pt too wide) in paragraph at lines 78--80
  [] 
  []
 
-) (Chapters/dermoscopicFeatures.tex [32 <./images/superpixels.png>] [33 <./images/superpixel2.png> <./images/superpixel1.png>]
+[34]) (Chapters/dermoscopicFeatures.tex
+Overfull \hbox (125.752pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10.95 6.5.  BORDER DETECTION USING ZERNIKE MOMENTS, FRACTAL BOX-COUNTING, AND CONVEXITY \OT1/cmr/m/n/10.95 35
+ []
+
+[35 <./images/superpixels.png>] [36 <./images/superpixel2.png> <./images/superpixel1.png>]
 Chapter 7.
-) (Chapters/proposedTechnique.tex [34
+) (Chapters/proposedTechnique.tex [37
 
 ]
 Chapter 8.
-) (Chapters/conclusion.tex [35
+) (Chapters/conclusion.tex [38
 
 ]
 Chapter 9.
-[36
+[39
 
-] [37]
+] [40]
 Chapter 10.
-) [38
+) [41
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [39
+ [42
 
 
 
-] [40] [41] [42] (Back/tables.tex [43]
+] [43] [44] [45] (Back/tables.tex [46]
 Chapter 11.
-) (Back/appendix.tex [44
+) (Back/appendix.tex [47
 
 ]
 Chapter 12.
-) [45
+) [48
 
 ] (thesis.aux)
 
@@ -1520,7 +1569,7 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4DBBA327CD55CA8071E737084E6E02E4;8059.
+(rerunfilecheck)             After:  8B4484593BE63C3774CAEBCF85A8BA6F;12058.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                thesis
@@ -1531,17 +1580,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39536 strings out of 476374
- 781439 string characters out of 5788854
+ 39571 strings out of 476374
+ 781953 string characters out of 5788854
  1865340 words of memory out of 5000000
- 58847 multiletter control sequences out of 15000+600000
- 529127 words of font info for 179 fonts, out of 8000000 for 9000
+ 58853 multiletter control sequences out of 15000+600000
+ 529296 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,134p,2229b,1673s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (52 pages, 963657 bytes).
+ 113i,11n,134p,2229b,1669s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (55 pages, 996900 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 187 named destinations out of 1000 (max. 500000)
- 41535 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 735 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 41540 words of extra memory for PDF output out of 42996 (max. 10000000)
 
