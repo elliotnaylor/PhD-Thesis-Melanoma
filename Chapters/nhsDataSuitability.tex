@@ -27,38 +27,77 @@ There are a range of public datasets including MEDLINE, PH2, ISIC, and others ma
 	\end{table} \label{TDS}
 
 \subsection{ISIC}
-The ISIC dataset is a collaborative effort of many different institutions to support the development of automatic classification methods. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, and anatomic site, diagnosis, and benign or malignant. These images are seperated into melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular  lesions (VL), and squamous cell carcinoma (SCC). 
+The ISIC dataset is a collaborative effort of many different institutions to support the development of automatic classification methods. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, and anatomical site, and diagnosis. These images are seperated into classes melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular  lesions (VL), and squamous cell carcinoma (SCC). 
 
 %Graph showing one of each type of diagnosis
 \begin{table}
 	\small
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		Name & Training data & Validation data & Total & Differences \\
+		Name & Year & Total Samples & Differences \\
 		\hline
-		HAM10000 & 10,015 & 1,511 & 11,526 & 
+		HAM10000 & 2018 & 11,526 & -
 		\\
 		\hline
-		BCN 20000 & - & - & 19,424 & Includes nails and mucosa
+		BCN 20000 & 2016 & 19,424 & Includes nails and mucosa
 		\\
 		\hline
-		MSK & - & - & 3918 & Coloured stickers covering un-applicable skin lesions
+		MSK & 2015, 2017 & 3918 & Coloured stickers covering un-applicable skin lesions
 		\\
 		\hline	
 	\end{tabular}
 	\caption{}
 \end{table} \label{ISIC_AF}
 
-ISIC 2019 is a combined source of data from different hospitals datasets including HAM10000, BCN 20000, and MSK shown in \ref{ISIC_af}. This is important to mention because each dataset has captured their images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets.
-
+ISIC 2019 is a combined source of data from different hospitals datasets including HAM10000, BCN 20000, and MSK desribed in more detail in \ref{ISIC_af}. This is important to mention because each dataset has captured their images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions.
 
 %Diagram of the number of images assigned to which diagnoses
+\begin{figure}
+	\centering
+	\includegraphics[]{images/ISIC/diagnosis-number.png}
+	\caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions. Dataset appears to be highly unbalanced with half being NV.} 
+\end{figure} \label{diagnosis-number}
+	
+As demonstrated in \ref(diagnosis-number) the dataset is highly inbalanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, which has very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Others such as DF, and VASC only contains a handful of images. The difference in image samples makes the dataset only useful for testing between NV and MEL.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[]{images/ISIC/sex-number.png}
+	\includegraphics[]{images/ISIC/number-sex-diagnosis.png}
+	\caption{The dataset has more male than female patients except for NV that has more samples.} 
+\end{figure} \label{sex}
+
+Figure \ref{sex} demonstrates the number of samples relating to the patients sex. There are more samples for each type of skin lesion except for NV which there are more female samples. They are all within a very close range and are unlikely to need rebalancing.
+
+\begin{figure}
+	\centering
+	\includegraphics[]{images/ISIC/age-number.png}
+	\caption{This shows the number of images samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.} 
+\end{figure} \label{age-number}
+
+As demonstrated in \ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. This suggests the skin lesions are more developed than lesions in younger people. Although, skin problems are more likely to develop in older people.
+
+\begin{figure}
+	\centering
+	\includegraphics[]{images/ISIC/diagnosis-age.png}
+	\caption{The approximate age range of patients and their diagnosis.} 
+\end{figure} \label{diagnosis-age}
+
+In Figure \cite{diagnosis-age} the age approximation is compared with the type of skin lesion. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. There are dots that represent outliers in the data, that are outside the age range. Each class in the diagram is a diagnosis associated with age of each case. Interestingly, represented in this data SCC and AK appear to develop more in older adults and many of the younger patients were diagnosed with NV or DF.
+
+\begin{figure}
+	\centering
+	\includegraphics[]{images/ISIC/location-age.png}
+	\caption{The dataset has more male than female patients except for NV that has more samples.} 
+\end{figure} \label{location-age}
+
+Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients that have been diagnosed with the skin lesion or there head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palmes/soles and head/neck, which could mean more developed skin lesions in these image samples than others.
+
 
 %Explain diagram 
 
-
-
-Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melampcytic proliferation, cafe-au,lait macule, lentigo NOS, lichenoid keratosis, nevus, seborrheic keratosis, solar lentig, and other/unknown. This metadata is too specific, so ISIC 2019 is still a better candidate for testing in this scenario.
+Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melampcytic proliferation, cafe-au-lait macule, lentigo NOS, lichenoid keratosis, nevus, seborrheic keratosis, solar lentig, and other/unknown. The metadata doesn't match the requirements of the project, so ISIC 2019 is still a better candidate for testing in this scenario.
 
 The dataset also contains additional data relating to challenges. ISIC 2017 has metadata on dermoscopic features including pigment networks, negative networks, globules, milia-like cysts, and streaks making a total of 2,694 images. 
 
@@ -105,7 +144,7 @@ The NHS datasets contain a wealth of information that can be utilized. However, 
     \item Seborrhoeic keratosis (SK) have similar features to that seen in malignant skin lesions. Therefore, there might be skin lesions diagnosed as melanoma that are SK. Furthermore, because of its similarity there are potentially many SK images. It will be vital to separate these.
 \end{enumerate}
 
-Varied accuracy of
+Varied accuracy of 
 
 \subsection{Image Criteria}
 
