@@ -58,8 +58,10 @@ ISIC 2019 is a combined source of data from different hospitals datasets includi
 	\caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions. Dataset appears to be highly unbalanced with half being NV.} 
 \end{figure} \label{diagnosis-number}
 	
-As demonstrated in \ref(diagnosis-number) the dataset is highly inbalanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, which has very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Others such as DF, and VASC only contains a handful of images. The difference in image samples makes the dataset only useful for testing between NV and MEL.
+As demonstrated in \ref(diagnosis-number) the dataset is highly inbalanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, where AK has very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Others such as DF, and VASC only contains a handful of images. The difference in image samples makes the dataset primarly useful for testing between NV and MEL.
 
+\subsubsection{metadata}
+In this dataset the images are accompanied by metadata. This metadata includes patients age, sex, and anatomical location. Analysing this data provides further insight into the influence of patient information has on the classification process. Most of all we're looking for similar numbers for each catagory and some cases might be removed from the classification process to improve results.
 
 \begin{figure}
 	\centering
@@ -76,7 +78,7 @@ Figure \ref{sex} demonstrates the number of samples relating to the patients sex
 	\caption{This shows the number of images samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.} 
 \end{figure} \label{age-number}
 
-As demonstrated in \ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. This suggests the skin lesions are more developed than lesions in younger people. Although, skin problems are more likely to develop in older people.
+As demonstrated in figure \ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. Variation might be because the skin lesions develop in older people more than younger. This could also mean that many of the skin lesions are developed and there is going to be unlikely to find un-developed skin lesion samples.
 
 \begin{figure}
 	\centering
@@ -84,7 +86,7 @@ As demonstrated in \ref{age-number} the dataset is unbalanced relating to age an
 	\caption{The approximate age range of patients and their diagnosis.} 
 \end{figure} \label{diagnosis-age}
 
-In Figure \cite{diagnosis-age} the age approximation is compared with the type of skin lesion. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. There are dots that represent outliers in the data, that are outside the age range. Each class in the diagram is a diagnosis associated with age of each case. Interestingly, represented in this data SCC and AK appear to develop more in older adults and many of the younger patients were diagnosed with NV or DF.
+In Figure \cite{diagnosis-age} the age approximation is compared with the type of skin lesion. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. There are dots that represent outliers in the data, that are outside the age range. Each class in the diagram is a diagnosis associated with age of each patient. Interestingly, represented in this data SCC and AK appear to develop more in older adults and many of the younger patients were diagnosed with NV or DF. This is correct when regarding literature considering that SCC and AK develop in older adults \cite{}.
 
 \begin{figure}
 	\centering
@@ -92,17 +94,18 @@ In Figure \cite{diagnosis-age} the age approximation is compared with the type o
 	\caption{The dataset has more male than female patients except for NV that has more samples.} 
 \end{figure} \label{location-age}
 
-Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients that have been diagnosed with the skin lesion or there head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palmes/soles and head/neck, which could mean more developed skin lesions in these image samples than others.
+Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients that have been diagnosed with the skin lesion or there head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palmes/soles and head/neck, which could mean more developed skin lesions in these criteria.
+
+\subsection{Dermoscopic Structures}
+
+ISIC 2017 that shares some images with ISIC 2019 has some additional metadata relating to the dermoscopic structure. This data was part of the tasks section and the data was linked manually to the ISIC 2019 using the image name. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks making a total of 2,694 images. 
 
 
-%Explain diagram 
-
+\subsubsection{ISIC 2020}
 Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melampcytic proliferation, cafe-au-lait macule, lentigo NOS, lichenoid keratosis, nevus, seborrheic keratosis, solar lentig, and other/unknown. The metadata doesn't match the requirements of the project, so ISIC 2019 is still a better candidate for testing in this scenario.
 
-The dataset also contains additional data relating to challenges. ISIC 2017 has metadata on dermoscopic features including pigment networks, negative networks, globules, milia-like cysts, and streaks making a total of 2,694 images. 
 
-\subsubsection{metadata}
-
+\subsection{}
 
 \subsection{Issues}
 One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms (espeically relating to ABCD rules) difficult. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their rules, likely because of subjectivity depending on the dermatologists that labelled them. Ideally, more datasets and labels should be public to assess individual rules and reach objective measurements. Until then, testing algorithms conforms with malignant, suspicious, or benign.
@@ -114,8 +117,9 @@ The data presented is from David Wen, et al. \cite{Wen2022}, but is updated to i
 
 \section{Creating `the Dataset'}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
-The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this chapter is to describe and document the data extraction process from the National Health Service (NHS) and highlight biases, preprocessing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
+The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of a dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this chapter is to describe and document the data extraction process from the National Health Service (NHS) and highlight biases, pre-processing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma.
 
+\subsection{Requirements}
 There are requirements for the project including the use of macroscopic images instead of dermoscopic images. Macroscopic is described as viewing with a naked eye or by taking a standard picture with standard lenses. When referring to dermoscopic images, it means images captured with a specialised lense that removes lighting, is when you use a specialized tool called a dermoscope.
 
 Dermoscopy improves the diagnostic accuracy of dermatologists for melanoma when compared with macroscopic examination\cite{Wolner2017} and is widely considered superior\cite{Thiers2009}. Dermoscopic images provide a detailed visualization of patterns and structures on the surface of the skin lesion that might not be visible to the naked eye\cite{Thiers2009}. Some of these structures are pigment network, asymmetry, irregular borders, and other features that support in the differentiation between benign and malignant lesions\cite{Thiers2009}. 
