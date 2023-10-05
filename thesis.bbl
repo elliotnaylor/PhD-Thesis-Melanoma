@@ -485,6 +485,135 @@
     \field{year}{2017}
   \endentry
 
+  \entry{BarredoArrieta2020}{article}{}
+    \name{author}{12}{}{%
+      {{hash=AAB}{%
+         family={Arrieta},
+         familyi={A\bibinitperiod},
+         given={Alejandro\bibnamedelima Barredo},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=DRN}{%
+         family={Díaz-Rodríguez},
+         familyi={D\bibinithyphendelim R\bibinitperiod},
+         given={Natalia},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SJD}{%
+         family={Ser},
+         familyi={S\bibinitperiod},
+         given={Javier\bibnamedelima Del},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bennetot},
+         familyi={B\bibinitperiod},
+         given={Adrien},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tabik},
+         familyi={T\bibinitperiod},
+         given={Siham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Barbado},
+         familyi={B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={Salvador},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GLS}{%
+         family={Gil-Lopez},
+         familyi={G\bibinithyphendelim L\bibinitperiod},
+         given={Sergio},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Molina},
+         familyi={M\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Benjamins},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Chatila},
+         familyi={C\bibinitperiod},
+         given={Raja},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Herrera},
+         familyi={H\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Accountability,Comprehensibility,Data Fusion,Deep
+  Learning,Explainable Artificial
+  Intelligence,Fairness,Interpretability,Machine Learning,Privacy,Responsible
+  Artificial Intelligence,Transparency}
+    \strng{namehash}{AAB+1}
+    \strng{fullhash}{AABDRNSJDBATSBAGSGLSMDBRCRHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    In the last few years, Artificial Intelligence (AI) has achieved a notable
+  momentum that, if harnessed appropriately, may deliver the best of
+  expectations over many application sectors across the field. For this to
+  occur shortly in Machine Learning, the entire community stands in front of
+  the barrier of explainability, an inherent problem of the latest techniques
+  brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were
+  not present in the last hype of AI (namely, expert systems and rule based
+  models). Paradigms underlying this problem fall within the so-called
+  eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature
+  for the practical deployment of AI models. The overview presented in this
+  article examines the existing literature and contributions already done in
+  the field of XAI, including a prospect toward what is yet to be reached. For
+  this purpose we summarize previous efforts made to define explainability in
+  Machine Learning, establishing a novel definition of explainable Machine
+  Learning that covers such prior conceptual propositions with a major focus on
+  the audience for which the explainability is sought. Departing from this
+  definition, we propose and discuss about a taxonomy of recent contributions
+  related to the explainability of different Machine Learning models, including
+  those aimed at explaining Deep Learning methods for which a second dedicated
+  taxonomy is built and examined in detail. This critical literature analysis
+  serves as the motivating background for a series of challenges faced by XAI,
+  such as the interesting crossroads of data fusion and explainability. Our
+  prospects lead toward the concept of Responsible Artificial Intelligence,
+  namely, a methodology for the large-scale implementation of AI methods in
+  real organizations with fairness, model explainability and accountability at
+  its core. Our ultimate goal is to provide newcomers to the field of XAI with
+  a thorough taxonomy that can serve as reference material in order to
+  stimulate future research advances, but also to encourage experts and
+  professionals from other disciplines to embrace the benefits of AI in their
+  activity sectors, without any prior bias for its lack of interpretability.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.inffus.2019.12.012
+    \endverb
+    \field{issn}{15662535}
+    \field{pages}{82\bibrangedash 115}
+    \field{title}{Explainable Explainable Artificial Intelligence (XAI):
+  Concepts, taxonomies, opportunities and challenges toward responsible AI}
+    \field{volume}{58}
+    \field{journaltitle}{Information Fusion}
+    \field{year}{2020}
+  \endentry
+
   \entry{Badrinarayanan2017}{article}{}
     \name{author}{3}{}{%
       {{hash=BV}{%

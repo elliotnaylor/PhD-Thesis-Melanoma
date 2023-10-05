@@ -9,9 +9,9 @@ There are a range of public datasets including MEDLINE, PH2, ISIC, and others ma
 %Go into more detail and graphs
 \begin{table}
 	\small
-	\begin{tabular}{|p{5cm}|c|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
-		Name & Year of Publication & Image Type & Number of Images & Metadata \\
+		Name & Year & Image Type & Number & Metadata \\
 		\hline
 		ISIC 2019 & 2019 & Dermoscopic & 33,569 & Age, anatomical site, gender, and diagnosis
 		\\
@@ -54,7 +54,7 @@ ISIC 2019 is a combined source of data from different hospitals datasets includi
 %Diagram of the number of images assigned to which diagnoses
 \begin{figure}
 	\centering
-	\includegraphics[]{images/ISIC/diagnosis-number.png}
+	\includegraphics[scale=0.8]{images/ISIC/diagnosis-number.png}
 	\caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions. Dataset appears to be highly unbalanced with half being NV.} 
 \end{figure} \label{diagnosis-number}
 	
@@ -65,8 +65,8 @@ In this dataset the images are accompanied by metadata. This metadata includes p
 
 \begin{figure}
 	\centering
-	\includegraphics[]{images/ISIC/sex-number.png}
-	\includegraphics[]{images/ISIC/number-sex-diagnosis.png}
+	\includegraphics[scale=0.8]{images/ISIC/sex-number.png}
+	\includegraphics[scale=0.8]{images/ISIC/number-sex-diagnosis.png}
 	\caption{The dataset has more male than female patients except for NV that has more samples.} 
 \end{figure} \label{sex}
 
@@ -74,7 +74,7 @@ Figure \ref{sex} demonstrates the number of samples relating to the patients sex
 
 \begin{figure}
 	\centering
-	\includegraphics[]{images/ISIC/age-number.png}
+	\includegraphics[scale=0.8]{images/ISIC/age-number.png}
 	\caption{This shows the number of images samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.} 
 \end{figure} \label{age-number}
 
@@ -82,7 +82,7 @@ As demonstrated in figure \ref{age-number} the dataset is unbalanced relating to
 
 \begin{figure}
 	\centering
-	\includegraphics[]{images/ISIC/diagnosis-age.png}
+	\includegraphics[scale=0.8]{images/ISIC/diagnosis-age.png}
 	\caption{The approximate age range of patients and their diagnosis.} 
 \end{figure} \label{diagnosis-age}
 
@@ -90,7 +90,7 @@ In Figure \cite{diagnosis-age} the age approximation is compared with the type o
 
 \begin{figure}
 	\centering
-	\includegraphics[]{images/ISIC/location-age.png}
+	\includegraphics[scale=0.8]{images/ISIC/location-age.png}
 	\caption{The dataset has more male than female patients except for NV that has more samples.} 
 \end{figure} \label{location-age}
 
