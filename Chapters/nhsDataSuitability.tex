@@ -96,7 +96,7 @@ In Figure \cite{diagnosis-age} the age approximation is compared with the type o
 
 Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients that have been diagnosed with the skin lesion or there head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palmes/soles and head/neck, which could mean more developed skin lesions in these criteria.
 
-\subsection{Dermoscopic Structures}
+\subsubsection{Dermoscopic Structures}
 
 ISIC 2017 that shares some images with ISIC 2019 has some additional metadata relating to the dermoscopic structure. This data was part of the tasks section and the data was linked manually to the ISIC 2019 using the image name. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks making a total of 2,694 images. 
 
@@ -105,7 +105,7 @@ ISIC 2017 that shares some images with ISIC 2019 has some additional metadata re
 Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melampcytic proliferation, cafe-au-lait macule, lentigo NOS, lichenoid keratosis, nevus, seborrheic keratosis, solar lentig, and other/unknown. The metadata doesn't match the requirements of the project, so ISIC 2019 is still a better candidate for testing in this scenario.
 
 
-\subsection{}
+In summary the ISIC 2019 dataset is the most valuable public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
 
 \subsection{Issues}
 One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms (espeically relating to ABCD rules) difficult. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their rules, likely because of subjectivity depending on the dermatologists that labelled them. Ideally, more datasets and labels should be public to assess individual rules and reach objective measurements. Until then, testing algorithms conforms with malignant, suspicious, or benign.
@@ -113,6 +113,7 @@ One fundamental problem is the overutilisation of private or privately annotated
 %Mention some inaccessible datasets
 
 The data presented is from David Wen, et al. \cite{Wen2022}, but is updated to include meta-data relating to diagnostic procedures for testing. Although there are thousands of images for dermoscopic and macroscopic. Data is lacking relating to diagnostic procedures.
+
 
 \subsection{PH2}
 The PH2 dataset is a collection of dermoscopic images that was made available in 2013 by Mendonca, et al\cite{}. It consists of 200 images including 80 common nevus, 80 atypical nevus, and 40 Melanoma. Although the dataset is small it holds substational metadata for describing describing features within the skin lesion, including asymmetry, colour, pigment network, dots & globules, streaks, regression areas, and blue-whitish veil. THis is the only dataset that has such substational data regarding smaller features. Each image has a segmentation mask of the skin lesion.
@@ -123,9 +124,7 @@ The PH2 dataset is a collection of dermoscopic images that was made available in
 	\caption{Number of image samples and diagnosis in the PH2 dataset.} 
 \end{figure} \label{ph2-diagnosis-number}
 
-
-
-
+As shown in figure \ref{ph2-diagnosis-number} there are 200 image samples in total with 80 common nevus, 80 atypical and 40 melanoma. The number of images samples is too small for any neural network techniques. It is likely that the benefit of this dataset is the substatial amount of metadata.
 
 \begin{figure}
 	\centering
@@ -141,7 +140,7 @@ Figure \ref{ph2-diagnosis-number} dataset is highly unbalanced with only 40 mela
 	\caption{This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).} 
 \end{figure} \label{ph2-asym-number}
 
-Demonstrated in figure \ref{ph2-asym}
+Demonstrated in figure \ref{ph2-asym} demonstres there is substational data for measuring the asymmetry score based off total dermoscopy score (TDS). Exisiting techniques such as bi-fold do not require massive amounts of data, so the 200 sample size is ideal in this scenario.
 
 \begin{figure}
 	\centering
