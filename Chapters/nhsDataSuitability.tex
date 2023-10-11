@@ -118,24 +118,22 @@ ISIC 2017 that shares some images with ISIC 2019 has some additional metadata re
 
 \begin{figure}
 	\centering
-	%\includegraphics[scale=0.8]{}
-	\caption{Get graph} 
+	\includegraphics[scale=0.8]{images/ISIC/isic-dermo-number.png}
+	\caption{Number of images containing dermoscopic structures.} 
 \end{figure} \label{isic-number-dermo}
 
-The dermoscopic structures described in figure \ref{isic-number-dermo} shows ..
+The dermoscopic structures described in figure \ref{isic-number-dermo} shows the number of image samples for each dermoscopic structure. Naturally pigmented networks has more than 1400 images which makes it ideal for training a SegNet algorithm. Other demroscopic structures are lacking and do not have enough data for any deep learning algroithms.
 
 \begin{figure}
 	\centering
-	%\includegraphics[scale=0.8]{}
-	\caption{Get graph} 
+	\includegraphics[scale=0.8]{images/ISIC/isic-dermo-diagnosis.png}
+	\caption{Number of dermosocpic structures relating} 
 \end{figure} \label{isic-dermo-diagnosis}
 
-As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are relevant in....
-
+As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melnaoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
 
 \subsubsection{Summary}
-In summary the ISIC 2019 dataset is the most valuable public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
-
+In summary the ISIC dataset including data from 2017, 2018, and 2019 makes this dataset the largest public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
 
 \subsection{PH2}
 The PH2 dataset is a collection of dermoscopic images that was made available in 2013 by Mendonca, et al\cite{}. It consists of 200 images including 80 common nevus, 80 atypical nevus, and 40 Melanoma. Although the dataset is small it holds substational metadata for describing describing features within the skin lesion, including asymmetry, colour, pigment network, dots/globules, streaks, regression areas, and blue-whitish veil. THis is the only dataset that has such substational data regarding smaller features. Each image has a segmentation mask of the skin lesion.
