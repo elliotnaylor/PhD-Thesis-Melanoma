@@ -264,6 +264,17 @@ Use ANOVA to check whether features of Atypical and typical moles are similar.
 %Show transforming the images into the correct size
 
 
+\subsection{Dataset Statistics}
+General statistics of the dataset after its creation
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis-number.png}
+	\caption{Number of image samples relating to the diagnosis of the image.} 
+\end{figure} \label{nhs-diagnosis-number}
+
+ As shown in figure \ref{nhs-diagnosis-number} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi has been split into benign naevi (BN) and aytpical naevi (AN). There are images of seborreic keratosis, which is more than any other public dataset currently available. 
+
 %Specular reflection removal
 \subsection{Skin Lesion Augmentation}
 One of the main challenges in melanoma detection is the visual similarity normal and infected regions. Others are the presence of artefacts such as bubbles, hair and clinical marks\cite{Albahli2020}. These factors lead to low accuracy rates in traditional approaches. However, segmentation techniques can help overcome these challenges by removing these areas and isolating the melanoma from the rest of the image.
