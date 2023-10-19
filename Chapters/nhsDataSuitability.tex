@@ -260,6 +260,38 @@ Use ANOVA to check whether features of Atypical and typical moles are similar.
 
 %Data extraction Techniques
 
+%Go into more detail and graphs
+\begin{table}
+	\small
+	\begin{tabular}{|c|c|}
+		\hline
+		Upper Extremity & Wrist, Elbow, Arm
+		\\
+		\hline
+		Lower Extremity & Leg, Knee, Hip, Ankle
+		\\
+		\hline
+		Lateral Torso & Axilla, Breast
+		\\
+		\hline
+		Posterior Torso & Back, Shoulder
+		\\
+		\hline
+		Anterior Torso & Chest, Abdomen, Trunk
+		\\
+		\hline
+		Palms/Soles & Hand, Thumb, Foot
+		\\
+		\hline
+		Oral/Genital & Groin, Genitalia, Sacrum, Buttocks, Sacrum
+		\\
+		\hline
+		Head/Neck & Neck, Chin, Face, Temple, Head, Forehead
+		\\
+		\hline
+	\end{tabular}
+	\caption{}
+\end{table} \label{nhs-location-names}
 
 %Show transforming the images into the correct size
 
@@ -269,11 +301,50 @@ General statistics of the dataset after its creation
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis-number.png}
+	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis.png}
 	\caption{Number of image samples relating to the diagnosis of the image.} 
-\end{figure} \label{nhs-diagnosis-number}
+\end{figure} \label{nhs-diagnosis}
 
- As shown in figure \ref{nhs-diagnosis-number} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi has been split into benign naevi (BN) and aytpical naevi (AN). There are images of seborreic keratosis, which is more than any other public dataset currently available. 
+ As shown in figure \ref{nhs-diagnosis} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi has been split into benign naevi (BN) and aytpical naevi (AN). There are images of seborreic keratosis, which is more than any other public dataset currently available. 
+
+ \begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-age.png}
+	\caption{Age of patients and number of image samples.} 
+\end{figure} \label{nhs-age}
+
+As desribed in figure \ref{nhs-age}, there are more image samples from younger patients than older ones. This is understandable because of the number of Astypical and typical neavus in this dataset. Benign neavus is more common in younger patients.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-location.png}
+	\caption{Number of image samples related to the location of the skin lesion.} 
+\end{figure} \label{nhs-location}
+
+As shown in figure \cite{nhs-location} describing the location of the skin lesions and number of image samples. There are more samples on the posterior torso (back) compared with other skin lesion compared with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descripters, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure \ref{nhs-location-names}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-sex-diagnosis.png}
+	\caption{Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.} 
+\end{figure} \label{nhs-sex-diagnosis}
+
+Figure \ref{nhs-sex-diagnosis} describes the number of image samples relating to the diagnosis and sex of the patients. Interestingly there are almost double the number of female patients being diagnosed for AN and BN comapred with MM where there are slightly more male patients and BCC where there is almost double male.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis-age.png}
+	\caption{Boxplot describing the age of patients and the diagnosis.} 
+\end{figure} \label{nhs-diagnosis-age}
+
+Image samples described in figure \ref{nhs-diagnosis-age} demonstrate the age of patients compared with there diagnosis. Understandably, AN and BN which are neavus are from younger patients, while SK, SCC, and BCC appear in older adults. MM is primarly from patinets at the age of 50 to 70.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-location-diagnosis.png}
+	\caption{Number of image samples relating to the diagnosis of the image.} 
+\end{figure} \label{nhs-location-diagnosis}
+
 
 %Specular reflection removal
 \subsection{Skin Lesion Augmentation}
