@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  10 OCT 2023 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.21)  19 OCT 2023 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1244,23 +1244,23 @@ Chapter 3.
 
 
 ] [12]
-<images/asym1.png, id=613, 291.9708pt x 265.2309pt>
+<images/asym1.png, id=633, 291.9708pt x 265.2309pt>
 File: images/asym1.png Graphic file (type png)
 <use images/asym1.png>
 Package pdftex.def Info: images/asym1.png  used on input line 44.
 (pdftex.def)             Requested size: 145.98503pt x 132.61511pt.
-<images/asym2.png, id=615, 295.5843pt x 263.7855pt>
+<images/asym2.png, id=635, 295.5843pt x 263.7855pt>
 File: images/asym2.png Graphic file (type png)
 <use images/asym2.png>
 Package pdftex.def Info: images/asym2.png  used on input line 45.
 (pdftex.def)             Requested size: 147.79178pt x 131.89243pt.
  [13]
-<images/bord1.png, id=628, 265.2309pt x 263.0628pt>
+<images/bord1.png, id=648, 265.2309pt x 263.0628pt>
 File: images/bord1.png Graphic file (type png)
 <use images/bord1.png>
 Package pdftex.def Info: images/bord1.png  used on input line 60.
 (pdftex.def)             Requested size: 132.61511pt x 131.53107pt.
-<images/bord2.png, id=629, 292.6935pt x 265.2309pt>
+<images/bord2.png, id=649, 292.6935pt x 265.2309pt>
 File: images/bord2.png Graphic file (type png)
 <use images/bord2.png>
 Package pdftex.def Info: images/bord2.png  used on input line 61.
@@ -1306,18 +1306,18 @@ Overfull \hbox (6.66281pt too wide) in paragraph at lines 51--65
 LaTeX Warning: Reference `ISIC_af' on page 19 undefined on input line 68.
 
 [19]
-<images/ISIC/diagnosis-number.png, id=682, 425.6703pt x 328.8285pt>
+<images/ISIC/diagnosis-number.png, id=702, 425.6703pt x 328.8285pt>
 File: images/ISIC/diagnosis-number.png Graphic file (type png)
 <use images/ISIC/diagnosis-number.png>
 Package pdftex.def Info: images/ISIC/diagnosis-number.png  used on input line 73.
 (pdftex.def)             Requested size: 340.5367pt x 263.06316pt.
  [20 <./images/ISIC/diagnosis-number.png>]
-<images/ISIC/sex-number.png, id=690, 425.6703pt x 328.8285pt>
+<images/ISIC/sex-number.png, id=710, 425.6703pt x 328.8285pt>
 File: images/ISIC/sex-number.png Graphic file (type png)
 <use images/ISIC/sex-number.png>
 Package pdftex.def Info: images/ISIC/sex-number.png  used on input line 84.
 (pdftex.def)             Requested size: 340.5367pt x 263.06316pt.
-<images/ISIC/number-sex-diagnosis.png, id=691, 470.4777pt x 354.8457pt>
+<images/ISIC/number-sex-diagnosis.png, id=711, 470.4777pt x 354.8457pt>
 File: images/ISIC/number-sex-diagnosis.png Graphic file (type png)
 <use images/ISIC/number-sex-diagnosis.png>
 Package pdftex.def Info: images/ISIC/number-sex-diagnosis.png  used on input line 85.
@@ -1326,12 +1326,12 @@ Package pdftex.def Info: images/ISIC/number-sex-diagnosis.png  used on input lin
 
 LaTeX Warning: Float too large for page by 28.66351pt on input line 87.
 
-<images/ISIC/age-number.png, id=693, 419.166pt x 328.8285pt>
+<images/ISIC/age-number.png, id=713, 419.166pt x 328.8285pt>
 File: images/ISIC/age-number.png Graphic file (type png)
 <use images/ISIC/age-number.png>
 Package pdftex.def Info: images/ISIC/age-number.png  used on input line 93.
 (pdftex.def)             Requested size: 335.33325pt x 263.06316pt.
-<images/ISIC/diagnosis-age.png, id=695, 406.1574pt x 328.8285pt>
+<images/ISIC/diagnosis-age.png, id=715, 406.1574pt x 328.8285pt>
 File: images/ISIC/diagnosis-age.png Graphic file (type png)
 <use images/ISIC/diagnosis-age.png>
 Package pdftex.def Info: images/ISIC/diagnosis-age.png  used on input line 101.
@@ -1339,104 +1339,151 @@ Package pdftex.def Info: images/ISIC/diagnosis-age.png  used on input line 101.
 
 LaTeX Warning: Citation '' on page 21 undefined on input line 105.
 
-<images/ISIC/location-age.png, id=697, 406.1574pt x 399.6531pt>
+<images/ISIC/location-age.png, id=717, 406.1574pt x 399.6531pt>
 File: images/ISIC/location-age.png Graphic file (type png)
 <use images/ISIC/location-age.png>
 Package pdftex.def Info: images/ISIC/location-age.png  used on input line 109.
 (pdftex.def)             Requested size: 324.92636pt x 319.7229pt.
-[21] [22 <./images/ISIC/sex-number.png> <./images/ISIC/number-sex-diagnosis.png>] [23 <./images/ISIC/age-number.png>] [24 <./images/ISIC/diagnosis-age.png>] [25 <./images/ISIC/location-age.png>]
+<images/ISIC/isic-dermo-number.png, id=720, 419.166pt x 409.0482pt>
+File: images/ISIC/isic-dermo-number.png Graphic file (type png)
+<use images/ISIC/isic-dermo-number.png>
+Package pdftex.def Info: images/ISIC/isic-dermo-number.png  used on input line 121.
+(pdftex.def)             Requested size: 335.33325pt x 327.239pt.
+<images/ISIC/isic-dermo-diagnosis.png, id=722, 438.6789pt x 239.2137pt>
+File: images/ISIC/isic-dermo-diagnosis.png Graphic file (type png)
+<use images/ISIC/isic-dermo-diagnosis.png>
+Package pdftex.def Info: images/ISIC/isic-dermo-diagnosis.png  used on input line 129.
+(pdftex.def)             Requested size: 350.94357pt x 191.3712pt.
+[21] [22 <./images/ISIC/sex-number.png> <./images/ISIC/number-sex-diagnosis.png>] [23 <./images/ISIC/age-number.png>] [24 <./images/ISIC/diagnosis-age.png>] [25 <./images/ISIC/location-age.png>] [26 <./images/ISIC/isic-dermo-number.png>]
 
-LaTeX Warning: Citation '' on page 26 undefined on input line 141.
+LaTeX Warning: Citation '' on page 27 undefined on input line 139.
 
-<images/ph2/ph2-diagnosis-number.png, id=730, 406.1574pt x 328.8285pt>
+<images/ph2/ph2-diagnosis-number.png, id=756, 406.1574pt x 328.8285pt>
 File: images/ph2/ph2-diagnosis-number.png Graphic file (type png)
 <use images/ph2/ph2-diagnosis-number.png>
-Package pdftex.def Info: images/ph2/ph2-diagnosis-number.png  used on input line 145.
+Package pdftex.def Info: images/ph2/ph2-diagnosis-number.png  used on input line 143.
 (pdftex.def)             Requested size: 324.92636pt x 263.06316pt.
 File: images/ph2/ph2-diagnosis-number.png Graphic file (type png)
 <use images/ph2/ph2-diagnosis-number.png>
-Package pdftex.def Info: images/ph2/ph2-diagnosis-number.png  used on input line 153.
+Package pdftex.def Info: images/ph2/ph2-diagnosis-number.png  used on input line 151.
 (pdftex.def)             Requested size: 324.92636pt x 263.06316pt.
-[26 <./images/ph2/ph2-diagnosis-number.png>] [27]
-<images/ph2/ph2-asym-number.png, id=743, 416.2752pt x 328.8285pt>
+[27 <./images/ISIC/isic-dermo-diagnosis.png>] [28 <./images/ph2/ph2-diagnosis-number.png>] [29]
+<images/ph2/ph2-asym-number.png, id=775, 416.2752pt x 328.8285pt>
 File: images/ph2/ph2-asym-number.png Graphic file (type png)
 <use images/ph2/ph2-asym-number.png>
-Package pdftex.def Info: images/ph2/ph2-asym-number.png  used on input line 163.
+Package pdftex.def Info: images/ph2/ph2-asym-number.png  used on input line 161.
 (pdftex.def)             Requested size: 333.02061pt x 263.06316pt.
 
 
-LaTeX Warning: Reference `ph2-asym' on page 28 undefined on input line 167.
+LaTeX Warning: Reference `ph2-asym' on page 30 undefined on input line 165.
 
-<images/ph2/ph2-colour-number.png, id=744, 425.6703pt x 208.1376pt>
+<images/ph2/ph2-colour-number.png, id=776, 425.6703pt x 208.1376pt>
 File: images/ph2/ph2-colour-number.png Graphic file (type png)
 <use images/ph2/ph2-colour-number.png>
-Package pdftex.def Info: images/ph2/ph2-colour-number.png  used on input line 171.
+Package pdftex.def Info: images/ph2/ph2-colour-number.png  used on input line 169.
 (pdftex.def)             Requested size: 340.5367pt x 166.5103pt.
-<images/ph2/ph2-dermo-number.png, id=746, 432.1746pt x 299.9205pt>
+<images/ph2/ph2-dermo-number.png, id=778, 432.1746pt x 299.9205pt>
 File: images/ph2/ph2-dermo-number.png Graphic file (type png)
 <use images/ph2/ph2-dermo-number.png>
-Package pdftex.def Info: images/ph2/ph2-dermo-number.png  used on input line 179.
+Package pdftex.def Info: images/ph2/ph2-dermo-number.png  used on input line 177.
 (pdftex.def)             Requested size: 345.74016pt x 239.9367pt.
-<images/ph2/ph2-dermo-diagnosis.png, id=748, 432.1746pt x 188.6247pt>
+<images/ph2/ph2-dermo-diagnosis.png, id=780, 432.1746pt x 188.6247pt>
 File: images/ph2/ph2-dermo-diagnosis.png Graphic file (type png)
 <use images/ph2/ph2-dermo-diagnosis.png>
-Package pdftex.def Info: images/ph2/ph2-dermo-diagnosis.png  used on input line 187.
+Package pdftex.def Info: images/ph2/ph2-dermo-diagnosis.png  used on input line 185.
 (pdftex.def)             Requested size: 345.74016pt x 150.89995pt.
-<images/ph2/ph2-number-diagnosis-dermo.png, id=750, 425.6703pt x 234.8775pt>
+[30 <./images/ph2/ph2-asym-number.png>] [31 <./images/ph2/ph2-colour-number.png> <./images/ph2/ph2-dermo-number.png>]
+<images/ph2/ph2-number-diagnosis-dermo.png, id=794, 425.6703pt x 234.8775pt>
 File: images/ph2/ph2-number-diagnosis-dermo.png Graphic file (type png)
 <use images/ph2/ph2-number-diagnosis-dermo.png>
-Package pdftex.def Info: images/ph2/ph2-number-diagnosis-dermo.png  used on input line 195.
+Package pdftex.def Info: images/ph2/ph2-number-diagnosis-dermo.png  used on input line 193.
 (pdftex.def)             Requested size: 340.5367pt x 187.90225pt.
-[28 <./images/ph2/ph2-asym-number.png>] [29 <./images/ph2/ph2-colour-number.png> <./images/ph2/ph2-dermo-number.png>]
-<images/ph2/ph2-pigment-diagnosis.png, id=764, 425.6703pt x 188.6247pt>
+<images/ph2/ph2-pigment-diagnosis.png, id=796, 425.6703pt x 188.6247pt>
 File: images/ph2/ph2-pigment-diagnosis.png Graphic file (type png)
 <use images/ph2/ph2-pigment-diagnosis.png>
-Package pdftex.def Info: images/ph2/ph2-pigment-diagnosis.png  used on input line 203.
+Package pdftex.def Info: images/ph2/ph2-pigment-diagnosis.png  used on input line 201.
 (pdftex.def)             Requested size: 340.5367pt x 150.89995pt.
- [30 <./images/ph2/ph2-dermo-diagnosis.png>] [31 <./images/ph2/ph2-number-diagnosis-dermo.png> <./images/ph2/ph2-pigment-diagnosis.png>] [32] [33]
-
-LaTeX Warning: Citation 'Unver2019' on page 34 undefined on input line 273.
-
-[34]
-
-LaTeX Warning: Citation 'kasmi2023' on page 35 undefined on input line 275.
-
-
-LaTeX Warning: Citation 'kasmi2023' on page 35 undefined on input line 278.
-
-
-LaTeX Warning: Citation 'kasmi2023' on page 35 undefined on input line 278.
-
-
-LaTeX Warning: Citation 'Lee1997' on page 35 undefined on input line 280.
-
-
-LaTeX Warning: Citation 'kasmi2023' on page 35 undefined on input line 282.
+ [32 <./images/ph2/ph2-dermo-diagnosis.png>] [33 <./images/ph2/ph2-number-diagnosis-dermo.png> <./images/ph2/ph2-pigment-diagnosis.png>] [34] [35]
+<images/nhs/nhs-diagnosis.png, id=841, 412.6617pt x 328.8285pt>
+File: images/nhs/nhs-diagnosis.png Graphic file (type png)
+<use images/nhs/nhs-diagnosis.png>
+Package pdftex.def Info: images/nhs/nhs-diagnosis.png  used on input line 307.
+(pdftex.def)             Requested size: 330.12979pt x 263.06316pt.
+<images/nhs/nhs-age.png, id=843, 406.1574pt x 328.8285pt>
+File: images/nhs/nhs-age.png Graphic file (type png)
+<use images/nhs/nhs-age.png>
+Package pdftex.def Info: images/nhs/nhs-age.png  used on input line 315.
+(pdftex.def)             Requested size: 324.92636pt x 263.06316pt.
+ [36] [37 <./images/nhs/nhs-diagnosis.png>] [38 <./images/nhs/nhs-age.png>]
+<images/nhs/nhs-location.png, id=860, 412.6617pt x 383.7537pt>
+File: images/nhs/nhs-location.png Graphic file (type png)
+<use images/nhs/nhs-location.png>
+Package pdftex.def Info: images/nhs/nhs-location.png  used on input line 323.
+(pdftex.def)             Requested size: 330.12979pt x 307.00336pt.
 
 
-LaTeX Warning: Citation 'Shen2009' on page 35 undefined on input line 285.
+LaTeX Warning: Citation 'nhs-location' on page 39 undefined on input line 327.
+
+<images/nhs/nhs-sex-diagnosis.png, id=862, 470.4777pt x 354.8457pt>
+File: images/nhs/nhs-sex-diagnosis.png Graphic file (type png)
+<use images/nhs/nhs-sex-diagnosis.png>
+Package pdftex.def Info: images/nhs/nhs-sex-diagnosis.png  used on input line 331.
+(pdftex.def)             Requested size: 376.38266pt x 283.87692pt.
+<images/nhs/nhs-diagnosis-age.png, id=864, 412.6617pt x 328.8285pt>
+File: images/nhs/nhs-diagnosis-age.png Graphic file (type png)
+<use images/nhs/nhs-diagnosis-age.png>
+Package pdftex.def Info: images/nhs/nhs-diagnosis-age.png  used on input line 339.
+(pdftex.def)             Requested size: 330.12979pt x 263.06316pt.
+[39 <./images/nhs/nhs-location.png>] [40 <./images/nhs/nhs-sex-diagnosis.png>] [41 <./images/nhs/nhs-diagnosis-age.png>]
+<images/nhs/nhs-location-diagnosis.png, id=882, 367.8543pt x 339.669pt>
+File: images/nhs/nhs-location-diagnosis.png Graphic file (type png)
+<use images/nhs/nhs-location-diagnosis.png>
+Package pdftex.def Info: images/nhs/nhs-location-diagnosis.png  used on input line 347.
+(pdftex.def)             Requested size: 294.28381pt x 271.73557pt.
 
 
-LaTeX Warning: Citation 'Shen2009' on page 35 undefined on input line 285.
+LaTeX Warning: Citation 'Unver2019' on page 42 undefined on input line 356.
 
 
-LaTeX Warning: Citation 'Wen2022' on page 35 undefined on input line 293.
+LaTeX Warning: Citation 'kasmi2023' on page 42 undefined on input line 358.
 
-) (Chapters/segmentation.tex [35]
+
+LaTeX Warning: Citation 'kasmi2023' on page 42 undefined on input line 361.
+
+
+LaTeX Warning: Citation 'kasmi2023' on page 42 undefined on input line 361.
+
+[42 <./images/nhs/nhs-location-diagnosis.png>]
+
+LaTeX Warning: Citation 'Lee1997' on page 43 undefined on input line 363.
+
+
+LaTeX Warning: Citation 'kasmi2023' on page 43 undefined on input line 365.
+
+
+LaTeX Warning: Citation 'Shen2009' on page 43 undefined on input line 368.
+
+
+LaTeX Warning: Citation 'Shen2009' on page 43 undefined on input line 368.
+
+
+LaTeX Warning: Citation 'Wen2022' on page 43 undefined on input line 376.
+
+) (Chapters/segmentation.tex [43]
 Chapter 5.
 
-LaTeX Warning: Citation 'seeja2019' on page 36 undefined on input line 9.
+LaTeX Warning: Citation 'seeja2019' on page 44 undefined on input line 9.
 
 
-LaTeX Warning: Citation 'Lee2020' on page 36 undefined on input line 11.
+LaTeX Warning: Citation 'Lee2020' on page 44 undefined on input line 11.
 
-[36
+[44
 
 ]
 
-LaTeX Warning: Citation 'Lee2020' on page 37 undefined on input line 16.
+LaTeX Warning: Citation 'Lee2020' on page 45 undefined on input line 16.
 
-<images/border-seg.png, id=843, 362.5545pt x 107.80275pt>
+<images/border-seg.png, id=917, 362.5545pt x 107.80275pt>
 File: images/border-seg.png Graphic file (type png)
 <use images/border-seg.png>
 Package pdftex.def Info: images/border-seg.png  used on input line 30.
@@ -1446,12 +1493,12 @@ Overfull \hbox (5.05861pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
-[37]
+[45]
 
-LaTeX Warning: Citation 'Hamburger1996' on page 38 undefined on input line 39.
+LaTeX Warning: Citation 'Hamburger1996' on page 46 undefined on input line 39.
 
-[38 <./images/border-seg.png>]
-<images/otsu3.png, id=863, 650.43pt x 307.90031pt>
+[46 <./images/border-seg.png>]
+<images/otsu3.png, id=938, 650.43pt x 307.90031pt>
 File: images/otsu3.png Graphic file (type png)
 <use images/otsu3.png>
 Package pdftex.def Info: images/otsu3.png  used on input line 52.
@@ -1461,49 +1508,49 @@ Overfull \hbox (25.29327pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
-[39 <./images/otsu3.png>]
-<images/borders.PNG, id=878, 301.72725pt x 205.9695pt>
+[47 <./images/otsu3.png>]
+<images/borders.PNG, id=952, 301.72725pt x 205.9695pt>
 File: images/borders.PNG Graphic file (type png)
 <use images/borders.PNG>
 Package pdftex.def Info: images/borders.PNG  used on input line 77.
 (pdftex.def)             Requested size: 362.07088pt x 247.16214pt.
- [40 <./images/borders.PNG>]
+ [48 <./images/borders.PNG>]
 
-LaTeX Warning: Reference `' on page 41 undefined on input line 84.
+LaTeX Warning: Reference `' on page 49 undefined on input line 84.
 
-) (Chapters/improvedAsymmetry.tex [41]
+) (Chapters/improvedAsymmetry.tex [49]
 Chapter 6.
-[42
+[50
 
-] [43]
+] [51]
 Overfull \hbox (214.33691pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 44
+\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 52
  []
 
-[44]
-<images/symmetrical.png, id=920, 462.528pt x 322.3242pt>
+[52]
+<images/symmetrical.png, id=995, 462.528pt x 322.3242pt>
 File: images/symmetrical.png Graphic file (type png)
 <use images/symmetrical.png>
 Package pdftex.def Info: images/symmetrical.png  used on input line 53.
 (pdftex.def)             Requested size: 277.51894pt x 193.39601pt.
 
 Overfull \hbox (214.33691pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 45
+\OT1/cmr/m/sl/10.95 6.3.  A NOVEL ASYMMETRY DETECTION TECHNIQUE USING BI-FOLD, 3D EUCLIDEAN DISTANCE, AND SUPERPIXELS \OT1/cmr/m/n/10.95 53
  []
 
-[45 <./images/symmetrical.png>]
-<images/superpixels.png, id=931, 607.51968pt x 263.48438pt>
+[53 <./images/symmetrical.png>]
+<images/superpixels.png, id=1005, 607.51968pt x 263.48438pt>
 File: images/superpixels.png Graphic file (type png)
 <use images/superpixels.png>
 Package pdftex.def Info: images/superpixels.png  used on input line 74.
 (pdftex.def)             Requested size: 364.51462pt x 158.09183pt.
- [46]
-<images/superpixel2.png, id=938, 657.2053pt x 280.04625pt>
+ [54]
+<images/superpixel2.png, id=1012, 657.2053pt x 280.04625pt>
 File: images/superpixel2.png Graphic file (type png)
 <use images/superpixel2.png>
 Package pdftex.def Info: images/superpixel2.png  used on input line 82.
 (pdftex.def)             Requested size: 460.04057pt x 196.03102pt.
-<images/superpixel1.png, id=939, 659.46375pt x 289.08pt>
+<images/superpixel1.png, id=1013, 659.46375pt x 289.08pt>
 File: images/superpixel1.png Graphic file (type png)
 <use images/superpixel1.png>
 Package pdftex.def Info: images/superpixel1.png  used on input line 83.
@@ -1518,43 +1565,43 @@ Overfull \hbox (31.61685pt too wide) in paragraph at lines 82--84
  [] 
  []
 
-) (Chapters/dermoscopicFeatures.tex [47 <./images/superpixels.png>] [48 <./images/superpixel2.png> <./images/superpixel1.png>]
+) (Chapters/dermoscopicFeatures.tex [55 <./images/superpixels.png>] [56 <./images/superpixel2.png> <./images/superpixel1.png>]
 Overfull \hbox (125.752pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/10.95 6.5.  BORDER DETECTION USING ZERNIKE MOMENTS, FRACTAL BOX-COUNTING, AND CONVEXITY \OT1/cmr/m/n/10.95 49
+\OT1/cmr/m/sl/10.95 6.5.  BORDER DETECTION USING ZERNIKE MOMENTS, FRACTAL BOX-COUNTING, AND CONVEXITY \OT1/cmr/m/n/10.95 57
  []
 
-[49]
+[57]
 Chapter 7.
-) (Chapters/proposedTechnique.tex [50
+) (Chapters/proposedTechnique.tex [58
 
 ]
 Chapter 8.
-) (Chapters/conclusion.tex [51
+) (Chapters/conclusion.tex [59
 
 ]
 Chapter 9.
-[52
+[60
 
-] [53]
+] [61]
 Chapter 10.
-) [54
+) [62
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [55
+ [63
 
 
 
-] [56] [57] [58] (Back/tables.tex [59]
+] [64] [65] [66] (Back/tables.tex [67]
 Chapter 11.
-) (Back/appendix.tex [60
+) (Back/appendix.tex [68
 
 ]
 Chapter 12.
-) [61
+) [69
 
 ] (thesis.aux)
 
@@ -1564,7 +1611,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C23AECA3ED8F8DF2CAA96B6B079DD7B3;11816.
+(rerunfilecheck)             Checksum: 5CA47A838ABBA790A3A9D888CAAD812D;11971.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                thesis
@@ -1575,17 +1622,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39814 strings out of 476374
- 787662 string characters out of 5788854
+ 39895 strings out of 476374
+ 789888 string characters out of 5788854
  1869340 words of memory out of 5000000
- 59029 multiletter control sequences out of 15000+600000
+ 59085 multiletter control sequences out of 15000+600000
  529356 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,10n,134p,2229b,1671s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\scary\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/scary/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (71 pages, 1302724 bytes).
+Output written on thesis.pdf (79 pages, 1517631 bytes).
 PDF statistics:
- 1205 PDF objects out of 1440 (max. 8388607)
- 249 named destinations out of 1000 (max. 500000)
- 42117 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1285 PDF objects out of 1440 (max. 8388607)
+ 265 named destinations out of 1000 (max. 500000)
+ 42165 words of extra memory for PDF output out of 42996 (max. 10000000)
 

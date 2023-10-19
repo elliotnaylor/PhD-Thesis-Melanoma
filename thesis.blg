@@ -20,13 +20,14 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 13540 items.
+Reallocating 'field_info' (item size: 4) to 13680 items.
 Database file #1: thesis-blx.bib
 Database file #2: references.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Warning--I didn't find a database entry for "skar2017"
 Warning--I didn't find a database entry for "Aas2021"
 Warning--I didn't find a database entry for "Wen2022"
+Warning--I didn't find a database entry for "nhs-location"
 Warning--I didn't find a database entry for "Unver2019"
 Warning--I didn't find a database entry for "kasmi2023"
 Warning--I didn't find a database entry for "Lee1997"
@@ -39,7 +40,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 51 entries,
             6399 wiz_defined-function locations,
-            1688 strings with 96193 characters,
+            1689 strings with 96205 characters,
 and the built_in function-call counts, 613240 in all, are:
 = -- 54389
 > -- 6025
@@ -78,4 +79,4 @@ warning$ -- 0
 while$ -- 9061
 width$ -- 0
 write$ -- 2485
-(There were 10 warnings)
+(There were 11 warnings)
