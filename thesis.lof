@@ -4,35 +4,37 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Images of two skin lesions from the PH$^2$ dataset showing the asymmetry calculated from moments.\relax }}{14}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Images of two skin lesions split into 8 sections using moments, each border is measured for irregularity.\relax }}{15}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions. Dataset appears to be highly unbalanced with half being NV.\relax }}{20}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The dataset has more male than female patients except for NV that has more samples.\relax }}{22}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces This shows the number of images samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.\relax }}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions dataset appears to be highly unbalanced with half being NV.\relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The dataset has more male than female patients except for NV which has more samples.\relax }}{22}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces This shows the number of image samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.\relax }}{23}{figure.caption.19}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces The approximate age range of patients and their diagnosis.\relax }}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The dataset has more male than female patients except for NV that has more samples.\relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The dataset has more male than female patients except for NV which has more samples.\relax }}{25}{figure.caption.21}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Number of images containing dermoscopic structures.\relax }}{26}{figure.caption.23}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Number of dermosocpic structures relating\relax }}{27}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Number of image samples and diagnosis in the PH2 dataset.\relax }}{28}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of image samples and diagnosis in the PH2 dataset.\relax }}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).\relax }}{30}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Number of colours in the PH2 dataset compared with the diagnosis. Colours are in order of white, red, light brown, dark brown, blue-gray, and black.\relax }}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example of images from the PH2 dataset. The first two are standard, the second two are atypical, and the last 4 are melanoma.\relax }}{28}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of image samples and diagnosis in the PH2 dataset.\relax }}{28}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).\relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Number of colours in the PH2 dataset compared with the diagnosis. Colours are in order white, red, light brown, dark brown, blue-gray, and black.\relax }}{30}{figure.caption.30}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Dermosocpic structures and the number of images. These are labelled between absent, atypical, present, and Typical.\relax }}{31}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Shows the labels of dermoscopic structures, number of images, and diagnosis. These are labelled between absent, atypical, present, and Typical.\relax }}{32}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Shows the number of images based on the diagnosis and dermoscopic structures present, typical, and atypical.\relax }}{33}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Pigment network data relating to the diagnosis.\relax }}{33}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of image samples relating to the diagnosis of the image.\relax }}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Age of patients and number of image samples.\relax }}{38}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Number of image samples related to the location of the skin lesion.\relax }}{39}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.\relax }}{40}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Boxplot describing the age of patients and the diagnosis.\relax }}{41}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Number of image samples relating to the diagnosis of the image.\relax }}{42}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Shows the labels of dermoscopic structures, number of images, and diagnosis. These are labelled between absent, atypical, present, and Typical.\relax }}{31}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Shows the number of images based on the diagnosis and dermoscopic structures present, typical, and atypical.\relax }}{32}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Pigment network data relating to the diagnosis.\relax }}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of image samples relating to the historical diagnosis. Labelled as uncertain if there is a `?' in the diagnosis.\relax }}{38}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses because they are not specifically searched for.\relax }}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Number of image samples relating to the diagnosis of the image.\relax }}{41}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Age of patients and number of image samples.\relax }}{42}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Number of image samples related to the location of the skin lesion.\relax }}{43}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.\relax }}{44}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Boxplot describing the age of patients and the diagnosis.\relax }}{45}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Number of image samples relating to the diagnosis of the image.\relax }}{46}{figure.caption.50}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.\relax }}{46}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Otsu thresholding alongside ground-truth mask, where grey Otsu and white is SegNet. The bar chart shows the histogram with an otsu threshold of 138.\relax }}{47}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Local Binary Pattern Clustering (LBPC) showing the a) original image, b) ground-truth, and c) LBPC. LBPC successfully exaggerates the border cut-off on the skin lesions with regular and irregular borders\relax }}{48}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.\relax }}{50}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Otsu thresholding alongside ground-truth mask, where grey Otsu and white is SegNet. The bar chart shows the histogram with an otsu threshold of 138.\relax }}{51}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Local Binary Pattern Clustering (LBPC) showing the a) original image, b) ground-truth, and c) LBPC. LBPC successfully exaggerates the border cut-off on the skin lesions with regular and irregular borders\relax }}{52}{figure.caption.53}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces This diagram is a summary of the PH2 dataset after using bi-fold, euclidean distance of colour. The value on the right would be a threshold.\relax }}{53}{figure.caption.49}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces This diagram shows the skin lesion split relating to superpixels instead of averaging squares.\relax }}{55}{figure.caption.50}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces This diagram shows the difference between averaging squares and using superpixels, with the threshold of 10 implying curves and 50 being square. The horizontal colour difference is improved, making it more likely to be seen asymmetrical. The vertical comparison is roughly the same, except for removing a false positive of 40.\relax }}{56}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces This diagram is a summary of the PH2 dataset after using bi-fold, euclidean distance of colour. The value on the right would be a threshold.\relax }}{57}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces This diagram shows the skin lesion split relating to superpixels instead of averaging squares.\relax }}{59}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces This diagram shows the difference between averaging squares and using superpixels, with the threshold of 10 implying curves and 50 being square. The horizontal colour difference is improved, making it more likely to be seen asymmetrical. The vertical comparison is roughly the same, except for removing a false positive of 40.\relax }}{60}{figure.caption.57}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

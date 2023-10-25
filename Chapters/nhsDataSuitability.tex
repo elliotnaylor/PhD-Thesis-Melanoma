@@ -68,7 +68,7 @@ The ISIC dataset is a collaborative effort of many institutions to support the d
 	\caption{}
 \end{table} \label{ISIC_AF}
 
-ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_af}. This is important to mention because each dataset has captured its images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions. 
+ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has captured its images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions. 
 
 %Diagram of the number of images assigned to which diagnoses
 \begin{figure}
@@ -257,7 +257,7 @@ Following the potential issues 2,500 images were chosen from the NHS database. I
 
 %In this project, we do not have the resources to re-diagnose skin lesions, so instead the focus is on gathering diagnostic results from the histopathology department. These results are more accurate than dermatologists\cite{Morton1998} and counter the mentioned biases. Comparing this data with the diagnoses from the dermatology department provides insight into dermatology accuracy. Furthermore, histopathology serves as a ground truth for training the algorithms and testing their capabilities.
 
-Each image holds metadata shown in table \ref{nhs-metdata} as EXIF Tags within each image. After extracting the images the metadata included in the images are Filename, Tags (Capturing method, anatomical location), Gender, DOB, Department, Consent, Historical Diagnosis, Diagnosis, and Date Photographed. There was other metadata with each image, but they are potentially identifiable, so in order to protect patient confidentiality, they were removed. 
+Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within each image. After extracting the images the metadata included in the images are Filename, Tags (Capturing method, anatomical location), Gender, DOB, Department, Consent, Historical Diagnosis, Diagnosis, and Date Photographed. There was other metadata with each image, but they are potentially identifiable, so in order to protect patient confidentiality, they were removed. 
 
 
 
@@ -384,7 +384,7 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 
 %Go into more detail and graphs
 \begin{table}
-	\small
+	\centering
 	\begin{tabular}{|c|c|}
 		\hline
 		Category & Organised sub-labels

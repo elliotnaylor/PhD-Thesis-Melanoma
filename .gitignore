@@ -39,3 +39,13 @@ luac.out
 *.x86_64
 *.hex
 
+thesis.lot
+thesis.fls
+thesis.log
+thesis.lof
+thesis.fdb_latexmk
+thesis.blg
+thesis.aux
+thesis.toc
+thesis.synctex.gz
+thesis.toc
