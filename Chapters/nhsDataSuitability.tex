@@ -41,12 +41,12 @@ Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosi
 
 Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is utilized for an analysis of feature extraction techniques such as the detection of ABCD rules and dermoscopic structures. Then the entire technique is analysed using the ISIC 2019 dataset, which is the largest public dataset.
 
-
 \subsection{ISIC}
 The ISIC dataset is a collaborative effort of many institutions to support the development of automatic classification methods for melanoma detection. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, anatomical site, and diagnosis. These images are separated into classes melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular lesions (VL), and squamous cell carcinoma (SCC). 
 
-
 %Show images in the ISIC dataset showing how some of them are different
+
+
 
 %Graph showing one of each type of diagnosis
 \begin{table}
@@ -113,11 +113,11 @@ In Figure \ref{diagnosis-age} the age approximation is compared with the type of
 	\caption{The dataset has more male than female patients except for NV which has more samples.} 
 \end{figure} \label{location-age}
 
-Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients who have been diagnosed with skin lesions on their head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palmes/soles and head/neck, which could mean more developed skin lesions in these criteria.
+Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients who have been diagnosed with skin lesions on their head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palms/soles and head/neck, which could mean more developed skin lesions in these criteria.
 
 \subsubsection{Dermoscopic Structures}
 
-ISIC 2017 which shares some images with ISIC 2019 has some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to the ISIC 2019 using there image file names to get their diagnosis.
+ISIC 2017 which shares some images with ISIC 2019 has some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2019 using image file names to get their diagnosis.
 
 \begin{figure}
 	\centering
@@ -133,7 +133,7 @@ The dermoscopic structures described in figure \ref{isic-number-dermo} show the 
 	\caption{Number of dermosocpic structures relating} 
 \end{figure} \label{isic-dermo-diagnosis}
 
-As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melnaoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
+As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melanoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
 
 \subsubsection{Summary}
 In summary, the ISIC dataset including data from 2017, 2018, and 2019 makes this dataset the largest public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
@@ -143,17 +143,24 @@ The PH2 dataset is a collection of dermoscopic images that were made available i
 
 %Show example images of the PH2 dataset, showing that lots of the melanoma images overlap
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/ph2/ph2-example-images.png}
+	\caption{Example of images from the PH2 dataset. The first two are standard, the second two are atypical, and the last 4 are melanoma.} 
+\end{figure}\label{ph2-example-images}
+
+The images in figure{ph2-example-images} are some examples of skin lesions from the PH2 dataset. All the images have a circular border and melanoma samples are too big to fit inside the area of the dermoscope in many cases. This results in a skewered border making it difficult to analyse asymmetry and border from ABCD rules.
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.8]{images/ph2/ph2-diagnosis-number.png}
 	\caption{Number of image samples and diagnosis in the PH2 dataset.} 
-\end{figure} \label{ph2-diagnosis-number}
+\end{figure}\label{ph2-diagnosis-number}
 
 As shown in figure \ref{ph2-diagnosis-number} there are 200 image samples in total with 80 common nevus, 80 atypical and 40 melanoma. The number of image samples is too small for most neural network techniques. The dataset is highly unbalanced with only 40 melanoma images and 160 naevus images. With such a skewed distribution of classes, the model might become overly biased towards the majority class (naevus), leading to poor performance in identifying melanoma. Another issue is the size of these classes, the scarcity of samples will likely result in overfitting when training models. For this reason, this is not a reliable candidate for training machine learning algorithms when considering that more diverse candidates such as ISIC exist.
 
 \subsubsection{Metadata}
-The benefit of this dataset is the rich metadata allowing for the analysis of specific features within an image and the relationship between them. This allows for the development of more sophisticated algorithms that provide further insight into the characteristics between melanoma and naevus.
+The benefit of this dataset is the rich metadata allowing for the analysis of specific features within an image and the relationship between them. This allows for the development of more sophisticated algorithms that provide further insight into the characteristics of melanoma and naevus.
 
 \begin{figure}
 	\centering
@@ -224,7 +231,7 @@ Although macroscopic images are used it is important to note that dermoscopy imp
 
 Another example shows the diagnosis for BCC was 91\% when using dermoscopy, compared to 57\% when using close-up images\cite{Dascalu2022}. Similarly, the sensitivity for SCC was 77\% with dermoscopy, compared to 70\% with close-up images\cite{Dascalu2022}. These findings highlight the superior diagnostic performance of dermoscopy compared to macroscopic.
 
-The dermoscopic examination is superior to macroscopic examination, however, the project use case specifies macroscopic. The logic behind this is that the tool is specifically designed for general practitioners who are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes. This appears to be consistent with an author's findings showing that 92\% of dermatologists correctly recognize at least four size types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas\cite{Tae2019}. Therefore, `the dataset' is created with macroscopic images for examination.
+The dermoscopic examination is superior to macroscopic examination, however, the project use case specifies macroscopic. The logic behind this is that the tool is specifically designed for general practitioners who are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes. This appears to be consistent with an author's findings showing that 92\% of dermatologists correctly recognize at least four size-types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas\cite{Tae2019}. Therefore, `the dataset' is created with macroscopic images for examination.
 
 Considering the use of macroscopic images there needs to be a more thorough clean-up of the data for it to be used effectively. This will include removing hair and specular reflections to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support improving the accuracy when classifying.
 
@@ -234,7 +241,7 @@ The use of datasets is fundamental to the development and evaluation of machine 
 NHS datasets contain a wealth of information that can be utilized. However, some biases need consideration before creating a dataset. These biases include:
 \begin{enumerate}
     \item The diagnostic procedure dismisses skin lesions without recognizably suspicious features and does not reach the phase that photographs were captured. As such, there is a lack of typical benign skin lesions within the dataset, and most have some undesirable features.
-    \item Dermatologists and general practitioners have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. Images include metadata on the department and person capturing the image, so the doctors experience could be measured.
+    \item Dermatologists and general practitioners have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. Images include metadata on the department and person capturing the image, so the doctors' experience can be measured.
     \item Dermatologists could diagnose during an in-person examination where patients can be asked questions in real-time and further tests can be made involving touch. Otherwise, dermatologists diagnose using previously saved images, which might be less accurate because they lack the insight that an in-person examination would provide.
     \item Some skin lesions within the dataset lack metadata including their diagnosis. Such image samples should be avoided.
     \item Diagnoses of skin lesions are written in plain text including question marks where there is some uncertainty and the possibility of multiple diagnoses. Only diagnoses that are certain of their findings are used.
@@ -316,12 +323,11 @@ Each image holds metadata shown in table \ref{nhs-metdata} as EXIF Tags within e
 	\caption{This table shows the metadata in each image and a description of each label. Rows highlighted in red are removed to protect patient confidentiality.}
 \end{table} \label{nhs-metadata}                         
 
-The dataset includes skin lesions with diagnoses of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squamous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). This is a generalised diagnosis, alongside these images are historical diagnoses of the skin lesion, written in plain text where in some cases this question marks when the doctor is uncertain of a diagnosis and other times it includes a slash and a different diagnosis. Although it is not a specific format making it difficult to process, it includes a wealth of knowledge.
+The dataset includes skin lesions with diagnoses of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squamous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). This is a generalised diagnosis, alongside these images are historical diagnoses of the skin lesion, written in plain text in some cases this question marks when the doctor is uncertain of a diagnosis and other times it includes a slash and a different diagnosis. Although it is not a specific format making it difficult to process, it includes a wealth of knowledge.
 
 \subsubsection{Historical Diagnosis of Skin lesions}
 
-Much of the historical diagnosis is written text by a doctor, so you can
-
+The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table \ref{nhs-metadata}.
 
 %Go into more detail and graphs
 \begin{table}
@@ -350,8 +356,10 @@ Much of the historical diagnosis is written text by a doctor, so you can
 		586010.JPG & SUSPECTED N. MM
 		\\
 	\end{tabular}
-	\caption{Examples of historical diagnosis and doctors and some unique variations of labelling}
+	\caption{Examples of historical diagnosis and doctors and some unique variations of labelling.}
 \end{table} \label{nhs-metadata}        
+
+
 
 \begin{figure}
 	\centering
@@ -361,7 +369,13 @@ Much of the historical diagnosis is written text by a doctor, so you can
 
 Some historical diagnoses contain a `?' showing uncertainty from the doctor. Figure \ref{nhs-diagnosis-certainty} describes the number of skin lesions between uncertain and certain. Interestingly AN, BN, and BCC appear to be certain with 117, 36, and 39 respectively. Followed by SK and SCC are roughly half of the images at 106 and 87. Most of all MM shows that more than half of the diagnoses at 259 are uncertain out of 184 that are certain. This in turn demonstrates the type of skin lesions that doctors are having difficulty diagnosing where melanoma is especially difficult.
 
-Multiple diagnoses are sometimes shown, so it would be interesting to see which skin lesions are frequently mixed.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/nhs/nhs-multiple-diagnosis.png}
+	\caption{Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses because they are not specifically searched for.} 
+\end{figure}\label{nhs-multiple-diagnosis}
+
+Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} shows the number of skin lesions with multiple diagnoses mentioned in the historical diagnoses. Interestingly the most commonly associated are AN with MM at 44 and SK with MM at 22 images. Others are SK with MM, Bowen's disease, lentigo, warts, and SCC demonstrating that SK is associated with the widest range of skin lesions and the difficulty diagnosing it.
 
 \subsubsection{Anatomical location}
 
@@ -404,9 +418,34 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 \end{table} \label{nhs-location-names}
 
 %Show transforming the images into the correct size
+\subsection{Data Transformation and Augmentation}
+As mentioned in the data biases section the skin lesion images are taken under various conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project.
+
+One of the main challenges in melanoma detection is the visual similarity between normal and infected regions. Others are the presence of artefacts such as bubbles, hair and clinical marks\cite{Albahli2020}. These factors lead to low accuracy rates in traditional approaches. However, segmentation techniques can help overcome these challenges by removing these areas and isolating the melanoma from the rest of the image.
+
+Skin lesion augmentation is especially vital because of the use of macroscopic images instead of dermoscopic images. This means there are various artefacts including hair, specular reflections, rulers, varying sizes, and shapes of the skin lesion. All of these can obscure the skin lesion and affect the accuracy of segmentation\cite{Unver2019} and in effect feature detection.
+
+By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved\cite{kasmi2023}. 
+
+
+
+\subsubsection{Hair Removal}
+Hair artefacts in images can interfere with the recognition of handcrafted features and affect the performance of deep learning algorithms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation techniques can remove hair artefacts from dermoscopic images\cite{kasmi2023}.
+
+Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997} and is frequently implemented with 
+
+Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from images. This uses a multiple-filter approach including grayscale plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform existing methods.
+
+\subsubsection{Specular Removal}
+Specular reflection removal techniques are effective in improving the accuracy of melanoma detection\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular component, removing the specular reflection\cite{Shen2009}.
+
+
+\subsection{Conclusion}
+
+
 
 \subsection{Dataset Statistics}
-General statistics of the dataset after its creation
+The dataset has been analysed and modified accordingly, originally starting with a total of 2,500 and ending up with ...
 
 \begin{figure}
 	\centering
@@ -455,25 +494,6 @@ Image samples described in figure \ref{nhs-diagnosis-age} demonstrate the age of
 \end{figure}\label{nhs-location-diagnosis}
 
 
-%Specular reflection removal
-\subsection{Skin Lesion Augmentation}
-As mentioned in the data biases section the skin lesion images are taken under various conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project.
-
-One of the main challenges in melanoma detection is the visual similarity between normal and infected regions. Others are the presence of artefacts such as bubbles, hair and clinical marks\cite{Albahli2020}. These factors lead to low accuracy rates in traditional approaches. However, segmentation techniques can help overcome these challenges by removing these areas and isolating the melanoma from the rest of the image.
-
-Skin lesion augmentation is especially vital because of the use of macroscopic images instead of dermoscopic images. This means there are various artefacts including hair, specular reflections, rulers, varying sizes, and shapes of the skin lesion. All of these can obscure the skin lesion and affect the accuracy of segmentation\cite{Unver2019} and in effect feature detection.
-
-By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved\cite{kasmi2023}. 
-
-\subsubsection{Hair Removal}
-Hair artefacts in images can interfere with the recognition of handcrafted features and affect the performance of deep learning algorithms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation techniques can remove hair artefacts from dermoscopic images\cite{kasmi2023}.
-
-Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997} and is frequently implemented with 
-
-Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from images. This uses a multiple-filter approach including grayscale plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform existing methods.
-
-\subsubsection{Specular Removal}
-Specular reflection removal techniques are effective in improving the accuracy of melanoma detection\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular component, removing the specular reflection\cite{Shen2009}.
 
 
 \subsection{Issues}
