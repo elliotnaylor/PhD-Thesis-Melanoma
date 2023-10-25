@@ -1578,69 +1578,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{mendonca2013}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=MT}{%
-         family={Mendonca},
-         familyi={M\bibinitperiod},
-         given={Teresa},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=FPM}{%
-         family={Ferreira},
-         familyi={F\bibinitperiod},
-         given={Pedro\bibnamedelima M.},
-         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=MJS}{%
-         family={Marques},
-         familyi={M\bibinitperiod},
-         given={Jorge\bibnamedelima S.},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=MAR}{%
-         family={Marcal},
-         familyi={M\bibinitperiod},
-         given={Andre\bibnamedelima R.S.},
-         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RJ}{%
-         family={Rozeira},
-         familyi={R\bibinitperiod},
-         given={Jorge},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MT+1}
-    \strng{fullhash}{MTFPMMJSMARRJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    The increasing incidence of melanoma has recently promoted the development
-  of computer-aided diagnosis systems for the classification of dermoscopic
-  images. Unfortunately, the performance of such systems cannot be compared
-  since they are evaluated in different sets of images by their authors and
-  there are no public databases available to perform a fair evaluation of
-  multiple systems. In this paper, a dermoscopic image database, called PH2, is
-  presented. The PH2 database includes the manual segmentation, the clinical
-  diagnosis, and the identification of several dermoscopic structures,
-  performed by expert dermatologists, in a set of 200 dermoscopic images. The
-  PH2 database will be made freely available for research and benchmarking
-  purposes. © 2013 IEEE.%
-    }
-    \verb{doi}
-    \verb 10.1109/EMBC.2013.6610779
-    \endverb
-    \field{issn}{1557170X}
-    \field{title}{PH2 - A dermoscopic image database for research and
-  benchmarking}
-    \field{journaltitle}{Proceedings of the Annual International Conference of
-  the IEEE Engineering in Medicine and Biology Society, EMBS}
-    \field{year}{2013}
-  \endentry
-
   \entry{Meskini2018}{article}{}
     \name{author}{4}{}{%
       {{hash=ME}{%

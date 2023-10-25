@@ -168,7 +168,7 @@ The benefit of this dataset is the rich metadata allowing for the analysis of sp
 	\caption{This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).} 
 \end{figure} \label{ph2-asym-number}
 
-Demonstrated in figure \ref{ph2-asym} demonstrates there is substantial data for measuring the asymmetry score based on the total dermoscopy score (TDS). Typically the algorithms used to measure asymmetry such as bi-fold do not require any training, making the smaller sample size ideal. However, there is a very small sample size for both TDS of 1 and 2, and it would be beneficial to have more data samples.
+Demonstrated in figure \ref{ph2-asym-number} demonstrates there is substantial data for measuring the asymmetry score based on the total dermoscopy score (TDS). Typically the algorithms used to measure asymmetry such as bi-fold do not require any training, making the smaller sample size ideal. However, there is a very small sample size for both TDS of 1 and 2, and it would be beneficial to have more data samples.
 
 \begin{figure}
 	\centering
@@ -209,7 +209,7 @@ Figure \ref{ph2-number-diagnosis-dermo} demonstrates that pigment networks are p
 \end{figure} \label{ph2-number-diagnosis-dermo}
 
 
-There is little to no overlap between typical and atypical pigment networks between melanoma and nevus. Shown in figure \ref{ph2-number-diagnosis-dermo} common nevus are all typical pigment networks, while atypical nevus and melanoma are labelled atypical. This demonstrates that testing for pigment networks should be on type (typical and atypical) instead of whether they are present. Unusually, there is very little overlapping in the data. This is very unusual unless it was designed this way purposely, but it would have been more useful to have more samples without pigment networks.
+There is little to no overlap between typical and atypical pigment networks between melanoma and naevus. Shown in figure \ref{ph2-number-diagnosis-dermo} common naevus are all typical pigment networks, while atypical naevus and melanoma are labelled atypical. This demonstrates that testing for pigment networks should be on type (typical and atypical) instead of whether they are present. Unusually, there is very little overlapping in the data. This is very unusual unless it was designed this way purposely, but it would have been more useful to have more samples without pigment networks.
 
 \subsubsection{Summary}
 In summary, the PH2 dataset is a valuable resource for researchers considering it is the only one of its kind to provide metadata relating to asymmetry, colour and dermoscopic structures. This has been used frequently in various studies to develop and evaluate algorithms for skin lesion analysis. Such datasets with substantial metadata are useful for producing explainable results. As explainable (XAI) becomes more common more datasets describing the data will be necessary. However, one of the downfalls of this dataset is the unusual labelling for dermoscopic structures where the pigment network and globules are labelled between typical and atypical and others are between present and absent. Furthermore, almost every image sample has a pigment network, it would be more useful to have some without this feature.
@@ -264,7 +264,7 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 %Go into more detail and graphs
 \begin{table}
 	\small
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|c|p{0.8\linewidth}|}
 		\hline
 		Attribute & Description
 		\\
@@ -272,22 +272,22 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 		Image ID & an integer representing the image ID - example: 123456.xxx
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Doctor & a string representing the forename and surname of the doctor that made the diagnosis - example: JOHN SMITH
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Department & a string representing the name of the department - example: DERMATOLOGY
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Studio & a string representing the name of the studio used to capture an image of the skin lesion
 		\\
 		\hline
 		Capture date & an integer representing the date the image was captured - example: 00:00:0000
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Hospital ID & a string representing the hospital ID
 		\\
 		\hline
@@ -297,27 +297,29 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 		Date of Birth ID & an integer representing the patients date of birth - example: 00-00-0000
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Surname & a string representing the patients surname
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Forename & a string representing the patients forename
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Initials & a string representing the patients initials
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Patient ID & an integer representing the patients ID
 		\\
 		\hline
 		Subject (Tags) & an array representing method the image capturing method (Dermo or Close-Up) and anatomical location
 		\\
 		\hline
-		\rowcolor{red}
+		\rowcolor{Red}
 		Creator & a string representing the forename and surname of the photographer - example: JOHN SMITH
+		\\
+		\hline
 
 	\end{tabular}
 	\caption{This table shows the metadata in each image and a description of each label. Rows highlighted in red are removed to protect patient confidentiality.}
@@ -331,10 +333,12 @@ The historical diagnosis is written text by the doctor that includes the possibl
 
 %Go into more detail and graphs
 \begin{table}
-	\small
+	\centering
 	\begin{tabular}{|c|c|}
 		\hline
 		Image ID & Historical Diagnosis
+		\\
+		\hline
 		998444.jpg & SEB K
 		\\
 		\hline
@@ -355,6 +359,7 @@ The historical diagnosis is written text by the doctor that includes the possibl
 		\hline
 		586010.JPG & SUSPECTED N. MM
 		\\
+		\hline
 	\end{tabular}
 	\caption{Examples of historical diagnosis and doctors and some unique variations of labelling.}
 \end{table} \label{nhs-metadata}        
@@ -383,6 +388,7 @@ Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} show
 Anatomical location has a total of 28 different descriptors for specific body parts including leg, wrist, neck, etc. To make comparisons easier with the ISIC dataset each label has been assigned to specific areas such as upper extremity, anterior torso, etc. All the locations are listed in the table \ref{nhs-location-names}. 
 
 %Go into more detail and graphs
+
 \begin{table}
 	\centering
 	\begin{tabular}{|c|c|}
@@ -404,6 +410,7 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 		\hline
 		Anterior Torso & Chest, Abdomen, Trunk
 		\\
+		\hline
 		Palms/Soles & Hand, Thumb, Foot
 		\\
 		\hline

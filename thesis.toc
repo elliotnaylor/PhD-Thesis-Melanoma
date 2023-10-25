@@ -39,45 +39,45 @@
 \contentsline {subsection}{\numberline {4.3.1}Requirements}{34}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Data Biases}{35}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Data Transformation and Analysis}{36}{subsection.4.3.3}%
-\contentsline {subsubsection}{Historical Diagnosis of Skin lesions}{37}{section*.37}%
-\contentsline {subsubsection}{Anatomical location}{37}{section*.41}%
+\contentsline {subsubsection}{Historical Diagnosis of Skin lesions}{36}{section*.37}%
+\contentsline {subsubsection}{Anatomical location}{40}{section*.41}%
 \contentsline {subsection}{\numberline {4.3.4}Data Transformation and Augmentation}{40}{subsection.4.3.4}%
-\contentsline {subsubsection}{Hair Removal}{40}{section*.43}%
+\contentsline {subsubsection}{Hair Removal}{41}{section*.43}%
 \contentsline {subsubsection}{Specular Removal}{41}{section*.44}%
 \contentsline {subsection}{\numberline {4.3.5}Conclusion}{41}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Dataset Statistics}{41}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}Issues}{45}{subsection.4.3.7}%
-\contentsline {chapter}{\numberline {5}A Comparison of Melanoma Segmentation Algorithms using Neural Networks and Statistical Models}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{48}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Related Works}{48}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Skin Lesion Segmentation}{49}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Semantic Pixel Wise Segmentation (SegNet)}{49}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Border extraction}{50}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}U-Otsu Threshold}{50}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}LBPC segmentation}{51}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Comparison of techniques}{53}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Joint Neural network and statistcal model approach}{53}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Analysing and Updating ABCD Rules Detection Algorithms}{54}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{54}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Discussion}{54}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Preferred Diagnostic Procedures}{55}{subsection.6.2.1}%
-\contentsline {subsubsection}{Asymmetry}{55}{section*.54}%
-\contentsline {subsection}{\numberline {6.2.2}Related Works}{55}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}A Novel Asymmetry detection technique using Bi-Fold, 3D Euclidean distance, and Superpixels}{56}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Bi-fold}{56}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}3D Euclidean Distance}{57}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Superpixels using Simple Linear Iterative Clustering (SLIC)}{58}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Experimental Results}{58}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Border Detection Using Zernike Moments, Fractal Box-Counting, and Convexity}{61}{section.6.5}%
-\contentsline {section}{\numberline {6.6}A Novel Colour Analysis Approach using Colour Ranges, and SVM}{61}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Results}{61}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Conclusion}{61}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Dermoscopic features extraction}{62}{chapter.7}%
-\contentsline {section}{\numberline {7.1}}{62}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Combined ABCD Rules and Dermoscopic Structures using Bayesian Network}{63}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{63}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Challenges}{63}{subsection.8.1.1}%
-\contentsline {chapter}{\numberline {9}Conclusion}{64}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Future Work}{66}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Tables}{72}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Appendix}{73}{chapter.12}%
+\contentsline {subsection}{\numberline {4.3.7}Issues}{48}{subsection.4.3.7}%
+\contentsline {chapter}{\numberline {5}A Comparison of Melanoma Segmentation Algorithms using Neural Networks and Statistical Models}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Related Works}{49}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Skin Lesion Segmentation}{50}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Semantic Pixel Wise Segmentation (SegNet)}{50}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Border extraction}{51}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}U-Otsu Threshold}{51}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}LBPC segmentation}{52}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Comparison of techniques}{54}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Joint Neural network and statistcal model approach}{54}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Analysing and Updating ABCD Rules Detection Algorithms}{55}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{55}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Discussion}{55}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Preferred Diagnostic Procedures}{56}{subsection.6.2.1}%
+\contentsline {subsubsection}{Asymmetry}{56}{section*.54}%
+\contentsline {subsection}{\numberline {6.2.2}Related Works}{56}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}A Novel Asymmetry detection technique using Bi-Fold, 3D Euclidean distance, and Superpixels}{57}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Bi-fold}{57}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}3D Euclidean Distance}{58}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Superpixels using Simple Linear Iterative Clustering (SLIC)}{59}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Experimental Results}{59}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Border Detection Using Zernike Moments, Fractal Box-Counting, and Convexity}{62}{section.6.5}%
+\contentsline {section}{\numberline {6.6}A Novel Colour Analysis Approach using Colour Ranges, and SVM}{62}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Results}{62}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Conclusion}{62}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Dermoscopic features extraction}{63}{chapter.7}%
+\contentsline {section}{\numberline {7.1}}{63}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Combined ABCD Rules and Dermoscopic Structures using Bayesian Network}{64}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{64}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Challenges}{64}{subsection.8.1.1}%
+\contentsline {chapter}{\numberline {9}Conclusion}{65}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Future Work}{67}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Tables}{73}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Appendix}{74}{chapter.12}%
