@@ -8,38 +8,38 @@ There are a range of public datasets including MEDLINE, PH2, ISIC, and others ma
 
 %Go into more detail and graphs
 \begin{table}
-	\small
-	\begin{tabular}{|c|c|p{0.15\linewidth}|c|c|p{0.34\linewidth}|}
-		\hline
-		Name & Year & Image Type & Number & Classes & Metadata \\
-		\hline
-		ISIC 2019 & 2019 & Dermoscopic & 33,569 & 8 & Age, anatomical site, gender, and diagnosis
-		\\
-		\hline
-		PH2 & 2013 & Dermoscopic & 200 & 3 & Asymmetry, colour, pigment network, dots/globules, streaks, regression areas, blue-whitish veil
-		\\
-		\hline
-		MED-NODE  & 2015 & Macroscopic & 170 & 2 & n/a
-		\\
-		\hline	
-		SD-198  & 2016 & Dermoscopic \& Macroscopic & 6,584 & 198 & anatomical site, symptoms, duration, morphology, and colour
-		\\
-		\hline	
-		SKINL2 & 2019 & Macroscopic (unique tool) & 376 & 8 & Gender, age, and fototype
-		\\
-		\hline
-		7-point Criteria & 2018 & Dermoscopic \& Macroscopic & 2000 & 2 & Pigment network, regression, pigmentation, blue-whitish veil vascular structures, streaks, dots/globules
-		\\
-		\hline	
-	\end{tabular}
-	\caption{}
-	\end{table} \label{datasets}
+    \small
+    \begin{tabular}{|c|c|p{0.15\linewidth}|c|c|p{0.34\linewidth}|}
+        \hline
+        Name & Year & Image Type & Number & Classes & Metadata \\
+        \hline
+        ISIC 2019 & 2019 & Dermoscopic & 33,569 & 8 & Age, anatomical site, gender, and diagnosis
+        \\
+        \hline
+        PH2 & 2013 & Dermoscopic & 200 & 3 & Asymmetry, colour, pigment network, dots/globules, streaks, regression areas, blue-whitish veil
+        \\
+        \hline
+        MED-NODE  & 2015 & Macroscopic & 170 & 2 & n/a
+        \\
+        \hline  
+        SD-198  & 2016 & Dermoscopic \& Macroscopic & 6,584 & 198 & anatomical site, symptoms, duration, morphology, and colour
+        \\
+        \hline  
+        SKINL2 & 2019 & Macroscopic (unique tool) & 376 & 8 & Gender, age, and fototype
+        \\
+        \hline
+        7-point Criteria & 2018 & Dermoscopic \& Macroscopic & 2000 & 2 & Pigment network, regression, pigmentation, blue-whitish veil vascular structures, streaks, dots/globules
+        \\
+        \hline  
+    \end{tabular}
+    \caption{}
+    \end{table} \label{datasets}
 
 The datasets listed in table \ref{datasets} include the number of images, classes, and metadata. Out of these datasets ISIC 2019, PH2 and 7-Point Criteria appear to be the most promising. PH2 is especially useful because it is the only dataset representing ABCD rules on asymmetry and colour. SKINL2 was considered, but ISIC 2019 was a much larger dataset with more metadata. SD-198 is publicly available but not accessible.
 
 Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melanocytic proliferation, café au lait macule, lentigo NOS, lichenoid keratosis, naevus, seborrhoeic keratosis, solar lentigo, and other/unknown. The metadata is very specific and doesn't match the requirements of the project, so ISIC 2019 is still a better candidate for analysis.
 
-Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is utilized for an analysis of feature extraction techniques such as the detection of ABCD rules and dermoscopic structures. Then the entire technique is analysed using the ISIC 2019 dataset, which is the largest public dataset.
+Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is utilised for an analysis of feature extraction techniques such as the detection of ABCD rules and dermoscopic structures. Then the entire technique is analysed using the ISIC 2019 dataset, which is the largest public dataset.
 
 \subsection{ISIC}
 The ISIC dataset is a collaborative effort of many institutions to support the development of automatic classification methods for melanoma detection. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, anatomical site, and diagnosis. These images are separated into classes melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular lesions (VL), and squamous cell carcinoma (SCC). 
@@ -50,67 +50,66 @@ The ISIC dataset is a collaborative effort of many institutions to support the d
 
 %Graph showing one of each type of diagnosis
 \begin{table}
-	\small
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		Name & Year & Total Samples & Differences \\
-		\hline
-		HAM10000 & 2018 & 11,526 & n/a
-		\\
-		\hline
-		BCN 20000 & 2016 & 19,424 & Includes nails and mucosa
-		\\
-		\hline
-		MSK & 2015, 2017 & 3918 & Coloured stickers covering un-applicable skin lesions
-		\\
-		\hline	
-	\end{tabular}
-	\caption{}
+    \small
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Name & Year & Total Samples & Differences \\
+        \hline
+        HAM10000 & 2018 & 11,526 & n/a
+        \\
+        \hline
+        BCN 20000 & 2016 & 19,424 & Includes nails and mucosa
+        \\
+        \hline
+        MSK & 2015, 2017 & 3918 & Coloured stickers covering un-applicable skin lesions
+        \\
+        \hline  
+    \end{tabular}
+    \caption{}
 \end{table} \label{ISIC_AF}
 
 ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has captured its images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions. 
 
 %Diagram of the number of images assigned to which diagnoses
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/diagnosis-number.png}
-	\caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions dataset appears to be highly unbalanced with half being NV.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/diagnosis-number.png}
+    \caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions dataset appears to be highly unbalanced with half being NV.} 
 \end{figure} \label{diagnosis-number}
-	
+    
 As demonstrated in figure \ref{diagnosis-number} the dataset is highly in-balanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, where AK has a very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Seborrhoeic keratosis (SK) is not in this dataset and AK a similar lesion is described instead. Others such as DF, and VASC only contain a handful of images. The difference in image samples makes the dataset primarily useful for testing between NV and MEL.
 
 \subsubsection{Metdata}
 In this dataset, the images are accompanied by metadata describing patient information. This includes patients age, sex, and anatomical location. Analysing this data provides further insight into the influence of patient information on the classification process. Most of all we are looking for similar numbers for each category and some cases might be removed from the classification process to improve results.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/sex-number.png}
-	\includegraphics[scale=0.8]{images/ISIC/number-sex-diagnosis.png}
-	\caption{The dataset has more male than female patients except for NV which has more samples.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/number-sex-diagnosis.png}
+    \caption{The dataset has more male than female patients except for NV which has more samples.} 
 \end{figure} \label{sex}
 
 Figure \ref{sex} demonstrates the number of samples relating to the patient's sex. There are more samples for each type of skin lesion except for NV which there are more female samples. They are all within a very close range and are unlikely to need rebalancing.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/age-number.png}
-	\caption{This shows the number of image samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.}
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/age-number.png}
+    \caption{This shows the number of image samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.}
 \end{figure} \label{age-number}
 
 As demonstrated in figure \ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. Variation might be because skin lesions are more likely to develop in older people than younger ones. This might mean that many of the skin lesions are developed and there is going to be unlikely to find underdeveloped skin lesion samples.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/diagnosis-age.png}
-	\caption{The approximate age range of patients and their diagnosis.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/diagnosis-age.png}
+    \caption{The approximate age range of patients and their diagnosis.} 
 \end{figure} \label{diagnosis-age}
 
 In Figure \ref{diagnosis-age} the age approximation is compared with the type of skin lesion. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. Some dots represent outliers in the data, that are outside the age range. Each class in the diagram is a diagnosis associated with the age of each patient. Interestingly, represented in this data SCC and AK appear to develop more in older adults and many of the younger patients were diagnosed with NV or DF. This is correct when regarding literature considering that SCC and AK develop in older adults\cite{}.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/location-age.png}
-	\caption{The dataset has more male than female patients except for NV which has more samples.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/location-age.png}
+    \caption{Shows image examples associated with the anatomical location and age of the patients.} 
 \end{figure} \label{location-age}
 
 Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients who have been diagnosed with skin lesions on their head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palms/soles and head/neck, which could mean more developed skin lesions in these criteria.
@@ -120,17 +119,17 @@ Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares 
 ISIC 2017 which shares some images with ISIC 2019 has some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2019 using image file names to get their diagnosis.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/isic-dermo-number.png}
-	\caption{Number of images containing dermoscopic structures.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/isic-dermo-number.png}
+    \caption{Number of images containing dermoscopic structures.} 
 \end{figure} \label{isic-number-dermo}
 
 The dermoscopic structures described in figure \ref{isic-number-dermo} show the number of image samples for each dermoscopic structure. Naturally pigmented networks have more than 1400 images which makes it ideal for training a SegNet algorithm. Other demroscopic structures are lacking and do not have enough data for any deep-learning algorithms.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ISIC/isic-dermo-diagnosis.png}
-	\caption{Number of dermosocpic structures relating} 
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/isic-dermo-diagnosis.png}
+    \caption{Number of dermoscopic structures relating} 
 \end{figure} \label{isic-dermo-diagnosis}
 
 As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melanoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
@@ -144,17 +143,17 @@ The PH2 dataset is a collection of dermoscopic images that were made available i
 %Show example images of the PH2 dataset, showing that lots of the melanoma images overlap
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-example-images.png}
-	\caption{Example of images from the PH2 dataset. The first two are standard, the second two are atypical, and the last 4 are melanoma.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-example-images.png}
+    \caption{Example of images from the PH2 dataset. The first two are standard, the second two are atypical, and the last 4 are melanoma.} 
 \end{figure}\label{ph2-example-images}
 
 The images in figure{ph2-example-images} are some examples of skin lesions from the PH2 dataset. All the images have a circular border and melanoma samples are too big to fit inside the area of the dermoscope in many cases. This results in a skewered border making it difficult to analyse asymmetry and border from ABCD rules.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-diagnosis-number.png}
-	\caption{Number of image samples and diagnosis in the PH2 dataset.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-diagnosis-number.png}
+    \caption{Number of image samples and diagnosis in the PH2 dataset.} 
 \end{figure}\label{ph2-diagnosis-number}
 
 As shown in figure \ref{ph2-diagnosis-number} there are 200 image samples in total with 80 common nevus, 80 atypical and 40 melanoma. The number of image samples is too small for most neural network techniques. The dataset is highly unbalanced with only 40 melanoma images and 160 naevus images. With such a skewed distribution of classes, the model might become overly biased towards the majority class (naevus), leading to poor performance in identifying melanoma. Another issue is the size of these classes, the scarcity of samples will likely result in overfitting when training models. For this reason, this is not a reliable candidate for training machine learning algorithms when considering that more diverse candidates such as ISIC exist.
@@ -163,60 +162,57 @@ As shown in figure \ref{ph2-diagnosis-number} there are 200 image samples in tot
 The benefit of this dataset is the rich metadata allowing for the analysis of specific features within an image and the relationship between them. This allows for the development of more sophisticated algorithms that provide further insight into the characteristics of melanoma and naevus.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-asym-number.png}
-	\caption{This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-asym-number.png}
+    \caption{This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).} 
 \end{figure} \label{ph2-asym-number}
 
 Demonstrated in figure \ref{ph2-asym-number} demonstrates there is substantial data for measuring the asymmetry score based on the total dermoscopy score (TDS). Typically the algorithms used to measure asymmetry such as bi-fold do not require any training, making the smaller sample size ideal. However, there is a very small sample size for both TDS of 1 and 2, and it would be beneficial to have more data samples.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-colour-number.png}
-	\caption{Number of colours in the PH2 dataset compared with the diagnosis. Colours are in order white, red, light brown, dark brown, blue-gray, and black.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-colour-number.png}
+    \caption{Number of colours in the PH2 dataset compared with the diagnosis. Colours are in order white, red, light brown, dark brown, blue-gray, and black.} 
 \end{figure} \label{ph2-colour-number}
 
 The observation in figure \ref{ph2-colour-number} demonstrates that Light and dark brown are commonly associated with typical naevus. On the other hand, white, blue, and black are more common in melanoma because they indicate structural and vascular irregularities. The scarcity of red samples demonstrates that it is uncommon in nevus and melanoma. Other lesions including BCC are more likely to contain red\cite{}, but these lesions are not included in this dataset.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-dermo-number.png}
-	\caption{Dermosocpic structures and the number of images. These are labelled between absent, atypical, present, and Typical.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-dermo-number.png}
+    \caption{Dermosocpic structures and the number of images. These are labelled between absent, atypical, present, and Typical.} 
 \end{figure} \label{ph2-dermo-number}
 
 There are many records of pigment networks, and dots/globules, but as seen in Figure \ref{ph2-dermo-number} there are roughly 20 samples for each streaks, regression, and blue-whitish veil. The data is highly unbalanced, so it will be difficult to train a machine-learning algorithm for these features. There are more samples of pigment networks, and dots/globules because common. For this reason, typical and atypical features are a good indication of whether the skin lesion is melanoma.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-dermo-diagnosis.png}
-	\caption{Shows the labels of dermoscopic structures, number of images, and diagnosis. These are labelled between absent, atypical, present, and Typical.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-dermo-diagnosis.png}
+    \caption{Shows the labels of dermoscopic structures, number of images, and diagnosis. These are labelled between absent, atypical, present, and Typical.} 
 \end{figure} \label{ph2-dermo-diagnosis}
 
 Figure \ref{ph2-dermo-diagnosis} shows dermoscopic structure labels relating to the diagnosis of the skin lesions. Common nevus have typical and present dermoscopic structures, atypical nevus have just as many absent with more present and atypical. Melanoma has more present and atypical types of skin lesions. 
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-number-diagnosis-dermo.png}
-	\caption{Shows the number of images based on the diagnosis and dermoscopic structures present, typical, and atypical.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-number-diagnosis-dermo.png}
+    \caption{Shows the number of images based on the diagnosis and dermoscopic structures present, typical, and atypical.} 
 \end{figure} \label{ph2-number-diagnosis-dermo}
 
-Figure \ref{ph2-number-diagnosis-dermo} demonstrates that pigment networks are present in both nevus and melanoma. Furthermore, streaks, regression areas, and blue-whitish veils are more common in melanoma. Pigment networks and dots/globules use different labels of typical and atypical so it is understandable they do not change between lesion types.
+Figure\ref{ph2-number-diagnosis-dermo} demonstrates that pigment networks are present in both nevus and melanoma. Furthermore, streaks, regression areas, and blue-whitish veils are more common in melanoma. Pigment networks and dots/globules use different labels of typical and atypical so it is understandable they do not change between lesion types.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/ph2/ph2-pigment-diagnosis.png}
-	\caption{Pigment network data relating to the diagnosis.} 
+    \centering
+    \includegraphics[scale=0.75]{images/ph2/ph2-pigment-diagnosis.png}
+    \caption{Pigment network data relating to the diagnosis.} 
 \end{figure} \label{ph2-number-diagnosis-dermo}
-
 
 There is little to no overlap between typical and atypical pigment networks between melanoma and naevus. Shown in figure \ref{ph2-number-diagnosis-dermo} common naevus are all typical pigment networks, while atypical naevus and melanoma are labelled atypical. This demonstrates that testing for pigment networks should be on type (typical and atypical) instead of whether they are present. Unusually, there is very little overlapping in the data. This is very unusual unless it was designed this way purposely, but it would have been more useful to have more samples without pigment networks.
 
 \subsubsection{Summary}
 In summary, the PH2 dataset is a valuable resource for researchers considering it is the only one of its kind to provide metadata relating to asymmetry, colour and dermoscopic structures. This has been used frequently in various studies to develop and evaluate algorithms for skin lesion analysis. Such datasets with substantial metadata are useful for producing explainable results. As explainable (XAI) becomes more common more datasets describing the data will be necessary. However, one of the downfalls of this dataset is the unusual labelling for dermoscopic structures where the pigment network and globules are labelled between typical and atypical and others are between present and absent. Furthermore, almost every image sample has a pigment network, it would be more useful to have some without this feature.
 
-
 \pagebreak
-
 \section{Creating `the Dataset'}
 Whilst recognising the benefits of the ISIC 2019 and PH2 datasets we can begin to develop `the dataset' using NHS data. The inclusion of NHS data brings real-world clinical cases into the mix, and techniques developed during this project can be tested in the scenario it is intended to be utilised. Requirements are decided below to highlight potential biases and issues, and then 2,000 images are chosen to create the dataset. This is followed by an analysis similar to the previous datasets and interesting findings from the data.
 
@@ -231,14 +227,14 @@ Although macroscopic images are used it is important to note that dermoscopy imp
 
 Another example shows the diagnosis for BCC was 91\% when using dermoscopy, compared to 57\% when using close-up images\cite{Dascalu2022}. Similarly, the sensitivity for SCC was 77\% with dermoscopy, compared to 70\% with close-up images\cite{Dascalu2022}. These findings highlight the superior diagnostic performance of dermoscopy compared to macroscopic.
 
-The dermoscopic examination is superior to macroscopic examination, however, the project use case specifies macroscopic. The logic behind this is that the tool is specifically designed for general practitioners who are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes. This appears to be consistent with an author's findings showing that 92\% of dermatologists correctly recognize at least four size-types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas\cite{Tae2019}. Therefore, `the dataset' is created with macroscopic images for examination.
+The dermoscopic examination is superior to macroscopic examination, however, the project use case specifies macroscopic. The logic behind this is that the tool is specifically designed for general practitioners who are unlikely to recognize dermoscopic features, so there is no need to supply them with dermoscopes. This appears to be consistent with an author's findings showing that 92\% of dermatologists correctly recognize at least four size types of melanoma. In contrast, only 38\% of non-dermatologists were able to recognize the same number of melanomas\cite{Tae2019}. Therefore, `the dataset' is created with macroscopic images for examination.
 
 Considering the use of macroscopic images there needs to be a more thorough clean-up of the data for it to be used effectively. This will include removing hair and specular reflections to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support improving the accuracy when classifying.
 
 \subsection{Data Biases}
 The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
 
-NHS datasets contain a wealth of information that can be utilized. However, some biases need consideration before creating a dataset. These biases include:
+NHS datasets contain a wealth of information that can be utilised. However, some biases need consideration before creating a dataset. These biases include:
 \begin{enumerate}
     \item The diagnostic procedure dismisses skin lesions without recognizably suspicious features and does not reach the phase that photographs were captured. As such, there is a lack of typical benign skin lesions within the dataset, and most have some undesirable features.
     \item Dermatologists and general practitioners have diagnosed the large majority of skin lesions which have varying accuracy depending on their experience. Images include metadata on the department and person capturing the image, so the doctors' experience can be measured.
@@ -257,72 +253,70 @@ Following the potential issues 2,500 images were chosen from the NHS database. I
 
 %In this project, we do not have the resources to re-diagnose skin lesions, so instead the focus is on gathering diagnostic results from the histopathology department. These results are more accurate than dermatologists\cite{Morton1998} and counter the mentioned biases. Comparing this data with the diagnoses from the dermatology department provides insight into dermatology accuracy. Furthermore, histopathology serves as a ground truth for training the algorithms and testing their capabilities.
 
-Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within each image. After extracting the images the metadata included in the images are Filename, Tags (Capturing method, anatomical location), Gender, DOB, Department, Consent, Historical Diagnosis, Diagnosis, and Date Photographed. There was other metadata with each image, but they are potentially identifiable, so in order to protect patient confidentiality, they were removed. 
-
-
+Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within each image. After extracting the images the metadata included in the images are Filename, Tags (Capturing method, anatomical location), Gender, DOB, Department, Consent, Historical Diagnosis, Diagnosis, and Date Photographed. There was other metadata with each image, but they are potentially identifiable, so to protect patient confidentiality, they were removed. 
 
 %Go into more detail and graphs
 \begin{table}
-	\small
-	\begin{tabular}{|c|p{0.8\linewidth}|}
-		\hline
-		Attribute & Description
-		\\
-		\hline
-		Image ID & an integer representing the image ID - example: 123456.xxx
-		\\
-		\hline
-		\rowcolor{Red}
-		Doctor & a string representing the forename and surname of the doctor that made the diagnosis - example: JOHN SMITH
-		\\
-		\hline
-		\rowcolor{Red}
-		Department & a string representing the name of the department - example: DERMATOLOGY
-		\\
-		\hline
-		\rowcolor{Red}
-		Studio & a string representing the name of the studio used to capture an image of the skin lesion
-		\\
-		\hline
-		Capture date & an integer representing the date the image was captured - example: 00:00:0000
-		\\
-		\hline
-		\rowcolor{Red}
-		Hospital ID & a string representing the hospital ID
-		\\
-		\hline
-		Gender & a string representing the patient's gender
-		\\
-		\hline
-		Date of Birth ID & an integer representing the patients date of birth - example: 00-00-0000
-		\\
-		\hline
-		\rowcolor{Red}
-		Surname & a string representing the patients surname
-		\\
-		\hline
-		\rowcolor{Red}
-		Forename & a string representing the patients forename
-		\\
-		\hline
-		\rowcolor{Red}
-		Initials & a string representing the patients initials
-		\\
-		\hline
-		\rowcolor{Red}
-		Patient ID & an integer representing the patients ID
-		\\
-		\hline
-		Subject (Tags) & an array representing method the image capturing method (Dermo or Close-Up) and anatomical location
-		\\
-		\hline
-		\rowcolor{Red}
-		Creator & a string representing the forename and surname of the photographer - example: JOHN SMITH
-		\\
-		\hline
+    \small
+    \begin{tabular}{|c|p{0.8\linewidth}|}
+        \hline
+        Attribute & Description
+        \\
+        \hline
+        Image ID & an integer representing the image ID - example: 123456.xxx
+        \\
+        \hline
+        \rowcolor{Red}
+        Doctor & a string representing the forename and surname of the doctor that made the diagnosis - example: JOHN SMITH
+        \\
+        \hline
+        \rowcolor{Red}
+        Department & a string representing the name of the department - example: DERMATOLOGY
+        \\
+        \hline
+        \rowcolor{Red}
+        Studio & a string representing the name of the studio used to capture an image of the skin lesion
+        \\
+        \hline
+        Capture date & an integer representing the date the image was captured - example: 00:00:0000
+        \\
+        \hline
+        \rowcolor{Red}
+        Hospital ID & a string representing the hospital ID
+        \\
+        \hline
+        Gender & a string representing patient gender
+        \\
+        \hline
+        Date of Birth ID & an integer representing patient date of birth - example: 00-00-0000
+        \\
+        \hline
+        \rowcolor{Red}
+        Surname & a string representing patient surname
+        \\
+        \hline
+        \rowcolor{Red}
+        Forename & a string representing patient forename
+        \\
+        \hline
+        \rowcolor{Red}
+        Initials & a string representing patient initials
+        \\
+        \hline
+        \rowcolor{Red}
+        Patient ID & an integer representing patient ID
+        \\
+        \hline
+        Subject (Tags) & an array representing method the image capturing method (Dermo or Close-Up) and anatomical location
+        \\
+        \hline
+        \rowcolor{Red}
+        Creator & a string representing the forename and surname of the photographer - example: JOHN SMITH
+        \\
+        \hline
 
-	\end{tabular}
-	\caption{This table shows the metadata in each image and a description of each label. Rows highlighted in red are removed to protect patient confidentiality.}
+    \end{tabular}
+    \caption{This table shows the metadata in each image and a description of each label. Rows highlighted in red are removed to protect patient confidentiality.}
 \end{table} \label{nhs-metadata}                         
 
 The dataset includes skin lesions with diagnoses of Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Typical Naevi (TN), Squamous Cell Carcinoma (SCC), Basal Cell Carcinoma (BCC). This is a generalised diagnosis, alongside these images are historical diagnoses of the skin lesion, written in plain text in some cases this question marks when the doctor is uncertain of a diagnosis and other times it includes a slash and a different diagnosis. Although it is not a specific format making it difficult to process, it includes a wealth of knowledge.
@@ -333,54 +327,62 @@ The historical diagnosis is written text by the doctor that includes the possibl
 
 %Go into more detail and graphs
 \begin{table}
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		Image ID & Historical Diagnosis
-		\\
-		\hline
-		998444.jpg & SEB K
-		\\
-		\hline
-		549982.JPG & AK / SCC
-		\\
-		\hline
-		824466.jpg & ATYPICAL MOLE / ? MM
-		\\
-		\hline
-		879067.jpg & ? ATYPICAL NAEVI
-		\\
-		\hline
-		1028628.jpg & ? MM / ? BCC
-		\\
-		\hline
-		154414.jpg & 1) ? SCC 2) SBCC 3) ? SPOT
-		\\
-		\hline
-		586010.JPG & SUSPECTED N. MM
-		\\
-		\hline
-	\end{tabular}
-	\caption{Examples of historical diagnosis and doctors and some unique variations of labelling.}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Image ID & Historical Diagnosis
+        \\
+        \hline
+        998444.jpg & SEB K
+        \\
+        \hline
+        549982.JPG & AK / SCC
+        \\
+        \hline
+        824466.jpg & ATYPICAL MOLE / ? MM
+        \\
+        \hline
+        879067.jpg & ? ATYPICAL NAEVI
+        \\
+        \hline
+        1028628.jpg & ? MM / ? BCC
+        \\
+        \hline
+        154414.jpg & 1) ? SCC 2) SBCC 3) ? SPOT
+        \\
+        \hline
+        586010.JPG & SUSPECTED N. MM
+        \\
+        \hline
+    \end{tabular}
+    \caption{Examples of historical diagnosis and doctors and some unique variations of labelling.}
 \end{table} \label{nhs-metadata}        
 
 
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis-certainty.png}
-	\caption{Number of image samples relating to the historical diagnosis. Labelled as uncertain if there is a `?' in the diagnosis.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-diagnosis-certainty.png}
+    \caption{Number of image samples relating to the historical diagnosis. Labelled as uncertain if there is a `?' in the diagnosis.} 
 \end{figure}\label{nhs-diagnosis-certainty}
 
 Some historical diagnoses contain a `?' showing uncertainty from the doctor. Figure \ref{nhs-diagnosis-certainty} describes the number of skin lesions between uncertain and certain. Interestingly AN, BN, and BCC appear to be certain with 117, 36, and 39 respectively. Followed by SK and SCC are roughly half of the images at 106 and 87. Most of all MM shows that more than half of the diagnoses at 259 are uncertain out of 184 that are certain. This in turn demonstrates the type of skin lesions that doctors are having difficulty diagnosing where melanoma is especially difficult.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-multiple-diagnosis.png}
-	\caption{Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses because they are not specifically searched for.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-multiple-diagnosis.png}
+    \caption{Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses because they are not specifically searched for.} 
 \end{figure}\label{nhs-multiple-diagnosis}
 
 Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} shows the number of skin lesions with multiple diagnoses mentioned in the historical diagnoses. Interestingly the most commonly associated are AN with MM at 44 and SK with MM at 22 images. Others are SK with MM, Bowen's disease, lentigo, warts, and SCC demonstrating that SK is associated with the widest range of skin lesions and the difficulty diagnosing it.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-mm-sk-examples.png}
+    \caption{Comparing skin lesions that are diagnosed as MM, SK, and considered both MM and SK.} 
+\end{figure}\label{nhs-mm-sk-examples}
+
+Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions.
 
 \subsubsection{Anatomical location}
 
@@ -390,38 +392,38 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 %Go into more detail and graphs
 
 \begin{table}
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		Category & Organised sub-labels
-		\\
-		\hline
-		Upper Extremity & Wrist, Elbow, Arm
-		\\
-		\hline
-		Lower Extremity & Leg, Knee, Hip, Ankle
-		\\
-		\hline
-		Lateral Torso & Axilla, Breast
-		\\
-		\hline
-		Posterior Torso & Back, Shoulder
-		\\
-		\hline
-		Anterior Torso & Chest, Abdomen, Trunk
-		\\
-		\hline
-		Palms/Soles & Hand, Thumb, Foot
-		\\
-		\hline
-		Oral/Genital & Groin, Genitalia, Sacrum, Buttocks, Sacrum
-		\\
-		\hline
-		Head/Neck & Neck, Chin, Face, Temple, Head, Forehead
-		\\
-		\hline
-	\end{tabular}
-	\caption{}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Category & Organised sub-labels
+        \\
+        \hline
+        Upper Extremity & Wrist, Elbow, Arm
+        \\
+        \hline
+        Lower Extremity & Leg, Knee, Hip, Ankle
+        \\
+        \hline
+        Lateral Torso & Axilla, Breast
+        \\
+        \hline
+        Posterior Torso & Back, Shoulder
+        \\
+        \hline
+        Anterior Torso & Chest, Abdomen, Trunk
+        \\
+        \hline
+        Palms/Soles & Hand, Thumb, Foot
+        \\
+        \hline
+        Oral/Genital & Groin, Genitalia, Sacrum, Buttocks, Sacrum
+        \\
+        \hline
+        Head/Neck & Neck, Chin, Face, Temple, Head, Forehead
+        \\
+        \hline
+    \end{tabular}
+    \caption{}
 \end{table} \label{nhs-location-names}
 
 %Show transforming the images into the correct size
@@ -455,53 +457,50 @@ Specular reflection removal techniques are effective in improving the accuracy o
 The dataset has been analysed and modified accordingly, originally starting with a total of 2,500 and ending up with ...
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis.png}
-	\caption{Number of image samples relating to the diagnosis of the image.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-diagnosis.png}
+    \caption{Number of image samples relating to the diagnosis of the image.} 
 \end{figure}\label{nhs-diagnosis}
 
  As shown in figure \ref{nhs-diagnosis} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi have been split into benign naevi (BN) and atypical naevi (AN). There are images of seborrheic keratosis, which is more than any other public dataset currently available. 
 
  \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-age.png}
-	\caption{Age of patients and number of image samples.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-age.png}
+    \caption{Age of patients and number of image samples.} 
 \end{figure}\label{nhs-age}
 
 The age variation of patients described in figure \ref{nhs-age} demonstrates there are many younger patients included in the NHS dataset. This is substantially different from other datasets including ISIC that have mostly older patients. This demonstrates that there is an influx of younger patients regardless of them not being within the age group where melanoma usually develops. In both ISIC and NHS datasets the median the median is 60 years.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-location.png}
-	\caption{Number of image samples related to the location of the skin lesion.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-location.png}
+    \caption{Number of image samples related to the location of the skin lesion.} 
 \end{figure}\label{nhs-location}
 
 As shown in figure \cite{nhs-location} describing the location of the skin lesions and several image samples. There are more samples on the posterior torso (back) compared with other skin lesions with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descriptors, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure \ref{nhs-location-names}.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-sex-diagnosis.png}
-	\caption{Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-sex-diagnosis.png}
+    \caption{Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.} 
 \end{figure}\label{nhs-sex-diagnosis}
 
 Figure \ref{nhs-sex-diagnosis} describes the number of image samples relating to the diagnosis and sex of the patients. Interestingly there are almost double the number of female patients being diagnosed for AN and BN compared with MM where there are slightly more male patients and BCC where there is almost double male.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-diagnosis-age.png}
-	\caption{Boxplot describing the age of patients and the diagnosis.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-diagnosis-age.png}
+    \caption{Boxplot describing the age of patients and the diagnosis.} 
 \end{figure}\label{nhs-diagnosis-age}
 
 Image samples described in figure \ref{nhs-diagnosis-age} demonstrate the age of patients compared with their diagnosis. Understandably, AN and BN which are neavus are from younger patients, while SK, SCC, and BCC appear in older adults. MM is primarily from patients at the age of 50 to 70.
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.8]{images/nhs/nhs-location-diagnosis.png}
-	\caption{Number of image samples relating to the diagnosis of the image.} 
+    \centering
+    \includegraphics[scale=0.75]{images/nhs/nhs-location-diagnosis.png}
+    \caption{Number of image samples relating to the diagnosis of the image.} 
 \end{figure}\label{nhs-location-diagnosis}
-
-
-
 
 \subsection{Issues}
 One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms (especially relating to ABCD rules) difficult. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their rules, likely because of subjectivity depending on the dermatologists that labelled them. Ideally, more datasets and labels should be public to assess individual rules and reach objective measurements. Until then, testing algorithms conform with malignant, suspicious, or benign.
