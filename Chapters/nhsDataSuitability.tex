@@ -37,7 +37,7 @@ There are a range of public datasets including MEDLINE, PH2, ISIC, and others ma
 
 The datasets listed in table \ref{datasets} include the number of images, classes, and metadata. Out of these datasets ISIC 2019, PH2 and 7-Point Criteria appear to be the most promising. PH2 is especially useful because it is the only dataset representing ABCD rules on asymmetry and colour. SKINL2 was considered, but ISIC 2019 was a much larger dataset with more metadata. SD-198 is publicly available but not accessible.
 
-Although an ISIC 2020 dataset exists with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melanocytic proliferation, café au lait macule, lentigo NOS, lichenoid keratosis, naevus, seborrhoeic keratosis, solar lentigo, and other/unknown. The metadata is very specific and doesn't match the requirements of the project, so ISIC 2019 is still a better candidate for analysis.
+Although there is an ISIC 2020 dataset with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melanocytic proliferation, café au lait macule, lentigo NOS, lichenoid keratosis, naevus, seborrhoeic keratosis, solar lentigo, and other/unknown. The metadata is very specific and doesn't match the requirements of the project, so ISIC 2019 is still a better candidate.
 
 Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is utilised for an analysis of feature extraction techniques such as the detection of ABCD rules and dermoscopic structures. Then the entire technique is analysed using the ISIC 2019 dataset, which is the largest public dataset.
 
@@ -45,6 +45,7 @@ Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is uti
 The ISIC dataset is a collaborative effort of many institutions to support the development of automatic classification methods for melanoma detection. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, anatomical site, and diagnosis. These images are separated into classes melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular lesions (VL), and squamous cell carcinoma (SCC). 
 
 %Show images in the ISIC dataset showing how some of them are different
+
 
 
 
@@ -68,7 +69,7 @@ The ISIC dataset is a collaborative effort of many institutions to support the d
     \caption{}
 \end{table} \label{ISIC_AF}
 
-ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has captured its images slightly differently. There are varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions. 
+ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has images captured with differing diagnostic procedures rsulting in varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions.
 
 %Diagram of the number of images assigned to which diagnoses
 \begin{figure}
@@ -77,10 +78,10 @@ ISIC 2019 is a combined source of data from different hospital datasets includin
     \caption{ISIC 2019 dataset showing the number of image samples and the diagnosis of those skin lesions dataset appears to be highly unbalanced with half being NV.} 
 \end{figure} \label{diagnosis-number}
     
-As demonstrated in figure \ref{diagnosis-number} the dataset is highly in-balanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, where AK has a very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Seborrhoeic keratosis (SK) is not in this dataset and AK a similar lesion is described instead. Others such as DF, and VASC only contain a handful of images. The difference in image samples makes the dataset primarily useful for testing between NV and MEL.
+As demonstrated in figure \ref{diagnosis-number} the dataset is highly in-balanced based on the diagnosis of the skin lesion with 12,875 NV and 4,522 MEL. There are only 867 AK, where AK has a very high variance compared to other skin lesions and the sample size is unlikely for adequate detection. Seborrhoeic keratosis (SK) is not in this dataset and AK a similar lesion is described instead. There are only a handful of images for DF, and VASC. The difference in image samples makes the dataset primarily useful for testing between NV and MEL.
 
 \subsubsection{Metdata}
-In this dataset, the images are accompanied by metadata describing patient information. This includes patients age, sex, and anatomical location. Analysing this data provides further insight into the influence of patient information on the classification process. Most of all we are looking for similar numbers for each category and some cases might be removed from the classification process to improve results.
+In this dataset, the images are accompanied by metadata describing patient information. This includes patients age, sex, and anatomical location. Analysing this data provides further insight into the influence of patient information on the classification process. Most of all we are looking for similar numbers for each category and some cases might be removed to balance the dataset and improve classification results.
 
 \begin{figure}
     \centering
@@ -88,7 +89,7 @@ In this dataset, the images are accompanied by metadata describing patient infor
     \caption{The dataset has more male than female patients except for NV which has more samples.} 
 \end{figure} \label{sex}
 
-Figure \ref{sex} demonstrates the number of samples relating to the patient's sex. There are more samples for each type of skin lesion except for NV which there are more female samples. They are all within a very close range and are unlikely to need rebalancing.
+Figure\ref{sex} demonstrates the number of samples relating to the patient's sex. There are more samples for each type of skin lesion except for NV which there are slightly more female samples. They are all within a very close range and are unlikely to need rebalancing.
 
 \begin{figure}
     \centering
@@ -96,7 +97,7 @@ Figure \ref{sex} demonstrates the number of samples relating to the patient's se
     \caption{This shows the number of image samples compared to the age, the dataset is largely unbalanced regarding age where patients are between 40 and 75 years of age.}
 \end{figure} \label{age-number}
 
-As demonstrated in figure \ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. Variation might be because skin lesions are more likely to develop in older people than younger ones. This might mean that many of the skin lesions are developed and there is going to be unlikely to find underdeveloped skin lesion samples.
+As demonstrated in figure\ref{age-number} the dataset is unbalanced relating to age and type of skin lesion. Variation is likely a result of skin lesions being more likely to develop in older people than younger ones. This might mean that many of the skin lesions are developed and there is going to be unlikely to find underdeveloped skin lesion samples.
 
 \begin{figure}
     \centering
@@ -104,35 +105,50 @@ As demonstrated in figure \ref{age-number} the dataset is unbalanced relating to
     \caption{The approximate age range of patients and their diagnosis.} 
 \end{figure} \label{diagnosis-age}
 
-In Figure \ref{diagnosis-age} the age approximation is compared with the type of skin lesion. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. Some dots represent outliers in the data, that are outside the age range. Each class in the diagram is a diagnosis associated with the age of each patient. Interestingly, represented in this data SCC and AK appear to develop more in older adults and many of the younger patients were diagnosed with NV or DF. This is correct when regarding literature considering that SCC and AK develop in older adults\cite{}.
+In figure\ref{diagnosis-age} the age approximation (in intervals of 5) are compared with diagnosis. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. Some dots represent outliers in the data, that are outside the age range. 
+
+Each class in the diagram is a diagnosis associated with the age of each patient. Interestingly, represented in this data SCC, BCC, and AK appear to develop more in older adults with a median of age 70. Many younger patients were diagnosed with NV with a median age of 46. Whilst MM appears to be diagnosed in adults with a median age of 60. This is correct when regarding literature\cite{}.
+
+
+%Consider changing this to a meat map of diagnosis and anatomical location, showing roughly where certain types of skin lesions usually appear
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.75]{images/ISIC/isic-location-diagnosis.png}
+    \caption{Shows image examples associated with the anatomical location and age of the patients.} 
+\end{figure}\label{isic-location-diagnosis}
+
+A diagnosis and anatomical location figure\ref{isic-location-diagnosis}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{images/ISIC/location-age.png}
     \caption{Shows image examples associated with the anatomical location and age of the patients.} 
-\end{figure} \label{location-age}
+\end{figure}\label{location-age}
 
-Figure \ref{location-age} is similar to \ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients who have been diagnosed with skin lesions on their head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palms/soles and head/neck, which could mean more developed skin lesions in these criteria.
+Figure\ref{location-age} is similar to\ref{diagnosis-age}, except it compares the approximate age and location of the skin lesion. There are more older patients who have been diagnosed with skin lesions on their head/neck and younger for the lateral torso. It is concerning that there is a distinct lack of younger patients for palms/soles and head/neck, which could mean more developed skin lesions in these criteria.
+
+
 
 \subsubsection{Dermoscopic Structures}
 
-ISIC 2017 which shares some images with ISIC 2019 has some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2019 using image file names to get their diagnosis.
+ISIC 2017 shares some images with ISIC 2018 including some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2018 using image file names to get their diagnosis. The diagnosis is only between benign naevi, seborreic keratosis, and melanoma. 
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{images/ISIC/isic-dermo-number.png}
     \caption{Number of images containing dermoscopic structures.} 
-\end{figure} \label{isic-number-dermo}
+\end{figure}\label{isic-number-dermo}
 
-The dermoscopic structures described in figure \ref{isic-number-dermo} show the number of image samples for each dermoscopic structure. Naturally pigmented networks have more than 1400 images which makes it ideal for training a SegNet algorithm. Other demroscopic structures are lacking and do not have enough data for any deep-learning algorithms.
+The dermoscopic structures described in figure\ref{isic-number-dermo} show the number of image samples for each dermoscopic structure. Naturally pigmented networks have more than 1400 images which makes it ideal for training a SegNet algorithm. Other demroscopic structures are lacking and do not have enough data for any deep-learning algorithms.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.75]{images/ISIC/isic-dermo-diagnosis.png}
+    \includegraphics[scale=0.75]{images/ISIC/isic-dermo-diagnosis-heat.png}
     \caption{Number of dermoscopic structures relating} 
-\end{figure} \label{isic-dermo-diagnosis}
+\end{figure}\label{isic-dermo-diagnosis}
 
-As described in figure \ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melanoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
+As described in figure\ref{isic-dermo-diagnosis} certain dermoscopic structures are split almost evenly between melanoma and benign naevi, except for streaks and negative networks being more common. This demonstrates the importance of being able to detect the difference between typical and atypical pigmented networks. Furthermore, milia-like cysts appear more frequently in seborrhoeic keratosis and there is a lack of pigmented networks.
 
 \subsubsection{Summary}
 In summary, the ISIC dataset including data from 2017, 2018, and 2019 makes this dataset the largest public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
