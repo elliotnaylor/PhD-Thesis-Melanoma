@@ -3,6 +3,8 @@
 \section{Introduction}
 This chapter contains an analysis of some popular datasets including ISIC 2019, and PH2. The goal is to identify any relationships between skin lesions and patients. Using this analysis `the dataset' is created using NHS macroscopic images and metadata.
 
+There is analysis on the distribution of metadata and whether they are consistent with the literature. The reasoning for this is that a Bayesian network is used later, which analyses the distribution of data. Therefore ensuring that the data is scientifically relevant ensures the Bayesian network is correct.
+
 \section{Other Datasets}
 There are a range of public datasets including MEDLINE, PH2, ISIC, and others making a total of 21 open access datasets containing 106,950 skin lesion images\cite{Wen2022}. Out of these datasets, only the PH2 dataset has publicly accessible data on ABCD rules with a total of 200 images. ISIC is the largest of these datasets, being a combination of many other datasets.
 
@@ -48,7 +50,6 @@ The ISIC dataset is a collaborative effort of many institutions to support the d
 
 
 
-
 %Graph showing one of each type of diagnosis
 \begin{table}
     \small
@@ -69,7 +70,7 @@ The ISIC dataset is a collaborative effort of many institutions to support the d
     \caption{}
 \end{table} \label{ISIC_AF}
 
-ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has images captured with differing diagnostic procedures rsulting in varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions.
+ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in \ref{ISIC_AF}. This is important to mention because each dataset has images captured with differing diagnostic procedures resulting in varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions.
 
 %Diagram of the number of images assigned to which diagnoses
 \begin{figure}
@@ -105,12 +106,12 @@ As demonstrated in figure\ref{age-number} the dataset is unbalanced relating to 
     \caption{The approximate age range of patients and their diagnosis.} 
 \end{figure} \label{diagnosis-age}
 
-In figure\ref{diagnosis-age} the age approximation (in intervals of 5) are compared with diagnosis. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. Some dots represent outliers in the data, that are outside the age range. 
+In figure\ref{diagnosis-age} the age approximation (in intervals of 5) was compared with the diagnosis. The black line (whisker) represents the minimum and maximum range of age, the box (quartile) shows the interquartile range (IQR), and the centre line in the middle represents the median. Some dots represent outliers in the data, that are outside the age range. 
 
 Each class in the diagram is a diagnosis associated with the age of each patient. Interestingly, represented in this data SCC, BCC, and AK appear to develop more in older adults with a median of age 70. Many younger patients were diagnosed with NV with a median age of 46. Whilst MM appears to be diagnosed in adults with a median age of 60. This is correct when regarding literature\cite{}.
 
 
-%Consider changing this to a meat map of diagnosis and anatomical location, showing roughly where certain types of skin lesions usually appear
+%Consider changing this to a heat map of diagnosis and anatomical location, showing roughly where certain types of skin lesions usually appear
 
 \begin{figure}
     \centering
@@ -118,7 +119,9 @@ Each class in the diagram is a diagnosis associated with the age of each patient
     \caption{Shows image examples associated with the anatomical location and age of the patients.} 
 \end{figure}\label{isic-location-diagnosis}
 
-A diagnosis and anatomical location figure\ref{isic-location-diagnosis}
+The comparison between diagnosis and anatomical location provides further insight into the image quality. Figure\ref{isic-location-diagnosis} demonstrates the percentage of image samples (based on the diagnosis) there are for diagnosis and anatomical location. Interestingly, AK appears on 69\% of images on the head/neck. So there is a strong likelihood that skin lesions are overlapping facial features. Furthermore, DF appears more on the lower extremity and upper extremity at 58\% and 22\% respectively. Both AK and DF are consistent with the literature\cite{}.
+
+Another interesting finding is that most skin lesions are in areas of the body that are frequently exposed to the sun, being anterior torso, head/neck, and lower extremities.
 
 \begin{figure}
     \centering
@@ -132,7 +135,7 @@ Figure\ref{location-age} is similar to\ref{diagnosis-age}, except it compares th
 
 \subsubsection{Dermoscopic Structures}
 
-ISIC 2017 shares some images with ISIC 2018 including some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2018 using image file names to get their diagnosis. The diagnosis is only between benign naevi, seborreic keratosis, and melanoma. 
+ISIC 2017 shares some images with ISIC 2018 including some additional metadata relating to dermoscopic structure. This includes 2,694 segmentation masks of pigment networks, negative networks, globules, milia-like cysts, and streaks. While the original in ISIC 2017 only has metadata for dermoscopic structures, it was linked to ISIC 2018 using image file names to get their diagnosis. The diagnosis is only between benign naevi, seborrheic keratosis, and melanoma. 
 
 \begin{figure}
     \centering
@@ -183,13 +186,13 @@ The benefit of this dataset is the rich metadata allowing for the analysis of sp
     \caption{This shows the number of image samples and asymmetry score based on Total dermoscopy score (TDS).} 
 \end{figure} \label{ph2-asym-number}
 
-Demonstrated in figure \ref{ph2-asym-number} demonstrates there is substantial data for measuring the asymmetry score based on the total dermoscopy score (TDS). Typically the algorithms used to measure asymmetry such as bi-fold do not require any training, making the smaller sample size ideal. However, there is a very small sample size for both TDS of 1 and 2, and it would be beneficial to have more data samples.
+Demonstrated in figure\ref{ph2-asym-number} demonstrates there is substantial data for measuring the asymmetry score based on the total dermoscopy score (TDS). Typically the algorithms used to measure asymmetry such as bi-fold do not require any training, making the smaller sample size ideal. However, there is a very small sample size for both TDS of 1 and 2, and it would be beneficial to have more data samples.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.75]{images/ph2/ph2-colour-number.png}
+    \includegraphics[scale=0.75]{images/ph2/ph2-colour-number-heat.png}
     \caption{Number of colours in the PH2 dataset compared with the diagnosis. Colours are in order white, red, light brown, dark brown, blue-gray, and black.} 
-\end{figure} \label{ph2-colour-number}
+\end{figure}\label{ph2-colour-number}
 
 The observation in figure \ref{ph2-colour-number} demonstrates that Light and dark brown are commonly associated with typical naevus. On the other hand, white, blue, and black are more common in melanoma because they indicate structural and vascular irregularities. The scarcity of red samples demonstrates that it is uncommon in nevus and melanoma. Other lesions including BCC are more likely to contain red\cite{}, but these lesions are not included in this dataset.
 
@@ -211,9 +214,9 @@ Figure \ref{ph2-dermo-diagnosis} shows dermoscopic structure labels relating to 
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.75]{images/ph2/ph2-number-diagnosis-dermo.png}
+    \includegraphics[scale=0.75]{images/ph2/ph2-diagnosis-dermo-heat.png}
     \caption{Shows the number of images based on the diagnosis and dermoscopic structures present, typical, and atypical.} 
-\end{figure} \label{ph2-number-diagnosis-dermo}
+\end{figure}\label{ph2-number-diagnosis-dermo}
 
 Figure\ref{ph2-number-diagnosis-dermo} demonstrates that pigment networks are present in both nevus and melanoma. Furthermore, streaks, regression areas, and blue-whitish veils are more common in melanoma. Pigment networks and dots/globules use different labels of typical and atypical so it is understandable they do not change between lesion types.
 
@@ -275,7 +278,7 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 \begin{table}
     \small
     \begin{tabular}{|c|p{0.8\linewidth}|}
-        \hline
+    \hline
         Attribute & Description
         \\
         \hline
