@@ -396,7 +396,7 @@ This is a generalised diagnosis, alongside these images are historical diagnoses
 
 \subsubsection{Historical Diagnosis of Skin lesions}
 
-The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table \ref{nhs-metadata}.
+The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table\ref{nhs-metadata}.
 
 %Go into more detail and graphs
 \begin{table}
@@ -424,6 +424,9 @@ The historical diagnosis is written text by the doctor that includes the possibl
         154414.jpg & 1) ? SCC 2) SBCC 3) ? SPOT
         \\
         \hline
+        739199.JPG & (1) BOWEN'S DISEASE (2) SUPERFICIAL BCC
+        \\
+        \hline
         586010.JPG & SUSPECTED N. MM
         \\
         \hline
@@ -439,7 +442,7 @@ The historical diagnosis is written text by the doctor that includes the possibl
     \caption{Number of image samples relating to the historical diagnosis. Labelled as uncertain if there is a `?' in the diagnosis.} 
 \end{figure}\label{nhs-diagnosis-certainty}
 
-Some historical diagnoses contain a `?' showing uncertainty from the doctor. Figure \ref{nhs-diagnosis-certainty} describes the number of skin lesions between uncertain and certain. Interestingly AN, BN, and BCC appear to be certain with 117, 36, and 39 respectively. Followed by SK and SCC are roughly half of the images at 106 and 87. Most of all MM shows that more than half of the diagnoses at 259 are uncertain out of 184 that are certain. This in turn demonstrates the type of skin lesions that doctors are having difficulty diagnosing where melanoma is especially difficult.
+Some historical diagnoses contain a `?' showing uncertainty from the doctor. Figure\ref{nhs-diagnosis-certainty} describes the number of skin lesions between uncertain and certain. Interestingly AN, BN, and BCC appear to be certain with 117, 36, and 39 respectively. Followed by SK and SCC are roughly half of the images at 106 and 87. Most of all MM shows that more than half of the diagnoses at 259 are uncertain out of 184 that are certain. This in turn demonstrates the type of skin lesions that doctors are having difficulty diagnosing where melanoma is especially difficult.
 
 \begin{figure}
     \centering
@@ -460,7 +463,7 @@ Considering that SK has multiple diagnoses mostly for MM and SK, it is a good id
 \subsubsection{Anatomical location}
 
 %Data extraction Techniques
-Anatomical location has a total of 28 different descriptors for specific body parts including leg, wrist, neck, etc. To make comparisons easier with the ISIC dataset each label has been assigned to specific areas such as upper extremity, anterior torso, etc. All the locations are listed in the table \ref{nhs-location-names}. 
+Anatomical location has a total of 28 different descriptors for specific body parts including leg, wrist, neck, etc. To make comparisons easier with the ISIC dataset each label has been assigned to specific areas such as upper extremity, anterior torso, etc. All the locations are listed in the table\ref{nhs-location-names}. 
 
 %Go into more detail and graphs
 
@@ -500,6 +503,8 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 \end{table} \label{nhs-location-names}
 
 %Show transforming the images into the correct size
+
+
 \subsection{Data Transformation and Augmentation}
 As mentioned in the data biases section the skin lesion images are taken under various conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project.
 
@@ -527,7 +532,7 @@ Specular reflection removal techniques are effective in improving the accuracy o
 
 
 \subsection{Dataset Statistics}
-The dataset has been analysed and modified accordingly, originally starting with a total of 2,500 and ending up with ...
+The dataset has been analysed and modified accordingly, originally starting with a total of 2,500 images and it has been amended to 2,271.
 
 \begin{figure}
     \centering
@@ -535,7 +540,7 @@ The dataset has been analysed and modified accordingly, originally starting with
     \caption{Number of image samples relating to the diagnosis of the image.} 
 \end{figure}\label{nhs-diagnosis}
 
- As shown in figure \ref{nhs-diagnosis} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi have been split into benign naevi (BN) and atypical naevi (AN). There are images of seborrheic keratosis, which is more than any other public dataset currently available. 
+ As shown in figure\ref{nhs-diagnosis} the image data and diagnosis of the skin lesion there are several differences in this dataset compared with the ones described so far. There has been more of an attempt to balance the data so there are more equal samples of each. Furthermore, benign naevi have been split into benign naevi (BN) and atypical naevi (AN). There are images of seborrheic keratosis, which is more than any other public dataset currently available. 
 
  \begin{figure}
     \centering
@@ -567,7 +572,7 @@ Figure \ref{nhs-sex-diagnosis} describes the number of image samples relating to
     \caption{Boxplot describing the age of patients and the diagnosis.} 
 \end{figure}\label{nhs-diagnosis-age}
 
-Image samples described in figure \ref{nhs-diagnosis-age} demonstrate the age of patients compared with their diagnosis. Understandably, AN and BN which are neavus are from younger patients, while SK, SCC, and BCC appear in older adults. MM is primarily from patients at the age of 50 to 70.
+Image samples described in figure\ref{nhs-diagnosis-age} demonstrate the age of patients compared with their diagnosis. Understandably, AN and BN which are neavus are from younger patients, while SK, SCC, and BCC appear in older adults. MM is primarily from patients at the age of 50 to 70.
 
 \begin{figure}
     \centering
