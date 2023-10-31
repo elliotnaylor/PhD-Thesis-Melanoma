@@ -270,15 +270,15 @@ NHS datasets contain a wealth of information that can be utilised. However, some
     \item Seborrhoeic keratosis (SK) has similar features to that seen in malignant skin lesions. Therefore, there might be skin lesions diagnosed as melanoma that are SK. Furthermore, because of its similarity, there are many SK images. It will be vital to separate these.
 \end{enumerate}
 
-Following the potential issues 2,500 images were chosen from the NHS database. Eight types of skin lesions were chosen from are Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Benign Naevi (BN), Squamous Cell Carcinoma (SCC), and Basal Cell Carcinoma (BCC).
+Following the potential issues 2,500 images were chosen from the NHS database. Eight types of skin lesions were chosen Malignant Melanoma (MM), Seborrhoeic keratosis (SK), Atypical Naevi (AN), Benign Naevi (BN), Squamous Cell Carcinoma (SCC), and Basal Cell Carcinoma (BCC).
 
 %Go into more detail and graphs
 \begin{enumerate}
-    \item Malignant Melanoma (MM): A type of skin cancer that arises from melanocytes, which are resposible for the pigment melanin (brown skin).
+    \item Malignant Melanoma (MM): A type of skin cancer that arises from melanocytes, which are responsible for the pigment melanin (brown skin).
     \item Seborrhoeic Keratosis (SK): A non-cancerous growth that originates from cells called keratinocytes.
-    \item Atypical Naevi (AN): This referes to an unsual or atypical mole that share characterisitcs of skin cacner, but they are not cancerous themselves
+    \item Atypical Naevi (AN): This refers to an unusual or atypical mole that shares characteristics of skin cancer, but they are not cancerous themselves
     \item Benign Naevi (BN) & Normal benign mole that most people have.
-    \item Squamous Cell Carcinoma (TM) & A form ofskin cancer that develops from squamous cells in the outer layer of skin.
+    \item Squamous Cell Carcinoma (TM) & A form of skin cancer that develops from squamous cells in the outer layer of skin.
     \item Basal Cell Carcinoma (BCC) & The most common type of skin cancer, that develops from basal cells located in the outer layer of skin.
 \end{enumerate}
 
@@ -297,7 +297,7 @@ The database system where the skin lesion images were located uses fotoware soft
     \item Incision
 \end{enumerate}
 
-Some images were angled and far away which made it hard to get a clear view of the skin lesion. Others contained multiple skin lesions making it difficult to differentiate which one was being diagnosed. Others including tattoos and incisions were considered more extreme cases and deliberetly excluded because there were not enough samples or outside the projects criteria, respectivly. 
+Some images were angled and far away which made it hard to get a clear view of the skin lesion. Others contained multiple skin lesions making it difficult to differentiate which one was being diagnosed. Others including tattoos and incisions were considered more extreme cases and deliberately excluded because there were not enough samples or outside the criteria of the project, respectively. 
 
 To remove the mentioned samples a search criteria was used, the example below is for finding melanoma:
 
@@ -305,7 +305,7 @@ To remove the mentioned samples a search criteria was used, the example below is
 ("01 Close-up " -"Dermoscopy" -"eye lid" -ear -Nose -scalp -lip -cheek - scar -toe) AND (-SCC -BCC -"Seb k" melanoma -"atypical mole" -mole)
 \end{center}
 
-Some samples could not be removed automtically so they were removed manually by looking through the images. After finding all the samples, the following
+Some samples could not be removed automatically so they were removed manually by looking through the images. After finding all the samples, the following
 
 \begin{enumerate}
 \item BN = 500 (600)
@@ -316,7 +316,7 @@ Some samples could not be removed automtically so they were removed manually by 
 \item SCC = 200 (203)
 \end{enumerate}
 
-A significant difference between this and other datasets is the inclusion of benign naevi and atypical naevi. Where an atypical mole is an unusual naevi that has features similar to cancer, but is non-cancerous. This will provide further insight into their distinguishing characteristics and into the difficulty of diagnosing atypical naevi from other skin lesions.
+A significant difference between this and other datasets is the inclusion of benign naevi and atypical naevi. Where an atypical mole is an unusual naevi that has features similar to cancer but is non-cancerous. This will provide further insight into their distinguishing characteristics and into the difficulty of diagnosing atypical naevi from other skin lesions.
 
 In the next section, further analysis of the images using the metadata will be conducted to remove image samples with uncertain diagnoses and to balance the dataset for better use with machine learning algorithms.
 
@@ -556,7 +556,7 @@ The age variation of patients described in figure \ref{nhs-age} demonstrates the
     \caption{Number of image samples related to the location of the skin lesion.} 
 \end{figure}\label{nhs-location}
 
-As shown in figure \cite{nhs-location} describing the location of the skin lesions and several image samples. There are more samples on the posterior torso (back) compared with other skin lesions with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descriptors, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure \ref{nhs-location-names}.
+As shown in figure\cite{nhs-location} describing the location of the skin lesions and several image samples. There are more samples on the posterior torso (back) compared with other skin lesions with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descriptors, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure\ref{nhs-location-names}.
 
 \begin{figure}
     \centering
