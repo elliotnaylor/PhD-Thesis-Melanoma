@@ -6,11 +6,8 @@ This chapter is about the development of the proposed CAD framework for automati
 \section{Related Work}
 A paper described by Javier Lopez, et al.\cite{Lopez-Labraca2018} describes a CAD system designed to provide doctors with an enriched diagnosis. They utilise data extraction and classification techniques on dermoscopic structures, followed by combining the output of individual features using a bayesian approach. This provides an indication of which features are impact the diagnosis.
 
-
-
-
 \subsection{Detection Algorithms}
-Ihab S. zaqout\cite{Zaqout2016} describes a technique using the centroid and rotation fo the skin lesion using moments of inertia. The skin lesion is folded over vertically and horizontally subtracting the opposite halves. Pixels that cannot be subtracted are summed and compared with a threshold. If over the threshold the skin lesion is consdered asymmetrcial in that direction.
+Ihab S. zaqout\cite{Zaqout2016} describes a technique using the centroid and rotation of the skin lesion using moments of inertia. The skin lesion is folded over vertically and horizontally subtracting the opposite halves. Pixels that cannot be subtracted are summed and compared with a threshold. If over the threshold the skin lesion is consdered asymmetrcial in that direction.
 
 Reda Kasmi and Karim Mokrani\cite{Kasmi2016} describes a technique for comparing the colour distibution of the skin lesion by splitting the lesion into a 20x20 grid and comparing it against the colour of the perpendicular square using the 3D euclidean distance. If over a threshold that square is considered asymmetrical. If more than half the lesions are over the threshold then the area is considered asymmetrical.
 
@@ -38,7 +35,7 @@ The proposed CAD framework described in Figure\ref{model} automates the ABCD rul
 \begin{tikzpicture}[]
 
 	%Image Acqusition
-	\node (inp) [img] at (0, 3) {\includegraphics[scale=0.12]{lesion.png}};
+	\node (inp) [img] at (0, 3) {\includegraphics[scale=0.12]{images/lesion.png}};
 	
 	%Pre-processing
 	\node (aug) [box, minimum height=1cm, node distance=3.6cm, right of=inp] {Augmentation};
