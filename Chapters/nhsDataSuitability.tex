@@ -39,9 +39,12 @@ The analysis of skin lesions is an especially laboured field, so there are a hug
 
 The datasets listed in table\ref{datasets} include the number of images, classes, and metadata. Out of these datasets ISIC 2019, PH2 and 7-Point Criteria appear to be the most promising. PH2 is especially useful because it is the only dataset representing ABCD rules on asymmetry and colour. SKINL2 was considered, but ISIC 2019 was a much larger dataset with more metadata. SD-198 is publicly available but not accessible.
 
-Although there is an ISIC 2020 dataset with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melanocytic proliferation, café au lait macule, lentigo NOS, lichenoid keratosis, naevus, seborrhoeic keratosis, solar lentigo, and other/unknown. The metadata is very specific and doesn't match the requirements of the project, so ISIC 2019 is still a better candidate.
-
 Overall ISIC 2019 and PH2 are the most suitable datasets. The PH2 dataset is utilised for an analysis of feature extraction techniques such as the detection of ABCD rules and dermoscopic structures. Then the entire technique is analysed using the ISIC 2019 dataset, which is the largest public dataset.
+
+\section{Issues}
+One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms (especially relating to ABCD rules) difficult. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their ABCD rules, likely because of subjectivity depending on the dermatologists that labelled them. Ideally, more datasets and labels should be public to assess individual rules and reach objective measurements. Until then, testing algorithms conform with malignant, suspicious, or benign. This is espeically true for the PH2 dataset, although it was around before some of these publications it was not used for testing.
+
+Although there is an ISIC 2020 dataset with a total of 44,108 images, its diagnosis is between benign and malignant and other metadata is on atypical melanocytic proliferation, café au lait macule, lentigo NOS, lichenoid keratosis, naevus, seborrhoeic keratosis, solar lentigo, and other/unknown. The metadata is very specific and doesn't match the requirements of the project, so ISIC 2019 is still a better candidate.
 
 \subsection{ISIC}
 The ISIC dataset is a collaborative effort of many institutions to support the development of automatic classification methods for melanoma detection. The most recent applicable dataset is ISIC 2019, which contains a total of 25,331 images for training and 8,238 for testing, making 33,569 images in total. Each image has corresponding metadata including sex, age, anatomical site, and diagnosis. These images are separated into classes melanoma (MM), melanocytic nevus (MV), basal cell carcinoma (BCC), actinic keratosis (AC), benign keratosis (BC), dermatofibroma (DF), vascular lesions (VL), and squamous cell carcinoma (SCC). This includes segmentation masks.
@@ -235,13 +238,20 @@ There is little to no overlap between typical and atypical pigment networks betw
 \subsubsection{Summary}
 In summary, the PH2 dataset is a valuable resource for researchers considering it is the only one of its kind to provide metadata relating to asymmetry, colour, and dermoscopic structures. This has been used frequently in various studies to develop and evaluate algorithms for skin lesion analysis. Such datasets with substantial metadata are useful for producing explainable results. As explainable (XAI) becomes more common datasets describing clinical features will be necessary. However, one of the downfalls of this dataset is the unusual labelling for dermoscopic structures where the pigment network and globules are labelled between typical and atypical and others are between present and absent. Some metadata was inconsistent with literature including the colour red, which is more common for melanoma, but the data does not demonstrate this. Furthermore, almost every image sample has a pigment network (although common), it would be more useful to have some without this feature. 
 
-\pagebreak
-\section{Creating `the Dataset'}
+An issue with this dataset is that many of the papers that utilise ABCD rules and dermoscopic structures do not test their algorithms against this dataset, regardless of the dataset being around before the time of publication\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. Instead they tend to use privatly annotated datasets, which makes it difficult to replicate results. After analysing PH2 dataset it is likely the small size, lack of red colour samples and the unusual labelling of dermoscopic structures are the reason forthis dataset being avoided. Furthermore, the ABCD rules tend to be subjective and are only relevant to the institution which they are used, therefore this is likely again why the technique is being avoided and why many papers tend to annotate their own data. Hopefully some time in the future objective measurements can be accepted and datasets including vast data like PH2 will be accepted.
+
+\section{Conclusion}
+Overall both the PH2 and ISIC 2019 provide adequate data for the testing and developing algorithms. ISIC 2019 is suitable for training deep learning algorithms with a total sample size of 33,569 images with relevant metdata. PH2 is certaintly the weakest link with data samples of only 200 images between benign naevi and moles and that many papers refuse to test using the dataset and resort to privately annotating their 
+own data. Regardless PH2 appears to be suitable for analysis apart from the lack of red samples.
+
+Considering the data distribution of the dataset both samples appear to be consistent with literature. For example in ISIC 2017 dermoscopic structures, SK has more samples with milia-like cysts and less pigment networks. Furthermore melanoma and benign naevi have roughly equal pigment networks and less milia-like cysts. Another example is the colour distribution in PH2 while brown and light brown are common in benign neavi, MM has less samples of light and dark brown with more colours of blue, black, and white. The only sample that appeared to be wrong was the colour red, where there was a severe lack of samples.
+
+\chapter{Creating `the Dataset'}
 Whilst recognising the benefits of the ISIC 2019 and PH2 datasets we can begin to develop `the dataset' using NHS data. The inclusion of NHS data brings real-world clinical cases into the mix, and techniques developed during this project can be tested in the scenario it is intended to be utilised.
 
 Requirements are decided below to highlight potential biases and issues, and then 2,000 images are chosen to create the dataset. This is followed by an analysis similar to the previous datasets and interesting findings from the data.
 
-\subsection{Requirements}
+\section{Requirements}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
 The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this section is to describe and document the data extraction process from the National Health Service (NHS) and highlight biases, pre-processing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma. Requirements are first highlighted before gathering the data and are listed below.
 
@@ -255,7 +265,7 @@ The dermoscopic examination is superior to macroscopic examination, however, the
 
 Considering the use of macroscopic images there needs to be a more thorough clean-up of the data for it to be used effectively. This will include removing hair and specular reflections to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support improving the accuracy when classifying.
 
-\subsection{Data Biases}
+\section{Data Biases}
 The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
 
 NHS datasets contain a wealth of information that can be utilised. However, some biases need consideration before creating a dataset. These biases include:
@@ -320,7 +330,7 @@ A significant difference between this and other datasets is the inclusion of ben
 
 In the next section, further analysis of the images using the metadata will be conducted to remove image samples with uncertain diagnoses and to balance the dataset for better use with machine learning algorithms.
 
-\subsection{Data Transformation and Analysis}
+\section{Data Transformation and Analysis}
 %Considering the data biases described in the previous section we can begin to piece together criteria that describe which images are appropriate for the creation of `the dataset'. Firstly, the most glaring problems are the diagnoses, because some images are missing diagnostic data and some have a variety of diagnoses, the scenario in which the diagnoses were captured is not mentioned, SK is potentially misdiagnosed as malignant, and the dermatologist that originally diagnosed is not mentioned. There are many ways to combat this problem. For example, during the creation of the PH2 dataset\cite{mendonca2013}, several dermatologists were asked to diagnose a skin lesion with appropriate metadata relating to the ABCD rules. If most dermatologists agree it is included in the study, otherwise it is removed. The goal of this is to minimize the incorrect data within the dataset. Alternatively, you might argue that removing less adequate records fails to prove whether the developed algorithms work in a real medical environment. Therefore, other methods were explored to validate the data.
 %Very Unlikely we'll be getting histopathology data
 
@@ -390,13 +400,13 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 
     \end{tabular}
     \caption{This table shows the metadata in each image and a description of each label. Rows highlighted in red are removed to protect patient confidentiality.}
-\end{table} \label{nhs-metadata}                         
+\end{table}\label{nhs-metadata}                         
 
 This is a generalised diagnosis, alongside these images are historical diagnoses of the skin lesion, written in plain text in some cases this question marks when the doctor is uncertain of a diagnosis and other times it includes a slash and a different diagnosis. Although it is not a specific format making it difficult to process, it includes a wealth of knowledge.
 
-\subsubsection{Historical Diagnosis of Skin lesions}
+\subsection{Historical Diagnosis of Skin lesions}
 
-The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table\ref{nhs-metadata}.
+The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table\ref{nhs-naming}.
 
 %Go into more detail and graphs
 \begin{table}
@@ -432,7 +442,7 @@ The historical diagnosis is written text by the doctor that includes the possibl
         \hline
     \end{tabular}
     \caption{Examples of historical diagnosis and doctors and some unique variations of labelling.}
-\end{table}\label{nhs-metadata}        
+\end{table}\label{nhs-naming}        
 
 
 
@@ -460,7 +470,7 @@ Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} show
 
 Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions.
 
-\subsubsection{Anatomical location}
+\subsection{Anatomical location}
 
 %Data extraction Techniques
 Anatomical location has a total of 28 different descriptors for specific body parts including leg, wrist, neck, etc. To make comparisons easier with the ISIC dataset each label has been assigned to specific areas such as upper extremity, anterior torso, etc. All the locations are listed in the table\ref{nhs-location-names}. 
@@ -470,7 +480,6 @@ Anatomical location has a total of 28 different descriptors for specific body pa
 \begin{table}
     \centering
     \begin{tabular}{|c|c|}
-        \hline
         Category & Organised sub-labels
         \\
         \hline
@@ -500,12 +509,12 @@ Anatomical location has a total of 28 different descriptors for specific body pa
         \hline
     \end{tabular}
     \caption{}
-\end{table} \label{nhs-location-names}
+\end{table}\label{nhs-location-names}
 
 %Show transforming the images into the correct size
 
 
-\subsection{Data Transformation and Augmentation}
+\section{Data Transformation and Augmentation}
 As mentioned in the data biases section the skin lesion images are taken under various conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project.
 
 One of the main challenges in melanoma detection is the visual similarity between normal and infected regions. Others are the presence of artefacts such as bubbles, hair and clinical marks\cite{Albahli2020}. These factors lead to low accuracy rates in traditional approaches. However, segmentation techniques can help overcome these challenges by removing these areas and isolating the melanoma from the rest of the image.
@@ -516,22 +525,22 @@ By augmenting the skin lesion images using specular reflection removal and hair 
 
 
 
-\subsubsection{Hair Removal}
+\subsection{Hair Removal}
 Hair artefacts in images can interfere with the recognition of handcrafted features and affect the performance of deep learning algorithms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation techniques can remove hair artefacts from dermoscopic images\cite{kasmi2023}.
 
 Dull-Razor is an algorithm developed by Lee et al\cite{Lee1997} and is frequently implemented with 
 
 Sharp-Razor\cite{kasmi2023} is a technique for detecting hair and ruler marks to remove them from images. This uses a multiple-filter approach including grayscale plane modification, hair enhancement, segmentation using tri-directional gradients, and multiple filters for hair of varying widths. This technique is shown to outperform existing methods.
 
-\subsubsection{Specular Removal}
+\subsection{Specular Removal}
 Specular reflection removal techniques are effective in improving the accuracy of melanoma detection\cite{Shen2009}. A technique was proposed utilizing a partial differential equation to iteratively erode the specular component, removing the specular reflection\cite{Shen2009}.
 
 
-\subsection{Conclusion}
+\section{Conclusion}
 
 
 
-\subsection{Dataset Statistics}
+\section{Dataset Statistics}
 The dataset has been analysed and modified accordingly, originally starting with a total of 2,500 images and it has been amended to 2,271.
 
 \begin{figure}
@@ -548,7 +557,7 @@ The dataset has been analysed and modified accordingly, originally starting with
     \caption{Age of patients and number of image samples.} 
 \end{figure}\label{nhs-age}
 
-The age variation of patients described in figure \ref{nhs-age} demonstrates there are many younger patients included in the NHS dataset. This is substantially different from other datasets including ISIC that have mostly older patients. This demonstrates that there is an influx of younger patients regardless of them not being within the age group where melanoma usually develops. In both ISIC and NHS datasets the median the median is 60 years.
+The age variation of patients described in figure\ref{nhs-age} demonstrates there are many younger patients included in the NHS dataset. This is substantially different from other datasets including ISIC that have mostly older patients. This demonstrates that there is an influx of younger patients regardless of them not being within the age group where melanoma usually develops. In both ISIC and NHS datasets the median the median is 60 years.
 
 \begin{figure}
     \centering
@@ -580,9 +589,3 @@ Image samples described in figure\ref{nhs-diagnosis-age} demonstrate the age of 
     \caption{Number of image samples relating to the diagnosis of the image.} 
 \end{figure}\label{nhs-location-diagnosis}
 
-\subsection{Issues}
-One fundamental problem is the overutilisation of private or privately annotated datasets, making a direct comparison of algorithms (especially relating to ABCD rules) difficult. Some are between benign and malignant\cite{Meskini2018, Kasmi2016, Ali2020b, Ali2020a} while others utilise private or never mention any datasets\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. None compare their rules, likely because of subjectivity depending on the dermatologists that labelled them. Ideally, more datasets and labels should be public to assess individual rules and reach objective measurements. Until then, testing algorithms conform with malignant, suspicious, or benign.
-
-%Mention some inaccessible datasets
-
-The data presented is from David Wen, et al. \cite{Wen2022}, but is updated to include meta-data relating to diagnostic procedures for testing. Although there are thousands of images for dermoscopic and macroscopic. Data is lacking relating to diagnostic procedures.

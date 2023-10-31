@@ -1,7 +1,7 @@
 \chapter{Combined ABCD Rules and Dermoscopic Structures using Bayesian Network}
 
 \section{Introduction}
-This chapter is about the development of the proposed CAD framework for automating ABCD rules (Asymmetry, Border, Colour, and Dermoscopic structures) using SVM models and Bayesian fusion.
+This chapter is about the development of the proposed CAD framework for automating ABCD rules (Asymmetry, Border, Colour, and Dermoscopic structures) using SVM models and Bayesian fusion. Case-based reasoning is implemented in the form of an ANN to locate skin lesions with similar features.
 
 \section{Related Work}
 A paper described by Javier Lopez, et al.\cite{Lopez-Labraca2018} describes a CAD system designed to provide doctors with an enriched diagnosis. They utilise data extraction and classification techniques on dermoscopic structures, followed by combining the output of individual features using a bayesian approach. This provides an indication of which features are impact the diagnosis.
@@ -24,9 +24,6 @@ This chapter proposes a CAD framework for the detection of melanoma using data e
 \section{Detection of ABCD Rules}
 %Briefly cover the techniques, tested and proven in previous chapter
 ABCD rules in this chapter referres to the asymmetry, border, colour and dermoscopic structures. Sometimes the D in ABCD rules referes to the diameter of the skin lesion, but it is often removed for dermocopic structures because images are taken at different distances making the measurement of diameter unreliable. Furthermore, the detection of dermocopic structures provides valuable information in detecting the melanoma mimic called seborrhoeic keratosis (SK)\cite{Minagawa2017}. 
-
-Asymmetry detection utilised 
-
 
 \section{Proposed Framework}
 The proposed CAD framework described in Figure\ref{model} automates the ABCD rules using statistical algorithms to extract features ($f$) from asymmetry, border, colour, and dermoscopic structures. Each feature has an associated SVM model trained using these extracted features. Next, Bayesian fusion, a probabilistic approach, combines multiple independent classifiers to diagnose melanoma. One benefit of Bayesian fusion is its higher accuracy in classifying skin lesions as compared to a standalone classifier\cite{Takruri2017}.  Javier López-Labraca, et al describe a similar method using dermoscopic structures, and colour\cite{Lopez-Labraca2018}. Other benefits are estimating the relevance of individual classifiers and classifying them with incomplete data, making it an interpretable and robust method. In addition, some feature extraction techniques generate graphics that might be suitable as an explanation for the diagnosis. Finally, the PH$^2$ dataset validates the rules, and once combined into a diagnosis, more extensive datasets, including ISIC 2019, measure its accuracy based on diagnosis.
