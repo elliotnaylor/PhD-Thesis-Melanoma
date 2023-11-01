@@ -1,14 +1,14 @@
 \chapter{Analysing and Updating ABCD Rules Detection Algorithms}
 
 \section{Introduction}
-This chapter reviews a discussion on some of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH$/^2$ dataset and updated relating to their accuracy. Surprisingly, many of these techniques are tested on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques are tested and documented regarding the ABCD rules.
+This chapter reviews a discussion on some of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. Surprisingly, many of these techniques are tested on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques are tested and documented regarding the ABCD rules.
 
 \section{Discussion}
 Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
 
 \subsection{Preferred Diagnostic Procedures}
 % Quick summary of TDS, ABCD rules, bi-fold and general issues
-Diagnostic procedures are procedures that are preformed on patients in order to diagnose conditions. Regarding the diagnosis of melanoma there are many types that have been utilised for the detection of melanoma and the most favourable is CASH, ABCD rules, and Total Dermoscopy Score (TDS). The ABCD rules and TDS were commonly used because of its simplicity and effectiveness.
+Diagnostic procedures are procedures that are performed on patients in order to diagnose conditions. Regarding the diagnosis of melanoma, many types have been utilised for the detection of melanoma and the most favourable is CASH, ABCD rules, and Total Dermoscopy Score (TDS). The ABCD rules and TDS were commonly used because of its simplicity and effectiveness.
 
 Diagnostic procedures are usually based on the doctors medical experience. For example the use-case of this project is for general practioners (GPs), many of which have likely never seen or attempted to diagnose melanoma, and many of which will not have access to dermoscopes for the analysis of dermoscopic structures. So, in this use-case diagnostic procedures including ABCD rules, and CASH are suitable because of their simplicity. The method used by the NHS is also ABCD rules, which is the reasoning for using this method. 
 
@@ -44,14 +44,14 @@ To initiate the classification of skin lesions a technique called bi-fold is app
 Next, the lesion is partitioned into a 20 by 20 grid centred on the mentioned centre point, and the average of each region is computed. This is followed by finding the matching region on the perpendicular area from the centre of the skin lesion and comparing the colour distance between the two. Distance is measured using the LAB colour space and a 2D Euclidean distance of A and B, removing L (luminosity) to eliminate light variation. Once compared, all compared regions are obtained, and they are plotted onto a graph. If over half of the values are above a threshold of 6, then the lesion is asymmetrical.
 
 % Scrutinize the threshold method and show the graph that the data can't be split with only the threshold 
-The diagram shown below in \ref{symmetrical} is a compilation of all the images within the PH\^2 dataset showing the threshold range after applying bi-fold, euclidean distance of colour, but before applying the threshold. As can be seen, a threshold of 6 covers all of the symmetrical values, but still roughly covers half of the asymmetrical values. This demonstrates that the technique produces many false positives when regarding asymmetrical values.
+The diagram shown below in figure\ref{symmetrical} is a compilation of all the images within the PH\^2 dataset showing the threshold range after applying bi-fold, euclidean distance of colour, but before applying the threshold. As can be seen, a threshold of 6 covers all of the symmetrical values, but still roughly covers half of the asymmetrical values. This demonstrates that the technique produces many false positives when regarding asymmetrical values.
 Essentially, the symmetrical skin lesion has a smaller area and the asymmetrical lesion has a larger area, but both remain in the same zone and therefore splitting the data only using a threshold holds poor results. Furthermore, there are a lot of fliers and the threshold does not adjust according to these values. See the graph below:
 
 \begin{figure} 
     \centering
     \includegraphics[scale=0.6]{images/symmetrical.png}
 \caption{This diagram is a summary of the PH2 dataset after using bi-fold, euclidean distance of colour. The value on the right would be a threshold.}
-\end{figure} \label{symmetrical}
+\end{figure}\label{symmetrical}
     
 To improve the accuracy of the algorithm some changes need to be made based on the previous statements. First will be superpixels and next is k-means.
 
