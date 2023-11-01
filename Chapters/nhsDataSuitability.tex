@@ -292,7 +292,7 @@ Following the potential issues 2,500 images were chosen from the NHS database. E
     \item Basal Cell Carcinoma (BCC): The most common type of skin cancer, that develops from basal cells located in the outer layer of skin.
 \end{enumerate}
 
-The database system where the skin lesion images were located uses fotoware software. While there are a substantial number of images roughly reaching 20,000, these were obtained using diverse methods including between dermoscopic and macroscopic. Other issues included and were removed: 
+The database system where the skin lesion images were located uses fotoware software. While there are a substantial number of images roughly reaching 20,000, these were obtained using diverse methods including dermoscopic and macroscopic. Other issues included and were removed: 
 
 \begin{enumerate}
     \item Dermoscopic (Not used in this study)
@@ -326,7 +326,7 @@ Some samples could not be removed automatically so they were removed manually by
 \item SCC = 200 (203)
 \end{enumerate}
 
-A significant difference between this and other datasets is the inclusion of benign naevi and atypical naevi. Where an atypical mole is an unusual naevi that has features similar to cancer but is non-cancerous. This will provide further insight into their distinguishing characteristics and into the difficulty of diagnosing atypical naevi from other skin lesions.
+A significant difference between this and other datasets is the inclusion of benign naevi and atypical naevi. An atypical mole is an unusual naevi that has features similar to cancer but is non-cancerous. This will provide further insight into their distinguishing characteristics and into the difficulty of diagnosing atypical naevi from other skin lesions.
 
 In the next section, further analysis of the images using the metadata will be conducted to remove image samples with uncertain diagnoses and to balance the dataset for better use with machine learning algorithms.
 
@@ -405,7 +405,6 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
 This is a generalised diagnosis, alongside these images are historical diagnoses of the skin lesion, written in plain text in some cases this question marks when the doctor is uncertain of a diagnosis and other times it includes a slash and a different diagnosis. Although it is not a specific format making it difficult to process, it includes a wealth of knowledge.
 
 \subsection{Historical Diagnosis of Skin lesions}
-
 The historical diagnosis is written text by the doctor that includes the possible diagnosis. The format is dependent on the doctor, so it changes dramatically. Generally, this is a `?' to show uncertainty and a `/' followed by another diagnosis. All of the variations in the format are shown in table\ref{nhs-naming}.
 
 %Go into more detail and graphs
@@ -508,11 +507,10 @@ Anatomical location has a total of 28 different descriptors for specific body pa
         \\
         \hline
     \end{tabular}
-    \caption{}
+    \caption{All the different labelling for the anatomical location of the lesion. Each label in the NHS data has been assigned to a category similar to the ISIC dataset.}
 \end{table}\label{nhs-location-names}
 
 %Show transforming the images into the correct size
-
 
 \section{Data Transformation and Augmentation}
 As mentioned in the data biases section the skin lesion images are taken under various conditions including angles, lighting, and distance from the skin lesion. While the variety of conditions will decrease the accuracy of results and hinder the detection of dermoscopic features, it is a requirement of the project.
@@ -522,8 +520,6 @@ One of the main challenges in melanoma detection is the visual similarity betwee
 Skin lesion augmentation is especially vital because of the use of macroscopic images instead of dermoscopic images. This means there are various artefacts including hair, specular reflections, rulers, varying sizes, and shapes of the skin lesion. All of these can obscure the skin lesion and affect the accuracy of segmentation\cite{Unver2019} and in effect feature detection.
 
 By augmenting the skin lesion images using specular reflection removal and hair removal, the accuracy of feature classification methods can be improved\cite{kasmi2023}. 
-
-
 
 \subsection{Hair Removal}
 Hair artefacts in images can interfere with the recognition of handcrafted features and affect the performance of deep learning algorithms in melanoma detection\cite{kasmi2023}. Applying morphological operations such as image sharpening and segmentation techniques can remove hair artefacts from dermoscopic images\cite{kasmi2023}.
