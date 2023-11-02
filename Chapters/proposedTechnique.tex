@@ -125,10 +125,10 @@ ABCD rules in this refer to the asymmetry, border, colour and dermoscopic struct
 
 \subsubsection{Asymmetry}
 %Asymmetry algorithm description
-The method for detecting asymmetry in this chapter is derived from Reda Kasmi and Karim Mokrani\cite{Kasmi2016} method. The modified method uses superpixels from Simple Linear Iterative Clustering (SLIC) introduced by Achanta et al.\cite{Achanta2012}. This generates a 20 by 20 grid over the skin lesion, alongside a flexible border avoiding features. Each pixel within a square is averaged.
+The method for detecting asymmetry in this chapter is derived from Reda Kasmi and Karim Mokrani\cite{Kasmi2016} method. The modified method uses superpixels from Simple Linear Iterative Clustering (SLIC) introduced by Achanta et al.\cite{Achanta2012}. First, the area of the skin lesion is split into a 20 by 20 grid, alongside a flexible border avoiding features. Each pixel within a square is averaged.
 
 %Super pixels diagram example showing different examples and 
-accuracy.
+
 
 \subsubsection{Colour}
 
