@@ -8,9 +8,9 @@ This chapter proposes a CAD framework for the detection of melanoma using data e
 \section{Background}
 Automatic systems are being developed for the early detection of melanoma because it can take 10 years of experience for an accuracy of 86\%\cite{Morton1998}. Melanoma is one of the most aggressive forms of cancer that can remain dormant from anywhere between 6 months and 10 years before developing into metastatic melanoma, which becomes substantially more difficult to cure\cite{UK2019}. Problematically, clinicians who are not trained specifically to diagnose melanoma are usually the first to attempt it. Improving the accuracy of these clinicians should increase the overall accuracy of detecting melanoma. The early detection of melanoma followed by a biopsy is known to completely cure the disease\cite{mohammadpour2019}. Furthermore, melanoma develops from melanocytes that create skin pigmentation through the production of melanin, making a brown patch on the skin. Therefore, it has a clear indication of development on the surface of the skin. This means it is ideal for the creation of computer vision models for early detection.
 
-For these reasons, there has been further interest in developing an automatic system for helping clinicians detect melanoma at its early stages. However, regardless of newer systems being developed they are still rarely implemented within clinical environments. This is largely due to systems producing parallel diagnosis, which does not explain how results were reached\cite{Lipton2018, Andre2017}. These techniques usually utilise Convolutional Neural Network (CNN) because of their superior accuracy\cite{Wen2022}. There needs to be further explanations of the diagnosis for clinicians to understand and properly utilise within clinical environments. 
+For these reasons, there has been further interest in developing an automatic system for helping clinicians detect melanoma at its early stages. However, regardless of newer systems being developed they are still rarely implemented within clinical environments. This is largely due to systems producing parallel diagnosis, which does not explain how results were reached\cite{Lipton2018, Andre2017}. These techniques usually utilise Convolutional Neural Networks (CNN) because of their superior accuracy\cite{Wen2022}. There should be further explanations of the diagnosis for clinicians to understand and properly utilise within clinical environments. 
 
-Newer machine learning models utilise explainable AI (XAI) to provide an explanation which provides further insight\cite{skar2017}. While these provide some indication of which area of the image has been used to train the algorithm they are still not tied directly to relevant clinical features. Furthermore, there appears to be a tradeoff between interpretability and model performance. Clinicians might not want to utilise models that are more interpretable, but less accurate. Furthermore, there has been some indication of models producing realistic but incorrect results\cite{Lipton2018}. In some scenarios, clinicians might be misled to falsely diagnose a skin lesion. Due to the high stakes involved when diagnosing melanoma, there needs to be highly accurate explanations and a track record of success before utilising them.
+Newer machine learning models utilise explainable AI (XAI) to provide an explanation that provides further insight\cite{skar2017}. While these provide some indication of which area of the image has been used to train the algorithm they are still not tied directly to relevant clinical features. Furthermore, there appears to be a tradeoff between interpretability and model performance. Clinicians might not want to utilise models that are more interpretable, but less accurate. Furthermore, there has been some indication of models producing realistic but incorrect results\cite{Lipton2018}. In some scenarios, clinicians might be misled to falsely diagnose a skin lesion. Due to the high stakes involved when diagnosing melanoma, there should be highly accurate explanations and a track record of success before utilising them.
 
 \section{Related Work}
 In the design of CAD systems, two types of algorithms are employed. The initial type involves feature extraction, which is followed by individual classification methods. This process holds significant importance as it ensures the utilisation and visualisation of clinical features. The latter algorithm utilises the extracted features to classify different types of skin lesions. This method produces clinically relevant features that facilitate the diagnosis.
@@ -112,25 +112,32 @@ The proposed CAD framework described in Figure\ref{model} automates the ABCD rul
 \caption{Proposed CAD framework describing the segmentation, feature extraction  and classification process.}\label{model}
 \end{figure}
 
-ABCD rules describe the classification process for each rule and demonstrate the process behind reaching diagnoses. The objective is to visualise important features that GPs might need to support their diagnostic procedure. Hopefully, this will instantiate trust when automating skin lesion identification within clinical environments. Another advantage would be the automatic labelling of skin lesions, making it easier for dermatologists to identify later.
+The ABCD rules, a set of criteria employed for the early detection of skin cancer, especially melanoma, are instrumental in guiding clinicians and individuals in assessing potentially suspicious skin lesions. The acronym "ABCD" stands for asymmetry, border irregularity, color variation, and diameter. Each element serves as a crucial parameter in evaluating the characteristics of moles or lesions on the skin. The objective of utilising this diagnostic procedure is to visualise important features that GPs need to support their diagnosis. Automating this process will instantiate trust when automating skin lesion identification within clinical environments. Another advantage would be the automatic labelling of skin lesions, making it easier for dermatologists to identify later.
 
 The CAD framework in figure\ref{model} describes a model of pre-processing, feature extraction, and classification stages. After segmentation, statistical algorithms extract features ($f$), representing a different rule. Next, SVM models individually process the extracted features and combine them into a final result between benign and malignant using Bayesian fusion.
 
 %Briefly cover the techniques, tested and proven in the previous chapter
 
+
 %In the methods section you need to explain all the algorithms used in past tense in enough detail that they can be reproduced. Mention established methods.
 
+
 \subsection{Feature Extraction Methods}
-ABCD rules in this refer to the asymmetry, border, colour and dermoscopic structures.  Sometimes the D in ABCD rules refers to the diameter of the skin lesion, but it is often removed for dermocopic structures because images are taken at different distances making the measurement of diameter unreliable. Furthermore, the detection of dermoscopic structures provides valuable information in detecting the melanoma mimic called seborrhoeic keratosis (SK)\cite{Minagawa2017}. 
+ABCD rules in this refer to the asymmetry, border irregularity, colour variation, and dermoscopic structures. Sometimes the D in ABCD rules refers to the diameter of the skin lesion, but it is often removed for dermocopic structures because images are taken at different distances making the measurement of diameter unreliable. Furthermore, the detection of dermoscopic structures provides valuable information in detecting the melanoma mimic called seborrhoeic keratosis (SK)\cite{Minagawa2017}. 
+
+
 
 \subsubsection{Asymmetry}
 %Asymmetry algorithm description
-The method for detecting asymmetry in this chapter is derived from Reda Kasmi and Karim Mokrani\cite{Kasmi2016} method. The modified method uses superpixels from Simple Linear Iterative Clustering (SLIC) introduced by Achanta et al.\cite{Achanta2012}. First, the area of the skin lesion is split into a 20 by 20 grid, alongside a flexible border avoiding features. Each pixel within a square is averaged.
+The approach for identifying asymmetry in this chapter is adapted from the work of Reda Kasmi and Karim Mokrani\cite{Kasmi2016}. In the original method, a bi-fold technique is employed to determine the centroid and rotation of the skin lesion, followed by image rotation. Subsequently, the image undergoes a conversion to LAB colorspace and is divided into a 20 by 20 grid by averaging color areas. The modified technique, however, utilizes superpixels from Simple Linear Iterative Clustering (SLIC) introduced by Achanta et al.\cite{Achanta2012}, with a compactness ($C$) set to 20.
+
+Each color square is compared with others perpendicular to the centroid (with bi-fold) using the 3D Euclidean distance of the color (LAB). The resulting distance score is accumulated in an array, and if more than half exceed a threshold of 6, the lesion is classified as asymmetrical, contributing a TDS score of 1. This process is repeated at a 90-degree orientation, adding another TDS score if asymmetry is detected.
+
+The data presented in Figure\ref{} illustrates that employing superpixels better supports the thresholding process compared to the original technique. The boxplot data represents the Euclidean distance, summed and divided by the number of positions.
 
 %Super pixels diagram example showing different examples and 
-
-
 \subsubsection{Colour}
+
 
 %Colour analysis algorithm and diagram
 
@@ -145,11 +152,15 @@ Bayesian fusion is a class of methods used to combine information from multiple 
 
 \subsection{Case-Based reasoning using Artificial Neural Network (ANN)}
 
+
+
 \section{Results}
 %Simply mention what was found, but do not interpret the results or discuss their implementations. Present in logical order.
 Two datasets were utilised to test the produced algorithms. The first is the PH2 dataset which includes asymmetry, colour, and dermoscopic structures.
 
 
+
 \section{Discussion}
+
 
 \section{Conclusion}

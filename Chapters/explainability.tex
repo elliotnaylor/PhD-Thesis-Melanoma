@@ -6,7 +6,10 @@ This chapter contains an analysis on popular explainable AI (XAI) techniques cal
 \section{Discssion}
 Explainable AI (XAI) techniques have recently gained attention because the European general data protection regulation (GDPR and ISO/IEC 27001) stated that these approaches, commonly referred to as ``black box'' approaches, are challenging to utilize in medical environments. Since then, there has been significant progress in making neural network architectures more interpretable. A wide range of techniques\cite{Fuji2019,  Selvaraju2016, Ribeiro2016} have since been developed, demonstrating that it is possible to make neural network techniques interpretable. However, the problem is instead the current scepticism on whether these techniques are trustworthy\cite{Tjoa2019, Samek2019a}, and they can produce realistic but incorrect results\cite{Ghorbani2019}. Some other interpretable techniques do not utilise neural networks. For example, Javier López-Labraca et al.\cite{Lopez-Labraca2018} described an interpretable technique using multiple SVM models with colour and three dermoscopic structures (i.e., pigment networks, globules, and streaks). Bayesian fusion combines each model to calculate a diagnosis. Bayesian probability is a type of probability theory that uses probability distribution to estimate the values of unobserved variables. Bayesian fusion has comparable accuracy to neural network techniques\cite{Takruri2017}. Overall, results should be partially interpretable for use within clinical environments.
 
+%https://www.ejcancer.com/article/S0959-8049(22)00123-X/fulltext
+
 \section{Exisiting techniques}
+
 %Deepshap
 DeepSHAP (Shapley Additive exPlanations) is a game theoretic approach designed to explain models during training by visualising features related to the classificaiton. It does this by explaining individual predictions in machine learning models, measuring the contribution of each feature to the contribution to an outcome\cite{Aas2021}.
 
@@ -17,3 +20,4 @@ Although explainable algorithms have seen some use within healthcare, there is n
 
 %Gradcam
 
+%Start to mention bayesian network and how its explainable

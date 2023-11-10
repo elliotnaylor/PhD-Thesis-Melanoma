@@ -78,6 +78,8 @@ Images in the dataset shown in figure\ref{isic-example-images} are captured with
     \caption{}
 \end{table}\label{ISIC_AF}
 
+%Show stickers, nails, etc as proof
+
 ISIC 2019 is a combined source of data from different hospital datasets including HAM10000, BCN 20000, and MSK described in more detail in table\ref{ISIC_AF}. This is important to mention because each dataset has images captured with differing diagnostic procedures resulting in varying resolutions and styles in which the images are taken. MSK includes coloured stickers covering un-applicable skin lesions that are within the area of the image and the camera appears to be further away. BCN 20000 contains rarer types of images including nails and mucosa, which do not appear in the other datasets. HAM10000 does not appear to have any notable differences, but it is still captured with different tools and resolutions.
 
 %Diagram of the number of images assigned to which diagnoses
@@ -235,6 +237,10 @@ Figure\ref{ph2-diagnosis-dermo} demonstrates that pigment networks are present i
 
 There is little to no overlap between typical and atypical pigment networks between melanoma and naevus. Shown in figure\ref{ph2-number-diagnosis-dermo} common naevus are all typical pigment networks, while atypical naevus and melanoma are labelled atypical. This demonstrates that testing for pigment networks should be on type (typical and atypical) instead of whether they are present. Unusually, there is very little overlapping in the data. This is very unusual unless it was designed this way purposely, but it would have been more useful to have more samples without pigment networks.
 
+\subsection{Diagnosis and Image Assessment}
+%Show some of the asymmetry techniques that have been measured wrong, some seem to have been measured by colour and others only by shape. Consider excluding some.
+
+
 \subsubsection{Summary}
 In summary, the PH2 dataset is a valuable resource for researchers considering it is the only one of its kind to provide metadata relating to asymmetry, colour, and dermoscopic structures. This has been used frequently in various studies to develop and evaluate algorithms for skin lesion analysis. Such datasets with substantial metadata are useful for producing explainable results. As explainable (XAI) becomes more common datasets describing clinical features will be necessary. However, one of the downfalls of this dataset is the unusual labelling for dermoscopic structures where the pigment network and globules are labelled between typical and atypical and others are between present and absent. Some metadata was inconsistent with literature including the colour red, which is more common for melanoma, but the data does not demonstrate this. Furthermore, almost every image sample has a pigment network (although common), it would be more useful to have some without this feature. 
 
@@ -245,6 +251,7 @@ Overall both the PH2 and ISIC 2019 provide adequate data for the testing and dev
 own data. Regardless PH2 appears to be suitable for analysis apart from the lack of red samples.
 
 Considering the data distribution of the dataset both samples appear to be consistent with literature. For example in ISIC 2017 dermoscopic structures, SK has more samples with milia-like cysts and less pigment networks. Furthermore melanoma and benign naevi have roughly equal pigment networks and less milia-like cysts. Another example is the colour distribution in PH2 while brown and light brown are common in benign neavi, MM has less samples of light and dark brown with more colours of blue, black, and white. The only sample that appeared to be wrong was the colour red, where there was a severe lack of samples.
+
 
 \chapter{Creating `the Dataset'}
 Whilst recognising the benefits of the ISIC 2019 and PH2 datasets we can begin to develop `the dataset' using NHS data. The inclusion of NHS data brings real-world clinical cases into the mix, and techniques developed during this project can be tested in the scenario it is intended to be utilised.
@@ -371,7 +378,7 @@ Each image holds metadata shown in table \ref{nhs-metadata} as EXIF Tags within 
         Gender & a string representing patient gender
         \\
         \hline
-        Date of Birth ID & an integer representing patient date of birth - example: 00-00-0000
+        Date of Birth & an integer representing patient date of birth - example: 00-00-0000
         \\
         \hline
         \rowcolor{Red}
@@ -456,10 +463,10 @@ Some historical diagnoses contain a `?' showing uncertainty from the doctor. Fig
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{images/nhs/nhs-multiple-diagnosis.png}
-    \caption{Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses because they are not specifically searched for.} 
+    \caption{Number of skin lesion samples with multiple diagnoses in the historical diagnoses. Other types including lentigo, Bowen's disease, dermatofibroma, pyogenic granuloma, and wart are only associated with the main diagnoses (AN, BN, MM, SCC, BCC) because they are not specifically searched for. This means they are only found in association with the mentioned main diagnoses and this data is likely missing data comparing the other types.} 
 \end{figure}\label{nhs-multiple-diagnosis}
 
-Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} shows the number of skin lesions with multiple diagnoses mentioned in the historical diagnoses. Interestingly the most commonly associated are AN with MM at 44 and SK with MM at 22 images. Others are SK with MM, Bowen's disease, lentigo, warts, and SCC demonstrating that SK is associated with the widest range of skin lesions and the difficulty diagnosing it.
+Multiple diagnoses are sometimes shown, figure\ref{nhs-multiple-diagnosis} shows the number of skin lesions with multiple diagnoses mentioned in the historical diagnoses. Interestingly the most commonly associated are AN with MM at 44 and SK with MM at 22 images. Others are SK with MM, Bowen's disease, lentigo, warts, and SCC demonstrating that SK is associated with the widest range of skin lesions and the difficulty diagnosing it.
 
 \begin{figure}
     \centering
@@ -467,7 +474,7 @@ Multiple diagnoses are sometimes shown, figure \ref{nhs-multiple-diagnosis} show
     \caption{Comparing skin lesions that are diagnosed as MM, SK, and considered both MM and SK.} 
 \end{figure}\label{nhs-mm-sk-examples}
 
-Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions.
+Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions demonstrating how difficult it is telling them apart\cite{}. The ABCD rules and TDS is assigned to each image to see whether this diagnostic procedure will be suitable for seperating these skin lesions. 
 
 \subsection{Anatomical location}
 
@@ -561,7 +568,7 @@ The age variation of patients described in figure\ref{nhs-age} demonstrates ther
     \caption{Number of image samples related to the location of the skin lesion.} 
 \end{figure}\label{nhs-location}
 
-As shown in figure\cite{nhs-location} describing the location of the skin lesions and several image samples. There are more samples on the posterior torso (back) compared with other skin lesions with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descriptors, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure\ref{nhs-location-names}.
+As shown in figure\ref{nhs-location} describing the location of the skin lesions and several image samples. There are more samples on the posterior torso (back) compared with other skin lesions with any of the others. There are only a couple of samples for lateral, palms/soles, and oral/genital. This data was originally modified because it had a total of 28 descriptors, so they were grouped into 8 similar to the ISIC dataset. This can be seen in more detail in figure\ref{nhs-location-names}.
 
 \begin{figure}
     \centering
@@ -569,7 +576,7 @@ As shown in figure\cite{nhs-location} describing the location of the skin lesion
     \caption{Number of image samples relating to the diagnosis and sex of the patients. There are more female than male patients.} 
 \end{figure}\label{nhs-sex-diagnosis}
 
-Figure \ref{nhs-sex-diagnosis} describes the number of image samples relating to the diagnosis and sex of the patients. Interestingly there are almost double the number of female patients being diagnosed for AN and BN compared with MM where there are slightly more male patients and BCC where there is almost double male.
+Figure\ref{nhs-sex-diagnosis} describes the number of image samples relating to the diagnosis and sex of the patients. Interestingly there are almost double the number of female patients being diagnosed for AN and BN compared with MM where there are slightly more male patients and BCC where there is almost double male.
 
 \begin{figure}
     \centering

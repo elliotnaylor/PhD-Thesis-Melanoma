@@ -2,10 +2,14 @@
 \chapter{Literature Review}
 
 \section{Introduction}
-This chapter reviews statistical and machine learning algorithms for the automatic classification of ABCD rules and discussion on techniques beneficial for use within clinical environments.
+This chapter reviews statistical and machine learning algorithms for the automatic classification of melanoma and discussion on techniques and whether they are effective for use within clinical environments.
+
+%Start with a broader scope and mention the classification of lesions with NN techniques, explainability, etc.
 
 \section{Discussion}
-When doctors utilize a clinical diagnostic tool they should be capable of rationalizing and building explanations based on the data provided from that tool. Currently, many techniques\cite{Andre2017} called named ``black box'' approaches produce parallel diagnosis that lacks adequate explanations for clinical environments. These provide insufficient information for use within some clinical environments\cite{Andre2017}. Instead, it would be beneficial for doctors to follow procedures they are familiar with, such as diagnostic procedures including ABCD rules. The reviewed techniques aim to automate the ABCD rules using various statistical and machine-learning techniques. Many are interpretable and suitable for clinical environments.
+%Mention a wide range of techniques espeically around NN techniques and hybrid models, feature detectors, direct classification (CNN, DNN, etc)
+
+When doctors utilize a clinical diagnostic tool they should be capable of rationalizing and building explanations based on the data provided from that tool. Currently, many techniques\cite{Andre2017} called named `black box' approaches produce parallel diagnosis that lacks adequate explanations for clinical environments. These provide insufficient information for use within some clinical environments\cite{Andre2017}. Instead, it would be beneficial for doctors to follow procedures they are familiar with, such as diagnostic procedures including ABCD rules. The reviewed techniques aim to automate the ABCD rules using various statistical and machine-learning techniques. Many are interpretable and suitable for clinical environments.
 
 Hybrid machine learning techniques are recently gaining traction, an example by Ali combines results from both Gaussian naive Bayes (GNB) and a CNN\cite{Ali2020b} for border irregularity detection. The CNN ensures high-accuracy classification by finding the relationship between each component, and the GNB is interpretable. Results are combined using an ensemble approach, making a prediction probability. Such techniques are promising for use within clinical environments.
 
@@ -32,6 +36,12 @@ Yading Yuan and Yeh Chi Lo describe a fully convolutional network (FCN) with an 
 E. Meskini et al. proposed using Otsu binarisation - a threshold technique that is effective at locating the border of a skin lesion after segmenting using Segnet\cite{Meskini2018}. Researchers proposed that when analysing the skin lesion border using ABCD rules, the original SegNet methods were ineffective because the ground truth is subjective - ineffective at finding the border cut-off between the skin lesion and skin. While SegNet has a 91.7\% with the PH$^2$ dataset, the data is not effective at finding the precise border cut-off required for accurate border classification using ABCD rules. Therefore, researchers proposed the Otsu threshold to find the skin lesion border after segmenting using SegNet. Fan proposes another technique that uses a saliency-based segmentation approach to capture the area, followed by an Otsu threshold\cite{Fan2017} to find the border cut-off from the skin lesion with a precision of 96.78\% validated using the PH$^2$ dataset.
 
 Pedro M.M. Pereira et al. proposed local binary pattern clustering (LBPC) to exaggerate the border, producing accurate results when classifying ABCD rules than ground-truth borders in the PH$^2$ dataset\cite{Pereira2020}. Local binary patterns (LBP) are texture descriptors calculated by comparing the centre pixel (of each pixel in the grey scaled image) with the eight neighbouring pixels as 'i', and converting it to a binary using the equation:  [$if centroid > neighbour_i =  0, otherwise = 1$]. These eight neighbouring values produce a binary of 01101100 (decimal of 108) and change the centroid to 108. Next, the described process repeats on each other pixel in the image. Finally, the newly filtered image subtracted from the original grey-scaled image creates a segmentation mask with an accurate border cut-off. Finally, Pereira describes classification methods using SVM or FNN presenting the extracted border with an accuracy of 79\% and 77\% (respectively) with the MED-NODE dataset.
+
+\subsection{Neural Network Classification}
+
+\subsubsection{Explainability}
+
+\subsection{Case-based reasoning}
 
 \subsection{Handcrafted Features}
 Handcrafted features are the extraction of particular features using statistical algorithms the benefit of separating data into components is a more accessible breakdown, improving explainability. In addition, this might instantiate trust for use within a clinical environment and prove more helpful to doctors.
