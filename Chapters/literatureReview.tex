@@ -1,21 +1,83 @@
 \cleardoublepage
-\chapter{Literature Review}
+\chapter{Systematic Review}
 
 \section{Introduction}
-This chapter reviews statistical and machine learning algorithms for the automatic classification of melanoma and discussion on techniques and whether they are effective for use within clinical environments.
+This chapter reviews statistical and neural network algorithms for the automatic classification of melanoma. Following a discussion on the effectiveness of techniques and whether they are useful within clinical environments. 
 
 %Start with a broader scope and mention the classification of lesions with NN techniques, explainability, etc.
 
 \section{Discussion}
 %Mention a wide range of techniques espeically around NN techniques and hybrid models, feature detectors, direct classification (CNN, DNN, etc)
 
-When doctors utilize a clinical diagnostic tool they should be capable of rationalizing and building explanations based on the data provided from that tool. Currently, many techniques\cite{Andre2017} called named `black box' approaches produce parallel diagnosis that lacks adequate explanations for clinical environments. These provide insufficient information for use within some clinical environments\cite{Andre2017}. Instead, it would be beneficial for doctors to follow procedures they are familiar with, such as diagnostic procedures including ABCD rules. The reviewed techniques aim to automate the ABCD rules using various statistical and machine-learning techniques. Many are interpretable and suitable for clinical environments.
+Melanoma is a deadly skin cancer that frequently results in the death of patients if develops into metastatic melanoma. This refers to when the cancer has burrowed past the skin and makes its way into blood and internal organs. From this point is it far more difficult to remove.
+
+Melanoma develops from melanocyte cells, which in turn produce melanin resulting in skin pigmentation (brown patch of skin). This means there are visual characteristic of melanoma as it continues to grow. Alongside the necessity to improve the diagnostic accuracy the visual characteristics being ideal for the development of computer vision-based algorithms, this has sparked the creation of algorithms and in turn papers.
+
+When doctors utilize a clinical diagnostic tool they should be capable of rationalising and building explanations based on the data provided from that tool. Currently, many techniques\cite{Andre2017} called named `black box' approaches produce parallel diagnosis that lacks adequate explanations for clinical environments. These provide insufficient information for use within some clinical environments\cite{Andre2017}. Instead, it would be beneficial for doctors to follow procedures they are familiar with, such as diagnostic procedures including ABCD rules. The reviewed techniques aim to automate the ABCD rules using various statistical and machine-learning techniques. Many are interpretable and suitable for clinical environments.
 
 Hybrid machine learning techniques are recently gaining traction, an example by Ali combines results from both Gaussian naive Bayes (GNB) and a CNN\cite{Ali2020b} for border irregularity detection. The CNN ensures high-accuracy classification by finding the relationship between each component, and the GNB is interpretable. Results are combined using an ensemble approach, making a prediction probability. Such techniques are promising for use within clinical environments.
 
 There is a lack of literature describing adequate visual representations for doctors, and it is understandable as there is still little evidence proving that CAD systems improve doctors decision making-processes\cite{FerrantediRuffano2018}. It would be beneficial to create literature describing a catalogue of different visualisations that benefit doctors. Putting all this information together, alongside a questionnaire, might provide further insight into the visualisations that might be most useful to doctors.
 
-\section{Previous Works on Automating ABCD Rules}
+%Supporting algorithms such as deepshap
+
+\section{Research Methodology}
+The reason for writing this review was to select the best approaches of skin cancer detection and regarding whether they can be utilised within clinical environments. 
+
+Combining the information helps specify what is currently known in literature and highlighting what areas need further work.
+
+Literature is chosen considering techniques that are explainable or have supporting techniques developed for explainability.
+
+\subsection{Research Questions}
+The goal of this systematic review is to answer the following questions:
+
+\begin{enumerate}
+	\item What are the major techniques developed for the detection of skin cancer?
+	\item Are these techniques suitable for use within clinical environments?
+	\item Can these techniques be supported with other algorithms to improve explainability?
+\end{enumerate}
+
+\subsection{Search Criteria}
+
+\begin{table}
+	\begin{tabular}{}
+	\hline
+	Search Term & Set of Key Words \\
+	\hline
+	Skin & skin cancer, skin treatments
+	\hline
+	\end{tabular}
+
+\end{table}
+
+\section{Artificial Neural Network (ANN) Techniques}
+An artificial neural network is a nonlinear statsitci prediction technique.
+
+\section{ COnvolutional Neural Network (CNN) Techniques}
+
+\section{Deep Neural Network (DNN) Techniques}
+
+\section{Kohonen Self-Organising Neural Network (KNN) Technqiues}
+
+\section{Generative Adveserial Network (GAN) Techniques}
+
+
+\section{Explainability Techniques}
+The techiques mention in this section are ones including deepshap that are used alongside exisiting DNN techniques to make models more explainable.
+
+The Local Interpretable Model-agnostic Explanations (LIME)
+
+LIME has been tested in healthcare for the analysis of breast tumor classification\cite{Explainable Artificial Intelligence for Breast Tumour Classification: Helpful or Harmful}, and diagnosis of pigmented skin lesions\cite{A Comparison of Explanations Given by Explainable Artificial Intelligence Methods on Analysing Electronic Health Records}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
+
+\section{Ensemble Learning Techniques}
+Ensamble learning is a branch of machine learning based on the decision-making process to intergrate it into systems better\cite{https://www.hindawi.com/journals/cin/2022/1156748/}. Decision-making is the process of making a choice among many options and summarizing evidence to draw a conclusion. An example is case-based reasoning which involves classifying and presenting visually or statistically similar cases and their results.
+
+%Mention paper showing improved accuracy of GPs using machine learning algorithms
+
+\section{Hybrid machine learning techniques}
+Hybrid machine learning are techniques that aims to use the superior accuracy of deep learning algorithms that are difficult to interpret alongside more explainable algorithms inlcuding bayesian networks, SVMs and others. Results are then combined to reach a result.
+
+\section{Feature Extraction Techniques}
 Many CAD frameworks follow a methodology for the classification of skin lesions. These are listed below:
 
 \begin{enumerate}
@@ -36,12 +98,6 @@ Yading Yuan and Yeh Chi Lo describe a fully convolutional network (FCN) with an 
 E. Meskini et al. proposed using Otsu binarisation - a threshold technique that is effective at locating the border of a skin lesion after segmenting using Segnet\cite{Meskini2018}. Researchers proposed that when analysing the skin lesion border using ABCD rules, the original SegNet methods were ineffective because the ground truth is subjective - ineffective at finding the border cut-off between the skin lesion and skin. While SegNet has a 91.7\% with the PH$^2$ dataset, the data is not effective at finding the precise border cut-off required for accurate border classification using ABCD rules. Therefore, researchers proposed the Otsu threshold to find the skin lesion border after segmenting using SegNet. Fan proposes another technique that uses a saliency-based segmentation approach to capture the area, followed by an Otsu threshold\cite{Fan2017} to find the border cut-off from the skin lesion with a precision of 96.78\% validated using the PH$^2$ dataset.
 
 Pedro M.M. Pereira et al. proposed local binary pattern clustering (LBPC) to exaggerate the border, producing accurate results when classifying ABCD rules than ground-truth borders in the PH$^2$ dataset\cite{Pereira2020}. Local binary patterns (LBP) are texture descriptors calculated by comparing the centre pixel (of each pixel in the grey scaled image) with the eight neighbouring pixels as 'i', and converting it to a binary using the equation:  [$if centroid > neighbour_i =  0, otherwise = 1$]. These eight neighbouring values produce a binary of 01101100 (decimal of 108) and change the centroid to 108. Next, the described process repeats on each other pixel in the image. Finally, the newly filtered image subtracted from the original grey-scaled image creates a segmentation mask with an accurate border cut-off. Finally, Pereira describes classification methods using SVM or FNN presenting the extracted border with an accuracy of 79\% and 77\% (respectively) with the MED-NODE dataset.
-
-\subsection{Neural Network Classification}
-
-\subsubsection{Explainability}
-
-\subsection{Case-based reasoning}
 
 \subsection{Handcrafted Features}
 Handcrafted features are the extraction of particular features using statistical algorithms the benefit of separating data into components is a more accessible breakdown, improving explainability. In addition, this might instantiate trust for use within a clinical environment and prove more helpful to doctors.
@@ -92,14 +148,18 @@ Dermoscopic structure refers to structures on the skin lesion, including pigment
 
 Javier López-Labraca et al.\cite{Lopez-Labraca2018} describes a statistical approach to classifying melanoma using dermoscopic structures through Gabor filtering, support vector machines, and Bayesian fusion. This technique uses a form of soft segmentation to find the area of these dermoscopic features. Firstly the structures are located using Gabor filtering using different values to find fissures and globules. Each structure is then compared with a trained SVM model to check the similarity of the detected features. The results from the model are then combined using Bayesian fusion to reach a result of malignant or benign. Finally, training a CNN model alongside an SVM improves the retractability of dermoscopic structures; compared to a standalone CNN model.
 
-\subsubsection{Combining ABCD Rules}
+\subsection{Combining ABCD Rules}
 This section describes combining features from the ABCD rules into a classification between malignant, suspicious or benign after considering all clinical features. Again, meta-data and texture can potentially improve the results.
 
 Maryam Ramezani et al. proposed a method to extract features from ABCD rules storing them in vectors and extracting the texture as a GLCM. First, these 187 features are shrunk to 13 using PCA\cite{Ramezani2014}. Next, the data trains an SVM to classify skin lesions into benign or malignant with an accuracy of 82.2\% on macroscopic images using a private dataset.
 
 Other methods output TDS\cite{Zaqout2016, Zhang2018}, which combines them using: [(Asymmetry x 1.3) + (Border x 0.1) + (Colour x 0.5) + (Diameter x 0.5)]. A statistical model for each ABCD rule outputs a score in the same format. The benefit is interpretability because it follows the diagnostic procedure. The technique achieved an accuracy of 90\% using a private dataset.
 
-\section{Conclusion}
+\section{Datasets}
+
+\section{Challenges of Explainability}
+
+\section{Conclusion and Future Work}
 Many techniques utilise ABCD rules to produce an automatic and interpretable diagnosis. Interestingly, many focus on detecting and classifying asymmetry, border, and colour (ABC) or dermoscopic structures, but neither combine the whole ABCD rules into a single framework. Despite dermoscopic structures providing a means of diagnosing problematic forms of melanoma, including mimics (seborrhoeic keratosis)\cite{Izikson2002}, and non-pigmented melanomas. Thus, it would be valuable to combine both into a single system for possibly higher accuracy.
 
 Despite various valuable features, asymmetry rarely utilises techniques other than statistical models. For example, researchers highly focused on border irregularity and dermoscopic structures, leading to hybrid machine-learning models for their assessment. However, asymmetry still utilises statistical approaches to measure and combine shape, colour, and texture. It would be beneficial to transform this data and process it using an SVM, improving accuracy.

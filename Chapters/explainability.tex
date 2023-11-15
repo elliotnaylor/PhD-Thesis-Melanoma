@@ -1,23 +1,71 @@
 \chapter{Analysis of Explainability for the Detection of Melanoma}
 
 \section{Introduction}
-This chapter contains an analysis on popular explainable AI (XAI) techniques called DeepSHAP and Gradcam. Techniques are compared to measure whether they produce interpretable results for use within clinical environments. 
+This chapter contains an analysis of popular explainable AI (XAI) techniques called DeepSHAP and Gradcam. These techniques were compared to discuss whether their results are interpretable.
 
-\section{Discssion}
-Explainable AI (XAI) techniques have recently gained attention because the European general data protection regulation (GDPR and ISO/IEC 27001) stated that these approaches, commonly referred to as ``black box'' approaches, are challenging to utilize in medical environments. Since then, there has been significant progress in making neural network architectures more interpretable. A wide range of techniques\cite{Fuji2019,  Selvaraju2016, Ribeiro2016} have since been developed, demonstrating that it is possible to make neural network techniques interpretable. However, the problem is instead the current scepticism on whether these techniques are trustworthy\cite{Tjoa2019, Samek2019a}, and they can produce realistic but incorrect results\cite{Ghorbani2019}. Some other interpretable techniques do not utilise neural networks. For example, Javier López-Labraca et al.\cite{Lopez-Labraca2018} described an interpretable technique using multiple SVM models with colour and three dermoscopic structures (i.e., pigment networks, globules, and streaks). Bayesian fusion combines each model to calculate a diagnosis. Bayesian probability is a type of probability theory that uses probability distribution to estimate the values of unobserved variables. Bayesian fusion has comparable accuracy to neural network techniques\cite{Takruri2017}. Overall, results should be partially interpretable for use within clinical environments.
+\section{Background}
+%Why explainable AI has gained traction
+Explainable AI (XAI) has gained significant attention in recent years because of increasingly more complex machine learning models in high-stakes decision-making processes in domains including healthcare, education, and public policy\cite{amann2020, hemphill2023, dennehy2023, ploug2021, wachter2017}. This issue was highlighted by the General Data Protection Regulation (GDPR and ISO/IEC 27001) has mentioned the concern for machine learning algorithms, mentioning the difficulty of implementation in the medical domain without adequate explanations\cite{}. The public also has a preference for explainable systems\ref{ploug2021}. Transparency, accountability and privacy are the most critical AI ethical principles\cite{khan2022} and they must be considered for use within sensitive domains including healthcare.
+
+The lack of explainability in AI systems makes it difficult to evaluate the trustworthiness of algorithmic decisions, especially for the public and experts with little understanding of AI\cite{dennehy2023}. Issues could often arise with algorithms relating to data biases, such as the significant lack of data representing darker skin tones\cite{rizvi2022}. Without clinicians having an understanding of these issues, they might be misled into using incorrect diagnoses. This also highlights difficulty regarding accountability and whether the AI system or clinician would be blamed for any mishaps. Alongside this, there is a concern for parallel diagnoses\cite{}. This referrs to AI systems that produce only a diagnosis with little to no explanation. Without an explanation, the clinican cannot learn and attempt to understand why the results were met and in turn cannot utilise them. Considering the nature of clinical environments and that people's lives are at risk, algorithms need to produce explanations so that clinicians can intperpret and learn from results, but not depend on them. 
+
+%What has been done about it
+Since highlighting the concerns of AI systems progress has been made in developing neural network architectures that are more interpretable. Techniques have since been developed to function with existing machine learning algorithms\cite{Fuji2019, Selvaraju2016, Ribeiro2016}. This is beneficial because many DNN architectures are the highest accuracy currently available\cite{}. Other techniques\cite{} involve extracting clinically relevant features such as ABCD rules or dermoscopic structures, followed by combining results into a diagnosis. Other issues with these technqiues are the current scepticism on whether these techniques are trustworthy\cite{Tjoa2019, Samek2019a}, and the concern they produce realistic but incorrect results\cite{Ghorbani2019}. Techiques such as LIME have been for use witthin
+
+%Have they been implemented in healthcare and did they help?
+Some studies have described the use of explainable AI (XAI) models in healthcare\cite{}. One of which shows that the confidence of clinicians is improved.
+
+Lack of interpretability of AI systems has been identified as a challenge and these approaches are commonly referred to as ``black box'' approaches. This is because their inner workings are not visible and the system is
+
+Some other interpretable techniques do not utilise neural networks. For example, Javier López-Labraca et al.\cite{Lopez-Labraca2018} described an interpretable technique using multiple SVM models with colour and three dermoscopic structures (i.e., pigment networks, globules, and streaks). Bayesian fusion combines each model to calculate a diagnosis. Bayesian probability is a type of probability theory that uses probability distribution to estimate the values of unobserved variables. Bayesian fusion has comparable accuracy to neural network techniques\cite{Takruri2017}. Overall, results should be partially interpretable for use within clinical environments.
 
 %https://www.ejcancer.com/article/S0959-8049(22)00123-X/fulltext
 
-\section{Exisiting techniques}
+\subsection{Dataset}
+Comparisons were made using the ISIC 2019 dataset because it is the largest and most robust public dataset currently available regarding melanoma detection.
 
-%Deepshap
-DeepSHAP (Shapley Additive exPlanations) is a game theoretic approach designed to explain models during training by visualising features related to the classificaiton. It does this by explaining individual predictions in machine learning models, measuring the contribution of each feature to the contribution to an outcome\cite{Aas2021}.
+\section{DeepSHAP}
+%What is deepshap
 
+DeepSHAP (Shapley Additive exPlanations) is a method designed to offer insights into the decision-making process of machine learning models, specifically deep neural networks (DNN). DeepSHAP is an extension of the DeepLIFT algorithm and is based on the concept of Shapley values that are derived from cooperative game theory. The method aims to estimate the importance of input features for a given decision by comparing the acitivations in the network for a given input against the activiations caaused by a reference input. In Turn, DeepSHAP is particularly effective
+
+The method is particularly effective for explaining the performance of deep learning models in medical decision support systems\cite{}. It has been shown to highlight information relecant to the decision-making process. 
+
+DeepSHAP (Shapley Additive exPlanations) is a game theoretic approach designed to explain models during training by visualising features related to the classification. It explains the individual predictions in machine learning models using Shapley values that measure the contribution of each feature to the contribution of an outcome\cite{Aas2021}.
+
+%Why is it used?
 In the field of healthcare, DeepSHAP is applied to predict and explain non-communicable diseases (NCDs). In explanations for individual predictions and a case study detecting the progression of Alzheimers. 
 
-Although explainable algorithms have seen some use within healthcare, there is no evidence of it's current use within dermatology.
+Although explainable algorithms have seen some use within healthcare, there is no evidence of their current use within dermatology.
 
 
-%Gradcam
+%How does it work
 
+
+%Results
+
+
+\subsection{Summary}
+
+\section{Grad-Cam}
+%What is gradcam
+
+%Why is it used
+
+%How does it work?
+
+%Results
+
+\subsection{Summary}
+
+
+\section{DeepSHAP & Grad-CAM Comparison}
+
+\subsection{Tree ensemble methods}
+
+
+\section{Bayesian Network Approach}
 %Start to mention bayesian network and how its explainable
+
+
+\section{Conclusion}
