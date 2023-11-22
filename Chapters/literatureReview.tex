@@ -2,7 +2,7 @@
 \chapter{Systematic Review}
 
 \section{Introduction}
-This chapter reviews statistical and neural network algorithms for the automatic classification of melanoma. Following a discussion on the effectiveness of techniques and whether they are useful within clinical environments. 
+This chapter reviews statistical and neural network algorithms for the automatic classification of melanoma. Following a discussion on the effectiveness of techniques and whether they are useful within clinical environments.
 
 %Start with a broader scope and mention the classification of lesions with NN techniques, explainability, etc.
 
@@ -30,7 +30,7 @@ There is a lack of literature describing adequate visual representations for doc
 %Supporting algorithms such as deepshap
 
 \section{Research Methodology}
-The reason for writing this review was to select the best approaches to skin cancer detection and regarding whether they can be utilised within clinical environments. 
+The reason for writing this review was to select the best approaches to skin cancer detection and regarding whether they can be utilised within clinical environments.
 
 Combining the information helps specify what is currently known in literature and highlighting what areas need further work.
 
@@ -49,11 +49,11 @@ The goal of this systematic review is to answer the following questions:
 
 \begin{table}
 	\begin{tabular}{|c|c|c|}
-	\hline
-	Search Term & Set of Key Words \\
-	\hline
-	Skin & skin cancer, skin treatments \\
-	\hline
+		\hline
+		Search Term & Set of Key Words             \\
+		\hline
+		Skin        & skin cancer, skin treatments \\
+		\hline
 	\end{tabular}
 
 \end{table}
@@ -75,7 +75,7 @@ The techiques mention in this section are ones including deepshap that are used 
 
 The Local Interpretable Model-agnostic Explanations (LIME)
 
-LIME has been tested in healthcare for the analysis of breast tumor classification\cite{rafferty2022}, and diagnosis of pigmented skin lesions\cite{duell2021}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
+LIME has been tested in healthcare for the analysis of breast tumour classification\cite{rafferty2022}, and diagnosis of pigmented skin lesions\cite{duell2021}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
 
 \section{Ensemble Learning Techniques}
 Ensamble learning is a branch of machine learning based on the decision-making process to intergrate it into systems better\cite{xu2022}. Decision-making is the process of making a choice among many options and summarizing evidence to draw a conclusion. An example is case-based reasoning which involves classifying and presenting visually or statistically similar cases and their results.
@@ -83,19 +83,19 @@ Ensamble learning is a branch of machine learning based on the decision-making p
 %Mention paper showing improved accuracy of GPs using machine learning algorithms
 
 \section{Hybrid machine learning techniques}
-Hybrid machine learning are techniques that aims to use the superior accuracy of deep learning algorithms that are difficult to interpret alongside more explainable algorithms inlcuding bayesian networks, SVMs and others. Results are then combined to reach a result.
+Hybrid machine learning are techniques that aims to use the superior accuracy of deep learning algorithms that are difficult to interpret alongside more explainable algorithms inlcuding bayesian networks, SVMs and others.
 
 \section{Feature Extraction Techniques}
 Many CAD frameworks follow a methodology for the classification of skin lesions. These are listed below:
 
 \begin{enumerate}
-	
+
 	\item Segmentation – Image segmentation is the process of partitioning an image into multiple segments for more accessible analysis. These areas can be separated manually by a dermatologist (known as the ground truth) or separated automatically using statistical or machine learning algorithms.
-	
+
 	\item Feature Extraction - Gathering features through filtering, morphology and other statistical approaches. ABCD rules include asymmetry, border, colour, and dermoscopic structures.
 
 	\item Combination - Combining the extracted features before using Principal Component Analysis (PCA) or after classification using Bayesian Fusion. Others combine the results using the Total Dermoscopy Score (TDS).
-	
+
 	\item Classification – Measuring the results from the features and components through classification. Containing the final diagnosis of the type of skin lesion (Naveus, SK, or Melanoma)
 
 \end{enumerate}
@@ -113,11 +113,11 @@ Handcrafted features are the extraction of particular features using statistical
 \subsubsection{Asymmetry}
 Asymmetry can be measured using the bi-fold technique, which involves drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match, on both the horizontal and vertical axes, as shown in \ref{lit-asym}. If the two sides are greatly different, it could be a warning sign of melanoma. Asymmetry can be measured using the shape\cite{Zaqout2016}, colour\cite{Kasmi2016}, and texture\cite{Ali2020a}.
 
-\begin{figure} 
-\centering
-\includegraphics[scale=0.5]{images/asym1.png}
-\includegraphics[scale=0.5]{images/asym2.png}
-\caption{Images of two skin lesions from the PH$^2$ dataset showing the asymmetry calculated from moments.}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/asym1.png}
+	\includegraphics[scale=0.5]{images/asym2.png}
+	\caption{Images of two skin lesions from the PH$^2$ dataset showing the asymmetry calculated from moments.}
 \end{figure} \label{lit-asym}
 
 Measuring the asymmetrical shape requires a precise border cut-off. Ihab S. Zaqout\cite{Zaqout2016} describes a technique using the centroid and rotation of the skin lesion using moments of inertia. By Folding the skin lesion on both vertical and horizontal axes subtracting the opposite half. Pixels that cannot subtract are summed and compared with a threshold considering the skin lesion asymmetrical if the combined sum is more than the threshold.
@@ -130,10 +130,10 @@ Measuring similarities in texture can be achieved by using SIFT-based similarity
 Estimating border irregularities involves splitting the skin lesion into eight equal sections (through the centroid), where each section with tight corners and convexity is considered irregular. Each irregular section of the border adds a score of 1 ranging from 0 to a total of 8, as shown in figure \ref{borders}.
 
 \begin{figure}
-\centering
-\includegraphics[scale=0.5]{images/bord1.png}
-\includegraphics[scale=0.5]{images/bord2.png}
-\caption{Images of two skin lesions split into 8 sections using moments, each border is measured for irregularity.}
+	\centering
+	\includegraphics[scale=0.5]{images/bord1.png}
+	\includegraphics[scale=0.5]{images/bord2.png}
+	\caption{Images of two skin lesions split into 8 sections using moments, each border is measured for irregularity.}
 \end{figure} \label{borders}
 
 Border irregularity contours were found by splitting the skin lesion into eight segments around the centre, and then calculating a fitting error for each. If the error is larger than 0.05 (x contour), that area is considered irregular\cite{Kasmi2016}.
