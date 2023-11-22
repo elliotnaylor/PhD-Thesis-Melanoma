@@ -253,12 +253,12 @@ own data. Regardless PH2 appears to be suitable for analysis apart from the lack
 Considering the data distribution of the dataset both samples appear to be consistent with literature. For example in ISIC 2017 dermoscopic structures, SK has more samples with milia-like cysts and less pigment networks. Furthermore melanoma and benign naevi have roughly equal pigment networks and less milia-like cysts. Another example is the colour distribution in PH2 while brown and light brown are common in benign neavi, MM has less samples of light and dark brown with more colours of blue, black, and white. The only sample that appeared to be wrong was the colour red, where there was a severe lack of samples.
 
 
-\chapter{Developing the NHS dataset}
+\section{Developing the NHS dataset}
 Whilst recognising the benefits of the ISIC 2019 and PH2 datasets we can begin to develop `the dataset' using NHS data. The inclusion of NHS data brings real-world clinical cases into the mix, and techniques developed during this project can be tested in the scenario it is intended to be utilised.
 
 Requirements are decided below to highlight potential biases and issues, and then 2,000 images are chosen to create the dataset. This is followed by an analysis similar to the previous datasets and interesting findings from the data.
 
-\section{Requirements}
+\subsection{Requirements}
 %Describe the requirements, such as using macroscopic images over dermoscopic.
 The use of machine learning algorithms for the detection of melanoma is a promising and evolving field with detection accuracies often beating that of dermotologists\cite{Andre2017}. However, the effectiveness of such depends heavily on the quality of the datasets used to develop them\cite{Tae2019}. The goal of this section is to describe and document the data extraction process from the National Health Service (NHS) and highlight biases, pre-processing, and other potential issues involved in the training of machine learning algorithms for the detection of melanoma. Requirements are first highlighted before gathering the data and are listed below.
 
@@ -272,7 +272,7 @@ The dermoscopic examination is superior to macroscopic examination, however, the
 
 Considering the use of macroscopic images there needs to be a more thorough clean-up of the data for it to be used effectively. This will include removing hair and specular reflections to improve classification accuracy. This chapter will discuss the data transformation of NHS macroscopic images, including augmentation techniques to remove lighting, hair and other anomalous data from the images. All of which will support improving the accuracy when classifying.
 
-\section{Data Biases}
+\subsection{Data Biases}
 The use of datasets is fundamental to the development and evaluation of machine learning algorithms, and the accuracy and effectiveness heavily weigh on the quality of the data used. Biases can arise from data collection procedures and pre-processing techniques. Not considering possible biases greatly affects machine learning algorithms using them and their effectiveness. Furthermore, careful consideration is essential to ensure the accuracy and reliability of the conclusions proposed in this document. Failure to consider all these factors could result in skewered conclusions that could undermine the validity of findings. For these reasons, it is essential to carefully identify and evaluate data before using and testing it.
 
 NHS datasets contain a wealth of information that can be utilised. However, some biases need consideration before creating a dataset. These biases include:
