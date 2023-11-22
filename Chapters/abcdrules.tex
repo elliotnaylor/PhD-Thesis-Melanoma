@@ -2,9 +2,7 @@
 \chapter{Implementation of segmentation, ABCD rules  and Dermoscopic structures}
 
 \section{Introduction}
-This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. 
-
-Surprisingly, many of these techniques were originally on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques were tested and documented regarding the ABCD rules.
+This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. Surprisingly, many of the ABCD rules techniques were originally tested for whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques were tested and documented.
 
 %Discuss the ABCD rule techniques and how border is better with a tighter border rather than segmentation from techniques including SegNet
 
@@ -99,7 +97,7 @@ It might be beneficial to combine SegNet and LBPC using SegNet to find the skin 
 
 %Tables showing the accuracy of all three of the techniques essentially showing that segnet is obviously better.
 
-\subsection{Results of Border Cut-off}
+\subsubsection{Border Cut-off}
 %Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
 This section includes a simple border analysis technique called fractal box counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
 
@@ -107,7 +105,7 @@ To prove the usefulness of segmentation techniques with an accurate border cut-o
 
 The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until the relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
 
-\section{Issues}
+\subsection{Issues}
 %Show that LBPC sometimes fails at finding the skin lesion
 The segmentation algorithms encountered some issues, whilst the best of the techniques was SegNet with an 85\% accuracy when relating to the ISIC 2019 dataset. However, as previously mentioned the segmentation masks have poor border cut-off stunting features that are useful for finding border irregularities. 
 
@@ -115,20 +113,9 @@ In contrast LBPC and U-Otsu algorithms effectively identify the border cut-off o
 
 Both techniques appear to have downfalls making them less effective for use for analysing ABCD rules. It would be beneficial to find the approximate area of the skin lesion using SegNet and followed by LBPC to find the border cut-off.
 
-
-
-\subsection{Joint Neural network and statistical model approach}
+\section{Joint Neural network and statistical model approach}
 %Combine techniques together to get the area of the border
 Combining both SegNet and LBPC improves the accuracy.
-
-
-
-
-
-
-
-
-
 
 \section{ABCD Rules Data Extraction Techniques}
 Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
