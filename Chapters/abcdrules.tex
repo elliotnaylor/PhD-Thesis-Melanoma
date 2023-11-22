@@ -1,36 +1,43 @@
-\chapter{Analysing of ABCD, segmentation, Dermoscopic structures}
+
+\chapter{Implementation of segmentation, ABCD rules  and Dermoscopic structures}
 
 \section{Introduction}
-This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. Surprisingly, many of these techniques are tested on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques are tested and documented regarding the ABCD rules.
+This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. 
+
+Surprisingly, many of these techniques were originally on whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques were tested and documented regarding the ABCD rules.
 
 %Discuss the ABCD rule techniques and how border is better with a tighter border rather than segmentation from techniques including SegNet
 
-\chapter{A Comparison of Melanoma Segmentation Algorithms using Neural Networks and Statistical Models}
+\section{Hybrid Melanoma Segmentation Algorithms using Neural Networks and Statistical Models}
 
-\subsection{Discussion}
-This section includes a discussion on segmentation techniques for the detection of melanoma. The goal is to produce a statistically significant border cut-off at the perimeter of the skin lesion. An accurate border cut-off is an essential criterion for melanoma detection\cite{Pereira2020, Kaya2016} using ABCD rules. Unfortunately, segmentation continues to be a challenging task because datasets regularly contain an estimated border and sometimes an inaccurate border cut-off. This chapter includes a simple border analysis technique called fractal box counting to assess the benefits of using segmentation algorithms with accurate border cut-offs.
+Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020} including improving the detection of ABCD rules\cite{Lee2020}. This is especially important for border analysis\cite{Pereira2020, Kaya2016} that relies on the analysis of convex and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}.
 
-\section{Related Works}
-An approach by Albanhli\cite{Albahli2020} uses a deep learning-based segmentation algorithm using YOLOv4-arkNet and active contouring for melanoma and skin lesion detection and segmentation. This technique provides a classification of the skin lesion and a segmentation, demonstrating a high level of practicality for clinical decision support systems. 
+There are various deep learning approaches\cite{Albahli2020} and deep CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma. Although these techniques are massively accurate they are trained using datasets (ISIC 2019) contain rough segmentation masks, resulting in the produced borders having a poor border cut-off. This can be seen further in figure\ref{seg-expert}. This is largely due to ISIC datasets only having a few expert borders and not enough to train deep learning algorithms. Furthermore, the images are also shrunk as part of the deep learning process, which in turn loses smaller features that are of significant when analysing borders. All of this results in the major technologies including deep learning are ineffective when producing border cut-off.
+
+%Show example of borders and expert borders
+\begin{figure}[]
+    \centering
+    %\includegraphics[scale=1.2]{images/}
+    \caption{Some images from the ISIC dataset demonstrating the difference between segmentation masks and expert segmentation masks.}\label{seg-expert}
+\end{figure}
+
+A range of traditional segmentation techniques including SegNet, U-net methods have been shown to outperform other approaches in capturing the most significant melanoma characteristics. However, these techniques do not provide an effective border for the analysis of ABCD rules. Various statistical algorithms have been explored including active contouring-based segmenatation\cite{Riaz2019}, LBPC and others for border adjustment including u-otsu and edge-imfill.
+
+\subsection{Related Works}
+An approach by Albanhli\cite{Albahli2020} uses a deep learning-based segmentation algorithm using YOLOv4-DarkNet and active contouring for melanoma and skin lesion detection and segmentation. This technique provides a classification of the skin lesion and a segmentation, demonstrating a high level of practicality for clinical decision support systems. 
 
 Seeja R D\cite{seeja2019} proposed a technique that utilizes a convolutional neural network (CNN) based on a U-net model architecture for the segmentation based on colour, texture and shapes. The U-net model architecture is a popular choice for image segmentation tasks due to its ability to capture both local and global features effectively.
 
 Hyunju Lee\cite{Lee2020} proposed a technique that utilizes an edge fill method called u-otsu for segmentation, using the U channel from the YUV colour space to calculate the histogram. Otsu calculates the optimal threshold value to separate foreground and background pixels based on the histogram of the image.
 
-Another technique by Pedro\cite{Pereira2020} uses a newly developed technique called Local Binary Patterns Clustering (LBPC). Using a Local Binary Pattern (LBP) filter by subtracting the grayscale image from the LBP filter after a Gaussian filter, resulting in the creation of a mask. This has been successfully used for the detection of melanoma.
-
-\section{Skin Lesion Segmentation}
-Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020} including improving the detection of of ABCD rules\cite{Lee2020}. One of the important features is border, 
-
-A range of traditional segmentation techniques including SegNet, U-net methods have been shown to outperform other approaches in capturing the most significant melanoma characteristics. However, these techniques do not provide an effective border for the analysis of ABCD rules. Other techniques have been explored including active contouring-based segmenatation\cite{Riaz2019}, LBPC and others for border adjustment including u-otsu and edge-imfill.
-
+Another technique by Pedro\cite{Pereira2020} uses a newly developed technique called Local Binary Patterns Clustering (LBPC). Using a Local Binary Pattern (LBP) filter by subtracting the gray-scale image from the LBP filter after a Gaussian filter, resulting in the creation of a mask. This has been successfully used for the detection of melanoma.
 
 \subsection{Semantic Pixel Wise Segmentation (SegNet)}
 SegNet is a deep learning architecture that is used for semantic image segmentation for melanoma detection. It was originally developed by\cite{chen2018} and has shown promising results in various segmentation tasks.
 
 The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end-to-end learning and inference at the pixel level. 
 
-Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3x3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2x2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3x3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
+Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3$\times$3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2$\times$2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3$\times$3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
 
 \begin{figure}[hb]
 \centering
@@ -38,21 +45,18 @@ Semantic pixel-wise segmentation (SegNet) is a machine learning architecture uti
 \caption{Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.}\label{SegNet}
 \end{figure}
 
+
+
 Results in figure \ref{SegNet} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, figure \ref{SegNet} represents the border cut-off between skin and skin lesion is accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
 
-\section{Border extraction}
-To prove the usefulness of segmentation techniques with an accurate border cut-off a technique developed by Ali\cite{Ali2020b} is implemented that utilises machine learning with extracted data including Zernike moments, fractal box-counting, and convexity measurements. Fractal box-counting is used to measure the irregularity of the border.
-
-The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until the relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
-
 \subsection{U-Otsu Threshold}
-Otsu threshold is a versatile automatic image thresholding technique meant to separate each pixel between two classes of foreground or background. One of the benefits of this method is that it does not require any training data. The equation \ref{otsu} (within-class variance) describes splitting weights of $w_0(t),w_1(t)$, which are the probabilities divided by the threshold $t$, between 0 to 255. Furthermore, $\sigma_1^2$ and $\sigma_0^2$ are variances of these two classes. The class probability $w$ is computed from the histogram in figure \ref{otsu2}, which is an intensity histogram describing the colour distribution in an image. Measuring the values above and below the generated thresholds splits the image into two classes.
+Otsu threshold is a versatile automatic image thresholding technique meant to separate each pixel between two classes of foreground or background. One of the benefits of this method is that it does not require any training data. The equation \ref{otsu} (within-class variance) describes splitting weights of $w_0(t),w_1(t)$, which are the probabilities divided by the threshold $t$, between 0 and 255. Furthermore, $\sigma_1^2$ and $\sigma_0^2$ are variances of these two classes. The class probability $w$ is computed from the histogram in figure \ref{otsu2}, which is an intensity histogram describing the colour distribution in an image. Measuring the values above and below the generated thresholds splits the image into two classes.
 
 \begin{equation}
 \sigma_w^2(t) = w_0(t)\sigma_1^2(t) + w_1(t)\sigma_2^2(t)
 \end{equation}\label{otsu}
 
-The histogram is split into two segments with the threshold $t$ of 138 and the corresponding pixel locations to the histogram segment the skin lesion into two classes. Image morphology closing is applied to fill gaps that the threshold missed. On other occasions, the segmentation missed the skin lesion because of a similar colour between the skin and the skin lesion. It might be beneficial to combine Otsu with SegNet to improve its accuracy while producing a border cut-off. Figure \ref{otsu2} describes the difference between otsu and SegNet.
+The histogram was split into two segments with the threshold $t$ of 138 and the corresponding pixel locations to the histogram segment the skin lesion into two classes. Image morphology closing was applied to fill gaps that the threshold missed. On other occasions, the segmentation missed the skin lesion because of a similar colour between the skin and the skin lesion. It might be beneficial to combine Otsu with SegNet to improve its accuracy while producing a border cut-off. Figure \ref{otsu2} describes the difference between otsu and SegNet.
 
 \begin{figure}
 \centering
@@ -82,18 +86,49 @@ Figure \ref{fractal1} demonstrates the segmentation of two skin lesions, one wit
 \centering
 \includegraphics[scale=1.2]{images/borders.PNG}
 \caption{Local Binary Pattern Clustering (LBPC) showing the a) original image, b) ground-truth, and c) LBPC. LBPC successfully exaggerates the border cut-off on the skin lesions with regular and irregular borders} 
-\end{figure} \label{fractal1}
+\end{figure}\label{fractal1}
 
 Validating LBPC is not expected because the goal is to exaggerate the border to improve the classification process of ABCD rules, which it does successfully\cite{Pereira2020, Kaya2016}. For example, the segmentation might not match dataset segmentations but is still essential to classifying ABCD rules. Furthermore, many datasets lack expert border segmentation, an accurate border cut-off between the skin and skin lesions, so comparisons are not always possible.
 
-\section{Comparison of techniques}
+\subsection{Results}
 Overall the accuracy of the techniques demonstrates that SegNet is the most reliable technique. However, comparing the techniques in \ref{} we can demonstrate that it produces a smudge effect and fails to capture the border cut-off from the skin lesion, but it is successful at finding the location of the skin lesion.
 
 Both statistical models of LBPC and Otsu threshold generated an accurate border cut-off between the skin and the skin lesion As previously mentioned, measuring the border cut-off and exaggerating irregular borders are helpful when calculating the ABCD rules. 
 
 It might be beneficial to combine SegNet and LBPC using SegNet to find the skin lesions' location, followed by adjusting the border cut-off using LBPC. A similar technique using the Otsu threshold and Segnet is described by\cite{Riaz2019}.
 
-\section{Joint Neural network and statistical model approach}
+%Tables showing the accuracy of all three of the techniques essentially showing that segnet is obviously better.
+
+\subsection{Results of Border Cut-off}
+%Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
+This section includes a simple border analysis technique called fractal box counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
+
+To prove the usefulness of segmentation techniques with an accurate border cut-off a technique developed by Ali\cite{Ali2020b} is implemented that utilises machine learning with extracted data including Zernike moments, fractal box-counting, and convexity measurements. Fractal box-counting is used to measure the irregularity of the border.
+
+The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until the relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
+
+\section{Issues}
+%Show that LBPC sometimes fails at finding the skin lesion
+The segmentation algorithms encountered some issues, whilst the best of the techniques was SegNet with an 85\% accuracy when relating to the ISIC 2019 dataset. However, as previously mentioned the segmentation masks have poor border cut-off stunting features that are useful for finding border irregularities. 
+
+In contrast LBPC and U-Otsu algorithms effectively identify the border cut-off of the skin lesion, which isn't properly represented in the ISIC 2019 dataset. But, it sometimes fails to find the skin lesion or not detect anything. 
+
+Both techniques appear to have downfalls making them less effective for use for analysing ABCD rules. It would be beneficial to find the approximate area of the skin lesion using SegNet and followed by LBPC to find the border cut-off.
+
+
+
+\subsection{Joint Neural network and statistical model approach}
+%Combine techniques together to get the area of the border
+Combining both SegNet and LBPC improves the accuracy.
+
+
+
+
+
+
+
+
+
 
 \section{ABCD Rules Data Extraction Techniques}
 Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
@@ -108,7 +143,7 @@ Diagnostic procedures are usually based on the doctors medical experience. For e
 
 Interestingly dermatologists will utilise dermoscopic features and textures, which are more accurate but require sufficient training for the detection.
 
-\subsubsection{Asymmetry}
+\subsubsection{Asymmetry Techniques}
 Asymmetry analysis is a fundamental component in the early detection of melanoma because it often exhibits asymmetric shapes\cite{Ali2020a}. Meaning that the shape, colour and, texture match asymmetrically more often in benign lesions. For example, as melanoma grows the central area begins to waste away leaving a hollow area covered by thin skin, showing dermoscopic features. As it grows the edges become more irregular producing an uneven shape often relating to irregular borders and asymmetrical shapes. Diagnostic procedures have been developed to detect these unique characteristics.
 
 Bi-fold is a diagnostic procedure designed to support the recognition of melanoma by drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match (considering the difference in shape, colour, and texture). Using this horizontally and vertically calculates whether the skin lesion is possibly malignant with a score between 0 and 2. Calculating with Total Dermoscopy Score (TDS) alongside the other ABCD rules including asymmetry, border, colour, and diameter calculates the likelihood of malignancy. Dermatologists frequently use bi-fold due to its simplicity, but it can be subjective to the original observer and time-consuming when managing large numbers of skin lesions. Therefore, automating techniques is beneficial to clinicians and can improve the objectivity of results.
