@@ -169,21 +169,44 @@ Asymmetry analysis is a fundamental component in the early detection of melanoma
 
 \begin{figure}
     \centering
-    \includegraphics[scale=1.2]{images/asymmetry/.png}
+    %\includegraphics[scale=1.2]{images/asymmetry/.png}
     \caption{} 
 \end{figure}\label{asy-examples}
 
 
-
-Bi-fold is a diagnostic procedure designed to support the recognition of melanoma by drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match (considering the difference in shape, colour, and texture). Using this horizontally and vertically calculates whether the skin lesion is possibly malignant with a score between 0 and 2. Calculating with Total Dermoscopy Score (TDS) alongside the other ABCD rules including asymmetry, border, colour, and diameter calculates the likelihood of malignancy. Dermatologists frequently use bi-fold due to its simplicity, but it can be subjective to the original observer and time-consuming when managing large numbers of skin lesions. Therefore, automating techniques is beneficial to clinicians and can improve the objectivity of results.
-
 \section{A Novel Asymmetry detection technique using Bi-Fold, 3D Euclidean distance, and Superpixels}
 This section describes a novel machine-learning technique for the automatic detection of melanoma
 
+\subsection{Image Transformation}
+Transforming the skin lesion image is important to prevent scale variance in the algorithms. For example some of the images have a smaller skin lesion in upper corners and others take up the entire image size. For adequate comparisons the images must be transformed to match sizes. THis ensures the images are being compared fairly.
+
+To transform the image it is converted to gray scale and a threshold is applied finding all non-zero pixels. This is followed by a bounding rectangle around the area being assigned. After this the assigned area from the original image is cropped.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=1.2]{images/asymmetry/asy-cropped.png}
+    \caption{This figure shows some images from the PH2 dataset after being masked, cropped, and rotated using bi-fold.} 
+\end{figure}\label{asy-cropped}
+
+%Diagram showing the image before and after transformation
+The first line in figure \ref{asy-cropped} shows the skin lesion image, the second shows the segmentation mask, and the third shows the images after being cropped and rotated using bi-fold.
+
 \subsection{Bi-fold}
+Bi-fold is a diagnostic procedure designed to support the recognition of melanoma by drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match (considering the difference in shape, colour, and texture). Using this horizontally and vertically calculates whether the skin lesion is possibly malignant with a score between 0 and 2. Calculating with Total Dermoscopy Score (TDS) alongside the other ABCD rules including asymmetry, border, colour, and diameter calculates the likelihood of malignancy. Dermatologists frequently use bi-fold due to its simplicity, but it can be subjective to the original observer and time-consuming when managing large numbers of skin lesions. Therefore, automating techniques is beneficial to clinicians and can improve the objectivity of results.
+
 To initiate the classification of skin lesions a technique called bi-fold is applied involving folding the skin lesion in half vertically and horizontally and a comparison of their respective dimensions. While the original technique was designed only to assess the lesions' shape, it's been utilized to account for colour and texture as well. The centre and orientation are determined by calculating its moments, where the centre is (m10 / m00, m01 / m00) and phi is 0.5tan (2m11)/ (m20 -m02).
 
 %Add diagram demonstrating bi-fold of a skin lesion
+\begin{figure}
+    \centering
+    %Make better images showing both vertical and horizontal rotation after analysis
+    \includegraphics[scale=0.5]{images/asymmetry/bi-fold1.png}
+    \includegraphics[scale=0.5]{images/asymmetry/bi-fold1-rotated.png}
+    \caption{This diagram shows image IMD003 from the PH2 dataset after calculating Bi-fold, followed by rotating the image to match the rotation defined using moments of inertia.} 
+\end{figure}\label{asy-bifold}
+
+\subsection{Shape analysis}
+
 
 \subsection{3D Euclidean Distance}
 Next, the lesion is partitioned into a 20 by 20 grid centred on the mentioned centre point, and the average of each region is computed. This is followed by finding the matching region on the perpendicular area from the centre of the skin lesion and comparing the colour distance between the two. Distance is measured using the LAB colour space and a 2D Euclidean distance of A and B, removing L (luminosity) to eliminate light variation. Once compared, all compared regions are obtained, and they are plotted onto a graph. If over half of the values are above a threshold of 6, then the lesion is asymmetrical.
