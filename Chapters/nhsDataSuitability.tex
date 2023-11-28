@@ -163,7 +163,7 @@ As described in figure\ref{isic-dermo-diagnosis} certain dermoscopic structures 
 \subsubsection{Summary}
 In summary, the ISIC dataset including data from 2017, 2018, and 2019 makes this dataset the largest public dataset for skin lesion analysis and melanoma detection. It contains a large collection of dermoscopic images with 8 different diagnoses. The dataset having 33,569 makes it ideal for a diverse range of research and development purposes including the evaluation of machine learning and deep learning models. It also contains 2694 images of dermoscopic structures labelled in the ISIC 2017 version of the dataset. Overall, this is the best dataset currently publicly available for the analysis of skin lesions.
 
-Furthermore, data distribution comparing diagnosis to the age, anatomical location, and dermoscopic structures appears to be consistent with literature\cite{}, likely due to the size of the dataset. Otherwise, some image samples have incomplete broders. So, some images should be detected and removed to properly utilise asymmetry, border, and colour.
+Furthermore, data distribution comparing diagnosis to the age, anatomical location, and dermoscopic structures appears to be consistent with literature\cite{}, likely due to the size of the dataset. Otherwise, some image samples have incomplete borders. So, some images should be detected and removed to properly utilise asymmetry, border, and colour.
 
 \subsection{PH2}
 The PH2 dataset is a collection of dermoscopic images that were made available in 2013 by Mendonca, et al\cite{}. It consists of 200 images including 80 common nevus, 80 atypical nevus, and 40 Melanoma. Although the dataset is small it holds substantial metadata for describing features within the skin lesion, including asymmetry, colour, pigment network, dots/globules, streaks, regression areas, and blue-whitish veil. This is the only dataset that has such substantial data regarding the mentioned features. Each image has a segmentation mask of the skin lesion.
@@ -176,7 +176,7 @@ The PH2 dataset is a collection of dermoscopic images that were made available i
 	\caption{Example of images from the PH2 dataset. The first two are standard, the second two are atypical, and the last 4 are melanoma.}
 \end{figure}\label{ph2-example-images}
 
-The images in figure{ph2-example-images} are some examples of skin lesions from the PH2 dataset. All the images have a circular border and melanoma samples are too big to fit inside the area of the dermoscope in many cases. This results in incomplete border making it difficult to analyse asymmetry and border from ABCD rules.
+The images in figure{ph2-example-images} are some examples of skin lesions from the PH2 dataset. All the images have a circular border and melanoma samples are too big to fit inside the area of the dermoscope in many cases. This results in an incomplete border making it difficult to analyse asymmetry and border from ABCD rules.
 
 \begin{figure}
 	\centering
@@ -240,18 +240,24 @@ There is little to no overlap between typical and atypical pigment networks betw
 \subsection{Diagnosis and Image Assessment}
 %Show some of the asymmetry techniques that have been measured wrong, some seem to have been measured by colour and others only by shape. Consider excluding some.
 
+\begin{figure}
+	\centering
+	%\includegraphics[scale=0.75]{images/ph2/ph2-pigment-diagnosis.png}
+	\caption{}
+\end{figure}\label{ph2-image-assessment}
+
+%Show that the image assessment of some images is wrong, this was shown for asymmetry colour and shape
 
 \subsubsection{Summary}
 In summary, the PH2 dataset is a valuable resource for researchers considering it is the only one of its kind to provide metadata relating to asymmetry, colour, and dermoscopic structures. This has been used frequently in various studies to develop and evaluate algorithms for skin lesion analysis. Such datasets with substantial metadata are useful for producing explainable results. As explainable (XAI) becomes more common datasets describing clinical features will be necessary. However, one of the downfalls of this dataset is the unusual labelling for dermoscopic structures where the pigment network and globules are labelled between typical and atypical and others are between present and absent. Some metadata was inconsistent with literature including the colour red, which is more common for melanoma, but the data does not demonstrate this. Furthermore, almost every image sample has a pigment network (although common), it would be more useful to have some without this feature.
 
-An issue with this dataset is that many of the papers that utilise ABCD rules and dermoscopic structures do not test their algorithms against this dataset, regardless of the dataset being around before the time of publication\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. Instead they tend to use privatly annotated datasets, which makes it difficult to replicate results. After analysing PH2 dataset it is likely the small size, lack of red colour samples and the unusual labelling of dermoscopic structures are the reason forthis dataset being avoided. Furthermore, the ABCD rules tend to be subjective and are only relevant to the institution which they are used, therefore this is likely again why the technique is being avoided and why many papers tend to annotate their own data. Hopefully some time in the future objective measurements can be accepted and datasets including vast data like PH2 will be accepted.
+An issue with this dataset is that many of the papers that utilise ABCD rules and dermoscopic structures do not test their algorithms against this dataset, regardless of the dataset being around before the time of publication\cite{Kasmi2016, She2007, Tenenhaus2010, Ramezani2014, Zaqout2016}. Instead they tend to use privatly annotated datasets, which makes it difficult to replicate results. After analysing PH2 dataset it is likely the small size, lack of red colour samples and the unusual labelling of dermoscopic structures are the reason forthis dataset being avoided. Furthermore, the ABCD rules tend to be subjective and are only relevant to the institution which they are used, therefore this is likely again why the technique is being avoided and why many papers tend to annotate their data. Hopefully some time in the future objective measurements can be accepted and datasets including vast data like PH2 will be accepted.
 
 \section{Conclusion}
-Overall both the PH2 and ISIC 2019 provide adequate data for the testing and developing algorithms. ISIC 2019 is suitable for training deep learning algorithms with a total sample size of 33,569 images with relevant metdata. PH2 is certaintly the weakest link with data samples of only 200 images between benign naevi and moles and that many papers refuse to test using the dataset and resort to privately annotating their
+Overall both the PH2 and ISIC 2019 provide adequate data for the testing and developing algorithms. ISIC 2019 is suitable for training deep learning algorithms with a total sample size of 33,569 images with relevant metdata. PH2 is certaintly the weakest link with data samples of only 200 images between benign naevi and moles and many papers refuse to test using the dataset and resort to privately annotating their
 own data. Regardless PH2 appears to be suitable for analysis apart from the lack of red samples.
 
 Considering the data distribution of the dataset both samples appear to be consistent with literature. For example in ISIC 2017 dermoscopic structures, SK has more samples with milia-like cysts and less pigment networks. Furthermore melanoma and benign naevi have roughly equal pigment networks and less milia-like cysts. Another example is the colour distribution in PH2 while brown and light brown are common in benign neavi, MM has less samples of light and dark brown with more colours of blue, black, and white. The only sample that appeared to be wrong was the colour red, where there was a severe lack of samples.
-
 
 \section{Developing the NHS dataset}
 Whilst recognising the benefits of the ISIC 2019 and PH2 datasets we can begin to develop `the dataset' using NHS data. The inclusion of NHS data brings real-world clinical cases into the mix, and techniques developed during this project can be tested in the scenario it is intended to be utilised.
@@ -473,7 +479,7 @@ Multiple diagnoses are sometimes shown, figure\ref{nhs-multiple-diagnosis} shows
 	\caption{Comparing skin lesions that are diagnosed as MM, SK, and considered both MM and SK.}
 \end{figure}\label{nhs-mm-sk-examples}
 
-Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions demonstrating how difficult it is telling them apart\cite{}. The ABCD rules and TDS is assigned to each image to see whether this diagnostic procedure will be suitable for seperating these skin lesions.
+Considering that SK has multiple diagnoses mostly for MM and SK, it is a good idea to compare these images and see whether there are any distinguishing features. Demonstrated in figure\ref{nhs-mm-sk-examples} SK border and colours change dramatically between different lesions demonstrating how difficult it is telling them apart\cite{}. The ABCD rules and TDS is assigned to each image to see whether this diagnostic procedure will be suitable for separating these skin lesions.
 
 \subsection{Anatomical location}
 

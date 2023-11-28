@@ -134,6 +134,20 @@ Reda Kasmi and Karim Mokrani\cite{Kasmi2016} describe creating a grid of 20x20 p
 
 Measuring similarities in texture can be achieved by using SIFT-based similarity and projection profiles\cite{Ali2020a}. SIFT is scale-invariant and helpful for texture components with varying texture quality. First, the skin lesion is split vertically and horizontally across the centre into four halves, comparing texture components on the symmetrical halves and measuring the similarity. Lastly, the projection profile in the x and y directions generates histograms. These results train a decision tree and have an 80\% accuracy of the ISIC 2018 with 204 images privately annotated for ABCD rules and combined.
 
+% Measuring asymmetry shape
+Ihab S. Zaqout\cite{Zaqout2016} describes a technique using the centroid and rotation of the skin lesion using moments of inertia. By Folding the skin lesion on both vertical and horizontal axes subtracting the opposite half. Pixels that cannot subtract are summed and compared with a threshold considering the skin lesion asymmetrical if the combined sum is more than the threshold.
+
+% Measuring asymmetry colour
+Kasmi and Mokrani\cite{Kasmi2016} create a grid of 20 by 20 pixels from the skin lesion image and convert it into the LAB colour space. The average colour of each block is compared with a perpendicular block (vertical and horizontal axes) using the three-dimensional Euclidean luminance distance, a-axis, and b-axis. If more than half of the colour comparisons exceed the threshold, they consider that axis to be colour asymmetrical. They ignore blocks that have no symmetrical pair. Finally, they calculate luminance separately to prevent brightness problems. This technique achieves an accuracy of 94\% with a private dataset.
+
+% Measuring asymmetry texture
+Ali\cite{Ali2020a} uses SIFT-based similarity and projection profiles to measure similarities in texture. SIFT is scale-invariant and helpful for texture components with varying texture quality. First, they split the skin lesion vertically and horizontally across the centre into four halves, compare texture components on the symmetrical halves, and measure similarity. Lastly, they generate histograms for the projection profile in the x and y directions. These results train a decision tree and achieve an 80\% accuracy of the ISIC 2018 with 204 images privately annotated for ABCD rules.
+
+% Summary of techniques and mention of the proposed approach
+Prior studies have introduced techniques that measure distinct aspects of asymmetry, such as Ihab S. Zaqout\cite{Zaqout2016} measurement of shape, Kasmi and Mokrani\cite{Kasmi2016} measurement of colour, and  Ali\cite{Ali2020a} measurement of texture. The new approach seeks to combine the following approaches into a more comprehensive analysis of asymmetry that takes into account multiple features of the skin lesion. The proposed novel technique updates colour measurement to improve accuracy using superpixels and an SVM model.
+
+
+
 \subsubsection{Border}
 Estimating border irregularities involves splitting the skin lesion into eight equal sections (through the centroid), where each section with tight corners and convexity is considered irregular. Each irregular section of the border adds a score of 1 ranging from 0 to a total of 8, as shown in figure \ref{borders}.
 

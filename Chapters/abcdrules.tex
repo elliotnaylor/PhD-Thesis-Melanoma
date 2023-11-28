@@ -2,43 +2,48 @@
 \chapter{Implementation of segmentation, ABCD rules  and Dermoscopic structures}
 
 \section{Introduction}
-This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. Surprisingly, many of the ABCD rules techniques were originally tested for whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques were tested and documented.
+This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour, and Dermoscopic Features) algorithms including their implementation, and updating the algorithms. They are compared using the PH2 dataset and updated relating to their accuracy. Surprisingly, many of the ABCD rules techniques were originally tested for whether they effectively find melanoma and not individual features. So, this will be the first time some of these techniques have been tested and documented.
 
 %Discuss the ABCD rule techniques and how border is better with a tighter border rather than segmentation from techniques including SegNet
 \section{Development of a hybrid machine learning technique}
-Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020}. The accurate recognition of melanoma is a challenging task due to contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{Skin Lesion Analysis towards Melanoma Detection Using Deep Learning Network}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Computer Aided Diagnostic Support System for Skin Cancer: A Review of Techniques and Algorithms}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{An IoMT-Based Melanoma Lesion Segmentation Using Conditional Generative Adversarial Networks}. Furthermore accurate segmentation supports the development of computer-aided diagnostic (CAD) systems by extracting a relevant area of the skin lesion for analysis and ensuring that the relevant area of the image is classified, improving the accuracy of classification algorithms\cite{Step-wise integration of deep class-specific learning for dermoscopic image segmentation}. Overall segmentation is vital for the accurate and relaiale analsyis of melnaoma, enabling the analysis of melanoma through the extraction of relevant features.
+Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020}. The accurate recognition of melanoma is a challenging task due to the contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{li2018}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Masood2013}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{ali2023}. Furthermore, accurate segmentation supports the development of computer-aided diagnostic (CAD) systems by extracting a relevant area of the skin lesion for analysis and ensuring that the relevant area of the image is classified, improving the accuracy of classification algorithms\cite{bi2019}. Overall segmentation is vital for the accurate and reliable analsyis of melanoma, enabling the analysis of melanoma through the extraction of relevant features.
 
-Accurate segmentation also plays a crucial role for analysing ABCD rules\cite{Lee2020}. This is espeically vital for analysis of border features\cite{Pereira2020, Kaya2016} including convexes and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}. This is especially important for the analysis of asymmetry and colour that both analyse the colour of the skin lesion. An accurate border cut-off is also important for the analysis of asymmetry and colour that both classify the colour of the skin lesion. An accurate border is also essential to analysing lesions by preventing skin accidently being calculated in the process, ruining the accuracy. It's important to note that many of the ABCD rules algorithms are statistical and highly sensitive to incorrect segmentations.
+Accurate segmentation also plays a crucial role in analysing ABCD rules\cite{Lee2020}. This is especially vital for analysis of border features\cite{Pereira2020, Kaya2016} including convexes and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and the exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}. An accurate border cut-off is also important for the analysis of asymmetry and colour which both classify the colour of the skin lesion. An accurate border is also essential to analysing lesions by preventing skin from accidentally being calculated in the process, ruining the accuracy. It's important to note that many of the ABCD rules algorithms are statistical and highly sensitive to incorrect segmentations.
 
-There are various deep learning approaches\cite{Albahli2020} and deep CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma. Although these techniques are massively accurate they are trained and tested against datasets (ISIC 2018) containing a mixture of approximate segmentation masks and expert segmentation masks. Shown in figure \ref{seg-expert}, approximate borders are a rough estimation skin lesion area and expert segmentation masks fit the skin lesion tighter representing border features. The mixture of images results in produced borders from many deep learning techniques having an inaccurate border cut-off border, whilst appearing accurate when tested against datasets. The ISIC 2018 dataset has a mixture of approximate segmentation masks and expert borders, which is not enough to train deep learning algorithms. Furthermore, the images are also shrunk as part of the deep learning process, which in turn loses smaller features that are significant when analysing borders. Various hybrid techniques have been developed using statistical algorithms active contouring-based segmenatation\cite{Riaz2019}, LBPC and others for border adjustment including u-otsu and edge-imfill. Specifically u-otsu has been previously used to adjust the borders of melanoma to create expert borders\cite{}.
+There are various deep learning approaches\cite{Albahli2020} and deep CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma. Although these techniques are massively accurate they are trained and tested against datasets (ISIC 2018) containing a mixture of approximate segmentation masks and expert segmentation masks. Shown in figure \ref{seg-expert}, approximate borders are a rough estimation of skin lesion area and expert segmentation masks fit the skin lesion tighter representing border features. The mixture of images results in produced borders from many deep learning techniques having an inaccurate border cut-off border, whilst appearing accurate when tested against datasets. The ISIC 2018 dataset has a mixture of approximate segmentation masks and expert borders, which is not enough to train deep learning algorithms. Furthermore, the images are also shrunk as part of the deep learning process, which in turn loses smaller features that are significant when analysing borders. Various hybrid techniques have been developed using statistical algorithms active contouring-based segmenatation\cite{Riaz2019}, LBPC and others for border adjustment including u-otsu and edge-imfill. Specifically, u-otsu has been previously used to adjust the borders of melanoma to create expert borders\cite{}.
 
 %Show example of borders and expert borders
 \begin{figure}[]
     \centering
-    %\includegraphics[scale=1.2]{images/}
-    \caption{Some images from the ISIC dataset demonstrating the difference between segmentation masks and expert segmentation masks.}\label{seg-expert}
+    \includegraphics[scale=1.2]{images/segmentation/seg-expert-approx.png}
+    \caption{This figure shows examples of different styles of segmentation in the ISIC 2018 dataset with approximate segmentation masks on the top row and expert segmentation masks on the bottom.}\label{seg-expert}
 \end{figure}
 
-As shown in figure \ref{seg-expert} expert borders are tighter to the area of the skin lesion and approximate borders are the area of the lesion.
+As shown in figure \ref{seg-expert} expert borders are tighter to the area of the skin lesion and approximate borders are the area of the lesion. Images have either approximate borders or expert borders and no others in the ISIC 2018 dataset, measruements are likely skewered because of the variation in types of borders.
 
 
 \subsection{Data Organisation}
-As mentioned previously the ISIC 2018 dataset contains a mixture of approximate borders and expert borders. The statistical algorithms (U-otsu, LBPC) generate an accurate border cut-off and would have a better accuracy for expert borders, but worse for approximate border. The opposite is true for deep learning algorithms (U-net, SegNet) where they produce approximate borders and should be tested against approximate borders Considering these problems to better assess the quality of algorithms, the ISIC 2018 dataset is split into expert and approximate masks to better verify the accuracy of technqiues.
+As mentioned in the previous section the ISIC 2018 dataset contains a mixture of approximate borders and expert borders. The statistical algorithms (U-otsu, LBPC) generate an accurate border cut-off and would have a better accuracy for expert borders, but worse for approximate border. The opposite is true for deep learning algorithms (U-net, SegNet) where they produce approximate borders and should ideally be tested against approximate borders. Considering these problems to better assess the quality of algorithms, the ISIC 2018 dataset is split into expert and approximate masks to better verify the accuracy of techniques.
 
-To automatically split the dataset a simple algorithm is utilised called fractal box-counting that is designed to measure the complexity of a border.
+To automatically split the dataset a simple algorithm is utilised called fractal box-counting which is designed to measure the complexity of a border. 
 
 Out of 2,594 images ... are added to the approximate dataset of ... because they do not have expert borders. However because of the number of images needed to train the algorithms. Considering the deep learning algorithms only produce a rough border they are tested against the approximate borders in the ISIC 2018 dataset. This should allow for a better comparison of the techniques.
 
 After comparing a range of these technqiues the two highest performing are combined and tested against the expert
 
-Furthermore, border cut-off is subjective making it challenging to
+Furthermore, border cut-off is subjective making it challenging to analyse
 
-
+%Box-counting didn't split the values at all, another method needs to be used
 
 \subsection{Semantic Pixel Wise Segmentation (SegNet)}
 Semantic pixel-wise segmentation (SegNet) is a deep learning architecture that is used for semantic image segmentation for melanoma detection. It was originally developed by\cite{chen2018} and has shown promising results in various segmentation tasks. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end-to-end learning and inference at the pixel level. 
 
 Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3$\times$3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2$\times$2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3$\times$3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
+
+
+%Explain training parameters
+
+%Share results
 
 \begin{figure}[hb]
 \centering
@@ -46,11 +51,15 @@ Semantic pixel-wise segmentation (SegNet) is a machine learning architecture uti
 \caption{Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.}\label{SegNet}
 \end{figure}
 
-Results in figure \ref{SegNet} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, figure represents the border cut-off between skin and skin lesion is accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
+Results in figure \ref{SegNet} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, figure\ref{} represents the border cut-off between skin and skin lesion is accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
+
+
 
 \subsection{Unet}
-U-net or U-shaped neural netowrk is a convolutional neural network (CNN) that was developed for the automatic image segmentation of images. It is an encoder-decotr architecture designed for semantic segmentation tasks, it is espeically useful for medical image analysis\cite{zhou2020}. 
+U-net or U-shaped neural network is a deep neural network (DNN) architecture that gained significant attention, particularly in medical image segmentation. 
 
+
+that was developed for the automatic image segmentation of images. It is an encoder-decoder architecture designed for semantic segmentation tasks, it is especially useful for medical image analysis\cite{zhou2020}.  
 
 \subsection{Otsu Threshold}
 Otsu threshold is a versatile automatic image thresholding technique meant to separate each pixel between two classes of foreground or background. One of the benefits of this method is that it does not require any training data. The equation \ref{otsu} (within-class variance) describes splitting weights of $w_0(t),w_1(t)$, which are the probabilities divided by the threshold $t$, between 0 and 255. Furthermore, $\sigma_1^2$ and $\sigma_0^2$ are variances of these two classes. The class probability $w$ is computed from the histogram in figure \ref{otsu2}, which is an intensity histogram describing the colour distribution in an image. Measuring the values above and below the generated thresholds splits the image into two classes.
@@ -66,7 +75,6 @@ The histogram was split into two segments with the threshold $t$ of 138 and the 
 \includegraphics[scale=0.7]{images/otsu3.png}
 \caption{Otsu thresholding alongside ground-truth mask, where grey Otsu and white is SegNet. The bar chart shows the histogram with an otsu threshold of 138.}\label{otsu2}
 \end{figure}
-
 
 \subsection{Local Binary Pattern clustering (LBPC) Segmentation}
 Local Binary Patterns (LBP) is a texture descriptor commonly used for augmenting the image improving classification accuracy\cite{Pereira2020, Kaya2016}. First, equation\ref{eq1} calculates each pixel, where $p$ (equal to 8) is the number of neighbouring pixels compared to the centre of $c$, and the radius of $r$ from the centre. Next, shown in equation\ref{eq2} each value is subtracted counter-clockwise with the centre value and compared to function $S$ where each $gp - gc$, if more than or equal to 0, is equal to 1, and less than 0 is equal to 0. Next, add corresponding values equal to 1 of $gp$ together, changing the centre value, ignoring values of 0. Next, applying a Gaussian kernel of 13-pixel iterations and a standard deviation of 3 removes smaller features that interfere with the segmentation. Finally, applying k-means with a value of 2 subtracts the greyscale and segments the skin lesion from the skin.
@@ -100,15 +108,26 @@ Both statistical models of LBPC and Otsu threshold generated an accurate border 
 
 It might be beneficial to combine SegNet and LBPC using SegNet to find the skin lesions' location, followed by adjusting the border cut-off using LBPC. A similar technique using the Otsu threshold and Segnet is described by Riaz et al.\cite{Riaz2019}.
 
+\begin{figure}
+    \centering
+    \includegraphics[scale=1.2]{images/asymmetry/asy-changes.png}
+    \caption{} 
+\end{figure}\label{asy-changes}
+
+Figure\ref{asy-changes} demonstrates the difference between the updated asymmetry algorithm using super pixels compared with the original
+
+
+the asymmetry algorithm using super pixels decreases the median and range, compared with the original method where the pixels are closer together
+
 %Tables showing the accuracy of all three of the techniques essentially showing that segnet is obviously better.
 
 \subsubsection{Border Cut-off}
 %Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
-This section includes a simple border analysis technique called fractal box counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
+This section includes a simple border analysis technique called fractal box-counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
 
 To prove the usefulness of segmentation techniques with an accurate border cut-off a technique developed by Ali\cite{Ali2020b} is implemented that utilises machine learning with extracted data including Zernike moments, fractal box-counting, and convexity measurements. Fractal box-counting is used to measure the irregularity of the border.
 
-The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until the relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
+The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
 
 \subsection{Issues}
 %Show that LBPC sometimes fails at finding the skin lesion
@@ -140,35 +159,23 @@ Combining both SegNet and LBPC improves the accuracy.
 
 
 \section{ABCD Rules Data Extraction Techniques}
-Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
+The automatic detection of ABCD rules for the detection of ABCD rules has warrented extensive research and development\cite{Ali2020}. The ABCD rules stands for Asymmetry, Border irregularity, Colour veriegation, and Diameter greater than 6mm, and has been fundmenetal framework for the clinical diagnosis of melanoma. Sometimes Diameter is changed for Dermoscopic structures because measruing the size of the lesion is not always possible when capturing an image. Furthermore, demroscopic structures provides further insight into diagnosing melanoma\cite{}. Another useful change made to the ABCD rules is E for evolution, showing that it changes overtime, datasets however do not support this. Although the diagnostic procedures ABCD rules is frequently used in the medical environment it has limitations in detection of small melanomas and those with resular shape and homoheneous colour\cite{Dermoscopy Improves Accuracy of Primary Care Physicians to Triage Lesions Suggestive of Skin Cancer}. As a result, automatic classification algorithms for ABCD rules has become more prevelant\cite{Kasmi2016}.
 
-%Consider adding segmentation to this chapter, explain why its important for border irregualrity analysis
+Some of the benefits of implementing a CAD system for the automatic detection of ABCD rules is the the classification of exisiting diagnostic procedure in which clinicians are already aware of how it fundementally works. Another benefit is the automatic labelling of data, where it would take considerable time to input this diagnostic data into a server for further analysis, where the automatic system could generate results and the clinician only needs to check whether these results are correct. Other benefits include improving objectivity of results, where normally ABCD rules is considered subjective, meaning it can be utilised in a variety of ways. This ultimietly makes comparisons very difficult between lesions, but automatic detection can improve the objectivity, making hospital wide comparisons easier. Check out the previous chapter discussing the PH2 dataset and the data subjectivity on page\pageref*{ph2-image-assessment}.
 
-\subsection{Preferred Diagnostic Procedures}
-% Quick summary of TDS, ABCD rules, bi-fold and general issues
-Diagnostic procedures are procedures that are performed on patients in order to diagnose conditions. Regarding the diagnosis of melanoma, many types have been utilised for the detection of melanoma and the most favourable are CASH, ABCD rules, and Total Dermoscopy Score (TDS). The ABCD rules and TDS were commonly used because of their simplicity and effectiveness.
 
-Diagnostic procedures are usually based on the doctors medical experience. For example the use-case of this project is for general practioners (GPs), many of which have likely never seen or attempted to diagnose melanoma, and many of which will not have access to dermoscopes for the analysis of dermoscopic structures. So, in this use-case diagnostic procedures including ABCD rules, and CASH are suitable because of their simplicity. The method used by the NHS is also ABCD rules, which is the reasoning for using this method. 
-
-Interestingly dermatologists will utilise dermoscopic features and textures, which are more accurate but require sufficient training for the detection.
-
-\subsubsection{Asymmetry Techniques}
+\subsection{Asymmetry Techniques}
 Asymmetry analysis is a fundamental component in the early detection of melanoma because it often exhibits asymmetric shapes\cite{Ali2020a}. Meaning that the shape, colour and, texture match asymmetrically more often in benign lesions. For example, as melanoma grows the central area begins to waste away leaving a hollow area covered by thin skin, showing dermoscopic features. As it grows the edges become more irregular producing an uneven shape often relating to irregular borders and asymmetrical shapes. Diagnostic procedures have been developed to detect these unique characteristics.
 
+\begin{figure}
+    \centering
+    \includegraphics[scale=1.2]{images/asymmetry/.png}
+    \caption{} 
+\end{figure}\label{asy-examples}
+
+
+
 Bi-fold is a diagnostic procedure designed to support the recognition of melanoma by drawing a line down the middle of the skin lesion and comparing the two halves to confirm whether the sides match (considering the difference in shape, colour, and texture). Using this horizontally and vertically calculates whether the skin lesion is possibly malignant with a score between 0 and 2. Calculating with Total Dermoscopy Score (TDS) alongside the other ABCD rules including asymmetry, border, colour, and diameter calculates the likelihood of malignancy. Dermatologists frequently use bi-fold due to its simplicity, but it can be subjective to the original observer and time-consuming when managing large numbers of skin lesions. Therefore, automating techniques is beneficial to clinicians and can improve the objectivity of results.
-
-\subsection{Related Works}
-% Measuring asymmetry shape
-Ihab S. Zaqout\cite{Zaqout2016} describes a technique using the centroid and rotation of the skin lesion using moments of inertia. By Folding the skin lesion on both vertical and horizontal axes subtracting the opposite half. Pixels that cannot subtract are summed and compared with a threshold considering the skin lesion asymmetrical if the combined sum is more than the threshold.
-
-% Measuring asymmetry colour
-Kasmi and Mokrani\cite{Kasmi2016} create a grid of 20 by 20 pixels from the skin lesion image and convert it into the LAB colour space. They then compare the average colour of each block with a perpendicular block (vertical and horizontal axes) using the three-dimensional Euclidean luminance distance, a-axis, and b-axis. If more than half of the colour comparisons exceed the threshold, they consider that axis to be colour asymmetrical. They ignore blocks that have no symmetrical pair. Finally, they calculate luminance separately to prevent brightness problems. This technique achieves an accuracy of 94\% with a private dataset.
-
-% Measuring asymmetry texture
-Ali\cite{Ali2020a} uses SIFT-based similarity and projection profiles to measure similarities in texture. SIFT is scale-invariant and helpful for texture components with varying texture quality. First, they split the skin lesion vertically and horizontally across the centre into four halves, compare texture components on the symmetrical halves, and measure similarity. Lastly, they generate histograms for the projection profile in the x and y directions. These results train a decision tree and achieve an 80\% accuracy of the ISIC 2018 with 204 images privately annotated for ABCD rules.
-
-% Summary of techniques and mention of the proposed approach
-Prior studies have introduced techniques that measure distinct aspects of asymmetry, such as Ihab S. Zaqout\cite{Zaqout2016} measurement of shape, Kasmi and Mokrani\cite{Kasmi2016} measurement of colour, and  Ali\cite{Ali2020a} measurement of texture. The new approach seeks to combine the following approaches into a more comprehensive analysis of asymmetry that takes into account multiple features of the skin lesion. The proposed novel technique updates colour measurement to improve accuracy using superpixels and an SVM model.
 
 \section{A Novel Asymmetry detection technique using Bi-Fold, 3D Euclidean distance, and Superpixels}
 This section describes a novel machine-learning technique for the automatic detection of melanoma
@@ -188,7 +195,7 @@ Essentially, the symmetrical skin lesion has a smaller area and the asymmetrical
 \begin{figure} 
     \centering
     \includegraphics[scale=0.6]{images/symmetrical.png}
-\caption{This diagram is a summary of the PH2 dataset after using bi-fold, a euclidean distance of colour. The value on the right would be a threshold.}
+\caption{This diagram is a summary of the PH2 dataset after using bi-fold, a Euclidean distance of colour. The value on the right would be a threshold.}
 \end{figure}\label{symmetrical}
     
 To improve the accuracy of the algorithm some changes need to be made based on the previous statements. First will be superpixels and next is k-means.
@@ -227,6 +234,7 @@ There is a correlation in colour differences between the inner and outer edges b
 Fractal Box-Counting, and Convexity}
 
 \section{A Novel Colour Analysis Approach using Colour Ranges, and SVM}
+
 
 \section{Dermoscopic structures}
 
