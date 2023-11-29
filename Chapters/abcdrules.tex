@@ -6,9 +6,9 @@ This chapter is a discussion of the most popular ABCD (Asymmetry, Border, Colour
 
 %Discuss the ABCD rule techniques and how border is better with a tighter border rather than segmentation from techniques including SegNet
 \section{Development of a hybrid machine learning technique}
-Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020}. The accurate recognition of melanoma is a challenging task due to the contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{li2018}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Masood2013}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{ali2023}. Furthermore, accurate segmentation supports the development of computer-aided diagnostic (CAD) systems by extracting a relevant area of the skin lesion for analysis and ensuring that the relevant area of the image is classified, improving the accuracy of classification algorithms\cite{bi2019}. Overall segmentation is vital for the accurate and reliable analsyis of melanoma, enabling the analysis of melanoma through the extraction of relevant features.
+Segmentation plays a crucial role in melanoma detection because it separates melanoma from healthy skin. Accurate segmentation is essential for various aspects of melanoma diagnosis, treatment, and classification\cite{Albahli2020}. The accurate recognition of melanoma is a challenging task due to the contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{li2018}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Masood2013}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{ali2023}. Furthermore, accurate segmentation supports the development of computer-aided diagnostic (CAD) systems by extracting a relevant area of the skin lesion for analysis and ensuring that the relevant area of the image is classified, improving the accuracy of classification algorithms\cite{bi2019}. Overall segmentation is vital for the accurate and reliable analysis of melanoma, enabling the analysis of melanoma through the extraction of relevant features.
 
-Accurate segmentation also plays a crucial role in analysing ABCD rules\cite{Lee2020}. This is especially vital for analysis of border features\cite{Pereira2020, Kaya2016} including convexes and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and the exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}. An accurate border cut-off is also important for the analysis of asymmetry and colour which both classify the colour of the skin lesion. An accurate border is also essential to analysing lesions by preventing skin from accidentally being calculated in the process, ruining the accuracy. It's important to note that many of the ABCD rules algorithms are statistical and highly sensitive to incorrect segmentations.
+Accurate segmentation also plays a crucial role in analysing ABCD rules\cite{Lee2020}. This is especially vital for the analysis of border features\cite{Pereira2020, Kaya2016} including convexes and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and the exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}. An accurate border cut-off is also important for the analysis of asymmetry and colour which both classify the colour of the skin lesion. An accurate border is also essential to analysing lesions by preventing skin from accidentally being calculated in the process, ruining the accuracy. It's important to note that many of the ABCD rules algorithms are statistical and highly sensitive to incorrect segmentations.
 
 There are various deep learning approaches\cite{Albahli2020} and deep CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma. Although these techniques are massively accurate they are trained and tested against datasets (ISIC 2018) containing a mixture of approximate segmentation masks and expert segmentation masks. Shown in figure \ref{seg-expert}, approximate borders are a rough estimation of skin lesion area and expert segmentation masks fit the skin lesion tighter representing border features. The mixture of images results in produced borders from many deep learning techniques having an inaccurate border cut-off border, whilst appearing accurate when tested against datasets. The ISIC 2018 dataset has a mixture of approximate segmentation masks and expert borders, which is not enough to train deep learning algorithms. Furthermore, the images are also shrunk as part of the deep learning process, which in turn loses smaller features that are significant when analysing borders. Various hybrid techniques have been developed using statistical algorithms active contouring-based segmenatation\cite{Riaz2019}, LBPC and others for border adjustment including u-otsu and edge-imfill. Specifically, u-otsu has been previously used to adjust the borders of melanoma to create expert borders\cite{}.
 
@@ -19,8 +19,7 @@ There are various deep learning approaches\cite{Albahli2020} and deep CNN techni
     \caption{This figure shows examples of different styles of segmentation in the ISIC 2018 dataset with approximate segmentation masks on the top row and expert segmentation masks on the bottom.}\label{seg-expert}
 \end{figure}
 
-As shown in figure \ref{seg-expert} expert borders are tighter to the area of the skin lesion and approximate borders are the area of the lesion. Images have either approximate borders or expert borders and no others in the ISIC 2018 dataset, measruements are likely skewered because of the variation in types of borders.
-
+As shown in figure \ref{seg-expert} expert borders are tighter to the area of the skin lesion and approximate borders are the area of the lesion. Images have either approximate borders or expert borders and no others in the ISIC 2018 dataset, measurements are likely skewered because of the variation in types of borders.
 
 \subsection{Data Organisation}
 As mentioned in the previous section the ISIC 2018 dataset contains a mixture of approximate borders and expert borders. The statistical algorithms (U-otsu, LBPC) generate an accurate border cut-off and would have a better accuracy for expert borders, but worse for approximate border. The opposite is true for deep learning algorithms (U-net, SegNet) where they produce approximate borders and should ideally be tested against approximate borders. Considering these problems to better assess the quality of algorithms, the ISIC 2018 dataset is split into expert and approximate masks to better verify the accuracy of techniques.
@@ -29,19 +28,21 @@ To automatically split the dataset a simple algorithm is utilised called fractal
 
 Out of 2,594 images ... are added to the approximate dataset of ... because they do not have expert borders. However because of the number of images needed to train the algorithms. Considering the deep learning algorithms only produce a rough border they are tested against the approximate borders in the ISIC 2018 dataset. This should allow for a better comparison of the techniques.
 
-After comparing a range of these technqiues the two highest performing are combined and tested against the expert
+After comparing a range of these techniques the two highest performing are combined and tested against the expert
 
 Furthermore, border cut-off is subjective making it challenging to analyse
 
 %Box-counting didn't split the values at all, another method needs to be used
 
-\subsection{Semantic Pixel Wise Segmentation (SegNet)}
-Semantic pixel-wise segmentation (SegNet) is a deep learning architecture that is used for semantic image segmentation for melanoma detection. It was originally developed by\cite{chen2018} and has shown promising results in various segmentation tasks. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end-to-end learning and inference at the pixel level. 
+\subsection{Semantic Pixel-Wise Segmentation (SegNet)}
+Semantic Pixel-wise segmentation termed SegNet is a deep convolutional encoder-decoder architecture designed for the automatic segmentation of images. It was originally developed in 2015 by Badrinarayanan et al.\cite{} and has shown promising results for various segmentation tasks including those in the medical field. SegNet has been used in a variety of applications in the medical field including lung X-ray abnormality annotations\cite{}, dental imaging\cite{Automatic mandibular canal detection using a deep convolutional neural network}, liver tumor segmentation\cite{Classification of Liver Tumors from Computed Tomography Using NRSVM}, and many others. It is known for its efficiency in terms of memory and computational time and is known for being more memory efficient than other architectures including U-Net\cite{Workflow for Off-Site Bridge Inspection Using Automatic Damage Detection-Case Study of the Pahtajokk Bridge}. Further developments have been made in upgrading SegNet into different versions including Bayesian SegNet\cite{An Efficient Retinal Segmentation-Based Deep Learning Framework for Disease Prediction}, VGG-SegNet\cite{}, and ResNet-SegNet\cite{}, with differences in the encoder and decoder layers.
+
+The engine consists of an encoder network with identical 13 convolutional layers in the VGG16 network. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end-to-end learning and inference at the pixel level. 
 
 Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3$\times$3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2$\times$2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3$\times$3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
 
-
 %Explain training parameters
+
 
 %Share results
 
@@ -51,9 +52,7 @@ Semantic pixel-wise segmentation (SegNet) is a machine learning architecture uti
 \caption{Demonstrating the Semantic Pixel-Wise Segmentation (SegNet) results showing the a) original image, b) expert ground-truth and c) SegNet results.}\label{SegNet}
 \end{figure}
 
-Results in figure \ref{SegNet} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, figure\ref{} represents the border cut-off between skin and skin lesion is accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
-
-
+Results in figure \ref{SegNet} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, it represents the border cut-off between skin and skin lesion accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
 
 \subsection{Unet}
 U-net or U-shaped neural network is a deep neural network (DNN) architecture that gained significant attention, particularly in medical image segmentation. 
@@ -123,11 +122,11 @@ the asymmetry algorithm using super pixels decreases the median and range, compa
 
 \subsubsection{Border Cut-off}
 %Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
-This section includes a simple border analysis technique called fractal box-counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
+This section includes a simple border analysis technique called fractal box counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
 
 To prove the usefulness of segmentation techniques with an accurate border cut-off a technique developed by Ali\cite{Ali2020b} is implemented that utilises machine learning with extracted data including Zernike moments, fractal box-counting, and convexity measurements. Fractal box-counting is used to measure the irregularity of the border.
 
-The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until relationship between the box sizes and number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
+The fractal box-counting technique is a commonly employed technique for analysing fractal properties. It involves dividing a fractal object or pattern into a grid of equally sized boxes and counting the number of boxes that contain a portion of the fractals. The process is repeated with different box sizes until the boxes until the relationship between the box sizes and the number of boxes is analysed determining the fractal dimension\cite{Hamburger1996}. Essentially a more complicated border with corners and convexes will have more boxes and therefore a higher fractal score, than for example a border with smooth corners and edges which has a lower score. This should provide some evidence of the usefulness of an accurate border.
 
 \subsection{Issues}
 %Show that LBPC sometimes fails at finding the skin lesion
@@ -206,7 +205,7 @@ To initiate the classification of skin lesions a technique called bi-fold is app
 \end{figure}\label{asy-bifold}
 
 \subsection{Shape analysis}
-
+Analysing the shape of the skin lesion 
 
 \subsection{3D Euclidean Distance}
 Next, the lesion is partitioned into a 20 by 20 grid centred on the mentioned centre point, and the average of each region is computed. This is followed by finding the matching region on the perpendicular area from the centre of the skin lesion and comparing the colour distance between the two. Distance is measured using the LAB colour space and a 2D Euclidean distance of A and B, removing L (luminosity) to eliminate light variation. Once compared, all compared regions are obtained, and they are plotted onto a graph. If over half of the values are above a threshold of 6, then the lesion is asymmetrical.
@@ -255,6 +254,7 @@ There is a correlation in colour differences between the inner and outer edges b
 
 \section{Border Detection Using Zernike Moments, 
 Fractal Box-Counting, and Convexity}
+
 
 \section{A Novel Colour Analysis Approach using Colour Ranges, and SVM}
 
