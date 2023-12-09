@@ -37,43 +37,42 @@ Furthermore, border cut-off is subjective making it challenging to analyse
 \subsection{Semantic Pixel-Wise Segmentation (SegNet)}
 Semantic Pixel-wise segmentation termed SegNet is a deep convolutional encoder-decoder architecture designed for the automatic segmentation of images. It was originally developed in 2015 by Badrinarayanan et al.\cite{} and has shown promising results for various segmentation tasks including those in the medical field. SegNet has been used in a variety of applications in the medical field including lung X-ray abnormality annotations\cite{}, dental imaging\cite{kwak2020}, liver tumor segmentation\cite{Priyadarsini2022}, and many others. It is known for its efficiency in terms of memory and computational time and is known for being more memory efficient than other architectures including U-Net\cite{Mirzazade2021}. Further developments have been made in upgrading SegNet into different versions including Bayesian SegNet\cite{Dhanagopal2022}, VGG-SegNet\cite{}, and ResNet-SegNet\cite{}, with differences in the encoder and decoder layers.
 
-The engine consists of an encoder network with identical 13 convolutional layers in the VGG16 network. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a fully convolutional neural network (FCN) architecture, which allows for end-to-end learning and inference at the pixel level. 
+The engine consists of an encoder network with identical 13 convolutional layers. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a deep convolutional encoder-decoder architecture, which allows for robust semantic pixel-wise labelling.
 
 Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3$\times$3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2$\times$2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3$\times$3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
 
 %Explain training parameters
 In evaluating the effectiveness of a trained model, several training parameters are commonly used. These parameters serve as quantitative measures to assess the performance of models. The following parameters are utilised:
+\begin{itemize}
+    \item Loss: The loss function is a parameter used to measure the inconsistency between the predicted segmentation and the ground truth. Loss is typically minimised as the model is trained through the optimisation algorithm including Adam or stochastic gradient descent (SGD).
 
-\item Loss: The loss function is a parameter used to measure the inconsistency between the predicted segmentation and the ground truth. Loss is typically minimised as the model is trained through the optimisation algorithm including Adam or stochastic gradient descent (SGD).
+    \item Recall: The recall function otherwise known as sensitivity evaluates the ability of the model to correctly identify instances within an image. For example, it is calculated as a true positive to the sum of true positives and false negatives. A high recall value means that the model is effective at capturing the relevant objects in the image.
 
-\item Recall: The recall function otherwise known as sensitivity evaluates the ability of the model to correctly identify instances within an image. For example, it is calculated as a true positive to the sum of true positives and false negatives. A high recall value means that the model is effective at capturing the relevant objects in the image.
+    \item Accuracy: The accuracy is a fundamental metric that measures the overall correctness of the model's classification. It is calculated by the number of correct predictions to the total number of number of predictions. Accuracy tends to be ineffective in analysing unbalanced datasets.
 
-\item Accuracy: The accuracy is a fundamental metric that measures the overall correctness of the model's classification. It is calculated by the number of correct predictions to the total number of number of predictions. Accuracy tends to be ineffective in analysing unbalanced datasets.
+    \item The precision quantifies the accuracy of the model's positive predictions. It is calculated as the true positive to the sum of true positives and false positives. A high precision indicates that the model has a low risk of producing false positive predictions.
 
-\item The precision quantifies the accuracy of the model's positive predictions. It is calculated as the true positive to the sum of true positives and false positives. A high precision indicates that the model has a low risk of producing false positive predictions.
+    \item Dice Coefficient: The dice coefficient that is also known as F1 score is a metric that combines precision and recall into a single value. It is calculated as the harmonic mean of precision and recall. This provides a balanced assessment of general model performance in segmenting images.
 
-\item Dice Coefficient: The dice coefficient that is also known as F1 score is a metric that combines precision and recall into a single value. It is calculated as the harmonic mean of precision and recall. This provides a balanced assessment of general model performance in segmenting images.
-
-\item Jaccard Index: The Jaccard index or Intersection over Union (IoU) measures the similarity between the predicted segmentation and ground truth. It is calculated with the intersection of the predicted and ground truth regions to the union, providing the model's segmentation accuracy.
+    \item Jaccard Index: The Jaccard index or Intersection over Union (IoU) measures the similarity between the predicted segmentation and ground truth. It is calculated with the intersection of the predicted and ground truth regions to the union, providing the model's segmentation accuracy.
+\end{itemize}
 
 These parameters are a collective evaluation of the SegNet model's performance in image segmentation. These allow researchers to assess the effectiveness of the models and how they might function in real-world scenarios.
 
 \begin{figure}[]
     \centering
-    \includegraphics[scale=1.0]{images/segmentation/SegNet-results.png}
+    \includegraphics[scale=0.7]{images/segmentation/SegNet-results.png}
     \caption{}\label{SegNet-results}
 \end{figure}
 
 %Share results
 After training the model using parameters and 100 epochs the trained model has the following metrics, shown in figure \ref{SegNet-results}.
 
-
-
 \begin{figure}[]
     \centering
-    \includegraphics[scale=0.6]{images/segmentation/SegNet-1.png}
-    \includegraphics[scale=0.6]{images/segmentation/SegNet-2.png}
-    \includegraphics[scale=0.6]{images/segmentation/SegNet-3.png}
+    \includegraphics[scale=1.0]{images/segmentation/SegNet-1.png}
+    \includegraphics[scale=1.0]{images/segmentation/SegNet-2.png}
+    \includegraphics[scale=1.0]{images/segmentation/SegNet-3.png}
     \caption{SegNet model segmentation compared with the skin lesion, ground truth, and segmentation.}\label{SegNet-examples}
 \end{figure}
 
@@ -187,7 +186,7 @@ Combining both SegNet and LBPC improves the accuracy.
 
 
 \section{ABCD Rules Data Extraction Techniques}
-The automatic detection of ABCD rules for the detection of ABCD rules has warranted extensive research and development\cite{Ali2020}. The ABCD rules stand for Asymmetry, Border irregularity, Colour variegation, and Diameter greater than 6mm, and have been fundamental framework for the clinical diagnosis of melanoma. Sometimes Diameter is changed for Dermoscopic structures because measruing the size of the lesion is not always possible when capturing an image. Furthermore, demroscopic structures provides further insight into diagnosing melanoma\cite{}. Another useful change made to the ABCD rules is E for evolution, showing that it changes overtime, datasets however do not support this. Although the diagnostic procedures ABCD rules is frequently used in the medical environment it has limitations in detection of small melanomas and those with resular shape and homoheneous colour\cite{Dermoscopy Improves Accuracy of Primary Care Physicians to Triage Lesions Suggestive of Skin Cancer}. As a result, automatic classification algorithms for ABCD rules has become more prevelant\cite{Kasmi2016}.
+The automatic detection of ABCD rules for the detection of ABCD rules has warranted extensive research and development\cite{Ali2020}. The ABCD rules stand for Asymmetry, Border irregularity, Colour variegation, and Diameter greater than 6mm, and have been fundamental framework for the clinical diagnosis of melanoma. Sometimes Diameter is changed for Dermoscopic structures because measruing the size of the lesion is not always possible when capturing an image. Furthermore, demroscopic structures provides further insight into diagnosing melanoma\cite{}. Another useful change made to the ABCD rules is E for evolution, showing that it changes overtime, datasets however do not support this. Although the diagnostic procedures ABCD rules is frequently used in the medical environment it has limitations in detection of small melanomas and those with resular shape and homoheneous colour\cite{Argenziano2006}. As a result, automatic classification algorithms for ABCD rules has become more prevelant\cite{Kasmi2016}.
 
 Some of the benefits of implementing a CAD system for the automatic detection of ABCD rules is the the classification of exisiting diagnostic procedure in which clinicians are already aware of how it fundementally works. Another benefit is the automatic labelling of data, where it would take considerable time to input this diagnostic data into a server for further analysis, where the automatic system could generate results and the clinician only needs to check whether these results are correct. Other benefits include improving objectivity of results, where normally ABCD rules is considered subjective, meaning it can be utilised in a variety of ways. This ultimietly makes comparisons very difficult between lesions, but automatic detection can improve the objectivity, making hospital wide comparisons easier. Check out the previous chapter discussing the PH2 dataset and the data subjectivity on page\pageref*{ph2-image-assessment}.
 
