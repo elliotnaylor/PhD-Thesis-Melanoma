@@ -1,20 +1,11 @@
 \cleardoublepage
-\chapter{Systematic Review}
+\chapter{Literature  Review}
 
 \section{Introduction}
 This chapter reviews statistical and neural network algorithms for the automatic classification of melanoma. Following a discussion on the effectiveness of techniques and whether they are useful within clinical environments.
 
 %Start with a broader scope and mention the classification of lesions with NN techniques, explainability, etc.
-
-\section{Skin Lesions}
-
-\section{Diagnostic Procedures}
-
-\section{CAD Systems for Skin Lesion Diagnosis}
-
-\section{Case-Based Reasoning}
-
-\section{Discussion}
+\section{Background}
 %Mention a wide range of techniques espeically around NN techniques and hybrid models, feature detectors, direct classification (CNN, DNN, etc)
 
 Melanoma is a deadly skin cancer that frequently results in the death of patients if develops into metastatic melanoma. This refers to when the cancer has burrowed past the skin and makes its way into blood and internal organs. From this point is it far more difficult to remove.
@@ -29,12 +20,134 @@ There is a lack of literature describing adequate visual representations for doc
 
 %Supporting algorithms such as deepshap
 
+
+\section{Skin Lesions}
+Skin lesions refer to a section of skin that has an abnormal appearance or growth compared to the surrounding skin. These are separated into two categories including primary which are abnormal skin conditions at birth consisting of birthmarks and moles. Secondary skin conditions are abnormalities obtained after birth which include a range of diseases, cancers and benign lesions. Many of these skin conditions are caused by a range of factors including age, UV light and genetics.
+
+There are over 3000 known skin disorders in the area of dermatology some of which are so rare that it is unlikely for there to be any relevant images samples for analysis. This section holds a discussion on some of the most commonly found benign lesions and skin cancers that this project is concentrated around, the most important of which being melanoma.
+
+\subsection{Benign Lesions}
+Benign lesions are a non-cancerous areas of skin that are safe and unlikely to require any medical treatment. These are common and often share features with dangerous forms of skin cancers including Asymmetry, border and colour. As such, they are frequently given priority over other more serious lesions, slowing down the medical diagnosis procedure. One of the prime examples of this Serborrheic Keratosis (SK) which has similarities to melanoma. The following benign lesions discussed are Melancytic nevus (mole), benign keratosis, dermatofibroma and vascular lesions.
+
+\subsection{Skin Cancers}
+Skin cancer is one of the most common cancers that forms in the upper most layers of skin. Malignant cells divide without control spreading from the point of origin. There are many different types of skin cancers under categories of non-melanoma and melanoma. Non-melanoma refers to Basal Cell Carcinoma (BCC) and Squamous Cell Carcinoma, which are safer  because there is considerably less risk of metastasis; spreading to other regions of the body. Regardless skin cancers are easily curable \cite{Newlands2016} if found at the earliest stages of development. Melanoma however has a higher likelihood of going metastatic, which can only take 6 weeks, making it deadlier than other forms of skin cancer.
+
+\pagebreak[4]
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}
+
+\vspace*{-2cm}
+\hspace*{-2cm}
+\rotatebox{90}{%
+\begin{tabular}{|m{3cm}|c|m{15cm}|m{3cm}|}
+	\hline
+	Skin Lesion & Type & Description & Image Sample 
+	\\
+	\hline
+	Melanocytic Nevus & Benign & 
+	Melanocytic nevus or a mole is a harmless growth that often appears during childhood, birth or from prolonged exposure to UV light. They appear as pigmented clusters of cells representing a light to dark brown patch of skin that can protrude from the surface. & 
+	\includegraphics[scale=0.09]{images/intro/figure-2-mole.jpg} 
+	\\
+	\hline
+	Serborrheic Keratosis & Benign & 
+	The direct causes of these lesions are unknown, but they become more prevalent as the patient ages so genetics might play a role. These lesions are completely harmless, but the formation of them might be a symptom to a range of other problems. & 
+	\includegraphics[scale=0.09]{images/intro/figure-2-BK.jpg} 
+	\\
+	\hline
+	Dermatofibroma & Benign & 
+	This is a harmless skin lesion that forms within the dermis layer of skin that often related to insect bites or an immune system imbalance. However, being a red tumour like lesion these can be often misplaced with different skin cancers such as desmoplastic melanoma. \cite{Chen2013}. & 
+	\includegraphics[scale=0.15]{images/intro/figure-2-fibro.jpg} 
+	\\
+	\hline
+	Vascular Lesion & Benign & 
+	Vascular lesions are harmless abnormalities otherwise known as birthmarks. These consist of three main categories of haemangiomas, vascular malformations and pyogenic granulomas. Vascular tumours can form which can be benign or malignant. & 
+	\includegraphics[scale=0.15]{images/intro/figure-2-vasc.jpg} 
+	\\
+	\hline
+	Basal Cell Carcinoma & Malignant & 
+	Basal cell carcinoma (BCC) is one of the most commonly occurring skin cancer that develops on areas that have suffered from UV damage and develops. These lesions could take years to develop, making it the least dangerous type of skin cancer.  & 
+	\includegraphics[scale=0.15]{images/intro/figure-3-bcc.jpg} 
+	\\
+	\hline
+	Squamous Cell Carcinoma & Malignant & 
+	Squamous cell carcinoma (SCC) is caused by prolonged exposure to UV radiation and is prominent in people who sunburn easily and are over 70 years old. This type of skin cancer is not the most common but is one of the most devastating form of non-melanoma skin cancers. & 
+	\includegraphics[scale=0.15]{images/intro/figure-3-scc.jpg} 
+	\\
+	\hline
+	Melanoma & Malignant & 
+	Melanoma is the most common and dangerous forms of skin cancers relating to 4\% of the population. As melanoma evolves it burrows down through the skin eventually spreading to other regions of the body including lungs, liver, bones, brain, and intestines \cite{Damsky2011}. This is called metastases, which frequently results in death \cite{A.2014} & 
+	\includegraphics[scale=0.09]{images/intro/figure-3-mel.jpg} 
+	\\
+	\hline
+\end{tabular}
+%\caption{List of common benign and cancerous lesions. Images from the ISIC 2019 dataset\cite{Tschandl2018, Codella2018, Combalia2019}.}
+}%
+
+\pagebreak[4]
+
+\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}
+
+\section{Diagnostic Procedures (ABCD Rules, CASH, 7-Point Checklist, Texture)}
+% Quick summary of TDS, ABCD rules, bi-fold and general issues
+
+Diagnoses procedures were developed to simplify the process and to pursue higher accuracy \cite{Rigel2010} results from doctors that are not trained specifically in the analysis of skin lesions. Some of these include menzies, 7-point checklist, CASH, ABCD, CHAOS, BLINCK, TADA and pattern analysis. The most popular is ABCD rules because of its combined simplicity and accuracy \cite{<survey>} when recognising between benign and malignant skin lesions.
+
+The ABCD rules include Asymmetry, Borders, Colours, Diameter/dermoscopic structures and has been expanded to include Evolution\cite{Carrera2016}. Each feature is assigned a scoring system that can be used to diagnose skin lesions.
+
+\begin{table}
+\begin{tabular}{|p{2.1cm}|p{11.5cm}|c|}
+	\hline
+	Rules & Description & Example\\
+	\hline
+	Asymmetry & Melanoma is typically asymmetrical, meaning that if a line was drawn down the centre and the sides do not match there is a high likelihood that it is melanoma. & Image \\
+	\hline
+	Border & Irregular borders are normally a sign of melanoma. Normal moles have a smooth edge all the way around, while this has jagged or notched edges. & Image \\
+	\hline
+	Colour & Variations in colour are common in melanoma.  Moles typically are a single
+	 shade of brown. As it evolves the colour red, white or blue can appear. & Image \\
+	\hline	
+	Dermoscopic Structures & The diameter is for the analysis of structureless areas, pigment networks, atypical networks, dots and globules. These structures are required for the diagnoses of rarer melanoma and allow for a higher accuracy overall.& Image \\
+	\hline
+	Evolution & Any change in size, shape and colour could prove that an area is melanoma. Other factors include bleeding and itching. & Image \\
+	\hline
+\end{tabular}
+\caption{Example of the ABCDE rules with a description and an image. These images were obtained from the ISIC 2019 dataset\cite{Tschandl2018, Codella2018, Combalia2019}.}
+\end{table} 
+
+The 7-point checklist (7-PCL) is another effective\cite{Walter2013} diagnosis method that considers the change in size, irregular pigmentation, irregular border, inflammation, itch/sensation, size (larger than 7mm) and oozing/crusting. This has similarities to the ABCDE rules, but, this method not only uses sight to assess a lesion, but considers the patients sensation and the feel of the lesion. This would be difficult to implement within a framework because the relevant data describing the sensation might not be available.
+
+Another methods called the 3-point Checklist (3-PCL) is a simple diagnoses method that aims to analyse the asymmetry, atypical Network and blue-white structures within a lesion. These features are very specific compared to the other methods and naturally with the lack of some common features within melanoma it seems likely for this method to be less effective. This method is described for use in a home environment, but atypical networks would be difficult for a non-doctor to recognise.
+
+The Menzies method is a complex technique that has the highest accuracy\cite{Carrera2016} for diagnosing melanoma using negative and positive features. Negative feature include checking whether the lesion is symmetrical or of a singular colours, either of which define it is non-melanoma. Positive features include blue-white veil, multiple brown dots, pseudopods, radial steaming, scar-like depigmentation, peripheral black globules, five to six colours, mutliple blue-gray dots, broadened network. This method is naturally difficult to utilise within a clinical environment because of the expertise required recognise the features. Another problem is that a diagnoses needs to be fast because of the quantity of patients being processed, but, the number of rules does not support this.
+
+Pattern analysis is a simultaneous analysis of all components within a lesion. By far the most difficult method, requiring time and great expertise to utilise in a clinical environment. This is likely to only ever be used by expert dermatologists that have possibly analysed hundreds of lesions. The method consists of two categories including global features and local features. Global features describe the structure of the lesion which could include multicomponent patterns, unspecific pattern (Structureless or irregular), parallel patterns (Ridges, palms and soles). Local features analyses the components including atypical pigment networks, dots/globules, asymmetrical, irregular streaks, five or six colours, blue-white veil, etc. If the doctor can recognise each component and the correlation between them, this has the potential to be the most effective method for diagnoses.
+
+Another complementary sign is the “ugly duckling” approach, which urges for a comparison between other moles on the patient’s body. The one that is unlike any of the others is often suspect for malignancy \cite{Jensen2015}. This is an interesting method as it requires less prior experience to correctly diagnose the patient. However, there are no direct examples proving the effectiveness in a clinical environment.
+
+The goal of these methods is to simplify the process to improve the performance and accuracy of a diagnosis. However, the rules are not always effective against different types of melanoma. Examples of these are Amelanotic melanoma which is colourless and lacks the pigments required for analysing border and colour \cite{Pizzichetta2004}. Another is called nodular melanoma which appears darker and lacks in colour variation (black) or dotted features that are often required diagnoses. This is likely why the ABCD rules was modified from diameter to dermoscopic structures, providing more than enough information for an accurate diagnoses.
+
+
+\subsection{Computer-aided Diagnosis (CAD)}
+Most cases are first assigned to a general practitioner (GP), which do not have training in dermatology and skills are more globally oriented. This means they might struggle to recognise some of the skin features needed for a correct diagnoses. In these scenarios a secondary opinion is required, but, there are often limited dermatologists on hand, which can often lead to a misdiagnoses. To combat this CAD systems were developed to assist these doctors with an automatic secondary opinion; improving the likelihood of more frequently correct diagnoses. The main types of CAD systems are broken down into a smaller criteria including dictionary based features, clinically relevant features and deep learning\cite{Barata2019}.
+
+Bag-of-Features approaches involve further annotating of training data and assigning a word to each section of an image, which could relate to the ABCD rules or dermoscopic features. This can be achieved using a saliency map to separate an image into super pixels and assigning relevant words to each region. This is followed by classifying each area relating to the colour and texture descriptors \cite{Barata2013}. However, these answers are often found to be ambiguous and difficult to interpret. This is because each area is assigned a word or multiple words, but do not directly show or enhance feature. Therefore the person using it would need the relevant experience to recognise the features effectively.
+
+Clinically relevant features describe systems that follow a segmentation, features extraction and classification\cite{Vocaturo2019} approach. These steps are designed to segment the lesion to quantify the ABCD rules\cite{Bakheet2017, Filali2019} and other dermoscopic features. These hand-crafted features using edge filters can provide a basis for a diagnoses, but, this is sometimes met with scepticism because it is difficult to quantify the features for medical meaning. However, a recent paper has improved interpretability by analysing each feature with an SVM before merging the results using Bayesian fusion. This means each result is visualised and assigned a score similar to TDS possibly improving the diagnoses accuracy. Furthermore, this is a risky area to research because it is beginning to converge with texture extraction and deep learning methods; where clinical features are separated during classification through means of explainability. This means that using hand-crafted features could become irrelevant in the next couple of years.
+
+Texture extraction methods utilise segmentation and border to visualise the ABCD rules; D being Diameter instead of Dermoscopic structure. Smaller dermoscopic features are not made interpretable in these examples and the area is instead extracted as a texture as GLCM, LBP, etc. Therefore all features are analysed at a given time with exceptionally high accuracies. This holds the benefit of having a higher accuracy than extracting clinically relevant features, but holds only the bare minimum of visualising clinically relevant features to doctors. Biases will therefore be harder to recognise possibly leading to rarer lesions being misdiagnosed.
+
+Deep learning models are the current highest accuracy techniques that consist of training models directly from image samples. These methods have been improved to produce a visualisation through heatmaps and loosely visualising some relevant features, but the results cannot be retraced \cite{Kelly2019}, making them un-trustworthy. While there are methods being developed that allow for explainability, the results are still not interpretable\cite{Selvaraju2016} enough for use within a clinical environment. Therefore many useful machine learning algorithms should not be utilised within a clinical environment. Furthermore, this style of technique requires a large amount of training data which is not always available, especially for rarer skin conditions. This means there is a likelihood of the results being less accurate in rarer conditions with no means of proving otherwise.
+
+\section{Case-Based Reasoning}
+Case-based reasoning (CBR) is a probelm solving methodology that uses experiences (or cases) to address and solve newer issues, rather than relying on generalized methods. The goal of this method is to use stored prior cases and adapting their solutions to fit new circumstances. CBR is widely used in the medical domain and is mostly used for tutoring new doctors\cite{Moghadami2021}. This process enhcances the learning process.
+
+CBR is essentially a methodology of using previously solved cases to solve new ones. Most of the relevant data tying cases together needs to be sorted manually, as such finding similar cases is not always possible. An automted system that can find relevant features in a skin lesion and find skin lesions diagnosed with similar features would be valuable to doctors.
+
 \section{Research Methodology}
 The reason for writing this review was to select the best approaches to skin cancer detection and regarding whether they can be utilised within clinical environments.
 
 Combining the information helps specify what is currently known in literature and highlighting what areas need further work.
 
-Literature is chosen considering techniques that are explainable or have supporting techniques developed for explainability.
+The literature includes explainable techniques or have supporting techniques developed for explainability.
 
 \subsection{Research Questions}
 The goal of this systematic review is to answer the following questions:
@@ -45,30 +158,39 @@ The goal of this systematic review is to answer the following questions:
 	\item Can these techniques be supported with other algorithms to improve explainability?
 \end{enumerate}
 
-\subsection{Search Criteria}
-
-\begin{table}
-	\begin{tabular}{|c|c|c|}
-		\hline
-		Search Term & Set of Key Words             \\
-		\hline
-		Skin        & skin cancer, skin treatments \\
-		\hline
-	\end{tabular}
-
-\end{table}
+\section{Neural Network based algorithms}
+There are widely available studies describing extensive neural network algorithms relating to the detection of skin cancers. ANN, KNN, DNN, CNN, and GAN technqiues were described in the following studies\cite{Shah2023, Dildar2021}. 
 
 \section{Artificial Neural Network (ANN) Techniques}
 An artificial neural network is a nonlinear statistical prediction technique.
 
-\section{ Convolutional Neural Network (CNN) Techniques}
+Roffman et al.\cite{Roffman2018} proposed a multi-parameter artificial neural network (NN) for the early detection of non-melanoma skin cancer (NMSC), specifically in the absence of known ultraviolet radiation (UVR) exposure and family history—significant risk factors. Using data from the 1997–2015 National Health Interview Survey (NHIS) with 2,056 NMSC cases and 460,574 non-cancer cases, the NN was trained with 13 parameters, including gender, age, BMI, diabetic status, smoking status, and others. The study achieved an area under the ROC curve of 0.81 for both training and validation. The results indicated robust performance, with training sensitivity at 88.5\% and specificity at 62.2\%, and validation sensitivity at 86.2\% and specificity at 62.7\%. These were similar to other techniques showing that the NN's reliability in early detection with high sensitivity and specificity.
+
+Xie et al.\cite{Xie2017} proposed a novel method for classifying melanocytic tumors as benign or malignant through the analysis of digital dermoscopy images. The algorithm uses three key steps: first, lesions are extracted using a self-generating neural network (SGNN), second, features describing tumor color, texture, and border are extracted, and third, lesion objects undergo classification using a neural network ensemble model. The model addresses challenges considering new border features that characterise irregularities on both complete and incomplete lesions. The ensemble classifier, incorporating backpropagation (BP) neural networks and fuzzy neural networks, is designed to enhance overall performance. Experimental validation on diverse dermoscopy databases, including images from different racial groups, demonstrates significant improvements in classification accuracy, showing the effectiveness of the proposed border features and classifier model.
+
+Kumar et al.\cite{Kumar2020} proposed an enhanced strategy for the early detection of three types of skin cancers and designed for mobile devices. Input for the detection process consists of images depicting skin cancer lesions, categorised as either cancerous or non-cancerous. Image segmentation was found using Fuzzy C-means clustering to segment homogeneous regions, and various filters including Local Binary Pattern (LBP) and GLCM in the pre-processing stage to enhance the quality of the images. For classification, an Artificial Neural Network (ANN) is trained using a differential evolution (DE) algorithm. The proposed ANN-DE method demonstrated superior accuracy and efficacy compared to traditional methods, achieving an overall accuracy of 97.4\% with the HAM10000 and PH2 datasets.
+
+\subsection{Kohonen Self-Organising Neural Network (KNN) Technqiues}
+
+Mengistu et al.\cite{Debasu2015} proposed a self-organizing NN and radial basis function (RBF) to diagnose skin cancers between melanoma, BCC, and SCC. This involved the colour extraction method GLCM, and morphological features from the lesion images. These features were then utilized as input for the classification model. The system outperformed K-nearest neighbor, artifical neural network, and naive-Bayes classifiers with accuricies of 71.23\%, 63.01\%, and 56.15\%, respectivly. The proposed technique achieved an accuracy of 93.15\%.
+
+Lenhardt L, et al.\cite{Lenhardt2013} proposed a skin cancer detector based on k-Nearest Neightbors. Various optical specroscopic techniques were extensivly employed over the years as diagnostic tools to differentiate between malignant diseases. The data including gathered from synchronous fluorescent spectroscopy (SFS) and chemometrics were used to train a KNN and an ANN. On the test dataset, KNN exhibited a classification error of 2–3\%, while the classification error for ANN ranged from 3\% to 4\%.
 
 \section{Deep Neural Network (DNN) Techniques}
 
-\section{Kohonen Self-Organising Neural Network (KNN) Technqiues}
+\subsection{Convolutional Neural Network (CNN) Techniques}
+Yunendah Nur Fu'adah, et al.\cite{Fu2020} proposed a system for diagnose between skin cancer and benign lesions using Convolutional Neural Network (CNN). The proposed model uses three hidden layers with output channels of 16, 32, and 54 layers. Several optimisers are compared including SGD, RMSprop, Adam, and Nadam. The CNN model employing the Adam optimiser demonstrated the highest accuracy of 99\% in classifying the dataset. Using random regulators, the CNN procedure has an accuracy of 97.49\%, successfully distinguishing between melanoma, carcinoma, and nevus lesions. Augmentation data from the ISIC dataset played a role in training the model to differentiate between malignant and benign skin cancer lesions. The study's performance outcomes underscore the potential of using the proposed model as a diagnostic tool for medical professionals in identifying skin cancer.
+
+Hasan, et al.\cite{Bisla2019} proposed an automatic skin cancer detecter using Convolutional Neural Networks (CNN) to classify cancer images into malignant or benign categories. The features of affected skin cells are extracted through the segmentation of dermoscopic images using feature extraction methods, followed by the application of CNN to sort and categorise the extracted features. This approach has an accuracy of 89.5\%, with a training accuracy of 93.7\% when utilising publicly accessible datasets.
+
+Raja Subramanian, et al.\cite{Raja2021} proposed the use of convolutional neural networks (CNN) with an architecture consisting of 17 layers (8 convolutional layers and 5 max-pooling layers and 4 fully connected layers). The study model achieved an accuracy of 83.04\% and a precision of 81.86\% using the HAM10000 dataset with images the size of $600\times450$. Various research papers and methodologies were explored. Findings indicated that the standard CNN model has detection accuracy for skin cancer.
 
 \section{Generative Adveserial Network (GAN) Techniques}
+Rashid et al.\cite{Rashid2019b} proposed a skin lesion classification technique based on Generative Adversarial Networks (GAN). The system employed GAN generated skin lesion images to increase the size of the training dataset because current dataset sizes hinder the full potential for medical imaging for classification tasks. The generator module utilised a deconvolutional network, and the discriminator module employed a Convolutional Neural Network (CNN) for classification across seven different skin lesion categories. Comparing results with ResNet-50 and DenseNet showed accuracy rates of 79.2\% and 81.5\%, respectively. Notably, the proposed GAN-based approach achieved the highest accuracy at 86.1\% for skin lesion classification. Results demonstrate that GAN-based augmentation yields perfomance imporvements.
 
+Bisla et al.\cite{Bisla2019} proposed a deep learning approach incorporating data purification and Generative Adversarial Networks (GAN) for augmentation. This paper aims to generate data increasing the size of the dataset to imrpove data balanced-ness. This technique utilises decoupled deep convolutional GANs for data generation. A pre-trained ResNet-50 model was fine-tuned with the purified and augmented dataset to classify dermoscopic images into melanoma, SK, and nevus categories. The proposed system surpassed the baseline ResNet-50 model, achieving an accuracy of 86.1\% in skin lesion classification. This highlights the effectiveness of the integrated GAN-based approach for improving classification accuracy by generating augmented image samples.
+
+Ibrahim et al.\cite{Abdelhalim2021} proposed a data augmentation technique for skin lesions using Self-attention Progressive Growing GANs (SPGGANs), further enhanced using stablilisation technique. The goal is to increase the size of the data by generating photo realisitc and distinct images of skin lesions. The technique generates fine-grained $256\times256$ skin lesion images tailed for Convolutional Neural Networks (CNN) detection, overcoming some challenegs of convential GANs. The accuracy The technique achieved an accuraacy of 67.3\% and the study suggests the approach can be valuable in clinical practice.
 
 \section{Explainability Techniques}
 The techiques mention in this section are ones including deepshap that are used alongside exisiting DNN techniques to make models more explainable.
@@ -76,6 +198,11 @@ The techiques mention in this section are ones including deepshap that are used 
 The Local Interpretable Model-agnostic Explanations (LIME)
 
 LIME has been tested in healthcare for the analysis of breast tumour classification\cite{rafferty2022}, and diagnosis of pigmented skin lesions\cite{duell2021}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
+
+Gradcam
+
+Deepshap
+
 
 \section{Ensemble Learning Techniques}
 Ensamble learning is a branch of machine learning based on the decision-making process to intergrate it into systems better\cite{xu2022}. Decision-making is the process of making a choice among many options and summarizing evidence to draw a conclusion. An example is case-based reasoning which involves classifying and presenting visually or statistically similar cases and their results.
@@ -145,8 +272,6 @@ Ali\cite{Ali2020a} uses SIFT-based similarity and projection profiles to measure
 
 % Summary of techniques and mention of the proposed approach
 Prior studies have introduced techniques that measure distinct aspects of asymmetry, such as Ihab S. Zaqout\cite{Zaqout2016} measurement of shape, Kasmi and Mokrani\cite{Kasmi2016} measurement of colour, and  Ali\cite{Ali2020a} measurement of texture. The new approach seeks to combine the following approaches into a more comprehensive analysis of asymmetry that takes into account multiple features of the skin lesion. The proposed novel technique updates colour measurement to improve accuracy using superpixels and an SVM model.
-
-
 
 \subsubsection{Border}
 Estimating border irregularities involves splitting the skin lesion into eight equal sections (through the centroid), where each section with tight corners and convexity is considered irregular. Each irregular section of the border adds a score of 1 ranging from 0 to a total of 8, as shown in figure \ref{borders}.

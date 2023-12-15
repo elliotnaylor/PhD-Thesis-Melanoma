@@ -11,16 +11,18 @@ Skin cancer is considered amongst the most severe public health concerns, with m
 %Extra intro
 Melanoma is a type of malignant skin cancer that accounts for a significant proportion of cancer-related deaths around the world. In 2018 there were approximately 2,353 per 100,000 deaths in the United Kingdom (UK)\cite{UK2019}. Early detection is critical for improving the diagnosis and survival of patients. However, existing approaches including clinical examinations and dermoscopy, have limitations in terms of accuracy and cost-effectiveness\cite{Takiddin2021}. Machine learning approaches have beaten dermatologists in terms of accuracy\cite{Andre2017}. However, these approaches lack explainability implementing such techniques difficult for clinical environments\cite{Fan2017}. One concern is the production of realistic, but incorrect results\cite{Ghorbani2019}. Another is the use of parallel processes, which describes the creation of an answer with little to no explanation. In this paper, we propose a combined asymmetry approach using shape, colour, and texture analysis alongside a detailed comparison. The technique itself can be used in conjunction with ABCD rules (Asymmetry, border, colour, and dermoscopic features).
 
-\subsection{Diagnostic Procedures (ABCD Rules, CASH, 7-Point Checklist, Texture)}
-% Quick summary of TDS, ABCD rules, bi-fold and general issues
 Diagnostic procedures are procedures that are performed on patients in order to diagnose conditions. Regarding the diagnosis of melanoma, many types have been utilised for the detection of melanoma and the most favourable are CASH, ABCD rules, and Total Dermoscopy Score (TDS). The ABCD rules and TDS were commonly used because of their simplicity and effectiveness.
 
 Diagnostic procedures are usually based on the doctors medical experience. For example the use-case of this project is for general practioners (GPs), many of which have likely never seen or attempted to diagnose melanoma, and many of which will not have access to dermoscopes for the analysis of dermoscopic structures. So, in this use-case diagnostic procedures including ABCD rules, and CASH are suitable because of their simplicity. The method used by the NHS is also ABCD rules, which is the reasoning for using this method. 
 
 Interestingly dermatologists will utilise dermoscopic features and textures, which are more accurate but require sufficient training for the detection.
 
+
 %Diagnostic procedures
 Diagnostic procedures are instructions developed by doctors to simplify diagnosing conditions. Various methods have been developed to diagnose skin lesions and have greatly improved GP accuracy within clinical environments\cite{Nachbar1994, unlu2014}. Considering melanoma is the most dangerous skin condition, most procedures were developed specifically for early detection. Some include ABCD rules, 2-point checklist, 7-point checklist, and CASH. The most preferred of these techniques are ABCD rules and CASH because they have a higher sensitivity\cite{unlu2014} and ABCD rules are generally the most preferred because it is easy to learn and is rapidly calculated\cite{Nachbar1994}. There are several variations of ABCD rules, but, is originally measured using asymmetry, border, colour, and diameter. Diameter is sometimes replaced with dermatological structures because many features (i.e. blue-black signs, pigment networks, pseudopods, streaks, or milia-like cysts\cite{Stricklin2011}) improve the classification accuracy between melanoma and the mimic seborrheic keratosis\cite{Cognetta1994}. Furthermore, automatically measuring diameter is often difficult because it is dependent on the photo apparatus and the distance from the skin lesion, which is rarely consistent in research. Table \ref{TDS} describes each rule in more detail, including a scoring system called total dermoscopy score (TDS), where each rule is assigned a score and combined to reach a result of either malignant, suspicious or benign. The criteria is: [(Asymmetry $\times$ 1.3) + (Border $\times$ 0.1) + (Colour $\times$ 0.5) + (Dermoscopic structure $\times$ 0.5)]. Each rule is calculated using the following descriptions in Table \ref{TDS} and multiplied by their weight and then added together to reach a final score where [$<$ 4.76 = benign, $>$ 4.76 or $<$ 5.45 = suspicious, $>$ 5.45 = melanoma]. The disadvantage is the subjectivity of GP observations relating to their experience. So, it would be beneficial to automate the techniques using algorithms to standardise results and improve GP accuracy.
+
+\subsection{Total Dermoscopy Score (TDS)}
+The Total Dermoscopy Score (TDS) is a defined method for assessing the score of the ABCD criteria. Scores less than 4.75 indicates that the lesion is benign, 4.8 to 5.45 indicate a suspicious lesion and anything higher has a high likelihood of being melanoma. Each rule is assigned a score and a weight which are used to assess the structures. Such scoring systems have been implemented into CAD systems successfully\cite{Jaworek-Korjakowska2012}.
 
 \begin{table}
 \small
@@ -44,6 +46,61 @@ Diagnostic procedures are instructions developed by doctors to simplify diagnosi
 
 \caption{Total dermoscopy score (TDS) is a scoring system used with ABCD rules to support clinicians when diagnosing melanoma\cite{Cognetta1994}. Each rule is multiplied by weights and the sum of the combined values is the final score, all together: [(Asymmetry $\times$ 1.3) $+$ (Border $\times$ 0.1) $+$ (Colour $\times$ 0.5) $+$ (Dermoscopic structure $\times$ 0.5)].}
 \end{table} \label{TDS}
+
+\subsection{Explainability}
+The European General Data Protection Regulation (GDPR and ISO/IEC 27001) came into force in May 2018, making "black box" approaches difficult to utilise in a medical environment. Although this is not a ban, the outcome of the results needs to be re-traceable \cite{Holzinger2017}. These techniques are consistently relied on within medical imaging and without explainability doctors cannot interpret, modify or learn from the provided diagnoses. As such, when using machine learning algorithms, a trusted form of XAI or CAD system must be utilised.
+
+The reasoning behind retractable results is because society is becoming reliant on "black box" approaches that the results of which cannot be analysed. For example, in scenarios where a machine learning model is trained from mostly common lesion samples with a specific skin colour, it might have a lower accuracy against other rarer variations. As these algorithms are not always retractable and there is a lack of image samples within these groups it is difficult to assess whether these algorithms work effectively in rarer scenarios. Therefore, it is ethically and morally incorrect to utilise such methods within a clinical environment. To avoid malpractice the doctor must be provided with relevant and interpretable results to be considered, but not depended on for a diagnoses.
+
+\section{Datasets}
+A dataset is a collection of image samples that are often used to compare and validate performance and accuracy of algorithms described in journals, without implementing each technique needed for the comparisons.  Furthermore, machine learning techniques require large amounts of image samples for training and without the same amount of relevant images it would be impossible to reproduce some algorithms. For example, one of which utilises a private dataset of 129,450 images consisting of 2,032 different diseases \cite{Andre2017}, achieving the highest accuracy in classification so far. As a comparison, the largest public dataset called ISIC 2019 has 25,331 images containing 8 different diseases. This is one of the biggest concerns in medical imaging as comparisons with public datasets are not always made, bottlenecking active research within a topic \cite{Roh2019}. For this reason, competing against deep learning models has become less prominent and there has been a greater focus on other topics including image synthesis, explainable AI (XAI) and some CAD systems.
+
+Other datasets including MED-NODE \cite{Argenziano2001} provide macroscopic image samples for comparing and creating techniques without a dermoscope. Macroscopic images could have large variations in noise, angles and lighting conditions where the algorithm might fail. For example, the training process of a machine learning algorithm is specific to the type of data it analyses. If the model is used on an image that has a different variation in lighting and angles the algorithm is likely to fail. As such, rules must be followed by the doctor taking the image to insure accurate results.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	Dataset & Image Samples & Image Type & Availability\\
+	\hline
+	ISIC 2019 & 13,000 & Dermoscopic & Public  \\
+	\hline
+	BCN20000 & 19,424 & Dermoscopic & Public \\
+	\hline
+	HAM10000 & 11,788 & Dermoscopic & Public  \\
+	\hline
+	NHS & unsure & Dermoscopic & Private \\
+	\hline
+	Atlas & 80 & Dermoscopic & Public \\
+	\hline
+	MED-NODE & 170 & Macroscopic & Public \\
+	\hline
+	
+\end{tabular}
+\caption{List of datasets that are used throughout this project. Some of these datasets share images, making the total amount of unique images 25,581}
+\end{table}
+
+\section{Challenges - Project Scenario}
+This project has some unique components being that the traditional diagnostic procedure used by the dermatologists are based around touching and feeling through pinch tests. This might include an analysis of roughness, firmness, bleeding, etc. Other information that is considered are age and a lesions location on a body. These components are rarely considered within a CAD framework. A possibility would be to analyse the lesion based around the ABCD rules to separate the component into a benign or malignant skin lesion. The framework would then request additional information through a pinch tests, age and location to narrow the results down to a type skin condition. This additional information would prove valuable to the dermatologists examining the diagnoses at a later date.
+
+\subsection{Clinical Environment}
+In a clinical environment, sessions are often short because of the number of patients being diagnosed at a given time on a range of topics including dermatology. For many general practitioners it might be their first attempt at diagnosing a patient with a skin related issue. As described previously many benign lesions have a range of similar features to dangerous cancers, the most common of which are moles and melanoma. It is unrealistic to assume that each doctor has the relevant experience to correctly diagnose a skin lesion. Diagnoses methods including the ABCD rule were created to find some of the most common and dangerous skin lesions such as melanoma. However, there are over 3000 different skin lesions making it unlikely for a doctor to diagnose each effectively. Therefore, a secondary opinion is required from a dermatologist to improve the accuracy of the diagnoses.
+
+Assuming the dermatologist prioritises undiagnosed lesions they can still be left weeks before being diagnosed. However, the main complication is when a general practitioner incorrectly label a skin lesion, leaving it unchecked by a dermatologist indefinitely. This is because it is often impractical to use their limited time to be looking through a range of already diagnosed skin conditions. This is where a computer aided diagnoses system (CAD) can provide a secondary opinion to the doctor by providing tools that would standardize and improve the accuracy of the diagnostic procedure.
+
+The final diagnoses should be defined by the doctor and not the algorithm. For example, the algorithm should be built to provide relevant data supporting the classification process relating ABCD rules or other smaller features. These should be built to persuade and even teach the doctor of better diagnoses methods, without a too convincing diagnosis.
+
+\subsection{Data Samples}
+There are two different environments in which images of skin lesions have been captured which includes hospitals with access dermatologists and surgeries with general practitioners (GPs). Available equipment varies between these locations and general practitioners will often use digital cameras to capture skin lesions while dermatologists have access to dermocopes and other specialised equipment. Therefore the data samples will have variations between dermoscopic and macroscopic images depending on where they were captured.
+
+One of the underlining problems with using macroscopic images for analysis is that they are less likely to contain smaller features which can improve the accuracy of a diagnosis\cite{}. Furthermore, melanoma can contain 6 different colours and, in a room too bright or too dark these colours and other details can be difficult to interpret, leading to an incorrect diagnosis. Most data samples available are
+
+There was no mention of rules used to take these macroscopic images, meaning they might have large variations in lighting, angles and blurring. This makes it substantially difficult to utilise any illumination or noise removal techniques before using them to train a classification model. The training process is not controlled, and any intervening elements might be considered features, worsening the accuracy. It might be possible to train an algorithm only using the limited dermoscopic examples, which would have improved accuracy \cite{Holmes2018} compared to utilising macroscopic images.
+
+\section{Summary}
+Melanoma is one of the most dangerous skin cancers because it is difficult to differentiate between other skin conditions. For example, diagnosing with the ABCD rules is simple and allows for a fast and accurate diagnoses of the most common types of skin lesions, but, is inefficient at diagnosing some types benign lesions (SK) and rare types of melanoma\cite{Carrera2017}. Alongside the support of diagnostic procedures and Computer-Aided diagnostic (CAD) systems the accuracy continues to increase.
+
+The goal of this project is to improve the diagnostic accuracy of skin lesions within clinical environments through the development of a CAD system. This system would ideally be capable of producing results that can be retraced and understood by the doctor. One of the central problems with this project is that surgeries lack access to specialised equipment including dermoscopes. This means the system has to be developed for and using macroscopic images. These images could potentially contain infinite variations in lighting directions, colour, shadows, blurring, etc. These will hide structures and alter colour intensities. Images are then less likely to contain reliable and consistent features for the development of machine learning algorithms. This means there will be a decreased accuracy compared to the analysis of dermoscopic images.
 
 \subsection{UI Development and visualisation}
 The user interface (UI) being the method in which algorithms are visualised is arguably the most import section of this project because without the means of presenting algorithms in an explainable way they are of little to no use to healthcare professionals. Providing explanations will improve trust from doctors and patients to these algorithms\cite{BarredoArrieta2020}. This is also crucial for the successful implementation of AI technologies within healthcare settings\cite{skar2017}.
@@ -88,6 +145,7 @@ Some limitations were set by the company partner based on where they plan to uti
 The work is primarly for general practioners (GPs) because it is usually the source of misdiagnosed skin lesions due to the lack of specific training compared to dermatologists. The goal is to improve the accruacy of techniques using a cheap device for capturing data, furthermore automatic classification should provide a more adequate means for dermotologists to search for cases.
 
 \section{Aim}
+
 \begin{itemize}
 	\item Develop an interpretable CAD framework based on the ABCD rules to diagnose skin lesions automatically. The goal is to utilise statistical models to extract each ABCD rule (asymmetry, border, colour, and Dermoscopic structure). Each rule will be trained using individual SVM models and are combined using Bayesian Fusion.
 \end{itemize}

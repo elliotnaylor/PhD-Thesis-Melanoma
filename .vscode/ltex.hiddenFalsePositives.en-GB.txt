@@ -1,3 +1,4 @@
 {"rule":"PASSIVE_VOICE","sentence":"^\\QHere is a list of a number of biases being considered: Skin lesions without recognizable suspicious features are dismissed early within the diagnostic procedure.\\E$"}
 {"rule":"TOO_LONG_PARAGRAPH","sentence":"^\\QTherefore, there might be skin lesions diagnosed as melanoma that are in fact SK.\\E$"}
 {"rule":"THIS_NNS","sentence":"^\\QThere are many ways to combat these problem.\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QVarious research papers and methodologies were explored, achieving an accuracy of 80% and higher using the HAM10000 dataset.\\E$"}
