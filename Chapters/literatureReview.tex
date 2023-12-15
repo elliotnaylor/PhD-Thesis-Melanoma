@@ -195,13 +195,36 @@ Ibrahim et al.\cite{Abdelhalim2021} proposed a data augmentation technique for s
 \section{Explainability Techniques}
 The techiques mention in this section are ones including deepshap that are used alongside exisiting DNN techniques to make models more explainable.
 
-The Local Interpretable Model-agnostic Explanations (LIME)
+\subsection{Interpretable Model-agnostic Explanations (LIME)}
+Marco Tulio, et al.\cite{} developed an XAI model called Local Interpretable Model-agnostic Explanations (LIME) that approximates any black box machine learning model with a local interpretable model to explain each individual prediction for black-box appraoches. LIME can be applied to any machine learning model, regardless of its architecture or complexity. The primary goal of LIME is to provide interpetable explanations for individual predicitions made by machine learning models. It does this by generating local faithful and simplified models (interpetable surrogate models) around specific instances of interest. 
 
-LIME has been tested in healthcare for the analysis of breast tumour classification\cite{rafferty2022}, and diagnosis of pigmented skin lesions\cite{duell2021}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
+The following is how LIME functions:
 
-Gradcam
+\begin{enumerate}
 
-Deepshap
+	\item Select Instance: Choose a specific instance for which you want to explain the model's prediction.
+
+	\item Generate Perturbations: Introduce small random perturbations or variations to the chosen instance to create a dataset of slightly modified instances.
+
+    \item Get Predictions: Use the complex model to make predictions for each perturbed instance in the generated dataset.
+
+    \item Train Surrogate Model: Fit a simple and interpretable model (e.g. linear regression) on the perturbed instances and their corresponding model predictions. This surrogate model serves as an interpretable approximation of the complex model in the local neighborhood of the chosen instance.
+
+    \item Interpretation: Analyse the coefficients or rules of the surrogate model to gain insights into the factors influencing the complex model's prediction for the selected instance.
+
+\end{enumerate}
+
+LIME has been utilised in healthcare for the analysis of breast tumour classification\cite{rafferty2022}, and diagnosis of pigmented skin lesions\cite{duell2021}. Its ability to calculate feature importance for machine learning predictions has made it a valuable tool for improving the interpretability of AI models in the medical domain.
+
+
+\subsection{Gradient-weighted Class Activation Mapping (Grad-CAM)}
+Gradient-weighted Class Activation Mapping (Grad-CAM) is a technqiue for visualising the decision-making process of deep neural network (DNN) including convolutional neural networks (CNNs), in image classiciation tasks. This functions by feeding the inpit image through the network where the forward pass is perfoermed until the final convolitional or pooling layer before the fully connected layer. Back propogation captures how much each pixel contributes to the feature maps contribute to the final version. Gradients are predicted with respect to the feature maps of the chosen layer and are then global average-pooled, meaning that the importance of each feature is summarised by taking the average of all its pixel-wise gradients. The weighted sum of the feature map is computed where the weights are determiunted by the global average-pooled gradients. The map is passed through a rectified linear unit (ReLU) activation function to retain only the positive contributions, ignoring the irrelevant or negatively impacting regions. The final heatmap is upsampled to the original input image size which provids a visualisation fo the important regions.
+
+The generated heatmpa hights the regions of the input image that were influential in the model's decision for a specific class. For example in the context of melanoma detection it would be positive to see the focus of the heatmap to be on the lesion itself, where if it was focused on the area of skin it shows the detector isn't necassarly functioning correctly. Grad-CAM is a valuable tool for model interpretation especially in the medical domain where understanding the model is crucial.
+
+\subsection{DeepSHAP}
+
+
 
 
 \section{Ensemble Learning Techniques}
