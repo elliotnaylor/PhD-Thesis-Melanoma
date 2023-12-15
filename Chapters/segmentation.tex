@@ -78,9 +78,13 @@ Results in figure \ref{SegNet-examples} are generated from the architecture usin
 
 \section{Unet}
 %Consider removing because there is very little time
-U-net or U-shaped neural network is a deep neural network (DNN) architecture that gained significant attention, particularly in medical image segmentation. 
+U-Net or U-shaped neural network is a full convolutional neural network (FCN) architecture built for image segmentation tasks. It is an encoder-decoder architecture designed for semantic segmentation tasks, it is especially useful for medical image analysis\cite{zhou2020}. One advantage of this model is the ability to use high-resolution images and produce accurate segmentation maps.
 
-that was developed for the automatic image segmentation of images. It is an encoder-decoder architecture designed for semantic segmentation tasks, it is especially useful for medical image analysis\cite{zhou2020}.  
+The model consists of two $3\times3$ convolutions (unpadded convolutions), each followed by a rectified linear unit (ReLU) and a $2\times2$ max pooling operation with stride 2 for downsampling. After each downsampling the number of features is doubled. Then when upsampling the features are halved alongside $3\times3$ convolutions, each followed by a ReLU. The final layer consists of a $1\times1$ convolution that is used to map each 64-component feature vector to the desired number of classes. 
+
+%Diagram of Unet
+
+
 
 \subsection{Otsu Threshold}
 Otsu threshold is a versatile automatic image thresholding technique meant to separate each pixel between two classes of foreground or background. One of the benefits of this method is that it does not require any training data. The equation \ref{otsu} (within-class variance) describes splitting weights of $w_0(t),w_1(t)$, which are the probabilities divided by the threshold $t$, between 0 and 255. Furthermore, $\sigma_1^2$ and $\sigma_0^2$ are variances of these two classes. The class probability $w$ is computed from the histogram in figure\ref{otsu2}, which is an intensity histogram describing the colour distribution in an image. Measuring the values above and below the generated thresholds splits the image into two classes.
@@ -151,7 +155,7 @@ The fractal box-counting technique is a commonly employed technique for analysin
 %Show that LBPC sometimes fails at finding the skin lesion
 The segmentation algorithms encountered some issues, whilst the best of the techniques was SegNet with an 85\% accuracy when relating to the ISIC 2019 dataset. However, as previously mentioned the segmentation masks have poor border cut-off stunting features that are useful for finding border irregularities. 
 
-In contrast LBPC and U-Otsu algorithms effectively identify the border cut-off of the skin lesion, which isn't properly represented in the ISIC 2019 dataset. But, it sometimes fails to find the skin lesion or not detect anything. 
+In contrast LBPC and U-Otsu algorithms effectively identify the border cut-off of the skin lesion, which isn't properly represented in the ISIC 2019 dataset. But, it sometimes fails to find the skin lesion or does not detect anything. 
 
 Both techniques appear to have downfalls making them less effective for use for analysing ABCD rules. It would be beneficial to find the approximate area of the skin lesion using SegNet and followed by LBPC to find the border cut-off.
 
@@ -163,3 +167,4 @@ Combining both SegNet and LBPC improves the accuracy.
 
 \section{Results}
 %Percentages, graphs, etc
+
