@@ -2,3 +2,4 @@
 {"rule":"TOO_LONG_PARAGRAPH","sentence":"^\\QTherefore, there might be skin lesions diagnosed as melanoma that are in fact SK.\\E$"}
 {"rule":"THIS_NNS","sentence":"^\\QThere are many ways to combat these problem.\\E$"}
 {"rule":"PASSIVE_VOICE","sentence":"^\\QVarious research papers and methodologies were explored, achieving an accuracy of 80% and higher using the HAM10000 dataset.\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QFor example, classification tasks are improved by separating the lesion from healthy skin ensuring that only relevant sections of the lesion are classified\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
