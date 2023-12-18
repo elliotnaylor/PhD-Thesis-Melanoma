@@ -1,17 +1,17 @@
 \chapter{Segmentation and Border-line cut-off}
 
 \section{Introduction}
+This section describes the implementation and comparison of deep learning and statistical segmentation algorithms. The disadvantages of deep learning techniques are highlighted and the importance of an accurate border cut-off is explored for the analysis of ABCD rules.
+
 
 \section{Background}
 %Discuss the ABCD rule techniques and how border is better with a tighter border rather than segmentation from techniques including SegNet
-Segmentation plays a crucial role in correctly identifying melanoma. The accurate recognition of melanoma is a challenging task due to the contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{Li2018a}. For example, classification tasks are imporved by separating the lesion from healthy skin ensuring that only relevant sections of the lesion are classified\cite{Albahli2020, bi2019}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Masood2013a}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{Ali2020a}. Overall segmentation is vital for the accurate and reliable analysis of melanoma.
+Segmentation plays a crucial role in correctly identifying melanoma. The accurate recognition of melanoma is a challenging task due to the contrast between lesions and skin, including visual similarities between melanoma and non-melanoma skin lesions\cite{Li2018a}. For example, classification tasks are improved by separating the lesion from healthy skin ensuring that only relevant sections of the lesion are classified\cite{Albahli2020, bi2019}. The goal of producing segmentation techniques is to simplify and transform the representation of images into a more meaningful form for analysis, which is essential for precise representations of melanoma lesions\cite{Masood2013a}. This essentially leads to a more effective diagnosis by identifying key features that indicate malignancy\cite{Ali2020a}. Overall segmentation is vital for the accurate and reliable analysis of melanoma.
 
 Accurate segmentation also plays a for the analysis of ABCD rules\cite{Lee2020}. Especially for the analysis of border features\cite{Pereira2020, Kaya2016} including convexes and indents. The irregularity of borders is a key feature in distinguishing melanoma from benign lesions, and the exact identification of irregular borders from melanoma skin lesions is clinically significant\cite{patil2021}. An accurate border cut-off is also important for the analysis of asymmetry and colour which both classify the colour of the skin lesion. An accurate border is also essential to analysing lesions by preventing skin from accidentally being calculated in the process, ruining the accuracy. It's important to note that many of the ABCD rules algorithms are statistical and highly sensitive to incorrect segmentations.
 
-%There are various deep learning segmentation approaches\cite{Albahli2020} and CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma.
-
 \subsection{Significance of Border cut-off}
-The border cut-off sometimes referred to as an expert border is essentially a precise border that captures the edges between the skin and skin lesion. This is shown further in figure \ref{seg-expert} from the ISIC 2018 dataset that has a mixture of approximate and expert border types. 
+The border cut-off sometimes referred to as an expert border is essentially a precise border that captures the edges between the skin and skin lesion. This is shown further in figure\ref{seg-expert} from the ISIC 2018 dataset that has a mixture of approximate and expert border types. 
 
 %Show example of borders and expert borders
 \begin{figure}[]
@@ -20,9 +20,9 @@ The border cut-off sometimes referred to as an expert border is essentially a pr
     \caption{This figure shows examples of different styles of segmentation in the ISIC 2018 dataset with approximate segmentation masks on the top row and expert segmentation masks on the bottom.}\label{seg-expert}
 \end{figure}
 
-Many of the deep learning algorithms produce approximate borders; rough area around the lesion with no border cut-off for the lesion. The ABCD rules technqiues rely on border cut-offs. For example, colour analysis relies on removing any remaining skin colour and border relies on indents and convexes that are not present in approximate borders.
+Many of the deep learning algorithms produce approximate borders; a rough area around the lesion with no border cut-off for the lesion. The ABCD rules techniques rely on border cut-offs. For example, colour analysis relies on removing any remaining skin colour and the border relies on indents and convexes that are not present in approximate borders.
 
-Essentially, specifcially for the analysis of ABCD rules the use of deep learning (SegNet, Unet) is not effective enough for their analysis. Therefore, statistical technqiues (Otsu, LBPC) are tested to adjust the border as a joint technique.
+Essentially, specifically for the analysis of ABCD rules the use of deep learning (SegNet, Unet) is not effective enough for their analysis. Therefore, statistical techniques (Otsu, LBPC) are tested to adjust the border as a joint technique.
 
 \subsection{Methodology}
 
@@ -48,6 +48,7 @@ These parameters are a collective evaluation of the SegNet model's performance i
 %Out of 2,594 images ... are added to the approximate dataset of ... because they do not have expert borders. However because of the number of images needed to train the algorithms. Considering the deep learning algorithms only produce a rough border they are tested against the approximate borders in the ISIC 2018 dataset. This should allow for a better comparison of the techniques.
 
 \section{Deep Learning Segmentation Algorithms}
+There are various deep learning segmentation approaches\cite{Albahli2020} and CNN techniques\cite{yu2017}. These highlight the significance of advanced technologies for accurate segmentation and detection of melanoma.
 
 \subsection{Semantic Pixel-Wise Segmentation (SegNet)}
 Semantic Pixel-wise segmentation termed SegNet is a deep convolutional encoder-decoder architecture designed for the automatic segmentation of images. It was originally developed in 2015 by Badrinarayanan et al.\cite{Badrinarayanan2017} and has shown promising results for various segmentation tasks including those in the medical field. SegNet has been used in a variety of applications in the medical field including dental imaging\cite{kwak2020}, liver tumour segmentation\cite{Priyadarsini2022}, and many others. It is known for its efficiency in terms of memory and computational time and is known for being more memory efficient than other architectures including U-Net\cite{Mirzazade2021}. Further developments have been made in upgrading SegNet into different versions including Bayesian SegNet\cite{Dhanagopal2022}, and transfer learning using VGG-SegNet\cite{daniel2022}, and ResNet-SegNet\cite{mohd2020}, with differences in the encoder and decoder layers.
@@ -55,6 +56,10 @@ Semantic Pixel-wise segmentation termed SegNet is a deep convolutional encoder-d
 The engine consists of an encoder network with identical 13 convolutional layers. The idea of SegNet is to perform pixel-wise classification by assigning each pixel in an image to a specific class or category. This is achieved through a deep convolutional encoder-decoder architecture, which allows for robust semantic pixel-wise labelling.
 
 Semantic pixel-wise segmentation (SegNet) is a machine learning architecture utilizing a deep, fully convolutional neural network (DCNN). This network requires training from ground truth and pre-segmented images for automatic segmentation. SegNet consists of encoding layers, decoding layers, and a pixel-wise classification layer. The encoder layers consist of 3$\times$3 convolutions (including batch normalization and ReLU), and pre-trained filters for classifying features. After some convolutions, the data is down-sampled using a 2$\times$2 pooling layer. Next, decoding layers consist of up-sampling, followed by 3$\times$3 convolutions. Finally, the pixel-wise classification uses a softmax layer to represent each pixel between 0 and 1 based on the previous layers, generating a segmentation mask.
+
+%Show SegNet model
+
+
 
 %Mention training parameters
 The optimisation model Adam is used and was designed to replace stochastic gradient descent (SGD) because it is generally better than other models and has a faster computational time. 
@@ -76,9 +81,9 @@ After training the model using parameters and 100 epochs the trained model has t
     \caption{SegNet model segmentation compared with the skin lesion, ground truth, and segmentation.}\label{SegNet-examples}
 \end{figure}
 
-Here are some examples of the SegNet model described in figure \ref{SegNet-examples}. SegNet appears to capture the area of the skin lesion with high accuracy, but when compared with the expert borders in the images it fails to capture these features.
+Here are some examples of the SegNet model described in figure\ref{SegNet-examples}. SegNet appears to capture the area of the skin lesion with high accuracy, but when compared with the expert borders in the images it fails to capture these features.
 
-Results in figure \ref{SegNet-examples} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, it represents the border cut-off between skin and skin lesion accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
+Results in figure\ref{SegNet-examples} are generated from the architecture using the ISIC 2018 dataset split into 80\% training and 20\% validation images. The accuracy of locating the lesions is 85\%. However, it represents the border cut-off between skin and skin lesion accurate to the dataset but inadequate for using the ABCD rules. Finding the border cut-off is vital for measuring ABCD rules\cite{Pereira2020}.
 
 \subsection{Unet}
 %Consider removing because there is very little time
@@ -152,7 +157,7 @@ It might be beneficial to combine SegNet and LBPC using SegNet to find the skin 
 
 \section{Experimental Results}
 %Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
-This section includes a simple border analysis technique called fractal box counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
+This section includes a simple border analysis technique called fractal box-counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
 
 To prove the usefulness of segmentation techniques with an accurate border cut-off a technique developed by Ali\cite{Ali2020b} is implemented that utilises machine learning with extracted data including Zernike moments, fractal box-counting, and convexity measurements. Fractal box-counting is used to measure the irregularity of the border.
 
@@ -179,7 +184,7 @@ As shown in figure \ref{seg-expert} expert borders are tighter to the area of th
 %Show that LBPC sometimes fails at finding the skin lesion
 The segmentation algorithms encountered some issues, whilst the best of the techniques was SegNet with an 85\% accuracy when relating to the ISIC 2019 dataset. However, as previously mentioned the segmentation masks have poor border cut-off stunting features that are useful for finding border irregularities. 
 
-In contrast LBPC and U-Otsu algorithms effectively identify the border cut-off of the skin lesion, which isn't properly represented in the ISIC 2019 dataset. But, it sometimes fails to find the skin lesion or does not detect anything. 
+In contrast, LBPC and U-Otsu algorithms effectively identify the border cut-off of the skin lesion, which isn't properly represented in the ISIC 2019 dataset. But, it sometimes fails to find the skin lesion or does not detect anything. 
 
 Both techniques appear to have downfalls making them less effective for use for analysing ABCD rules. It would be beneficial to find the approximate area of the skin lesion using SegNet and followed by LBPC to find the border cut-off.
 
