@@ -25,7 +25,7 @@ Essentially, for the analysis of ABCD rules the use of deep learning SegNet is n
 
 \subsection{Methodology}
 %Explain training parameters
-In evaluating the effectiveness of trained model, several training parameters are commonly used. These parameters serve as quantitative measures to assess the performance of models. The following parameters are utilised:
+In evaluating the effectiveness of the trained model, several training parameters are commonly used. These parameters serve as quantitative measures to assess the performance of models. The following parameters are utilised:
 
 \begin{itemize}
     \item Loss: The loss function is a parameter used to measure the inconsistency between the predicted segmentation and the ground truth. Loss is typically minimised as the model is trained through the optimisation algorithm including Adam or stochastic gradient descent (SGD).
@@ -65,7 +65,7 @@ Semantic pixel-wise segmentation (SegNet) is a machine learning architecture uti
 \end{figure}
 
 %Mention training parameters
-The optimisation model Adam was utilised with learning rate of $0.01$ and a loss of binary crossentropy. Adam was designed to replace stochastic gradient descent (SGD) because it is generally better than other models and has a faster computational time. 
+The optimisation model Adam was utilised with learning rate of $0.01$ and a loss of binary cross-entropy. Adam was designed to replace stochastic gradient descent (SGD) because it is generally better than other models and has a faster computational time. 
 
 \begin{figure}[]
     \centering
@@ -175,9 +175,6 @@ It might be beneficial to combine SegNet and LBPC using SegNet to find the skin 
 \subsection{Joint Segnet comparison}
 
 
-
-
-
 \section{Experimental Results}
 %Show that regardless of segnet being better that the other techniques still have a better border cut-off improving border irregulrity detection
 This section includes a simple border analysis technique called fractal box-counting to assess the benefits of using different segmentation algorithms with accurate border cut-offs.
@@ -207,7 +204,4 @@ Both techniques appear to have downfalls making them less effective for use for 
 \section{Joint Neural network and statistical model approach}
 %Combine techniques together to get the area of the border
 
-
-Combining both SegNet and LBPC improves the accuracy. 
-
-
+Combining both SegNet and LBPC improves the accuracy.
